@@ -21,11 +21,9 @@ class Joueur {
 public:
 		/*! \fn Joueur()
 		  * \brief Constructeur de la classe joueur
-		  * \param comb la combinaison associée au joueur 
-		  * \param nbtour le nombre de tours écoulés
 
 		  */
-		Joueur(Combinaison comb, int nbtour);
+		Joueur();
 		
 		
 		/*! \fn getCombinaison();
@@ -35,11 +33,14 @@ public:
 		
 		/*! \fn getnumeroTour();
 		* \brief Pour accéder à l'attribut numeroTour 
+		* \return une combinaison
 		*/
 		int getnumeroTour();
 		
 		/*! \fn entrerCombinaison();
 		* \brief Méthode demandant la saisie d'une combinaison
+		* \return un entier
+
 		*/
 		void entrerCombinaison();
 		
