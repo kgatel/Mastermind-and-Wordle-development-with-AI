@@ -19,7 +19,7 @@ class Joueur {
 		static int numeroTour;
 
 public:
-		/*! \fn Codeur(string mdp)
+		/*! \fn Joueur()
 		  * \brief Constructeur de la classe joueur
 		  * \param comb la combinaison associée au joueur 
 		  * \param nbtour le nombre de tours écoulés
