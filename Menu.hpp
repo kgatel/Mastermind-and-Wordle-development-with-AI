@@ -19,11 +19,11 @@ class Menu {
 
 	public:
 
-		int NB_ELEMENT;
-		int ENSEMBLE_ELEMENT;
-		int NB_CASE;
-		int NB_TOUR;
-		int ModeDeJeu;	
+		const int NB_ELEMENT;
+		const int ENSEMBLE_ELEMENT;
+		const int NB_CASE;
+		const int NB_TOUR;
+		const int ModeDeJeu;	
 		
 		/*! \fn afficherMenu()
 		* \brief getteur de l'attribut motDePasse
@@ -38,8 +38,11 @@ class Menu {
 		  
 	  	/*! \fn parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,NB_CASE,NB_TOUR)
 	 	* \brief Fonction qui permet à l'utilisateur de choisir le parametre de jeu
-	 	* \param NB_ELEMENT indique le nombre d'éléments constitutifs parmi lesquels on choisit pour la combinaision à faire deviner qui sera de taille NB_CASE, ENSEMBLE_ELEMENT définit si on choisit de jouer avec des couleurs ou des lettres, NB_TOUR le nombre de tours maximale pour faire deviner la combinaison
-		*/		
+	 	* \param NB_ELEMENT indique le nombre d'éléments constitutifs parmi lesquels on choisit pour la combinaision à faire deviner
+		* \param NB_CASE indique la taille du tableau d'entier combinaison
+		* \param ENSEMBLE_ELEMENT définit si on choisit de jouer avec des couleurs ou des lettres
+		* \param NB_TOUR le nombre de tours maximale pour faire deviner la combinaison
+		*/
 		void parametreDeJeu(int NB_ELEMENT,int ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
 		
 };

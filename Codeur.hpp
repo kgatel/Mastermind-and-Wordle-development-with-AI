@@ -28,13 +28,13 @@ class Codeur {
 		  */
 		Codeur(string mdp);
 		
-		/*! \fn setMdp(string mdp);
+		/*! \fn vooid setMdp(string mdp);
 		* \brief setteur de l'attribut motDePasse
 		* \param mdp string 
 		*/
 		void setMdp(string mdp);
 		
-		/*! \fn getMdp()
+		/*! \fn string getMdp()
 		* \brief getteur de l'attribut motDePasse
 		* \return une chaine de caractère
 		*/

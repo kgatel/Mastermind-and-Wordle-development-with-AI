@@ -20,27 +20,24 @@ class Joueur {
 
 public:
 		/*! \fn Joueur()
-		  * \brief Constructeur de la classe joueur
-
-		  */
+		* \brief Constructeur de la classe joueur
+		*/
 		Joueur();
 		
-		
-		/*! \fn getCombinaison();
+		/*! \fn Combinaison getCombinaison();
 		* \brief Pour accéder à l'attribut combinaison 
+		* \return retourne la combinaison en attribut
 		*/
 		Combinaison getCombinaison();
 		
-		/*! \fn getnumeroTour();
+		/*! \fn int getnumeroTour();
 		* \brief Pour accéder à l'attribut numeroTour 
-		* \return une combinaison
+		* \return un entier
 		*/
 		int getnumeroTour();
 		
-		/*! \fn entrerCombinaison();
+		/*! \fn void entrerCombinaison();
 		* \brief Méthode demandant la saisie d'une combinaison
-		* \return un entier
-
 		*/
 		void entrerCombinaison();
 		

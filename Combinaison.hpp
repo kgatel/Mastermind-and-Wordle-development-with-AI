@@ -19,7 +19,7 @@ using namespace std;
 
 class Combinaison {
 	private:
-		int combinaison[10];
+		int combinaison[20];
 	
 	public:
 		/*! \fn Combinaison(string chaine)
@@ -28,7 +28,7 @@ class Combinaison {
 		  */
 		Combinaison(string chaine);
 		
-		/*! \fn setCombinaison(string chaine);
+		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 
 		*/
@@ -36,7 +36,7 @@ class Combinaison {
 		
 		/*! \fn get()
 		* \brief getteur de l'attribut combinaison
-		* \return un pointeur sur un entier, 
+		* \return un pointeur sur un entier permettant de gérer un tableau d'entier, 
 		*/
 		int* get();
 		
