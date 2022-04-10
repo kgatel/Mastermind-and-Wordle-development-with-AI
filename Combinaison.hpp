@@ -3,7 +3,7 @@
 
 #include <string>
 #include <iostream>
-
+#include "Menu.hpp"
 
 using std::string;
 using namespace std;
@@ -19,7 +19,7 @@ using namespace std;
 
 class Combinaison {
 	private:
-		int [] combinaison;
+		int combinaison[10];
 	
 	public:
 		/*! \fn Combinaison(string chaine)
@@ -36,9 +36,9 @@ class Combinaison {
 		
 		/*! \fn get()
 		* \brief getteur de l'attribut combinaison
-		* \return un tableau d'entier
+		* \return un pointeur sur un entier, 
 		*/
-		int [] get();
+		int* get();
 		
 		/*! \fn get(int i)
 		* \brief getteur du ième élément de l'attribut combinaison
