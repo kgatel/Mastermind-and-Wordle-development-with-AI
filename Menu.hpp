@@ -20,29 +20,26 @@ class Menu {
 
 	public:
 
-		  int NB_ELEMENT;
-		  int ENSEMBLE_ELEMENT;
-		  int NB_CASE;
-		  int NB_TOUR;
-		  int ModeDeJeu;	
-	  
-		void afficherMenu();
+		int NB_ELEMENT;
+		int ENSEMBLE_ELEMENT;
+		int NB_CASE;
+		int NB_TOUR;
+		int ModeDeJeu;	
 		
 		/*! \fn afficherMenu()
 		* \brief getteur de l'attribut motDePasse
-		* \return vide
 		*/
-		void choisirModeDeJeu(int ModeDeJeu);
+		void afficherMenu();
+		  
 		/*! \fn ChoisirModeDeJeu(int ModeDeJeu)
 		* \brief Fonction qui permet à l'utilisateur de choisir le mode de jeu
-		* \return vide
-		*/	
-		void parametreDeJeu(int NB_ELEMENT,int ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
-		/*! \fn parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,NB_CASE,NB_TOUR)
-		* \brief Fonction qui permet à l'utilisateur de choisir le parametre de jeu
-		* \return vide
+		*/
+		void choisirModeDeJeu(int ModeDeJeu);
+		  
+	  	/*! \fn parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,NB_CASE,NB_TOUR)
+	 	* \brief Fonction qui permet à l'utilisateur de choisir le parametre de jeu
 		*/		
-
+		void parametreDeJeu(int NB_ELEMENT,int ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
 		
 };
 
