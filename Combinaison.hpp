@@ -2,10 +2,12 @@
 #define COMBINAISON_H
 
 #include <string>
+#include <vector>
 #include <iostream>
 #include "Menu.hpp"
 
 using std::string;
+using std::vector;
 using namespace std;
 
 /*! \class Combinaison
@@ -19,7 +21,7 @@ using namespace std;
 
 class Combinaison {
 	private:
-		int combinaison[20];
+		vector<string>  combinaison;
 	
 	public:
 		/*! \fn Combinaison(string chaine)
@@ -32,27 +34,27 @@ class Combinaison {
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 
 		*/
-		void setCombinaison(string chaine);
+		void setCombinaison(const string chaine);
 		
 		/*! \fn get()
 		* \brief getteur de l'attribut combinaison
-		* \return un pointeur sur un entier permettant de gérer un tableau d'entier, 
+		* \return retourne un vecteur 
 		*/
-		int* get();
+		vector<string> get() const;
 		
 		/*! \fn get(int i)
 		* \brief getteur du ième élément de l'attribut combinaison
 		* \param i entier : l'indice
 		* \return un entier
 		*/
-		int get(int i);
+		int get(const int i) const;
 		
 		/*! \fn int bienPlace(Combinaison code)
 		* \brief renvoie le nombre d'élément (couleur ou lettre) bien placé par rapport à la combinaison du codeur
 		* \param code Combinaison : la combinaison valide recherchée par le décodeur
 		* \return un entier
 		*/
-		int bienPlace(Combinaison code);
+		int bienPlace(const Combinaison code) ;
 		
 		/*! \fn int malPlace(Combinaison code)
 		* \brief renvoie le nombre d'élément (couleur ou lettre) appartenant à la combinaison du codeur mais mal placé
