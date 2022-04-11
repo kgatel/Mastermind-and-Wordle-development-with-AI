@@ -4,6 +4,9 @@
 
 #include <iostream>
 #include <string>
+#include <iostream>
+#include <fstream>
+#include <sstream>
 
 
 Joueur :: Joueur(){
@@ -24,8 +27,37 @@ int Joueur:: getnumeroTour(){
 	}
 
 void Joueur:: entrerCombinaison(){
+	bool continuer;
+	continuer= true;
 	string ent("");
-	cout<< "entrer votre proposition\n"<<endl;
-	cin>>ent;
-	cout<<"voici la saisie :"<<ent<<endl;
+		do {
+			cout<< "entrer votre proposition\n"<<endl;
+			cin>>ent;
+			cout<<"voici la saisie :"<<ent<<endl;
+			if (verification(ent)){
+				continuer=false;}
+				}while(continuer);
+	//Combinaison comb(ent);
+	//combinaison=comb;
+	}
+
+vector<string> Joueur :: split(const string &chaine, char delimiteur) {
+	vector<string> elements;
+	stringstream ss(chaine);
+	string sousChaine;
+	while (getline(ss, sousChaine, delimiteur)){
+		elements.push_back(sousChaine);
+	}
+	return elements;
+
+}
+bool Joueur::verification(const string chaine){
+	bool verif;
+	vector<string> splited;
+	splited=split(chaine,' ');
+
+	verif=false;
+
+	return verif;
+	
 	}
