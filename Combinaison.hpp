@@ -24,6 +24,18 @@ class Combinaison {
 		vector<string>  combinaison;
 	
 	public:
+<<<<<<< HEAD
+		/*! \fn Combinaison()
+		  * \brief Constructeur neutre de Combinaison
+		  */
+		Combinaison();
+		
+		/*! \fn Combinaison(string chaine)
+		  * \brief Constructeur de la classe Combinaison
+		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
+		  */
+		Combinaison(string &chaine);
+=======
 	
 		/*! \fn Combinaison()
 		 * \brief Constructeur par défaut de la classe Combinaison
@@ -35,6 +47,7 @@ class Combinaison {
 		 * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
 		 */
 		Combinaison(string chaine);
+>>>>>>> a4196e3e53392b8cc4e1c6461fd2b639fe463d4d
 		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
@@ -75,6 +88,14 @@ class Combinaison {
 		*/
 		string toString();
 		
+		/*! \fn void split(const string chaine, char delimiteur, vector elements);
+		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
+		* \param chaine string : la chaine à découper, delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' '), elements vector: le vecteur crée avec les différents éléments 
+		* \return 
+		*/
+		
+		void split(const string &chaine, char delimiteur, vector<string> &elements) ; 
+			
 };
 
 #endif // CODEUR_H

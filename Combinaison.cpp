@@ -1,16 +1,27 @@
 #include <vector>
 #include "Combinaison.hpp"
-#include <cstring>
+#include <cstring>  //Package permettant de comparer deux chaines de caractère
+#include <iostream>
+#include <fstream>
+#include <sstream>
 
-Combinaison :: Combinaison(string chaine) {
-      //combinaison
+using namespace std;
+
+
+Combinaison :: Combinaison() {
+	combinaison=vector<string>();
+}
+
+Combinaison :: Combinaison(string &chaine){
+	combinaison=vector<string>();
+	split(chaine,' ',combinaison);
 }
 
 void  Combinaison ::setCombinaison (const string chaine){
 	//combinaison = null;
 }
 
-std::vector<string> Combinaison :: get() const{
+vector<string> Combinaison :: get() const{
 	return combinaison;
 }
 
@@ -58,3 +69,13 @@ string Combinaison :: toString() {
 	}
 	return "";
 }
+
+void Combinaison :: split(const string &chaine, char delimiteur, vector<string> &elements) {
+	stringstream ss(chaine);
+	string sousChaine;
+	while (getline(ss, sousChaine, delimiteur)){
+		elements.push_back(sousChaine);
+	}
+
+}
+
