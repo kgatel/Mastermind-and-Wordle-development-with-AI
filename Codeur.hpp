@@ -28,7 +28,7 @@ class Codeur:Joueur {
 		  */
 		Codeur(string mdp);
 		
-		/*! \fn vooid setMdp(string mdp);
+		/*! \fn void setMdp(string mdp);
 		* \brief setteur de l'attribut motDePasse
 		* \param mdp string 
 		*/

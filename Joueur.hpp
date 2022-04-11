@@ -24,7 +24,14 @@ public:
 		*/
 		Joueur();
 		
-		/*! \fn Combinaison getCombinaison();
+		/*! \fn Joueur(Combinaison comb,int nb)
+		  * \brief Constructeur de la classe joueur avec paramètre
+		  * \param comb la combinaison 
+		  * \param nb le nombre de tour
+		  */
+		Joueur(Combinaison comb,int nb);
+		
+		/*! \fn Combinaison getCombinaison()
 		* \brief Pour accéder à l'attribut combinaison 
 		* \return retourne la combinaison en attribut
 		*/
