@@ -47,8 +47,22 @@ public:
 		* \brief Méthode demandant la saisie d'une combinaison
 		*/
 		void entrerCombinaison();
+	
+		/*! \fn void split(const string chaine, char delimiteur, vector elements);
+		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
+		* \param chaine string : la chaine à découper, delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' '), elements vector: le vecteur crée avec les différents éléments 
+		* \return un vecteur
+		*/
 		
-};
+		vector<string> split(const string &chaine, char delimiteur) ; 
+		
+		/*! \fn bool verification(const string &chaine);
+		* \brief permet de verifier une chaine de caractère pour savoir si elle peut être transformée en combinaison
+		* \param chaine string : la chaine à vérifier
+		* \return un booleen
+		*/
+		bool verification(const string chaine);
+	};
 
 #endif // JOUEUR_H
 
