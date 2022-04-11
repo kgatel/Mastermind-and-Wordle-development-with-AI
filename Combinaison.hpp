@@ -24,10 +24,16 @@ class Combinaison {
 		vector<string>  combinaison;
 	
 	public:
+	
+		/*! \fn Combinaison()
+		 * \brief Constructeur par défaut de la classe Combinaison
+		 */
+		Combinaison();
+		
 		/*! \fn Combinaison(string chaine)
-		  * \brief Constructeur de la classe Combinaison
-		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
-		  */
+		 * \brief Constructeur de la classe Combinaison
+		 * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
+		 */
 		Combinaison(string chaine);
 		
 		/*! \fn void setCombinaison(string chaine);
