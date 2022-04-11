@@ -7,8 +7,8 @@ int Mastermind::main()
 
 { 
 	
-	Menu* m = new Menu();
-	m->afficherMenu();
+	Menu menu;
+	menu.afficherMenu();
 	Mastermind::partie();
 	return 0;
 }
