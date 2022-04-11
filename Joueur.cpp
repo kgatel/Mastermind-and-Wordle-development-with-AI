@@ -7,7 +7,7 @@
 
 
 Joueur :: Joueur(){
-	combinaison= new Combinaison();
+	Combinaison combinaison("");
 	numeroTour=0;
 	}
 Joueur::Joueur(Combinaison comb,int nb){
