@@ -47,7 +47,7 @@ class Combinaison {
 		* \param i entier : l'indice
 		* \return un entier
 		*/
-		int get(const int i) const;
+		string get(const int i) const;
 		
 		/*! \fn int bienPlace(Combinaison code)
 		* \brief renvoie le nombre d'élément (couleur ou lettre) bien placé par rapport à la combinaison du codeur
