@@ -85,7 +85,7 @@ class Combinaison {
 		* \return 
 		*/
 		
-		void split(const string &chaine, char delimiteur, vector<string> &elements) ; 
+		vector<string> split(const string &chaine, char delimiteur) ; 
 			
 };
 

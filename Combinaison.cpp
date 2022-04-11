@@ -13,8 +13,7 @@ Combinaison :: Combinaison() {
 }
 
 Combinaison :: Combinaison(string &chaine){
-	combinaison=vector<string>();
-	split(chaine,' ',combinaison);
+	combinaison=split(chaine,' ');
 }
 
 void  Combinaison ::setCombinaison (const string chaine){
@@ -70,12 +69,14 @@ string Combinaison :: toString() {
 	return "";
 }
 
-void Combinaison :: split(const string &chaine, char delimiteur, vector<string> &elements) {
+vector<string> Combinaison :: split(const string &chaine, char delimiteur) {
+	vector<string> elements;
 	stringstream ss(chaine);
 	string sousChaine;
 	while (getline(ss, sousChaine, delimiteur)){
 		elements.push_back(sousChaine);
 	}
+	return elements;
 
 }
 
