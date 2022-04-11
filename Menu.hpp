@@ -27,7 +27,6 @@ class Menu {
 		
 		/*! \fn Menu()
 		  * \brief Constructeur de la classe Menu
-		  
 		  */
 		Menu();
 		

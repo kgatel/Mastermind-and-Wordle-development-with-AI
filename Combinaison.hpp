@@ -16,7 +16,7 @@ using namespace std;
 * \version 1.0
 * \date avril 2022
 *
-* Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d'espace en tableau d'entier. Elle possède un seul attribut : le tableau d'entier.
+* Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d'espace en un vecteur de string. Elle possède un seul attribut.
 */
 
 class Combinaison {
@@ -34,11 +34,6 @@ class Combinaison {
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
 		  */
 		Combinaison(string &chaine);
-	
-		/*! \fn Combinaison()
-		 * \brief Constructeur par défaut de la classe Combinaison
-		 */
-		Combinaison(string chaine);
 		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
@@ -79,10 +74,11 @@ class Combinaison {
 		*/
 		string toString();
 		
-		/*! \fn void split(const string chaine, char delimiteur, vector elements);
-		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
-		* \param chaine string : la chaine à découper, delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' '), elements vector: le vecteur crée avec les différents éléments 
-		* \return 
+		/*! \fn vector<string> split(const string chaine, char delimiteur);
+		* \brief permet de séparer une chaine de caractère
+		* \param chaine string : la chaine à découper
+		* \param delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' ')
+		* \return Renvoie un vecteur de string
 		*/
 		
 		vector<string> split(const string &chaine, char delimiteur) ; 
