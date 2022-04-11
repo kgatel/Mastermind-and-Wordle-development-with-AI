@@ -17,7 +17,7 @@ using namespace std;
 * Cette classe hérite de la classe Joueur, elle représente l'humain ou l'ordi/IA qui devra chercher la combinaison entrée par le joueur codeur. Elle possède les mêmes attributs que Joueur.
 */
 
-class Decodeur {
+class Decodeur : public Joueur {
 	
 	public:
 		/*! \fn Decodeur()

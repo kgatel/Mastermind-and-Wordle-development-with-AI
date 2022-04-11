@@ -17,7 +17,7 @@ using namespace std;
 * Cette classe hérite de la classe Joueur, elle représente l'humain ou l'ordi/IA qui devra proposer une combinaison à trouver pour le joueur décodeur. Elle possède les mêmes attributs que Joueur avec un argument en plus, le mot de passe qui sera demandé au moment de voir la combinaison cherchée s'il le souhaite durant une partie.
 */
 
-class Codeur:Joueur {
+class Codeur: public Joueur {
 	private:
 		string motDePasse;
 	
