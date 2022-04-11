@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>projet decodeur: Joueur Class Reference</title>
+<title>Jeu de déduction: Joueur Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">projet decodeur
+   <div id="projectname">Jeu de déduction
    </div>
   </td>
  </tr>
@@ -73,6 +73,12 @@ $(function() {
  <a href="class_joueur.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_joueur_8hpp_source.html">Joueur.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Joueur:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_joueur__inherit__graph.png" border="0" usemap="#_joueur_inherit__map" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -80,6 +86,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#add6c98be3020651d84f6d75ccc1d867e">Joueur</a> ()</td></tr>
 <tr class="memdesc:add6c98be3020651d84f6d75ccc1d867e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe joueur. <br /></td></tr>
 <tr class="separator:add6c98be3020651d84f6d75ccc1d867e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0149e8d0d8253babed1bf92b746058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a6d0149e8d0d8253babed1bf92b746058">Joueur</a> (<a class="el" href="class_combinaison.html">Combinaison</a> comb, int nb)</td></tr>
+<tr class="memdesc:a6d0149e8d0d8253babed1bf92b746058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe joueur avec paramètre.  <a href="class_joueur.html#a6d0149e8d0d8253babed1bf92b746058">More...</a><br /></td></tr>
+<tr class="separator:a6d0149e8d0d8253babed1bf92b746058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd94edc661810c8ab409455c4387bb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_combinaison.html">Combinaison</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a3fd94edc661810c8ab409455c4387bb2">getCombinaison</a> ()</td></tr>
 <tr class="memdesc:a3fd94edc661810c8ab409455c4387bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour accéder à l'attribut combinaison.  <a href="class_joueur.html#a3fd94edc661810c8ab409455c4387bb2">More...</a><br /></td></tr>
 <tr class="separator:a3fd94edc661810c8ab409455c4387bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,7 +106,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>avril 2022</dd></dl>
 <p>Il s’agit d’une classe abstraite qui définit tout joueur du <a class="el" href="class_mastermind.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le mail et.">Mastermind</a>. On y retrouve deux attributs, le premier est un élément de la classe combinaison et le second est le nombre de tours écoulés qui est équivalent au nombre de combinaisons entrées par le joueur décodeur. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6d0149e8d0d8253babed1bf92b746058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0149e8d0d8253babed1bf92b746058">&#9670;&nbsp;</a></span>Joueur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Joueur::Joueur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_combinaison.html">Combinaison</a>&#160;</td>
+          <td class="paramname"><em>comb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de la classe joueur avec paramètre. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comb</td><td>la combinaison </td></tr>
+    <tr><td class="paramname">nb</td><td>le nombre de tour </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3fd94edc661810c8ab409455c4387bb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fd94edc661810c8ab409455c4387bb2">&#9670;&nbsp;</a></span>getCombinaison()</h2>
 
@@ -138,8 +185,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/thibaut/Documents/GM4/Projets/Projet_Cpp_S8/<a class="el" href="_joueur_8hpp_source.html">Joueur.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/kevin/Documents/GM4/S8/Projet_Cpp_S8/<a class="el" href="_joueur_8hpp_source.html">Joueur.hpp</a></li>
+<li>/home/kevin/Documents/GM4/S8/Projet_Cpp_S8/Joueur.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

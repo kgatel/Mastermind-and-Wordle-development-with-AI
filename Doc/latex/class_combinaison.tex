@@ -12,20 +12,27 @@ Tableau d\textquotesingle{}entier représentant une combinaison de couleur ou de
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_combinaison_a6dd6758b0f834f123208eb9b4d3ede12}{Combinaison}} (string chaine)
-\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_combinaison}{Combinaison}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_combinaison_a3e05b26be1cd90b6373d89bfbc8eae5c}{set\+Combinaison}} (string chaine)
+\mbox{\Hypertarget{class_combinaison_a96a5ca5be5f2beeecd330c0942afdda0}\label{class_combinaison_a96a5ca5be5f2beeecd330c0942afdda0}} 
+\mbox{\hyperlink{class_combinaison_a96a5ca5be5f2beeecd330c0942afdda0}{Combinaison}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de \mbox{\hyperlink{class_combinaison}{Combinaison}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combinaison_a4f074faeeaeddbf9e68474f9628ad688}\label{class_combinaison_a4f074faeeaeddbf9e68474f9628ad688}} 
+{\bfseries Combinaison} (string \&chaine)
+\item 
+void \mbox{\hyperlink{class_combinaison_afe41f73f474c6ce5c43374782ab7933a}{set\+Combinaison}} (const string chaine)
 \begin{DoxyCompactList}\small\item\em setteur de l\textquotesingle{}attribut combinaison \end{DoxyCompactList}\item 
-int $\ast$ \mbox{\hyperlink{class_combinaison_a7d0d0d9c99b28e0d169fb3952e56635c}{get}} ()
+vector$<$ string $>$ \mbox{\hyperlink{class_combinaison_a2b8f586b5c68679b9e72152bcd758b28}{get}} () const
 \begin{DoxyCompactList}\small\item\em getteur de l\textquotesingle{}attribut combinaison \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_combinaison_a15d76084258f300c534a36d1c718dea2}{get}} (int i)
-\begin{DoxyCompactList}\small\item\em getteur du ième élément de l\textquotesingle{}attribut combinaison \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_combinaison_aea5d7deea5c4cdee7af35a7a999d6c89}{bien\+Place}} (\mbox{\hyperlink{class_combinaison}{Combinaison}} code)
+\mbox{\Hypertarget{class_combinaison_afb79f03c01c2618e97e0ff026541e90a}\label{class_combinaison_afb79f03c01c2618e97e0ff026541e90a}} 
+string {\bfseries get} (const int i) const
+\item 
+int \mbox{\hyperlink{class_combinaison_aefdbeee0e2b52b4ce09efe617fbc834a}{bien\+Place}} (const \mbox{\hyperlink{class_combinaison}{Combinaison}} code)
 \begin{DoxyCompactList}\small\item\em renvoie le nombre d\textquotesingle{}élément (couleur ou lettre) bien placé par rapport à la combinaison du codeur \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_combinaison_a8940b99a7b83992750b3e2e73ab1e0c5}{mal\+Place}} (\mbox{\hyperlink{class_combinaison}{Combinaison}} code)
 \begin{DoxyCompactList}\small\item\em renvoie le nombre d\textquotesingle{}élément (couleur ou lettre) appartenant à la combinaison du codeur mais mal placé \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_combinaison_a1e1700b8ffa3459249adb99e8d636c08}{to\+String}} ()
-\begin{DoxyCompactList}\small\item\em permet l\textquotesingle{}affichage de la combinaison \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em permet l\textquotesingle{}affichage de la combinaison \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_combinaison_a3fc0dd5f846fabf1366c581153759ccf}{split}} (const string \&chaine, char delimiteur)
+\begin{DoxyCompactList}\small\item\em permet de séparer une chaine de caractère \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -40,32 +47,14 @@ Groupe A7
 \begin{DoxyDate}{Date}
 avril 2022
 \end{DoxyDate}
-Cette classe permet de définir l\textquotesingle{}objet \mbox{\hyperlink{class_combinaison}{Combinaison}}. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d\textquotesingle{}espace en tableau d\textquotesingle{}entier. Elle possède un seul attribut \+: le tableau d\textquotesingle{}entier. 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_combinaison_a6dd6758b0f834f123208eb9b4d3ede12}\label{class_combinaison_a6dd6758b0f834f123208eb9b4d3ede12}} 
-\index{Combinaison@{Combinaison}!Combinaison@{Combinaison}}
-\index{Combinaison@{Combinaison}!Combinaison@{Combinaison}}
-\doxysubsubsection{\texorpdfstring{Combinaison()}{Combinaison()}}
-{\footnotesize\ttfamily Combinaison\+::\+Combinaison (\begin{DoxyParamCaption}\item[{string}]{chaine }\end{DoxyParamCaption})}
-
-
-
-Constructeur de la classe \mbox{\hyperlink{class_combinaison}{Combinaison}}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em chaine} & est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d\textquotesingle{}espace \\
-\hline
-\end{DoxyParams}
-
+Cette classe permet de définir l\textquotesingle{}objet \mbox{\hyperlink{class_combinaison}{Combinaison}}. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d\textquotesingle{}espace en un vecteur de string. Elle possède un seul attribut. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_combinaison_aea5d7deea5c4cdee7af35a7a999d6c89}\label{class_combinaison_aea5d7deea5c4cdee7af35a7a999d6c89}} 
+\mbox{\Hypertarget{class_combinaison_aefdbeee0e2b52b4ce09efe617fbc834a}\label{class_combinaison_aefdbeee0e2b52b4ce09efe617fbc834a}} 
 \index{Combinaison@{Combinaison}!bienPlace@{bienPlace}}
 \index{bienPlace@{bienPlace}!Combinaison@{Combinaison}}
 \doxysubsubsection{\texorpdfstring{bienPlace()}{bienPlace()}}
-{\footnotesize\ttfamily int Combinaison\+::bien\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_combinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Combinaison\+::bien\+Place (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_combinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
 
 
 
@@ -79,36 +68,18 @@ renvoie le nombre d\textquotesingle{}élément (couleur ou lettre) bien placé p
 \begin{DoxyReturn}{Returns}
 un entier 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_combinaison_a7d0d0d9c99b28e0d169fb3952e56635c}\label{class_combinaison_a7d0d0d9c99b28e0d169fb3952e56635c}} 
+\mbox{\Hypertarget{class_combinaison_a2b8f586b5c68679b9e72152bcd758b28}\label{class_combinaison_a2b8f586b5c68679b9e72152bcd758b28}} 
 \index{Combinaison@{Combinaison}!get@{get}}
 \index{get@{get}!Combinaison@{Combinaison}}
-\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Combinaison\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily Combinaison\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 getteur de l\textquotesingle{}attribut combinaison 
 
 \begin{DoxyReturn}{Returns}
-un pointeur sur un entier permettant de gérer un tableau d\textquotesingle{}entier, 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_combinaison_a15d76084258f300c534a36d1c718dea2}\label{class_combinaison_a15d76084258f300c534a36d1c718dea2}} 
-\index{Combinaison@{Combinaison}!get@{get}}
-\index{get@{get}!Combinaison@{Combinaison}}
-\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Combinaison\+::get (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
-
-
-
-getteur du ième élément de l\textquotesingle{}attribut combinaison 
-
-
-\begin{DoxyParams}{Parameters}
-{\em i} & entier \+: l\textquotesingle{}indice \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-un entier 
+retourne un vecteur 
 \end{DoxyReturn}
 \mbox{\Hypertarget{class_combinaison_a8940b99a7b83992750b3e2e73ab1e0c5}\label{class_combinaison_a8940b99a7b83992750b3e2e73ab1e0c5}} 
 \index{Combinaison@{Combinaison}!malPlace@{malPlace}}
@@ -128,11 +99,11 @@ renvoie le nombre d\textquotesingle{}élément (couleur ou lettre) appartenant �
 \begin{DoxyReturn}{Returns}
 un entier 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_combinaison_a3e05b26be1cd90b6373d89bfbc8eae5c}\label{class_combinaison_a3e05b26be1cd90b6373d89bfbc8eae5c}} 
+\mbox{\Hypertarget{class_combinaison_afe41f73f474c6ce5c43374782ab7933a}\label{class_combinaison_afe41f73f474c6ce5c43374782ab7933a}} 
 \index{Combinaison@{Combinaison}!setCombinaison@{setCombinaison}}
 \index{setCombinaison@{setCombinaison}!Combinaison@{Combinaison}}
 \doxysubsubsection{\texorpdfstring{setCombinaison()}{setCombinaison()}}
-{\footnotesize\ttfamily void Combinaison\+::set\+Combinaison (\begin{DoxyParamCaption}\item[{string}]{chaine }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Combinaison\+::set\+Combinaison (\begin{DoxyParamCaption}\item[{const string}]{chaine }\end{DoxyParamCaption})}
 
 
 
@@ -143,6 +114,26 @@ setteur de l\textquotesingle{}attribut combinaison
 {\em chaine} & string \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_combinaison_a3fc0dd5f846fabf1366c581153759ccf}\label{class_combinaison_a3fc0dd5f846fabf1366c581153759ccf}} 
+\index{Combinaison@{Combinaison}!split@{split}}
+\index{split@{split}!Combinaison@{Combinaison}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Combinaison\+::split (\begin{DoxyParamCaption}\item[{const string \&}]{chaine,  }\item[{char}]{delimiteur }\end{DoxyParamCaption})}
+
+
+
+permet de séparer une chaine de caractère 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine} & string \+: la chaine à découper \\
+\hline
+{\em delimiteur} & char \+: le caractère qui va servir à séparer les éléments de la chaine (souvent un \textquotesingle{} \textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Renvoie un vecteur de string 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_combinaison_a1e1700b8ffa3459249adb99e8d636c08}\label{class_combinaison_a1e1700b8ffa3459249adb99e8d636c08}} 
 \index{Combinaison@{Combinaison}!toString@{toString}}
 \index{toString@{toString}!Combinaison@{Combinaison}}
@@ -158,6 +149,7 @@ un string
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/thibaut/\+Documents/\+G\+M4/\+Projets/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Combinaison.\+hpp\end{DoxyCompactItemize}
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Combinaison.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Combinaison.\+cpp\end{DoxyCompactItemize}
