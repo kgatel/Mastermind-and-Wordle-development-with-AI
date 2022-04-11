@@ -25,6 +25,12 @@ class Menu {
 		const int NB_TOUR;
 		const int ModeDeJeu;	
 		
+		/*! \fn Menu()
+		  * \brief Constructeur de la classe Menu
+		  
+		  */
+		Menu();
+		
 		/*! \fn afficherMenu()
 		* \brief getteur de l'attribut motDePasse
 		*/
