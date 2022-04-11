@@ -51,6 +51,7 @@ public:
 		/*! \fn void split(const string chaine, char delimiteur, vector elements);
 		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
 		* \param chaine string : la chaine à découper, delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' '), elements vector: le vecteur crée avec les différents éléments 
+		* \param char delimiteur caractère précisant où séparer la chaine
 		* \return un vecteur
 		*/
 		
