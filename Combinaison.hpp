@@ -24,7 +24,6 @@ class Combinaison {
 		vector<string>  combinaison;
 	
 	public:
-<<<<<<< HEAD
 		/*! \fn Combinaison()
 		  * \brief Constructeur neutre de Combinaison
 		  */
@@ -35,19 +34,11 @@ class Combinaison {
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
 		  */
 		Combinaison(string &chaine);
-=======
 	
 		/*! \fn Combinaison()
 		 * \brief Constructeur par défaut de la classe Combinaison
 		 */
-		Combinaison();
-		
-		/*! \fn Combinaison(string chaine)
-		 * \brief Constructeur de la classe Combinaison
-		 * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
-		 */
 		Combinaison(string chaine);
->>>>>>> a4196e3e53392b8cc4e1c6461fd2b639fe463d4d
 		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
