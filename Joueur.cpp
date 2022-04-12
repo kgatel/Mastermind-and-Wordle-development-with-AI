@@ -10,7 +10,7 @@
 
 
 Joueur :: Joueur(){
-	Combinaison combinaison("");
+	Combinaison combinaison();
 	numeroTour=0;
 	}
 Joueur::Joueur(Combinaison comb,int nb){
@@ -29,16 +29,17 @@ int Joueur:: getnumeroTour(){
 void Joueur:: entrerCombinaison(){
 	bool continuer;
 	continuer= true;
-	string ent("");
+	string *ent;
+	ent = new string;
 		do {
 			cout<< "entrer votre proposition\n"<<endl;
-			cin>>ent;
-			cout<<"voici la saisie :"<<ent<<endl;
-			if (verification(ent)){
+			cin>>*ent;
+			cout<<"voici la saisie :"<<*ent<<endl;
+			if (verification(*ent)){
 				continuer=false;}
 				}while(continuer);
-	//Combinaison comb(ent);
-	//combinaison=comb;
+	Combinaison comb(*ent);
+	combinaison=comb;
 	}
 
 vector<string> Joueur :: split(const string &chaine, char delimiteur) {
@@ -52,11 +53,24 @@ vector<string> Joueur :: split(const string &chaine, char delimiteur) {
 
 }
 bool Joueur::verification(const string chaine){
-	bool verif;
+	bool verif,btaille=false,belements=false;
+	int taille;
 	vector<string> splited;
 	splited=split(chaine,' ');
-
-	verif=false;
+	taille=splited.size();
+	extern int NB_CASE;
+	//verification de la taille
+	if(taille==NB_CASE){btaille=true;}
+	//verification de l'éxistence des éléments
+	//a faire en fonction de l'implémentation d'ENSEMBLE_ELEMENTS dans menu
+	
+	if (btaille&&belements){
+		
+		verif=true;
+		}
+	else{
+		verif=false;}
+	
 
 	return verif;
 	
