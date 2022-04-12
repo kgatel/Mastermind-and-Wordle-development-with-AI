@@ -2,7 +2,7 @@
 #define MENU_H
 
 #include <string>
-
+#include <vector>
 
 using std::string;
 using namespace std;
@@ -20,7 +20,7 @@ class Menu {
 	public:
 
 		static int NB_ELEMENT;
-		static int ENSEMBLE_ELEMENT;
+		static vector<string> ENSEMBLE_ELEMENT;
 		static int NB_CASE;
 		static int NB_TOUR;
 		static int ModeDeJeu;	
