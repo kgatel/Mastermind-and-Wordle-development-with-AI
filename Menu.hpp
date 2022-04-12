@@ -19,11 +19,11 @@ class Menu {
 
 	public:
 
-		const int NB_ELEMENT;
-		const int ENSEMBLE_ELEMENT;
-		const int NB_CASE;
-		const int NB_TOUR;
-		const int ModeDeJeu;	
+		static int NB_ELEMENT;
+		static int ENSEMBLE_ELEMENT;
+		static int NB_CASE;
+		static int NB_TOUR;
+		static int ModeDeJeu;	
 		
 		/*! \fn Menu()
 		  * \brief Constructeur de la classe Menu
