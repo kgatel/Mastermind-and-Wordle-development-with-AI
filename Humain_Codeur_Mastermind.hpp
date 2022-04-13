@@ -3,7 +3,7 @@
 #include <string>
 
 #include "Combinaison.hpp"
-
+#include "Humain_Codeur.hpp"
 
 /*! \class Humain_Codeur_Mastermind
 * \brief Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Mastermind
@@ -13,7 +13,7 @@
 *
 */
 
-class Humain_Codeur_Mastermind {
+class Humain_Codeur_Mastermind : Humain_Codeur{
 
 	
 		/*! \fn Humain_Codeur_Mastermind()

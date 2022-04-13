@@ -1,7 +1,8 @@
 #ifndef Humain_Codeur_H
 #define Humain_Codeur_H
 
-
+#include "Humain.hpp"
+#include "Combinaison.hpp"
 /*! \class Humain_Codeur
 * \brief Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de jeu (Mastermind ou wordle).
 * \author Groupe A7
@@ -10,7 +11,7 @@
 *
 */
 
-class Humain_Codeur {
+class Humain_Codeur : public Humain {
 
 	public:
 
@@ -25,7 +26,7 @@ class Humain_Codeur {
 		/*! \fn virtual void entrerCode()=0
 		* \brief methode abstraite à redefinir pour les différents modes de jeu
 		*/
-		virtual void entrerCode()=0;
+		virtual Combinaison entrerCode()=0;
 		  
 		/*! \fn int entrerMdP()
 		* \brief Méthode qui permet à l'utilisateur d'entrer son mot de passe

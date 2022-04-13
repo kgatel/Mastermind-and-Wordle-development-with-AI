@@ -3,6 +3,7 @@
 #include <string>
 
 #include "Combinaison.hpp"
+#include "Humain_Codeur.hpp"
 
 
 /*! \class Humain_Codeur_Wordle
@@ -13,7 +14,7 @@
 *
 */
 
-class Humain_Codeur_Wordle {
+class Humain_Codeur_Wordle : public Humain_Codeur{
 
 	
 		/*! \fn Humain_Codeur_Wordle()
