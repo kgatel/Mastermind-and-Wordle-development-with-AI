@@ -16,7 +16,7 @@
 class Joueur {
 	private:
 		Combinaison combinaison;
-		static int numeroTour;
+		string pseudo;
 
 public:
 		/*! \fn Joueur()
@@ -27,9 +27,9 @@ public:
 		/*! \fn Joueur(Combinaison comb,int nb)
 		  * \brief Constructeur de la classe joueur avec paramètre
 		  * \param comb la combinaison 
-		  * \param nb le nombre de tour
+		  * \param pseudo du joueur
 		  */
-		Joueur(Combinaison comb,int nb);
+		Joueur(Combinaison comb,string nom);
 		
 		/*! \fn Combinaison getCombinaison()
 		* \brief Pour accéder à l'attribut combinaison 
@@ -37,25 +37,30 @@ public:
 		*/
 		Combinaison getCombinaison();
 		
-		/*! \fn int getnumeroTour();
-		* \brief Pour accéder à l'attribut numeroTour 
-		* \return un entier
+		/*! \fn void setCombinaison(combinaison comb);
+		* \brief setteur de l'attribut combinaison
+		* \param une combinaison 
 		*/
-		int getnumeroTour();
+		void setCombinaison(Combinaison comb);
 		
-		/*! \fn void entrerCombinaison();
-		* \brief Méthode demandant la saisie d'une combinaison
+		/*! \fn void entrerPseudo();
+		* \brief Pour permettre au joueur de choisir un pseudo 
 		*/
-		void entrerCombinaison();
+		void entrerPseudo();
+		
+		/*! \fn string getPseudo();
+		* \brief getteur de l'attribut Pseudo
+		* \return retourne le pseudo en attribut
+		*/
+		string getPseudo();
+		
+		/*! \fn void setPseudo(string nom);
+		* \brief setteur de l'attribut Pseudo
+		* \param un string nom
+		*/
+		void setPseudo(string nom);
 	
-		/*! \fn void split(const string chaine, char delimiteur, vector elements);
-		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
-		* \param chaine string : la chaine à découper, delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' '), elements vector: le vecteur crée avec les différents éléments 
-		* \param char delimiteur caractère précisant où séparer la chaine
-		* \return un vecteur
-		*/
 		
-		vector<string> split(const string &chaine, char delimiteur) ; 
 		
 		/*! \fn bool verification(const string &chaine);
 		* \brief permet de verifier une chaine de caractère pour savoir si elle peut être transformée en combinaison
