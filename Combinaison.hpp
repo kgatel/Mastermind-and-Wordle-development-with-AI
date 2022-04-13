@@ -6,11 +6,10 @@
 #include <iostream>
 #include "Menu.hpp"
 
-using std::string;
-using std::vector;
+
 using namespace std;
 
-/*! \class Combinaison
+/*! \class Combinaison abstraite
 * \brief Tableau d'entier représentant une combinaison de couleur ou de lettre
 * \author Groupe A7
 * \version 1.0
@@ -54,36 +53,14 @@ class Combinaison {
 		*/
 		string get(const int i) const;
 		
-		/*! \fn int bienPlace(Combinaison code)
-		* \brief renvoie le nombre d'élément (couleur ou lettre) bien placé par rapport à la combinaison du codeur
-		* \param code Combinaison : la combinaison valide recherchée par le décodeur
-		* \return un entier
-		*/
-		int bienPlace(const Combinaison code) ;
 		
-		/*! \fn int malPlace(Combinaison code)
-		* \brief renvoie le nombre d'élément (couleur ou lettre) appartenant à la combinaison du codeur mais mal placé
-		* \param code Combinaison : la combinaison valide recherchée par le décodeur
-		* \return un entier
-		*/
-		int malPlace(Combinaison code);
-		
-		/*! \fn string toString();
+		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage de la combinaison
 		* \return un string
 		*/
-		string toString();
-		
-		/*! \fn vector<string> split(const string chaine, char delimiteur);
-		* \brief permet de séparer une chaine de caractère
-		* \param chaine string : la chaine à découper
-		* \param delimiteur char : le caractère qui va servir à séparer les éléments de la chaine (souvent un ' ')
-		* \return Renvoie un vecteur de string
-		*/
-		
-		vector<string> split(const string &chaine, char delimiteur) ; 
+		virtual string toString();
 			
 };
 
-#endif // CODEUR_H
+#endif // COMBINAISON_H
 
