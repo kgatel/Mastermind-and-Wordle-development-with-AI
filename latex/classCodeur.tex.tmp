@@ -1,0 +1,97 @@
+\hypertarget{classCodeur}{}\doxysection{Codeur Class Reference}
+\label{classCodeur}\index{Codeur@{Codeur}}
+
+
+\mbox{\hyperlink{classJoueur}{Joueur}} proposant la combinaison recherchée.  
+
+
+
+
+{\ttfamily \#include $<$Codeur.\+hpp$>$}
+
+
+
+Inheritance diagram for Codeur\+:
+% FIG 0
+
+
+Collaboration diagram for Codeur\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCodeur_aa3da496560ff38790592bf3fed0719a9}{Codeur}} (string mdp)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classCodeur}{Codeur}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCodeur_a45cf782988aa08f8411b5559061af577}{set\+Mdp}} (string mdp)
+\begin{DoxyCompactList}\small\item\em setteur de l\textquotesingle{}attribut mot\+De\+Passe \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCodeur_a73286843a90c0964fc449e2811142b76}{get\+Mdp}} ()
+\begin{DoxyCompactList}\small\item\em getteur de l\textquotesingle{}attribut mot\+De\+Passe \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classJoueur}{Joueur}} proposant la combinaison recherchée. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022
+\end{DoxyDate}
+Cette classe hérite de la classe \mbox{\hyperlink{classJoueur}{Joueur}}, elle représente l\textquotesingle{}humain ou l\textquotesingle{}ordi/\+IA qui devra proposer une combinaison à trouver pour le joueur décodeur. Elle possède les mêmes attributs que \mbox{\hyperlink{classJoueur}{Joueur}} avec un argument en plus, le mot de passe qui sera demandé au moment de voir la combinaison cherchée s\textquotesingle{}il le souhaite durant une partie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCodeur_aa3da496560ff38790592bf3fed0719a9}\label{classCodeur_aa3da496560ff38790592bf3fed0719a9}} 
+\index{Codeur@{Codeur}!Codeur@{Codeur}}
+\index{Codeur@{Codeur}!Codeur@{Codeur}}
+\doxysubsubsection{\texorpdfstring{Codeur()}{Codeur()}}
+{\footnotesize\ttfamily Codeur\+::\+Codeur (\begin{DoxyParamCaption}\item[{string}]{mdp }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classCodeur}{Codeur}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mdp} & le mot de passe du joueur codeur \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCodeur_a73286843a90c0964fc449e2811142b76}\label{classCodeur_a73286843a90c0964fc449e2811142b76}} 
+\index{Codeur@{Codeur}!getMdp@{getMdp}}
+\index{getMdp@{getMdp}!Codeur@{Codeur}}
+\doxysubsubsection{\texorpdfstring{getMdp()}{getMdp()}}
+{\footnotesize\ttfamily string Codeur\+::get\+Mdp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getteur de l\textquotesingle{}attribut mot\+De\+Passe 
+
+\begin{DoxyReturn}{Returns}
+une chaine de caractère 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCodeur_a45cf782988aa08f8411b5559061af577}\label{classCodeur_a45cf782988aa08f8411b5559061af577}} 
+\index{Codeur@{Codeur}!setMdp@{setMdp}}
+\index{setMdp@{setMdp}!Codeur@{Codeur}}
+\doxysubsubsection{\texorpdfstring{setMdp()}{setMdp()}}
+{\footnotesize\ttfamily void Codeur\+::set\+Mdp (\begin{DoxyParamCaption}\item[{string}]{mdp }\end{DoxyParamCaption})}
+
+
+
+setteur de l\textquotesingle{}attribut mot\+De\+Passe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mdp} & string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Codeur.\+hpp\item 
+Codeur.\+cpp\end{DoxyCompactItemize}

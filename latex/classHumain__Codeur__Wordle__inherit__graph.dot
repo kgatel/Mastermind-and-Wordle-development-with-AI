@@ -1,0 +1,13 @@
+digraph "Humain_Codeur_Wordle"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Humain_Codeur_Wordle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Humain_Codeur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHumain__Codeur.html",tooltip="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Humain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHumain.html",tooltip="Si le joueur est un humain."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Joueur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classJoueur.html",tooltip="classe abstraite regroupant tout joueur"];
+}

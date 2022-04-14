@@ -1,0 +1,109 @@
+\hypertarget{classCombiMastermind}{}\doxysection{Combi\+Mastermind Class Reference}
+\label{classCombiMastermind}\index{CombiMastermind@{CombiMastermind}}
+
+
+Tableau d\textquotesingle{}entier représentant une combinaison de couleur.  
+
+
+
+
+{\ttfamily \#include $<$Combi\+Mastermind.\+hpp$>$}
+
+
+
+Inheritance diagram for Combi\+Mastermind\+:
+% FIG 0
+
+
+Collaboration diagram for Combi\+Mastermind\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCombiMastermind_a84a25634d0ebce7105aa2c36137a6319}\label{classCombiMastermind_a84a25634d0ebce7105aa2c36137a6319}} 
+\mbox{\hyperlink{classCombiMastermind_a84a25634d0ebce7105aa2c36137a6319}{Combi\+Mastermind}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de \mbox{\hyperlink{classCombiMastermind}{Combi\+Mastermind}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCombiMastermind_a4691faddfc328e1fd520e71229c2e741}\label{classCombiMastermind_a4691faddfc328e1fd520e71229c2e741}} 
+{\bfseries Combi\+Mastermind} (string \&chaine)
+\item 
+int \mbox{\hyperlink{classCombiMastermind_aa11d4b2f936d38fdbea10414b5ece7a0}{bien\+Place}} (const \mbox{\hyperlink{classCombinaison}{Combinaison}} code)
+\begin{DoxyCompactList}\small\item\em renvoie le nombre de couleurs bien placées par rapport à la combinaison du codeur \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCombiMastermind_a6da7d56d3f416699f17620e85bbe6dd2}{mal\+Place}} (const \mbox{\hyperlink{classCombinaison}{Combinaison}} code)
+\begin{DoxyCompactList}\small\item\em renvoie le nombre de couleurs appartenant à la combinaison de couleur recherchée mais mal placées \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCombiMastermind_a4a148f265167565905dff2806854dbb9}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em permet l\textquotesingle{}affichage de la combinaison de couleur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tableau d\textquotesingle{}entier représentant une combinaison de couleur. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022
+\end{DoxyDate}
+Cette classe, héritée de \mbox{\hyperlink{classCombinaison}{Combinaison}}, permet de définir l\textquotesingle{}objet \mbox{\hyperlink{classCombiMastermind}{Combi\+Mastermind}}. Elle transforme une chaine de caractère (suite de couleur) séparée d\textquotesingle{}espace en un vecteur de string. Elle possède un seul attribut. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCombiMastermind_aa11d4b2f936d38fdbea10414b5ece7a0}\label{classCombiMastermind_aa11d4b2f936d38fdbea10414b5ece7a0}} 
+\index{CombiMastermind@{CombiMastermind}!bienPlace@{bienPlace}}
+\index{bienPlace@{bienPlace}!CombiMastermind@{CombiMastermind}}
+\doxysubsubsection{\texorpdfstring{bienPlace()}{bienPlace()}}
+{\footnotesize\ttfamily int Combi\+Mastermind\+::bien\+Place (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCombinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+
+
+
+renvoie le nombre de couleurs bien placées par rapport à la combinaison du codeur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{classCombinaison}{Combinaison}} \+: la combinaison de couleur valide recherchée par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCombiMastermind_a6da7d56d3f416699f17620e85bbe6dd2}\label{classCombiMastermind_a6da7d56d3f416699f17620e85bbe6dd2}} 
+\index{CombiMastermind@{CombiMastermind}!malPlace@{malPlace}}
+\index{malPlace@{malPlace}!CombiMastermind@{CombiMastermind}}
+\doxysubsubsection{\texorpdfstring{malPlace()}{malPlace()}}
+{\footnotesize\ttfamily int Combi\+Mastermind\+::mal\+Place (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCombinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+
+
+
+renvoie le nombre de couleurs appartenant à la combinaison de couleur recherchée mais mal placées 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{classCombinaison}{Combinaison}} \+: la combinaison de couleur valide recherchée par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCombiMastermind_a4a148f265167565905dff2806854dbb9}\label{classCombiMastermind_a4a148f265167565905dff2806854dbb9}} 
+\index{CombiMastermind@{CombiMastermind}!toString@{toString}}
+\index{toString@{toString}!CombiMastermind@{CombiMastermind}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Combi\+Mastermind\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+permet l\textquotesingle{}affichage de la combinaison de couleur 
+
+\begin{DoxyReturn}{Returns}
+un string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCombinaison_a1e1700b8ffa3459249adb99e8d636c08}{Combinaison}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combi\+Mastermind.\+hpp\end{DoxyCompactItemize}

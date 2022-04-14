@@ -1,0 +1,109 @@
+\hypertarget{classCombiWordle}{}\doxysection{Combi\+Wordle Class Reference}
+\label{classCombiWordle}\index{CombiWordle@{CombiWordle}}
+
+
+Tableau d\textquotesingle{}entier représentant une combinaison de lettre.  
+
+
+
+
+{\ttfamily \#include $<$Combi\+Wordle.\+hpp$>$}
+
+
+
+Inheritance diagram for Combi\+Wordle\+:
+% FIG 0
+
+
+Collaboration diagram for Combi\+Wordle\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCombiWordle_a325941c3cd97b8439596b70f911fcb1d}\label{classCombiWordle_a325941c3cd97b8439596b70f911fcb1d}} 
+\mbox{\hyperlink{classCombiWordle_a325941c3cd97b8439596b70f911fcb1d}{Combi\+Wordle}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de \mbox{\hyperlink{classCombiWordle}{Combi\+Wordle}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCombiWordle_a57b6042139fa9607fefddac9af383d86}\label{classCombiWordle_a57b6042139fa9607fefddac9af383d86}} 
+{\bfseries Combi\+Wordle} (string \&chaine)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classCombiWordle_a594442f540967b4c912116dd92800e69}{bien\+Place}} (const \mbox{\hyperlink{classCombinaison}{Combinaison}} code)
+\begin{DoxyCompactList}\small\item\em renvoie les indices des lettres placées \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classCombiWordle_ad37de3e9c25b1316c5a7f1ce45727bb6}{mal\+Place}} (const \mbox{\hyperlink{classCombinaison}{Combinaison}} code)
+\begin{DoxyCompactList}\small\item\em renvoie les indices des lettres appartenant au mot recherché mais mal placées \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCombiWordle_ae2bbd54299ccb1fed1a33f518aa1b172}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em permet l\textquotesingle{}affichage du mot \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tableau d\textquotesingle{}entier représentant une combinaison de lettre. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022
+\end{DoxyDate}
+Cette classe, héritée de \mbox{\hyperlink{classCombinaison}{Combinaison}}, permet de définir l\textquotesingle{}objet \mbox{\hyperlink{classCombiWordle}{Combi\+Wordle}}. Elle transforme une chaine de caractère (suite de lettre) séparée d\textquotesingle{}espace en un vecteur de string. Elle possède un seul attribut. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCombiWordle_a594442f540967b4c912116dd92800e69}\label{classCombiWordle_a594442f540967b4c912116dd92800e69}} 
+\index{CombiWordle@{CombiWordle}!bienPlace@{bienPlace}}
+\index{bienPlace@{bienPlace}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{bienPlace()}{bienPlace()}}
+{\footnotesize\ttfamily int Combi\+Wordle\+::bien\+Place (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCombinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+
+
+
+renvoie les indices des lettres placées 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{classCombinaison}{Combinaison}} \+: le mot recherché par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau d\textquotesingle{}entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCombiWordle_ad37de3e9c25b1316c5a7f1ce45727bb6}\label{classCombiWordle_ad37de3e9c25b1316c5a7f1ce45727bb6}} 
+\index{CombiWordle@{CombiWordle}!malPlace@{malPlace}}
+\index{malPlace@{malPlace}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{malPlace()}{malPlace()}}
+{\footnotesize\ttfamily int Combi\+Wordle\+::mal\+Place (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCombinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+
+
+
+renvoie les indices des lettres appartenant au mot recherché mais mal placées 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{classCombinaison}{Combinaison}} \+: le mot valide recherché par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tablaeu d\textquotesingle{}entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCombiWordle_ae2bbd54299ccb1fed1a33f518aa1b172}\label{classCombiWordle_ae2bbd54299ccb1fed1a33f518aa1b172}} 
+\index{CombiWordle@{CombiWordle}!toString@{toString}}
+\index{toString@{toString}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Combi\+Wordle\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+permet l\textquotesingle{}affichage du mot 
+
+\begin{DoxyReturn}{Returns}
+un string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCombinaison_a1e1700b8ffa3459249adb99e8d636c08}{Combinaison}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combi\+Wordle.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classHumain}{}\doxysection{Humain Class Reference}
+\label{classHumain}\index{Humain@{Humain}}
+
+
+Si le joueur est un humain.  
+
+
+
+
+{\ttfamily \#include $<$Humain.\+hpp$>$}
+
+
+
+Inheritance diagram for Humain\+:
+% FIG 0
+
+
+Collaboration diagram for Humain\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classHumain_a826e9a196651b5d53c2a52c14b618642}{verifier\+Entree}} (string entree)=0
+\begin{DoxyCompactList}\small\item\em une méthode abstraite qui permettera de vérifier la syntaxe de l\textquotesingle{}entrée selon le mode de jeu \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classHumain_af24a0aee15c0904e2693540c5627d71c}{split}} (const string \&chaine, char delimiteur)
+\begin{DoxyCompactList}\small\item\em permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Si le joueur est un humain. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022
+\end{DoxyDate}
+Cette classe hérite de la classe \mbox{\hyperlink{classJoueur}{Joueur}}, elle représente l\textquotesingle{}humain qui devra proposer une combinaison à trouver pour le joueur décodeur. Elle possède les mêmes attributs que \mbox{\hyperlink{classJoueur}{Joueur}} avec un argument en plus, le mot de passe qui sera demandé au moment de voir la combinaison cherchée s\textquotesingle{}il le souhaite durant une partie. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHumain_af24a0aee15c0904e2693540c5627d71c}\label{classHumain_af24a0aee15c0904e2693540c5627d71c}} 
+\index{Humain@{Humain}!split@{split}}
+\index{split@{split}!Humain@{Humain}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily void Humain\+::split (\begin{DoxyParamCaption}\item[{const string \&}]{chaine,  }\item[{char}]{delimiteur }\end{DoxyParamCaption})}
+
+
+
+permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chaine} & string \+: la chaine à découper, delimiteur char \+: le caractère qui va servir à séparer les éléments de la chaine (souvent un \textquotesingle{} \textquotesingle{}), elements vector\+: le vecteur crée avec les différents éléments \\
+\hline
+{\em char} & delimiteur caractère précisant où séparer la chaine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un vecteur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHumain_a826e9a196651b5d53c2a52c14b618642}\label{classHumain_a826e9a196651b5d53c2a52c14b618642}} 
+\index{Humain@{Humain}!verifierEntree@{verifierEntree}}
+\index{verifierEntree@{verifierEntree}!Humain@{Humain}}
+\doxysubsubsection{\texorpdfstring{verifierEntree()}{verifierEntree()}}
+{\footnotesize\ttfamily abstract bool Humain\+::verifier\+Entree (\begin{DoxyParamCaption}\item[{string}]{entree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+une méthode abstraite qui permettera de vérifier la syntaxe de l\textquotesingle{}entrée selon le mode de jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & entree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Humain.\+hpp\end{DoxyCompactItemize}
