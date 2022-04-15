@@ -39,6 +39,5 @@ class Wordle {
 		 void choisirFichierDeMot()	
 		* \brief Cette méthode permet de choisir le fichier de mot dictionnaire pour le Wordle. 	
 };
-
 #endif // CODEUR_H
 
