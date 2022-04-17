@@ -49,6 +49,18 @@ class Menu {
 		* \param NB_TOUR le nombre de tours maximale pour faire deviner la combinaison
 		*/
 		void parametreDeJeu(int NB_ELEMENT,int ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
+
+		/*! \fn appartientEE(string couleur)
+		 * \brief Fonction qui permet de vérifier si une combinaison de couleurs est valide syntaxiquement ou non.
+		 * \param couleur est un string qui correspond à une succession de couleurs différentes définissant une combinaison
+		 */ 
+		bool appartientEE(string couleur);
+		
+		/*! \fn appartientDico(Combinaison mot)
+		 * \brief Fonction qui permet de vérifier si un mot est reconnu par le dictionnaire Wordle ou non
+		 * \param mot est une combinaison qui correpond à un mot de la langue francaise 
+		 */
+		bool appartientDico(Combinaison mot); 
 		
 };
 
