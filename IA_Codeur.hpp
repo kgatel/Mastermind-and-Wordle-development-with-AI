@@ -13,10 +13,11 @@
 
 class IA_Codeur : public IA {
 
-	private
+	private :
 	
 		int Mdp;
-	
+		
+	public :	
 		
 		/*! \fn IA_Codeur()
 		  * \brief Constructeur de la classe IA_Codeur

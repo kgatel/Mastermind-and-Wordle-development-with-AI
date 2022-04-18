@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-#include "Combinaison.hpp"
 
 using std::string;
 using namespace std;
@@ -41,6 +40,11 @@ class Menu {
 		* \param ModeDejeu est un entier qui indique le mode Joueur contre Joueur ou Joueur contre IA
 		*/
 		void choisirModeDeJeu(int ModeDeJeu);
+		
+		/*! \fn choisirDifficulteIA(int ModeDeJeu)
+		* \brief Fonction qui permet à l'utilisateur de choisir la difficulté de l'IA
+		*/
+		void choisirDifficulteIA();
 		  
 	  	/*! \fn parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,NB_CASE,NB_TOUR)
 	 	* \brief Fonction qui permet à l'utilisateur de choisir le parametre de jeu
@@ -61,7 +65,7 @@ class Menu {
 		 * \brief Fonction qui permet de vérifier si un mot est reconnu par le dictionnaire Wordle ou non
 		 * \param mot est une combinaison qui correpond à un mot de la langue francaise 
 		 */
-		bool appartientDico(Combinaison mot); 
+		bool appartientDico(string mot); 
 		
 };
 

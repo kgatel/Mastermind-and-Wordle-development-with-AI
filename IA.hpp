@@ -1,11 +1,8 @@
-#ifndef HUMAIN_H
-#define HUMAIN_H
-
-#include <string>
+#ifndef IA_H
+#define IA_H
 
 #include "Joueur.hpp"
 
-using std::string;
 using namespace std;
 
 /*! \class IA
@@ -26,7 +23,8 @@ class IA: public Joueur {
 		  * \brief une méthode abstraite qui permettera à l'IA de trouver la combinaison correct selon le mode de jeu
 		  * \return une combinaison
 		  */
-		virtual Combinaison choisirCombinaison()=0;
+		virtual Combinaison choisirCombinaison();
 		 
 	};
+	
 #endif // IA_H

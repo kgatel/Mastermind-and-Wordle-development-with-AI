@@ -5,7 +5,6 @@
 
 #include "Joueur.hpp"
 
-using std::string;
 using namespace std;
 
 /*! \class Humain
