@@ -24,7 +24,7 @@ class Humain: public Joueur {
 		  * \param string entree
 		  * \return un booléen
 		  */
-		virtual bool verifierEntree(string entree)=0;
+		virtual bool verifierEntree(string entree);
 		
 		/*! \fn void split(const string chaine, char delimiteur, vector elements);
 		* \brief permet de séparer une chaine de caractère et de mettres les éléments dans un vecteur
