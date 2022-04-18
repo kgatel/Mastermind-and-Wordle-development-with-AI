@@ -13,7 +13,7 @@
 *
 */
 
-class IA_Codeur_Mastermind : IA_Codeur{
+class IA_Codeur_Mastermind : public IA_Codeur{
 	
 	public :
 	
