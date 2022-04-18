@@ -32,14 +32,14 @@ class CombiMastermind : public Combinaison{
 		  */
 		CombiMastermind(const string &chaine);
 		
-		/*! \fn int bienPlace(Combinaison code)
+		/*! \fn int bienPlace(CombiMastermind code)
 		* \brief renvoie le nombre de couleurs bien placées par rapport à la combinaison du codeur
 		* \param code Combinaison : la combinaison de couleur valide recherchée par le décodeur
 		* \return un entier
 		*/
 		int bienPlace(const CombiMastermind code) ;
 		
-		/*! \fn int malPlace(Combinaison code)
+		/*! \fn int malPlace(CombiMastermind code)
 		* \brief renvoie le nombre de couleurs appartenant à la combinaison de couleur recherchée mais mal placées
 		* \param code Combinaison : la combinaison de couleur valide recherchée par le décodeur
 		* \return un entier

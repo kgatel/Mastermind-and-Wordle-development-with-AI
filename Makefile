@@ -1,11 +1,11 @@
 FC = g++
 OPT = -c
 
-main : Combinaison.o CombiMastermind.o main.o
-	$(FC) Combinaison.o CombiMastermind.o main.o -o main
+mainTest : Combinaison.o CombiMastermind.o CombiWordle.o mainTest.o
+	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o mainTest.o -o mainTest
 	
-main.o : main.cpp CombiMastermind.hpp
-	$(FC) $(OPT) main.cpp
+mainTest.o : mainTest.cpp CombiMastermind.hpp
+	$(FC) $(OPT) mainTest.cpp
 
 JeuDeDeduction.o : JeuDeDeduction.cpp JeuDeDeduction.hpp
 	$(FC) $(OPT) JeuDeDeduction.cpp
@@ -16,7 +16,8 @@ Combinaison.o : Combinaison.cpp Combinaison.hpp
 CombiMastermind.o : CombiMastermind.cpp CombiMastermind.hpp
 	$(FC) $(OPT) CombiMastermind.cpp
 	
-all.o : 
+CombiWordle.o : CombiWordle.cpp CombiWordle.hpp
+	$(FC) $(OPT) CombiWordle.cpp
 
 clean : 
 	rm *.gch *.o

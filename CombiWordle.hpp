@@ -32,21 +32,15 @@ class CombiWordle : public Combinaison{
 		  * \brief Constructeur de la classe CombiWordle
 		  * \param chaine est la chaine de caractère comprenant la suite de lettre séparée d'espace
 		  */
-		CombiWordle(string &chaine);
+		CombiWordle(const string &chaine);
 		
-		/*! \fn int bienPlace(Combinaison code)
-		* \brief renvoie les indices des lettres placées
+		/*! \fn int resultat(CombiWordle code)
+		* \brief renvoie les indices des lettres placée
 		* \param code Combinaison : le mot recherché par le décodeur
 		* \return un tableau d'entier
 		*/
-		vector<int> bienPlace(const Combinaison code) ;
+		string resultat(const CombiWordle code) ;
 		
-		/*! \fn int malPlace(Combinaison code)
-		* \brief renvoie les indices des lettres appartenant au mot recherché mais mal placées
-		* \param code Combinaison : le mot valide recherché par le décodeur
-		* \return un tablaeu d'entier
-		*/
-		vector<int> malPlace(const Combinaison code);
 		
 		/*! \fn string toString();
 		* \brief permet l'affichage du mot
