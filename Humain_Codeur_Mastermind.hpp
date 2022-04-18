@@ -10,6 +10,7 @@
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 */
 

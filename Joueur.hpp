@@ -9,6 +9,7 @@
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022 
+* \namespace std
 *
 * Il s’agit d’une classe abstraite qui définit tout joueur du Mastermind. On y retrouve deux attributs, le premier est un élément de la classe combinaison et le second est le nombre de tours écoulés qui est équivalent au nombre de combinaisons entrées par le joueur décodeur. 
 * */

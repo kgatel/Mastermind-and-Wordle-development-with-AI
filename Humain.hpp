@@ -12,6 +12,7 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 * Classe abrstaire représentant un joueur humain codeur ou bien décodeur.
 */

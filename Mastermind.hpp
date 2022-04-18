@@ -13,7 +13,8 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
-*
+* \namespace std
+* 
 * Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur) séparée d'espace en tableau d'entier.
 */
 

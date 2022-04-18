@@ -10,6 +10,7 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 * Cette classe hérite de la classe Joueur, elle représente  l'ordi/IA qui devra proposer une combinaison à trouver pour le joueur décodeur. Elle possède les mêmes attributs que Joueur avec un argument en plus, le mot de passe qui sera demandé au moment de voir la combinaison cherchée s'il le souhaite durant une partie.
 */

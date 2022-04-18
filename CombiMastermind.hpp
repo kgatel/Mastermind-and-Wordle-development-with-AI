@@ -13,6 +13,7 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 * Cette classe, héritée de Combinaison, permet de définir l'objet CombiMastermind. Elle transforme une chaine de caractère (suite de couleur) séparée d'espace en un vecteur de string. Elle possède un seul attribut.
 */
