@@ -35,12 +35,6 @@ class JeuDeDeduction {
 		  */
 		JeuDeDeduction();
 		
-		/*! \fn Combinaison(string chaine)
-		  * \brief Constructeur de la classe Combinaison
-		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
-		  */
-		JeuDeDeduction(const string chaine);
-		
 		/*! \fn int main()
 		* \brief méthode principale, elle permet de lancement du jeu
 		*/

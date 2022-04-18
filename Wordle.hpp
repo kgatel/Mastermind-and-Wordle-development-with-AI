@@ -29,11 +29,11 @@ class Wordle : public JeuDeDeduction {
 		  */
 		Wordle();
 		
-		/*! \fn Wordle(const string chaine)
-		  * \brief Constructeur de la classe Wordle
-		  * \param chaine est la chaine de caractère comprenant la suite de lettres séparées d'espace
+		/*! \fn Wordle(string fichierDictionnaire)
+		  * \brief Constructeur de la classe Wordle selon un fichier
+		  * \param fichierDictionnaire : nom du fichier comprenant l'ensemble des mots formant le dictionnaire
 		*/
-		Wordle(const string chaine);
+		Wordle(string fichierDictionnaire);
 		
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
