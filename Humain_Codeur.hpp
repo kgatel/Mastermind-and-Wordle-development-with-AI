@@ -13,20 +13,20 @@
 
 class Humain_Codeur : public Humain {
 
-	public:
+	private:
 
 		int Mdp;
-	
-		
+	public:
+
 		/*! \fn Humain_Codeur()
 		  * \brief Constructeur de la classe Humain_Codeur
 		  */
 		Humain_Codeur();
 		
-		/*! \fn virtual void entrerCode()=0
-		* \brief methode abstraite à redefinir pour les différents modes de jeu
+		/*! \fn virtual Combinaison entrerCode()
+		* \brief methode abstraite utilisée pour demander un code au joueur codeur. Cette méthode devra être redefini pour les différents modes de jeu
 		*/
-		virtual Combinaison entrerCode()=0;
+		virtual Combinaison entrerCode();
 		  
 		/*! \fn int entrerMdP()
 		* \brief Méthode qui permet à l'utilisateur d'entrer son mot de passe

@@ -16,7 +16,7 @@
 
 class Humain_Decodeur_Wordle : Humain_Decodeur{
 	
-	
+	public :
 		/*! \fn Humain_Decodeur_Wordle()
 		  * \brief Constructeur de la classe Humain_Decodeur_Wordle
 		  */
