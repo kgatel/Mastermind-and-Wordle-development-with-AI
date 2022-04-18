@@ -11,12 +11,12 @@ using namespace std;
 Combinaison :: Combinaison() {
 }
 
-Combinaison :: Combinaison(string &chaine){
+Combinaison :: Combinaison(const string &chaine){
 	combinaison=split(chaine,' ');
 }
 
-void  Combinaison ::setCombinaison (const string chaine){
-	//combinaison = null;
+void  Combinaison ::setCombinaison (vector<string> c){
+	combinaison = c;
 }
 
 vector<string> Combinaison :: get() const{
@@ -33,7 +33,7 @@ string Combinaison :: toString() {
 	for (int i=0;i<(int)combinaison.size();i++){
 		res+=combinaison[i] + " ";
 	}
-	return "";
+	return res;
 }
 
 vector<string> Combinaison :: split(const string &chaine, char delimiteur) {

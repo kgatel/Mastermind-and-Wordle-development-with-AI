@@ -30,21 +30,21 @@ class CombiMastermind : public Combinaison{
 		  * \brief Constructeur de la classe CombiMastermind
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur séparée d'espace
 		  */
-		CombiMastermind(string &chaine);
+		CombiMastermind(const string &chaine);
 		
 		/*! \fn int bienPlace(Combinaison code)
 		* \brief renvoie le nombre de couleurs bien placées par rapport à la combinaison du codeur
 		* \param code Combinaison : la combinaison de couleur valide recherchée par le décodeur
 		* \return un entier
 		*/
-		int bienPlace(const Combinaison code) ;
+		int bienPlace(const CombiMastermind code) ;
 		
 		/*! \fn int malPlace(Combinaison code)
 		* \brief renvoie le nombre de couleurs appartenant à la combinaison de couleur recherchée mais mal placées
 		* \param code Combinaison : la combinaison de couleur valide recherchée par le décodeur
 		* \return un entier
 		*/
-		int malPlace(const Combinaison code);
+		int malPlace(const CombiMastermind code);
 		
 		/*! \fn string toString();
 		* \brief permet l'affichage de la combinaison de couleur

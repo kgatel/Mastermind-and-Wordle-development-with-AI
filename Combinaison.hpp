@@ -33,13 +33,13 @@ class Combinaison {
 		  * \brief Constructeur de la classe Combinaison
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
 		  */
-		Combinaison(string &chaine);
+		Combinaison(const string &chaine);
 		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 
 		*/
-		void setCombinaison(const string chaine);
+		void setCombinaison(vector<string> c);
 		
 		/*! \fn get()
 		* \brief getteur de l'attribut combinaison

@@ -12,16 +12,42 @@ CombiMastermind :: CombiMastermind() {
 	combinaison=vector<string>();
 }
 
-CombiMastermind :: CombiMastermind(string &chaine){
+CombiMastermind :: CombiMastermind(const string &chaine){
 	combinaison=split(chaine,' ');
 }
 
-int CombiMastermind :: bienPlace(const Combinaison code){
-	return 0;
+
+int CombiMastermind :: bienPlace(const CombiMastermind code){
+	int res=0;
+	for(int i=0;i<(int)combinaison.size();i++){
+		if (strcasecmp(combinaison[i].c_str(), code.get(i).c_str()) == 0){ //vérifier si combinaison[i]==code.get(i)
+			res++;
+		}
+	}
+	return res;
 }
 		
-int CombiMastermind :: malPlace(const Combinaison code){
-	return 0;
+int CombiMastermind :: malPlace(const CombiMastermind code){
+	int res=0;
+	int j=0;
+	bool exit=false;
+	for(int i=0;i<(int)combinaison.size();i++){
+		//on doit vérifier que l'élément n'est pas bien placé, ensuite on vérifiera si la couleur existe sur les cases voisines
+		if (!strcasecmp(combinaison[i].c_str(), code.get(i).c_str()) == 0){ //vérifier si combinaison[i]!=code.get(i)
+			while((j<(int)combinaison.size()) && (!exit)){
+				if (i!=j){
+					if (strcasecmp(combinaison[i].c_str(), code.get(j).c_str()) == 0){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
+						res++;
+						exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
+					}
+				}
+				j++;
+			}
+		}
+		j=0;
+		exit=false;
+	}
+	return res;
 }
 
 string CombiMastermind :: toString() {
@@ -29,7 +55,7 @@ string CombiMastermind :: toString() {
 	for (int i=0;i<(int)combinaison.size();i++){
 		res+=combinaison[i] + " ";
 	}
-	return "";
+	return res;
 }
 
 
