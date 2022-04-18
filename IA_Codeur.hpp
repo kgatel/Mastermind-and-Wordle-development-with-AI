@@ -3,7 +3,7 @@
 
 #include "IA.hpp"
 #include "Combinaison.hpp"
-/*! \class Humain_Codeur
+/*! \class IA_Codeur
 * \brief Cette classe abstraite permet de décrire l'intelligence artificielle en mode codeur peu importe le mode de jeu (Mastermind ou wordle).
 * \author Groupe A7
 * \version 1.0
@@ -24,8 +24,9 @@ class IA_Codeur : public IA {
 		  */
 		IA_Codeur();
 		
-		/*! \fn virtual void genererCode()
-		* \brief methode abstraite à redefinir pour les différents modes de jeu
+		/*! \fn virtual Combinaison genererCode()
+		* \brief methode abstraite permettant de générer le code que le décodeur devra deviner
+		* \return retourne une combinaison
 		*/
 		virtual Combinaison genererCode();
 		  

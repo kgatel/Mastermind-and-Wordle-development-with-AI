@@ -14,7 +14,8 @@
 */
 
 class IA_Codeur_Mastermind : IA_Codeur{
-
+	
+	public :
 	
 		/*! \fn IA_Codeur_Mastermind()
 		  * \brief Constructeur de la classe IA_Codeur_Mastermind

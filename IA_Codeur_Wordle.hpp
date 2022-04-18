@@ -16,6 +16,7 @@
 
 class IA_Codeur_Wordle : public IA_Codeur{
 
+	public :
 	
 		/*! \fn IA_Codeur_Wordle()
 		  * \brief Constructeur de la classe IA_Codeur_Wordle
