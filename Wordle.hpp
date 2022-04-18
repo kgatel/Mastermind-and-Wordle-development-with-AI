@@ -6,6 +6,7 @@
 #include "Menu.hpp"
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
+#include "JeuDeDeduction.hpp"
 
 using std::string;
 using namespace std;
@@ -21,7 +22,7 @@ using namespace std;
 */
 
 
-class Wordle {
+class Wordle : public JeuDeDeduction {
 		
 		/*! \fn Wordle();
 		  * \brief Constructeur neutre de la classe Wordle

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_combinaison.html" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$class_combi_mastermind.html" title="Tableau d&#39;entier représentant une combinaison de couleur." alt="" coords="160,5,303,32"/>
+<area shape="rect" id="node3" href="$class_combi_wordle.html" title="Tableau d&#39;entier représentant une combinaison de lettre." alt="" coords="176,56,287,83"/>
+</map>

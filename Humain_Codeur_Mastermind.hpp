@@ -14,7 +14,7 @@
 *
 */
 
-class Humain_Codeur_Mastermind : Humain_Codeur{
+class Humain_Codeur_Mastermind : public Humain_Codeur{
 
 	
 		/*! \fn Humain_Codeur_Mastermind()

@@ -1,0 +1,5 @@
+<map id="Combinaison" name="Combinaison">
+<area shape="rect" id="node1" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="98,5,205,32"/>
+<area shape="rect" id="node2" href="$class_combi_mastermind.html" title="Tableau d&#39;entier représentant une combinaison de couleur." alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node3" href="$class_combi_wordle.html" title="Tableau d&#39;entier représentant une combinaison de lettre." alt="" coords="172,80,283,107"/>
+</map>

@@ -5,6 +5,7 @@
 #include "Menu.hpp"
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
+#include "JeuDeDeduction.hpp"
 
 using namespace std;
 
@@ -18,7 +19,7 @@ using namespace std;
 * Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur) séparée d'espace en tableau d'entier.
 */
 
-class Mastermind {
+class Mastermind : public JeuDeDeduction {
 
 		/*! \fn Mastermind()
 		  * \brief Constructeur neutre de la classe Mastermind

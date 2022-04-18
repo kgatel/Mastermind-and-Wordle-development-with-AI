@@ -15,7 +15,7 @@
 *
 */
 
-class Humain_Decodeur_Wordle : Humain_Decodeur{
+class Humain_Decodeur_Wordle : public Humain_Decodeur{
 	
 	public :
 		/*! \fn Humain_Decodeur_Wordle()

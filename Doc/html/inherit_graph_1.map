@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_jeu_de_deduction.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="5,31,132,57"/>
+<area shape="rect" id="node2" href="$class_mastermind.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="180,5,280,32"/>
+<area shape="rect" id="node3" href="$class_wordle.html" title="Classe principale permettant de lancement d&#39;une partie de Wordle." alt="" coords="196,56,264,83"/>
+</map>

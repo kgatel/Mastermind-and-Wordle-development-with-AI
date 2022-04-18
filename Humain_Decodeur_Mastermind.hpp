@@ -15,7 +15,7 @@
 *
 */
 
-class Humain_Decodeur_Mastermind : Humain_Decodeur{
+class Humain_Decodeur_Mastermind : public Humain_Decodeur{
 	
 	public :
 	
