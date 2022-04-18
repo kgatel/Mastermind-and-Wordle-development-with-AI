@@ -1,13 +1,11 @@
 #ifndef MASTERMIND_H
 #define MASTERMIND_H
 
-#include <string>
 #include <iostream>
 #include "Menu.hpp"
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
 
-using std::string;
 using namespace std;
 
 /*! \class Mastermind
@@ -21,7 +19,17 @@ using namespace std;
 
 class Mastermind {
 
+		/*! \fn Mastermind()
+		  * \brief Constructeur neutre de la classe Mastermind
+		  */
+		Mastermind();
 		
+		/*! \fn Mastermind(const string chaine)
+		  * \brief Constructeur de la classe Mastermind
+		  * \param chaine est la chaine de caractère comprenant la suite de couleurs séparées d'espace
+		*/
+		Mastermind(const string chaine);
+
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie de Mastermind.
 		*/		
@@ -34,5 +42,5 @@ class Mastermind {
 		
 		};
 
-#endif // CODEUR_H
+#endif // MASTERMIND_H
 

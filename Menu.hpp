@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "Combinaison.hpp"
 
 using std::string;
 using namespace std;

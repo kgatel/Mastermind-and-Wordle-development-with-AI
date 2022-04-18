@@ -1,13 +1,13 @@
-#ifndef MASTERMIND_H
-#define MASTERMIND_H
+#ifndef JEU_DE_DEDUCTION
+#define JEU_DE_DEDUCTION
 
 #include <string>
 #include <iostream>
+#include <vector>
 #include "Menu.hpp"
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
 
-using std::string;
 using namespace std;
 
 /*! \class JeuDeDeduction
@@ -22,12 +22,18 @@ using namespace std;
 class JeuDeDeduction {
 	private:
 		Joueur codeur,decodeur;
-		Combinaison HistoriqueCombinaison[20];
+		vector<Combinaison> HistoriqueCombinaison;
 		int numeroTour;
 		Menu menu;
-		string historiqueResultatBienPlace[20,historiqueResultatMalPlace[20];
+		vector<Combinaison> historiqueResultatBienPlace,historiqueResultatMalPlace;
 	
 	public:
+	
+		/*! \fn JeuDeDeduction();
+		  * \brief Constructeur neutre de la classe JeuDeDeduction
+		  */
+		JeuDeDeduction();
+		
 		/*! \fn Combinaison(string chaine)
 		  * \brief Constructeur de la classe Combinaison
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
@@ -40,32 +46,39 @@ class JeuDeDeduction {
 		int main();
 		
 		/*! \fn void partie() 
-		* \brief Elle permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
+		* \brief Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
 		*/		
-		void partie();
+		virtual void partie();
 		
 		
 		/*! \fn void afficherPartie()
-		* \brief Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
+		* \brief Cette méthode abstraite permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
 		*/
-		void afficherPartie();
+		virtual void afficherPartie();
 		
 		/*! \fn void afficherCode();
 		* \brief Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes.
 		*/
 		void afficherCode();
 		
-		/*! \fn int bienPlace(Combinaison code)
+		/*! \fn Joueur detectionVictoire()
 		* \brief Cette méthode permet de savoir s'il y a un gagnant au cours de la partie ou non
 		* \return Renvoie le joueur gagant s'il en existe un, sinon elle retourne null
 		*/
 		Joueur detectionVictoire();
+		
+		/*! \fn int getTour();
+		* \brief Cette méthode permet de savoir le numéro du tour surlequelle le joueur est en train de jouer
+		* \return renvoie un entier
 		*/
 		int getTour();
+		
+		/*! \fn void incrTour();
+		* \brief Cette méthode permet d'incrémenter de 1 l'attribut numeroTour
 		*/
 		void incrTour();
 		
 };
 
-#endif // CODEUR_H
+#endif // JEU_DE_DEDUCTION
 

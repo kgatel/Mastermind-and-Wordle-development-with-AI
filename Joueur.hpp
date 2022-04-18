@@ -59,8 +59,6 @@ public:
 		* \param un string nom
 		*/
 		void setPseudo(string nom);
-	
-		
 		
 		/*! \fn bool verification(const string &chaine);
 		* \brief permet de verifier une chaine de caractère pour savoir si elle peut être transformée en combinaison
