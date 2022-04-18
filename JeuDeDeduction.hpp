@@ -26,7 +26,7 @@ class JeuDeDeduction {
 		vector<Combinaison> HistoriqueCombinaison;
 		int numeroTour;
 		Menu menu;
-		vector<Combinaison> historiqueResultatBienPlace,historiqueResultatMalPlace;
+		vector<string> historiqueResultatBienPlace,historiqueResultatMalPlace;
 	
 	public:
 	
@@ -35,10 +35,19 @@ class JeuDeDeduction {
 		  */
 		JeuDeDeduction();
 		
-		/*! \fn int main()
-		* \brief méthode principale, elle permet de lancement du jeu
-		*/
-		int main();
+		/*! \fn JeuDeDeduction();
+		  * \brief Constructeur neutre de la classe JeuDeDeduction avec paramètres
+		  * \param codeur : joueur codeur
+		  * \param decodeur : joueur décodeur
+		  * \param HistoriqueCombinaison : historique des combinaisons
+		  * \param numeroTour : numéro du tour initial
+		  * \param menu : menu qui a été initialisé
+		  * \param historiqueResultatBienPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
+		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
+		  */
+		JeuDeDeduction(Joueur codeur, Joueur decodeur, vector<Combinaison> HistoriqueCombinaison,int numeroTour,Menu menu,vector<string> historiqueResultatBienPlace,vector<string> historiqueResultatMalPlace);
+		
+		
 		
 		/*! \fn void partie() 
 		* \brief Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
