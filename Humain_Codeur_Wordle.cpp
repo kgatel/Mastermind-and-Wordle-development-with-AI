@@ -14,6 +14,7 @@ Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
 
 string Humain_Codeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
+	if (mot.size()==6) {repertoire=repertoire.append("\\").append("6lettres");}
 	if (mot.size()==5) {repertoire=repertoire.append("\\").append("5lettres");}
 	if (mot.size()==4) {repertoire=repertoire.append("\\").append("4lettres");}
 return repertoire+"\\"+mot[0]+".txt";

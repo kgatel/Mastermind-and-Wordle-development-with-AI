@@ -19,10 +19,13 @@ int main()
     cout << "***************************TEST***************************\n" << endl;
     Humain_Codeur_Wordle codeur;
 	CombiWordle c3=codeur.entrerCode();
-	CombiWordle c4("apfle");
+	CombiWordle c4("azpee");
 	string resultat="";
 	string chaine1, chaine2;
-    cout << c3.toString() << "\n" << c4.toString() << "\nRésultat : " << c3.resultat(c4) << "\n" << endl;
+	resultat =c3.resultat(c4);
+    //cout << c3.toString() << "\n" << c4.toString() << "\nRésultat : " << c3.afficherResultat(resultat) << "\n" << endl;
+    cout << c3.toString() << endl;
+    c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;
     
     
