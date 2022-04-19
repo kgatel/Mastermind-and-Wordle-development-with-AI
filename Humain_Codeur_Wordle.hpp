@@ -16,7 +16,21 @@
 */
 
 class Humain_Codeur_Wordle : public Humain_Codeur{
-
+	private:
+		/*! \fn choixFichier(string mot)
+		* \brief méthode permettant de choisir le fichier correspondant selon le mot rentré par l'utilisateur
+		* \param chaine string : le mot rentré par l'utilisateur
+		*\return retourne le nom du répertoire du fichier 
+		*/
+		string choixFichier(string mot);
+		
+		/*! \fn checkMotFichier(string fichier, string mot)
+		* \brief méthode permettant de vérifier si le mot rentré par le codeur existe dans un fichier donnée ou pas
+		* \param chaine string : le mot rentré par l'utilisateur
+		* \param chaine string : le fichier correspondant au mot
+		*\return un booléen : Vrai si le mot existe , Faux sinon
+		*/
+		bool checkMotFichier(string fichier, string mot);
 	public:
 		/*! \fn Humain_Codeur_Wordle()
 		  * \brief Constructeur de la classe Humain_Codeur_Wordle
