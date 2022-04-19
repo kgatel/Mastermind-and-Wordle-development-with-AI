@@ -53,7 +53,7 @@ bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
 	return checkMotFichier(chemin,entree);
 }
 
-Combinaison Humain_Codeur_Wordle :: entrerCode() {
+CombiWordle Humain_Codeur_Wordle :: entrerCode() {
 	string mot;
 	bool t=false;
 	while(t==false) {
