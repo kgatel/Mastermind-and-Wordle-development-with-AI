@@ -23,4 +23,4 @@ FonctionsUtiles.o : FonctionsUtiles.cpp FonctionsUtiles.hpp
 	$(FC) $(OPT) FonctionsUtiles.cpp
 
 clean : 
-	rm *.gch *.o
+	rm *.gch *.o mainTest
