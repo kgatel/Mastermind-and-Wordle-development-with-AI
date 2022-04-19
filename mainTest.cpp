@@ -1,9 +1,7 @@
 #include <iostream>
 #include "CombiMastermind.hpp"
+#include "Humain_Codeur_Wordle.hpp"
 #include "CombiWordle.hpp"
-#include "Joueur.hpp"
-#include "Humain.hpp"
-#include "IA.hpp"
 #include <vector>
 #include <iostream>
 #include <sstream>
@@ -19,17 +17,15 @@ int main()
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
     cout << "***************************TEST***************************\n" << endl;
-	CombiWordle c3("KEVING");
-	CombiWordle c4("KCYNIT");
+    Humain_Codeur_Wordle codeur;
+	CombiWordle c3=codeur.entrerCode();
+	CombiWordle c4("apfle");
 	string resultat="";
 	string chaine1, chaine2;
     cout << c3.toString() << "\n" << c4.toString() << "\nRésultat : " << c3.resultat(c4) << "\n" << endl;
-    cout << "*************************FIN TEST*************************\n\n" << endl;
+    cout << "*************************FIN TEST*************************\n" << "\n" << endl;
     
-    Joueur j1("eric");
-    Humain j2("sam");
-    IA j3("ordi");
-    cout << "Joueur 1 :"+j1.toString()+"\nJoueur 2 : "+j2.toString()+"\nJoueur 3 : "+j3.toString()+"\n"<< endl;
+    
     
     
     
