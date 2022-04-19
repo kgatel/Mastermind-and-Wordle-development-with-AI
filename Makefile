@@ -1,14 +1,9 @@
 FC = g++
 OPT = -c
 
-<<<<<<< HEAD
 mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain.o Joueur.o
 	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain.o Joueur.o -o mainTest
-=======
-mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o Joueur.o Humain.o IA.o mainTest.o
-	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o Joueur.o Humain.o IA.o mainTest.o -o mainTest
->>>>>>> 1ae121f7cabbc584f31d14ee31e8178f642250fe
-	
+
 mainTest.o : mainTest.cpp CombiMastermind.hpp
 	$(FC) $(OPT) mainTest.cpp
 
@@ -47,15 +42,6 @@ FonctionsUtiles.o : FonctionsUtiles.cpp FonctionsUtiles.hpp
 
 Humain_Codeur_Wordle.o : Humain_Codeur_Wordle.cpp Humain_Codeur_Wordle.hpp
 	$(FC) $(OPT) Humain_Codeur_Wordle.cpp
-
-Humain_Codeur.o : Humain_Codeur.cpp Humain_Codeur.hpp
-	$(FC) $(OPT) Humain_Codeur.cpp
-
-Humain.o : Humain.cpp Humain.hpp
-	$(FC) $(OPT) Humain.cpp
-
-Joueur.o : Joueur.cpp Joueur.hpp
-	$(FC) $(OPT) Joueur.cpp
 
 clean : 
 	rm *.gch *.o mainTest
