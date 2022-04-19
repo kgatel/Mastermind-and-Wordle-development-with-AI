@@ -20,16 +20,29 @@ JeuDeDeduction :: JeuDeDeduction(Joueur codeur1, Joueur decodeur1, vector<Combin
 }
 
 void JeuDeDeduction :: partie(){
-	
+	//méthode abstraite, déroulement d'une partie
 }
-/*
-virtual void afficherPartie();
 
-void afficherCode();
+void JeuDeDeduction :: afficherPartie(){
+	//méthode abstraite, permet d'afficher une partie
+}
 
-Joueur detectionVictoire();
+void JeuDeDeduction :: afficherCode(){
+	//demande à l'utilisateur le mdp, si le mdp est bon alors afficher le code
+}
 
-int getTour();
+Joueur JeuDeDeduction :: detectionVictoire(){
+	//retourne null pas de joueur gagnant, sinon retourne le joueur gagnant
+	Joueur res;
+	
+	return res;
+}
 
-void incrTour();*/
+int JeuDeDeduction :: getTour(){
+	return numeroTour;
+}
+
+void JeuDeDeduction :: incrTour(){
+	numeroTour++;
+}
 
