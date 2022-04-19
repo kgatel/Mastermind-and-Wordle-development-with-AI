@@ -16,9 +16,20 @@ using namespace std;
 */
 
 class IA: public Joueur {
-	private:
+	protected:
 		int difficulte;
 	public:
+	
+		/*! \fn IA()
+		* \brief Constructeur de la classe IA
+		*/
+		IA();
+		
+		/*! \fn IA(string pseudo1)
+		  * \brief Constructeur de la classe IA avec paramètre 
+		  * \param pseudo1 du joueur
+		  */
+		IA(string pseudo1);
 	
 		/*! \fn Combinaison choisirCombinaison()
 		  * \brief une méthode abstraite qui permettera à l'IA de trouver la combinaison correct selon le mode de jeu

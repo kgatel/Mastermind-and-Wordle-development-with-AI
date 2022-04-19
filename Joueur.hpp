@@ -15,22 +15,21 @@
 * */
 
 class Joueur {
-	private:
+	protected:
 		Combinaison combinaison;
 		string pseudo;
 
-public:
+	public:
 		/*! \fn Joueur()
 		* \brief Constructeur de la classe joueur
 		*/
 		Joueur();
 		
-		/*! \fn Joueur(Combinaison comb,int nb)
-		  * \brief Constructeur de la classe joueur avec paramètre
-		  * \param comb la combinaison 
-		  * \param pseudo du joueur
+		/*! \fn Joueur(string pseudo1)
+		  * \brief Constructeur de la classe joueur avec paramètre 
+		  * \param pseudo1 du joueur
 		  */
-		Joueur(Combinaison comb,string nom);
+		Joueur(string pseudo1);
 		
 		/*! \fn Combinaison getCombinaison()
 		* \brief Pour accéder à l'attribut combinaison 
@@ -61,12 +60,11 @@ public:
 		*/
 		void setPseudo(string nom);
 		
-		/*! \fn bool verification(const string &chaine);
-		* \brief permet de verifier une chaine de caractère pour savoir si elle peut être transformée en combinaison
-		* \param chaine string : la chaine à vérifier
-		* \return un booleen
+		/*! \fn string toString() abstraite;
+		* \brief permet l'affichage du pseudo
+		* \return un string
 		*/
-		bool verification(const string chaine);
+		string toString();
 	};
 
 #endif // JOUEUR_H

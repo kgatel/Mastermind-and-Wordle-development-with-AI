@@ -1,6 +1,6 @@
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
-#include "Menu.hpp"
+#include "FonctionsUtiles.hpp"
 
 #include <iostream>
 #include <string>
@@ -11,22 +11,34 @@
 
 Joueur :: Joueur(){
 	Combinaison combinaison();
-	numeroTour=0;
-	}
-Joueur::Joueur(Combinaison comb,int nb){
-	combinaison=comb;
-	numeroTour=nb;
-	}
+}
+Joueur::Joueur(string pseudo1){
+	Combinaison combinaison();
+	pseudo=pseudo1;
+}
 
 Combinaison Joueur:: getCombinaison(){
 	return combinaison;
-	}
+}
 
-int Joueur:: getnumeroTour(){
-	return numeroTour;
-	}
+void Joueur :: entrerPseudo(){
+	//demander à l'utilisateur de rentrer son pseudo
+	
+}
 
-void Joueur:: entrerCombinaison(){
+string Joueur:: getPseudo(){
+	return pseudo;
+}
+
+void Joueur :: setPseudo(string pseudo1){
+	pseudo=pseudo1;
+}
+
+string Joueur :: toString(){
+	return pseudo;
+}
+
+/*void Joueur:: entrerCombinaison(){
 	bool continuer;
 	continuer= true;
 	string *ent;
@@ -42,21 +54,15 @@ void Joueur:: entrerCombinaison(){
 	combinaison=comb;
 	}
 
-vector<string> Joueur :: split(const string &chaine, char delimiteur) {
-	vector<string> elements;
-	stringstream ss(chaine);
-	string sousChaine;
-	while (getline(ss, sousChaine, delimiteur)){
-		elements.push_back(sousChaine);
-	}
-	return elements;
+}*/
 
-}
-bool Joueur::verification(const string chaine){
+/*
+ bool Joueur::verification(const string chaine){
 	bool verif,btaille=false,belements=false;
 	int taille;
+	FonctionsUtiles f;
 	vector<string> splited;
-	splited=split(chaine,' ');
+	splited=f.split(chaine,' ');
 	taille=splited.size();
 	extern int NB_CASE;
 	//verification de la taille
@@ -73,5 +79,5 @@ bool Joueur::verification(const string chaine){
 	
 
 	return verif;
-	
-	}
+}
+*/
