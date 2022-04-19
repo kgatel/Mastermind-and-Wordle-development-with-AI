@@ -20,19 +20,22 @@ using namespace std;
 class Humain: public Joueur {
 	public:
 	
+		/*! \fn Humain()
+		* \brief Constructeur de la classe Humain
+		*/
+		Humain();
+		
+		/*! \fn Humain(string pseudo1)
+		  * \brief Constructeur de la classe Humain avec paramètre 
+		  * \param pseudo1 du joueur
+		  */
+		Humain(string pseudo1);
+	
 		/*! \fn virtual bool verifierEntree(string entree)
 		  * \brief une méthode abstraite qui permettera de vérifier la syntaxe de l'entrée selon le mode de jeu
 		  * \param string entree
 		  * \return retourne un booléen (vraie seulement si la syntaxe est bonne)
 		  */
 		virtual bool verifierEntree(string entree);
-		
-		/*! \fn vector<string> split(const string chaine, char delimiteur)
-		* \brief permet de séparer une chaine de caractère avec un caractère delimiteur donné
-		* \param chaine string : la chaine à découper
-		* \param char delimiteur caractère précisant où séparer la chaine
-		* \return retourne un vecteur
-		*/
-		vector<string> split(const string &chaine, char delimiteur) ; 
 	};
 #endif 

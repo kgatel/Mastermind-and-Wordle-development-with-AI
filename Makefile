@@ -1,14 +1,32 @@
 FC = g++
 OPT = -c
 
-mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o
-	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o -o mainTest
+mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o Joueur.o Humain.o IA.o mainTest.o
+	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o Joueur.o Humain.o IA.o mainTest.o -o mainTest
 	
 mainTest.o : mainTest.cpp CombiMastermind.hpp
 	$(FC) $(OPT) mainTest.cpp
 
 JeuDeDeduction.o : JeuDeDeduction.cpp JeuDeDeduction.hpp
 	$(FC) $(OPT) JeuDeDeduction.cpp
+
+Mastermind.o : JeuDeDeduction.hpp Mastermind.hpp Mastermind.cpp
+	$(FC) $(OPT) Mastermind.cpp
+
+Wordle.o : JeuDeDeduction.hpp Wordle.hpp Wordle.cpp
+	$(FC) $(OPT) Wordle.cpp
+
+Joueur.o : Joueur.hpp Joueur.cpp
+	$(FC) $(OPT) Joueur.cpp
+
+Humain.o : Joueur.hpp Humain.hpp Humain.cpp
+	$(FC) $(OPT) Humain.cpp
+
+IA.o : Joueur.hpp IA.hpp IA.cpp
+	$(FC) $(OPT) IA.cpp
+	
+Humain_Codeur.o : Humain.hpp Humain_Codeur.hpp Humain_Codeur.cpp
+	$(FC) $(OPT) Humain_Codeur.cpp
 
 Combinaison.o : FonctionsUtiles.hpp Combinaison.cpp Combinaison.hpp
 	$(FC) $(OPT) Combinaison.cpp

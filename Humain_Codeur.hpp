@@ -2,7 +2,7 @@
 #define Humain_Codeur_H
 
 #include "Humain.hpp"
-#include "Combinaison.hpp"
+
 /*! \class Humain_Codeur
 * \brief Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de jeu (Mastermind ou wordle).
 * \author Groupe A7
