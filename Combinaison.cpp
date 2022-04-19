@@ -1,5 +1,6 @@
 #include <vector>
 #include "Combinaison.hpp"
+#include "FonctionsUtiles.hpp"
 #include <cstring>  //Package permettant de comparer deux chaines de caractère
 #include <iostream>
 #include <fstream>
@@ -12,7 +13,8 @@ Combinaison :: Combinaison() {
 }
 
 Combinaison :: Combinaison(const string &chaine){
-	combinaison=split(chaine,' ');
+	FonctionsUtiles f;
+	combinaison=f.split(chaine,' ');
 }
 
 void  Combinaison ::setCombinaison (vector<string> c){
@@ -34,15 +36,5 @@ string Combinaison :: toString() {
 		res+=combinaison[i] + " ";
 	}
 	return res;
-}
-
-vector<string> Combinaison :: split(const string &chaine, char delimiteur) {
-	vector<string> elements;
-	stringstream ss(chaine);
-	string sousChaine;
-	while (getline(ss, sousChaine, delimiteur)){
-		elements.push_back(sousChaine);
-	}
-	return elements;
 }
 

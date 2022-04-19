@@ -54,14 +54,6 @@ class Combinaison {
 		*/
 		string get(const int i) const;
 		
-		/*! \fn vector<string> split(const string &chaine, char delimiteur)
-		* \brief méthode permettant de découper une chaine de caractère en plusieurs grâce à un delimiteur
-		* \param chaine : chaine à découper
-		* \param delimiteur : le séparateur de mot, ici l'espace
-		* \return un tableau de string
-		*/
-		vector<string> split(const string &chaine, char delimiteur);
-		
 		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage de la combinaison
 		* \return un string

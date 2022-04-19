@@ -1,5 +1,6 @@
 #include <vector>
 #include "CombiMastermind.hpp"
+#include "FonctionsUtiles.hpp"
 #include <cstring>  //Package permettant de comparer deux chaines de caractère
 #include <iostream>
 #include <fstream>
@@ -13,7 +14,8 @@ CombiMastermind :: CombiMastermind() {
 }
 
 CombiMastermind :: CombiMastermind(const string &chaine){
-	combinaison=split(chaine,' ');
+	FonctionsUtiles f;
+	combinaison=f.split(chaine,' ');
 }
 
 
