@@ -8,6 +8,7 @@
 #include <fstream>
 #include <string>
 #include <ncurses.h>
+#include <unistd.h>
 
 using namespace std;
 int Menu::NB_CASE;
@@ -60,14 +61,18 @@ bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
 CombiWordle Humain_Codeur_Wordle :: entrerCode() {
     string mot;
     bool t=false;
-    while(t==false) {
+    while(!t) {
         cout << "Codeur rentrez votre code:   ";
+        sleep (3);
         mot=cachermot();
         if ((int)mot.size()==Menu::NB_CASE) {
         if (VerifierEntree(mot)) {t=true;}
         else cout << "Le mot rentree existe pas dans le dictionnaire essayer a nouveau \n";
         }
-        if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot rentree ne fait pas " <<Menu::NB_CASE<<" caracteres \n";}}
+        if ((int)mot.size()!=Menu::NB_CASE){
+			cout << "Le mot rentree ne fait pas " <<Menu::NB_CASE<<" caracteres \n";
+		}
+    }
 
     return CombiWordle(mot);
 }
@@ -79,22 +84,22 @@ string Humain_Codeur_Wordle :: cachermot(){
     initscr();
     noecho();
     cbreak();
-    while (entr==false) {
-    a=getch();
-    if((a>=97&&a<=122)||(a>=65&&a<=90)) {
-		mot+=a;
-		printw("*");
-    }
-    if(a==127&&!mot.empty()) { //si le joueur veut effacer un caractere
-    printw("\b \b"); // on efface le caractére "" derriére le curseur
-    mot.pop_back(); //on supprime le caractére rentré par le joueur
+    while (!entr) {
+		a=getch();
+		if((a>=97&&a<=122)||(a>=65&&a<=90)) {
+			mot+=a;
+			printw("*");
+		}
+		if(a==127&&!mot.empty()) { //si le joueur veut effacer un caractere
+		printw("\b \b"); // on efface le caractére "" derriére le curseur
+		mot.pop_back(); //on supprime le caractére rentré par le joueur
 
-    }
-    if (a==10) {  //si le joueur appuie sur entrée
+		}
+		if (a==10) {  //si le joueur appuie sur entrée
 
-		entr=true;
-    }
-    }
+			entr=true;
+		}
+	}
     endwin();
     return mot;
 }

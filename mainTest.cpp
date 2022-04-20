@@ -19,9 +19,9 @@ int main()
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
     cout << "***************************TEST***************************\n"<< endl;
-	CombiWordle c5("SAUCE");
-	CombiWordle c6("APPLE");
-    cout << c5.toString() << "\n" << c6.toString() << "\nRésultat : " << c5.resultat(c6) << "\n"<< endl;
+	CombiWordle c5("TABLE");
+	CombiWordle c6("TREES");
+    cout << "Code : " + c5.toString() << "\nCombinaison testée : " << c6.toString() << "\nRésultat : " << c6.resultat(c5) << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
     
@@ -33,7 +33,7 @@ int main()
     CombiWordle c4=decodeur.entrerCombinaison();
     string resultat="";
 	string chaine1, chaine2;
-	resultat =c3.resultat(c4);
+	resultat =c4.resultat(c3);
     //cout << c3.toString() << "\n" << c4.toString() << "\nRésultat : " << c3.afficherResultat(resultat) << "\n" << endl;
     cout << c3.toString() << endl;
     cout << resultat << endl;
