@@ -23,6 +23,7 @@ class Menu {
 		static vector<string> ENSEMBLE_ELEMENT;
 		static int NB_CASE;
 		static int NB_TOUR;
+		static int Langue; //1 pour Francais , 2 pour Anglais
 		static int ModeDeJeu;	
 		
 		/*! \fn Menu()
@@ -33,9 +34,9 @@ class Menu {
 		/*! \fn Menu(int nbcase)   """A CHANGER!!!"""
 		  * \brief Constructeur de la classe Menu
 		  */
-		Menu(int nbcase);
+		Menu(int nbcase,int nbtour,int langue);
 		/*! \fn afficherMenu()
-		* \brief getteur de l'attribut motDePasse
+		* \brief affiche le menu.
 		*/
 		void afficherMenu();
 		  

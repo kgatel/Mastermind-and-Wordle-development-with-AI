@@ -12,12 +12,15 @@
 
 using namespace std;
 int Menu::NB_CASE;
+int Menu::Langue;
 
 Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
 }
 
 string Humain_Codeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
+	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}
+	if (Menu::Langue==2) {repertoire=repertoire.append("//").append("Anglais");}
 	if (mot.size()==6) {repertoire=repertoire.append("//").append("6lettres");}
 	if (mot.size()==5) {repertoire=repertoire.append("//").append("5lettres");}
 	if (mot.size()==4) {repertoire=repertoire.append("//").append("4lettres");}
