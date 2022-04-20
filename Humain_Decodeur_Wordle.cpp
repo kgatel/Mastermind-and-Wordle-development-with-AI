@@ -1,20 +1,17 @@
 #include <string>
-#include "Combinaison.hpp"
-#include "Menu.hpp"
 #include "CombiWordle.hpp"
-#include "Humain_Codeur.hpp"
-#include "Humain_Codeur_Wordle.hpp"
+#include "Humain_Decodeur.hpp"
+#include "Humain_Decodeur_Wordle.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
-int Menu::NB_CASE;
 
-Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
+Humain_Decodeur_Wordle :: Humain_Decodeur_Wordle() {
 }
 
-string Humain_Codeur_Wordle :: choixFichier(string mot) {
+string Humain_Decodeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
 	if (mot.size()==6) {repertoire=repertoire.append("\\").append("6lettres");}
 	if (mot.size()==5) {repertoire=repertoire.append("\\").append("5lettres");}
@@ -22,7 +19,7 @@ string Humain_Codeur_Wordle :: choixFichier(string mot) {
 return repertoire+"\\"+mot[0]+".txt";
 }	
 
-bool Humain_Codeur_Wordle :: checkMotFichier(string fichier, string mot)
+bool Humain_Decodeur_Wordle :: checkMotFichier(string fichier, string mot)
 {
     int offset; 
     string ligne;
@@ -50,17 +47,17 @@ bool Humain_Codeur_Wordle :: checkMotFichier(string fichier, string mot)
     return false;
 }
 
-bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
+bool Humain_Decodeur_Wordle :: VerifierEntree(string entree) {
 	string chemin;
 	chemin=choixFichier(entree);
 	return checkMotFichier(chemin,entree);
 }
 
-CombiWordle Humain_Codeur_Wordle :: entrerCode() {
+CombiWordle Humain_Decodeur_Wordle :: entrerCombinaison() {
 	string mot;
 	bool t=false;
 	while(t==false) {
-		cout << "Codeur rentrez votre code:\t";
+		cout << "Decodeur rentrez votre combinaison:\t";
 		cin >> mot;
 		if ((int)mot.size()==Menu::NB_CASE) {
 		if (VerifierEntree(mot)) {t=true;}

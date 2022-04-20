@@ -30,6 +30,10 @@ class Menu {
 		  */
 		Menu();
 		
+		/*! \fn Menu(int nbcase)   """A CHANGER!!!"""
+		  * \brief Constructeur de la classe Menu
+		  */
+		Menu(int nbcase);
 		/*! \fn afficherMenu()
 		* \brief getteur de l'attribut motDePasse
 		*/
