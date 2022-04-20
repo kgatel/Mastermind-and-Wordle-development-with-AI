@@ -49,7 +49,7 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		*/
 		bool VerifierEntree(string entree);
 		  
-	
+		string cachermot();
 };
 
 #endif 

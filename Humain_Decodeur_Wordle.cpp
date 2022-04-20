@@ -13,10 +13,10 @@ Humain_Decodeur_Wordle :: Humain_Decodeur_Wordle() {
 
 string Humain_Decodeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
-	if (mot.size()==6) {repertoire=repertoire.append("\\").append("6lettres");}
-	if (mot.size()==5) {repertoire=repertoire.append("\\").append("5lettres");}
-	if (mot.size()==4) {repertoire=repertoire.append("\\").append("4lettres");}
-return repertoire+"\\"+mot[0]+".txt";
+	if (mot.size()==6) {repertoire=repertoire.append("//").append("6lettres");}
+	if (mot.size()==5) {repertoire=repertoire.append("//").append("5lettres");}
+	if (mot.size()==4) {repertoire=repertoire.append("//").append("4lettres");}
+return repertoire+"//"+mot[0]+".txt";
 }	
 
 bool Humain_Decodeur_Wordle :: checkMotFichier(string fichier, string mot)
@@ -57,7 +57,7 @@ CombiWordle Humain_Decodeur_Wordle :: entrerCombinaison() {
 	string mot;
 	bool t=false;
 	while(t==false) {
-		cout << "Decodeur rentrez votre combinaison:\t";
+		cout << "Decodeur rentrez votre combinaison: ";
 		cin >> mot;
 		if ((int)mot.size()==Menu::NB_CASE) {
 		if (VerifierEntree(mot)) {t=true;}

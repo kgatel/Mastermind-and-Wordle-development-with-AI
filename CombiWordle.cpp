@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <windows.h>
+//#include <windows.h>
 using namespace std;
 
 
@@ -48,7 +48,7 @@ string CombiWordle :: resultat(const CombiWordle code){
 	return res;
 }
 
-void CombiWordle :: afficherResultat(string resultat) {
+/*void CombiWordle :: afficherResultat(string resultat) {
 	for(int i=0;i<(int)resultat.size();i++){
 	if (resultat[i]=='*') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);cout <<combinaison[i];}
 	if (resultat[i]=='_') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);cout <<combinaison[i];}
@@ -56,7 +56,7 @@ void CombiWordle :: afficherResultat(string resultat) {
 		}
 cout << endl;
 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
-}
+}*/
 
 string CombiWordle :: toString() {
 	string res="";

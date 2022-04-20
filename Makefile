@@ -1,8 +1,9 @@
 FC = g++
 OPT = -c
+LIBS = -lncurses
 
-mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Humain.o Joueur.o Menu.o
-	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Decodeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Menu.o Humain.o Joueur.o -o mainTest
+mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Humain.o Joueur.o Menu.o Humain_Decodeur_Wordle.o
+	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Menu.o Humain.o Joueur.o Humain_Decodeur_Wordle.o -o mainTest $(LIBS)
 
 mainTest.o : mainTest.cpp CombiMastermind.hpp
 	$(FC) $(OPT) mainTest.cpp
@@ -47,7 +48,7 @@ FonctionsUtiles.o : FonctionsUtiles.cpp FonctionsUtiles.hpp
 	$(FC) $(OPT) FonctionsUtiles.cpp
 
 Humain_Codeur_Wordle.o : Humain_Codeur_Wordle.cpp Humain_Codeur_Wordle.hpp Menu.hpp
-	$(FC) $(OPT) Humain_Codeur_Wordle.cpp
+	$(FC) $(OPT) $(LIBS) Humain_Codeur_Wordle.cpp
 
 Humain_Decodeur_Wordle.o : Humain_Decodeur_Wordle.cpp Humain_Decodeur_Wordle.hpp
 	$(FC) $(OPT) Humain_Decodeur_Wordle.cpp

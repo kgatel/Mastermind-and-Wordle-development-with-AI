@@ -18,19 +18,26 @@ int main()
     cout << c1.toString() << "\n" << c2.toString() << "\nNombre de couleurs bien placées : " << c1.bienPlace(c2) << "\nNombre de couleurs mal placées : " << c1.malPlace(c2) << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
+    cout << "***************************TEST***************************\n"<< endl;
+	CombiWordle c5("SAUCE");
+	CombiWordle c6("APPLE");
+    cout << c5.toString() << "\n" << c6.toString() << "\nRésultat : " << c5.resultat(c6) << "\n"<< endl;
+    cout << "*************************FIN TEST*************************\n\n" << endl;
+    
+    
     cout << "***************************TEST***************************\n" << endl;
     Humain_Codeur_Wordle codeur;
     Humain_Decodeur_Wordle decodeur;
     Menu(5);
-	CombiWordle c3=codeur.entrerCode();
-	CombiWordle c4=decodeur.entrerCombinaison();
-	string resultat="";
+    CombiWordle c3=codeur.entrerCode();
+    CombiWordle c4=decodeur.entrerCombinaison();
+    string resultat="";
 	string chaine1, chaine2;
 	resultat =c3.resultat(c4);
     //cout << c3.toString() << "\n" << c4.toString() << "\nRésultat : " << c3.afficherResultat(resultat) << "\n" << endl;
     cout << c3.toString() << endl;
     cout << resultat << endl;
-    c4.afficherResultat(resultat);
+    //c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;
     
     
