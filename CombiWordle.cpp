@@ -8,8 +8,7 @@
 using namespace std;
 
 
-CombiWordle :: CombiWordle() {
-	combinaison=vector<string>();
+CombiWordle :: CombiWordle() : Combinaison(){
 }
 
 CombiWordle :: CombiWordle(const string &chaine){

@@ -54,5 +54,5 @@ Humain_Decodeur_Wordle.o : Humain_Decodeur_Wordle.cpp Humain_Decodeur_Wordle.hpp
 	$(FC) $(OPT) Humain_Decodeur_Wordle.cpp
 
 clean : 
-	rm *.gch *.o mainTest
+	rm *.o mainTest
 

@@ -12,11 +12,6 @@ using namespace std;
 Combinaison :: Combinaison() {
 }
 
-Combinaison :: Combinaison(const string &chaine){
-	FonctionsUtiles f;
-	combinaison=f.split(chaine,' ');
-}
-
 void  Combinaison ::setCombinaison (vector<string> c){
 	combinaison = c;
 }

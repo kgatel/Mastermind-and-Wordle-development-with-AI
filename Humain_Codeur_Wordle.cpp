@@ -61,27 +61,42 @@ bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
 CombiWordle Humain_Codeur_Wordle :: entrerCode() {
     string mot;
     bool t=false;
+    bool longueurMotBonne=true;
+    bool motExiste=true;
     while(!t) {
-        cout << "Codeur rentrez votre code:   ";
-        sleep (3);
-        mot=cachermot();
+        mot=cachermot(longueurMotBonne,motExiste);
         if ((int)mot.size()==Menu::NB_CASE) {
-        if (VerifierEntree(mot)) {t=true;}
-        else cout << "Le mot rentree existe pas dans le dictionnaire essayer a nouveau \n";
+			if (VerifierEntree(mot)){
+				t=true;
+				motExiste=true;
+			}
+			else {
+				motExiste=false;			//cout << "Le mot rentree existe pas dans le dictionnaire essayer a nouveau \n";
+			}
         }
         if ((int)mot.size()!=Menu::NB_CASE){
-			cout << "Le mot rentree ne fait pas " <<Menu::NB_CASE<<" caracteres \n";
+			longueurMotBonne=false;			//cout << "Le mot rentree ne fait pas " <<Menu::NB_CASE<<" caracteres \n";
+		}else{
+			longueurMotBonne=true;
 		}
     }
-
+	cout << "Code bien enregistré, décodeur à vous de jouer !\n" << endl;
     return CombiWordle(mot);
 }
 
-string Humain_Codeur_Wordle :: cachermot(){
+string Humain_Codeur_Wordle :: cachermot(bool longueurMotBonne,bool motExiste){
 	string mot="";
 	int a;
     bool entr=false;
     initscr();
+    if (!longueurMotBonne){
+		printw("\nVeuillez entrer un mot de longueur égale à %d\n\n",Menu::NB_CASE);			//changer la longueur car 5 est arbitraire ici
+	}else{
+		if (!motExiste){
+			printw("\nVeuillez entrer un mot appartenant au dictionnaire anglais\n\n");
+		}
+	}
+    printw("Codeur rentrez votre code (en minuscule) : ");
     noecho();
     cbreak();
     while (!entr) {
@@ -96,7 +111,6 @@ string Humain_Codeur_Wordle :: cachermot(){
 
 		}
 		if (a==10) {  //si le joueur appuie sur entrée
-
 			entr=true;
 		}
 	}

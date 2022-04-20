@@ -29,12 +29,6 @@ class Combinaison {
 		  */
 		Combinaison();
 		
-		/*! \fn Combinaison(string chaine)
-		  * \brief Constructeur de la classe Combinaison
-		  * \param chaine est la chaine de caractère comprenant la suite de couleur ou de lettre séparée d'espace
-		  */
-		Combinaison(const string &chaine);
-		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 

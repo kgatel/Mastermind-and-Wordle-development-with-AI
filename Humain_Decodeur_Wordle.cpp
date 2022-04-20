@@ -56,13 +56,13 @@ bool Humain_Decodeur_Wordle :: VerifierEntree(string entree) {
 CombiWordle Humain_Decodeur_Wordle :: entrerCombinaison() {
 	string mot;
 	bool t=false;
-	while(t==false) {
-		cout << "Decodeur rentrez votre combinaison: ";
+	while(!t) {
+		cout << "Décodeur entrez votre mot ici : ";
 		cin >> mot;
 		if ((int)mot.size()==Menu::NB_CASE) {
 		if (VerifierEntree(mot)) {t=true;}
-		else cout << "Le mot rentree existe pas dans le dictionnaire essayer a nouveau \n";
+		else cout << "Le mot n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n";
 		}
-		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot rentree ne fait pas " <<Menu::NB_CASE<<" caracteres \n";}}
+		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot ne fait pas " <<Menu::NB_CASE<<" caracteres \n";}}
 	return CombiWordle(mot);
 }
