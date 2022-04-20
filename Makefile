@@ -2,6 +2,9 @@ FC = g++
 OPT = -c
 LIBS = -lncurses
 
+Jeu : Joueur.o Combinaison.o Menu.o JeuDeDeduction.o 
+	$(FC) Joueur.o Combinaison.o Menu.o JeuDeDeduction.o -o Jeu
+
 mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Humain.o Joueur.o Menu.o Humain_Decodeur_Wordle.o
 	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur.o Humain_Decodeur.o Menu.o Humain.o Joueur.o Humain_Decodeur_Wordle.o -o mainTest $(LIBS)
 

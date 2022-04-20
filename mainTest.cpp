@@ -28,7 +28,7 @@ int main()
     cout << "***************************TEST***************************\n" << endl;
     Humain_Codeur_Wordle codeur;
     Humain_Decodeur_Wordle decodeur;
-    Menu(5);
+    Menu(5,0,2);
     CombiWordle c3=codeur.entrerCode();
     CombiWordle c4=decodeur.entrerCombinaison();
     string resultat="";

@@ -2,8 +2,15 @@
 #include <iostream>
 #include <vector>
 #include "JeuDeDeduction.hpp"
+#include "Joueur.hpp"
+#include "Combinaison.hpp"
+#include "Menu.hpp"
 
 using namespace std;
+
+int Menu::NB_CASE;
+int Menu::Langue;
+int Menu::NB_TOUR;
 
 JeuDeDeduction :: JeuDeDeduction(){
 
@@ -17,6 +24,11 @@ JeuDeDeduction :: JeuDeDeduction(Joueur codeur1, Joueur decodeur1, vector<Combin
 	menu=menu1;
 	historiqueResultatBienPlace=vector<string>();
 	historiqueResultatMalPlace=vector<string>();
+}
+
+int JeuDeDeduction :: main(){
+	cout<<"ntm"<<endl;
+	return 0;
 }
 
 void JeuDeDeduction :: partie(){

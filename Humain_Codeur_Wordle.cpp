@@ -13,6 +13,7 @@
 using namespace std;
 int Menu::NB_CASE;
 int Menu::Langue;
+int Menu::NB_TOUR;
 
 Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
 }
@@ -39,7 +40,7 @@ bool Humain_Codeur_Wordle :: checkMotFichier(string fichier, string mot)
         while (!monFichier.eof())
         {
             getline(monFichier,ligne);
-            if ((offset = ligne.find(mot, 0)) != string::npos) 
+            if ((offset = ligne.find(mot, 0)) != (int)string::npos) 
             {
                 
                 monFichier.close();

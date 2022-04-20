@@ -13,6 +13,8 @@ Humain_Decodeur_Wordle :: Humain_Decodeur_Wordle() {
 
 string Humain_Decodeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
+	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}
+	if (Menu::Langue==2) {repertoire=repertoire.append("//").append("Anglais");}
 	if (mot.size()==6) {repertoire=repertoire.append("//").append("6lettres");}
 	if (mot.size()==5) {repertoire=repertoire.append("//").append("5lettres");}
 	if (mot.size()==4) {repertoire=repertoire.append("//").append("4lettres");}
@@ -31,7 +33,7 @@ bool Humain_Decodeur_Wordle :: checkMotFichier(string fichier, string mot)
         while (!monFichier.eof())
         {
             getline(monFichier,ligne);
-            if ((offset = ligne.find(mot, 0)) != string::npos) 
+            if ((offset = ligne.find(mot, 0)) != (int)string::npos) 
             {
                 
                 monFichier.close();

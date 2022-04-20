@@ -47,7 +47,7 @@ class JeuDeDeduction {
 		  */
 		JeuDeDeduction(Joueur codeur, Joueur decodeur, vector<Combinaison> HistoriqueCombinaison,int numeroTour,Menu menu,vector<string> historiqueResultatBienPlace,vector<string> historiqueResultatMalPlace);
 		
-		
+		virtual int main();
 		
 		/*! \fn void partie() 
 		* \brief Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
