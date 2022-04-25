@@ -28,9 +28,10 @@ int main()
     cout << "***************************TEST***************************\n" << endl;
     Humain_Codeur_Wordle codeur;
     Humain_Decodeur_Wordle decodeur;
+    
     Menu(5,0,2);
-    CombiWordle c3=codeur.entrerCode();
-    CombiWordle c4=decodeur.entrerCombinaison();
+    CombiWordle c3=CombiWordle(codeur.entrerCode());
+    CombiWordle c4=CombiWordle(decodeur.entrerCombinaison());
     string resultat="";
 	string chaine1, chaine2;
 	resultat =c4.resultat(c3);
