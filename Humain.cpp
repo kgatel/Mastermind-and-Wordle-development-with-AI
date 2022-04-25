@@ -4,9 +4,7 @@
 Humain :: Humain(){
 	Combinaison combinaison();
 }
-Humain::Humain(string pseudo1){
-	Combinaison combinaison();
-	pseudo=pseudo1;
+Humain::Humain(string pseudo1) : Joueur(pseudo1){
 }
 
 bool Humain :: verifierEntree(string entree){
