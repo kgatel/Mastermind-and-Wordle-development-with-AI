@@ -19,6 +19,10 @@ CombiWordle :: CombiWordle(const string &chaine){
 	}
 }
 
+CombiWordle :: CombiWordle(Combinaison c){
+	combinaison=c.get();
+}
+
 
 string CombiWordle :: resultat(const CombiWordle code){
 	string res="";   //initialise le vecteur à 0

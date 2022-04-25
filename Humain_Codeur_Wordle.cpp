@@ -1,9 +1,9 @@
 #include <string>
-#include "Combinaison.hpp"
 #include "Menu.hpp"
 #include "CombiWordle.hpp"
 #include "Humain_Codeur.hpp"
 #include "Humain_Codeur_Wordle.hpp"
+#include "Joueur.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -15,7 +15,7 @@ int Menu::NB_CASE;
 int Menu::Langue;
 int Menu::NB_TOUR;
 
-Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
+Humain_Codeur_Wordle :: Humain_Codeur_Wordle() : Humain_Codeur() {
 }
 
 string Humain_Codeur_Wordle :: choixFichier(string mot) {
@@ -62,7 +62,12 @@ bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
 	return checkMotFichier(chemin,entree);
 }
 
-CombiWordle Humain_Codeur_Wordle :: entrerCode() {
+void Humain_Codeur_Wordle :: jouer(){
+	CombiWordle c(entrerCode());
+	//setCombinaison(c);
+}
+
+Combinaison Humain_Codeur_Wordle :: entrerCode() {
     string mot;
     bool t=false;
     bool longueurMotBonne=true;

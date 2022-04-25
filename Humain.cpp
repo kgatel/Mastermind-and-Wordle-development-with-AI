@@ -9,6 +9,3 @@ Humain::Humain(string pseudo1){
 	pseudo=pseudo1;
 }
 
-bool Humain :: verifierEntree(string entree){
-	return false; //cette méthode sera redéfinie dans ses classes inférieures
-}
