@@ -21,10 +21,6 @@ Combinaison Joueur:: getCombinaison(){
 	return combinaison;
 }
 
-void setCombinaison(Combinaison c){
-	Combinaison combinaison(c); 
-}
-
 void Joueur :: entrerPseudo(){
 	//demander à l'utilisateur de rentrer son pseudo
 	
@@ -36,10 +32,6 @@ string Joueur:: getPseudo(){
 
 void Joueur :: setPseudo(string pseudo1){
 	pseudo=pseudo1;
-}
-
-void jouer(){
-	
 }
 
 string Joueur :: toString(){

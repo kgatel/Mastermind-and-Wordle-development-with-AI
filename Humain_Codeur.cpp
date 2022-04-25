@@ -10,9 +10,6 @@ Humain_Codeur :: Humain_Codeur(){
 	Combinaison combinaison();
 }
 
-int Humain_Codeur :: test(){
-	return 1;
-}
 
 
 

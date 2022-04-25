@@ -60,8 +60,6 @@ class Joueur {
 		*/
 		void setPseudo(string nom);
 		
-		virtual void jouer()=0;
-		
 		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage du pseudo
 		* \return un string

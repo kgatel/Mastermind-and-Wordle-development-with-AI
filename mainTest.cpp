@@ -1,7 +1,6 @@
 #include <iostream>
 #include "CombiMastermind.hpp"
 #include "Humain_Codeur_Wordle.hpp"
-#include "Humain_Codeur.hpp"
 #include "Humain_Decodeur_Wordle.hpp"
 #include "CombiWordle.hpp"
 #include "Menu.hpp"
@@ -27,11 +26,11 @@ int main()
     
     
     cout << "***************************TEST***************************\n" << endl;
-    //Humain_Codeur_Wordle codeur;
-    //Humain_Decodeur_Wordle decodeur;
-    /*Menu(5,0,2);
-    CombiWordle c3=CombiWordle(codeur.entrerCode());
-    CombiWordle c4=CombiWordle(decodeur.entrerCombinaison());
+    Humain_Codeur_Wordle codeur;
+    Humain_Decodeur_Wordle decodeur;
+    Menu(5,0,2);
+    CombiWordle c3=codeur.entrerCode();
+    CombiWordle c4=decodeur.entrerCombinaison();
     string resultat="";
 	string chaine1, chaine2;
 	resultat =c4.resultat(c3);
@@ -39,7 +38,7 @@ int main()
     cout << c3.toString() << endl;
     cout << resultat << endl;
     //c4.afficherResultat(resultat);
-    cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
+    cout << "*************************FIN TEST*************************\n" << "\n" << endl;
     
     
     

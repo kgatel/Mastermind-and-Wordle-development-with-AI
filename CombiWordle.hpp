@@ -34,8 +34,6 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle(const string &chaine);
 		
-		CombiWordle(Combinaison c);
-		
 		/*! \fn int resultat(CombiWordle code)
 		* \brief renvoie les indices des lettres placée
 		* \param code Combinaison : le mot recherché par le décodeur
