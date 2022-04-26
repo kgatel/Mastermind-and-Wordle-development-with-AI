@@ -65,6 +65,8 @@ class Joueur {
 		* \return un string
 		*/
 		string toString();
+		
+		virtual void jouer()=0;
 	};
 
 #endif // JOUEUR_H

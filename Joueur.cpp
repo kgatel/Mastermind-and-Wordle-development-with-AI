@@ -38,6 +38,8 @@ string Joueur :: toString(){
 	return pseudo;
 }
 
+
+
 /*void Joueur:: entrerCombinaison(){
 	bool continuer;
 	continuer= true;
