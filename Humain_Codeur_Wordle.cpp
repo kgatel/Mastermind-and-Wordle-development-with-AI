@@ -60,7 +60,7 @@ bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
 	return checkMotFichier(chemin,entree);
 }
 
-CombiWordle Humain_Codeur_Wordle :: entrerCode() {
+Combinaison Humain_Codeur_Wordle :: entrerCode() {
     string mot;
     bool t=false;
     bool longueurMotBonne=true;

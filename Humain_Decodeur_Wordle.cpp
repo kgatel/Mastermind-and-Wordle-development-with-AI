@@ -55,7 +55,7 @@ bool Humain_Decodeur_Wordle :: VerifierEntree(string entree) {
 	return checkMotFichier(chemin,entree);
 }
 
-CombiWordle Humain_Decodeur_Wordle :: entrerCombinaison() {
+Combinaison Humain_Decodeur_Wordle :: entrerCombinaison() {
 	string mot;
 	bool t=false;
 	while(!t) {

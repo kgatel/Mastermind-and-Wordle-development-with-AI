@@ -19,7 +19,9 @@ CombiMastermind :: CombiMastermind(const string &chaine){
 	combinaison=f.split(chaine,' ');
 }
 
-
+CombiMastermind :: CombiMastermind(Combinaison c){
+	combinaison=c.get();
+}
 int CombiMastermind :: bienPlace(const CombiMastermind code){
 	int res=0;
 	for(int i=0;i<(int)combinaison.size();i++){

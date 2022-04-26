@@ -10,11 +10,11 @@
 
 using namespace std;
 
-Humain_Codeur_Masterind :: Humain_Codeur_Mastermind () {
+Humain_Codeur_Mastermind :: Humain_Codeur_Mastermind () {
 }
 
-CombiMastermind Humain_Codeur_Masterind :: entrerCode() {
+CombiMastermind Humain_Codeur_Mastermind :: entrerCode() {
 }
 
-bool Humain_Codeur_Masterind :: VerifierEntree(string entree) {
+bool Humain_Codeur_Mastermind :: VerifierEntree(string entree) {
 }

@@ -26,6 +26,9 @@ void Joueur :: entrerPseudo(){
 	
 }
 
+void Joueur :: setCombinaison(Combinaison c){
+}
+
 string Joueur:: getPseudo(){
 	return pseudo;
 }

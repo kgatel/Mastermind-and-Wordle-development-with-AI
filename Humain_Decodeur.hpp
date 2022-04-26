@@ -24,7 +24,7 @@ class Humain_Decodeur : public Humain {
 		/*! \fn virtual Combinaison entrerCombinaison()
 		* \brief methode abstraite à redefinir pour les différents modes de jeu
 		*/
-		virtual CombiWordle entrerCombinaison()=0;
+		virtual Combinaison entrerCombinaison()=0;
 		
 };
 

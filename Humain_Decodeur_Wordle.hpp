@@ -40,7 +40,7 @@ class Humain_Decodeur_Wordle : public Humain_Decodeur{
 		* \brief méthode permettant à l'utilisateur de saisir le code que le joueur décodeur devra ensuite deviner
 		*\return retourne le code saisi par le joueur codeur
 		*/
-		CombiWordle entrerCombinaison();
+		virtual Combinaison entrerCombinaison();
 		  
 		/*! \fn bool VerifierEntree(string entree)()
 		* \brief Méthode qui Permet de vérifier si l'entrée du joueur codeur peut être interpréter en un mot du dictionnaire du jeu Wordle

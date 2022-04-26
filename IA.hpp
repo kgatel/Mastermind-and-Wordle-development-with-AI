@@ -37,6 +37,7 @@ class IA: public Joueur {
 		  */
 		virtual Combinaison choisirCombinaison();
 		 
+		virtual void jouer();
 	};
 	
 #endif // IA_H

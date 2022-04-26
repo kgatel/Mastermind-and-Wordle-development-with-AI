@@ -37,5 +37,7 @@ class Humain: public Joueur {
 		  * \return retourne un booléen (vraie seulement si la syntaxe est bonne)
 		  */
 		virtual bool verifierEntree(string entree);
+		
+		virtual void jouer();
 	};
 #endif 
