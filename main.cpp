@@ -21,12 +21,12 @@ int main() {
 	extern ModeDeJeu;
 	switch (ModeDeJeu) {
 		case 1:
-		Humain_Codeur_Wordle codeur
-		Humain_Decodeur_Wordle decodeur
+		Humain_Codeur_Wordle codeur ;
+		Humain_Decodeur_Wordle decodeur;
 		break;
 		case 2:
-		Humain_Codeur_Mastermind codeur
-		Humain_Decodeur_Mastermind decodeur
+		Humain_Codeur_Mastermind codeur;
+		Humain_Decodeur_Mastermind decodeur;
 		break;
 		case 3://cas avec IA ...
 		

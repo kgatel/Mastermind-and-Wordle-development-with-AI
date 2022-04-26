@@ -40,13 +40,13 @@ class Menu {
 		*/
 		void afficherMenu();
 		  
-		/*! \fn ChoisirModeDeJeu(int ModeDeJeu)
+		/*! \fn ChoisirModeDeJeu(int mdj)
 		* \brief Fonction qui permet à l'utilisateur de choisir le mode de jeu
 		* \param ModeDejeu est un entier qui indique le mode Joueur contre Joueur ou Joueur contre IA
 		*/
-		void choisirModeDeJeu(int ModeDeJeu);
+		void choisirModeDeJeu(int mdj);
 		
-		/*! \fn choisirDifficulteIA(int ModeDeJeu)
+		/*! \fn choisirDifficulteIA()
 		* \brief Fonction qui permet à l'utilisateur de choisir la difficulté de l'IA
 		*/
 		void choisirDifficulteIA();
@@ -58,7 +58,7 @@ class Menu {
 		* \param ENSEMBLE_ELEMENT définit si on choisit de jouer avec des couleurs ou des lettres
 		* \param NB_TOUR le nombre de tours maximale pour faire deviner la combinaison
 		*/
-		void parametreDeJeu(int NB_ELEMENT,int ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
+		void parametreDeJeu(int NB_ELEMENT,vector<string> ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
 
 		/*! \fn appartientEE(string couleur)
 		 * \brief Fonction qui permet de vérifier si une combinaison de couleurs est valide syntaxiquement ou non.
