@@ -35,15 +35,15 @@ void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour
 void Menu :: afficherMenu(){
 	bool finchoix=false;
 	int choix=-1 ;
-	int tmp=0;
+	int tmp=0,tmp2=0;
 	while(!finchoix){
 		
 		cout<<"\nque voulez vous définir ?\n";
 		cout<<"1 - Mode de jeu \n";
 		cout<<"2 - Nombre de tours \n";
-		cout<<"3 - Nombre de case  \n";
 		
-		cout<<"0 - lancer la partie \n";
+		
+		cout<<"0 - Lancer la partie \n";
 		cin >>choix;
 			switch (choix) {
 		
@@ -55,6 +55,7 @@ void Menu :: afficherMenu(){
 					ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Francais");
 					}
 			else {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Anglais");}
+			if (NB_CASE==7) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("7lettres");}
 			if (NB_CASE==6) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("6lettres");}
 			if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("5lettres");}
 			if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("4lettres");}
@@ -71,10 +72,23 @@ void Menu :: afficherMenu(){
 		cout<<"2 pour Wordle \n";
 		cin>>tmp;
 		choisirModeDeJeu(tmp);
+		if (tmp==1){do {
+			cout<<"choisissez le nombre de couleurs:\nIl doit être compris entre 3 et 10\n";
+			cin>>tmp2;
+			}while (tmp2<3||tmp2>10);
+			NB_CASE=tmp;
+			cout<<"nombre de cases modifié\n";
+			}
 		if (tmp==2){
 			cout<<"choisissez la langue\n1 - Français\n2 - Anglais\n";
 			cin>>tmp;
 			Langue=tmp;
+			do {
+			cout<<"choisissez le nombre de lettres:\nIl doit être compris entre 4 et 7\n";
+			cin>>tmp2;
+			}while (tmp2<4||tmp2>7);
+			NB_CASE=tmp2;
+			cout<<"nombre de cases modifié\n";
 			}
 		break;
 		case 2:
@@ -83,12 +97,12 @@ void Menu :: afficherMenu(){
 		NB_TOUR=tmp;
 		cout<<"nombre de tours modifié\n";
 		break;
-		case 3:
+		/*case 3:
 		cout<<"choisissez le nombre de cases:\n";
 		cin>>tmp;
 		NB_CASE=tmp;
 		cout<<"nombre de cases modifié\n";
-		break;
+		break;*/
 		default:
 		break;
 		
