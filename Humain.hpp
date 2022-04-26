@@ -36,6 +36,6 @@ class Humain: public Joueur {
 		  * \param string entree
 		  * \return retourne un booléen (vraie seulement si la syntaxe est bonne)
 		  */
-		virtual bool verifierEntree(string entree);
+		virtual bool verifierEntree(string entree)=0;
 	};
 #endif 
