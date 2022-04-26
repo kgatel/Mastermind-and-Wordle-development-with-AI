@@ -14,6 +14,7 @@ CombiMastermind :: CombiMastermind() {
 }
 
 CombiMastermind :: CombiMastermind(const string &chaine){
+	enum couleurs { Bleu, Rouge, Vert, Orange, Jaune, Violet, Marron};
 	FonctionsUtiles f;
 	combinaison=f.split(chaine,' ');
 }
