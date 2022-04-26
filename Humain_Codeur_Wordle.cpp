@@ -11,9 +11,7 @@
 #include <unistd.h>
 
 using namespace std;
-int Menu::NB_CASE;
-int Menu::Langue;
-int Menu::NB_TOUR;
+
 
 Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
 }
