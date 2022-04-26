@@ -56,6 +56,9 @@ Humain_Codeur_Wordle.o : Humain_Codeur_Wordle.cpp Humain_Codeur_Wordle.hpp Menu.
 Humain_Decodeur_Wordle.o : Humain_Decodeur_Wordle.cpp Humain_Decodeur_Wordle.hpp
 	$(FC) $(OPT) Humain_Decodeur_Wordle.cpp
 
+main : Menu.o
+	$(FC) Menu.o main.cpp -o main
+
 clean : 
-	rm *.o mainTest *.gch
+	rm *.o mainTest *.gch main
 

@@ -9,7 +9,7 @@ using namespace std;
 	int Menu::NB_TOUR=10;
 	int Menu::NB_CASE=4;
 	int Menu::NB_ELEMENT=0;
-	vector<string> Menu::ENSEMBLE_ELEMENT={};
+	string Menu::ENSEMBLE_ELEMENT="ressources";
 	
 Menu :: Menu() {
 	}
@@ -25,7 +25,7 @@ void Menu::choisirModeDeJeu(int mdj){
 	cout<<"Mode de jeu mis à jour\n";
 	}	
 	
-void Menu::parametreDeJeu(int nbelement, vector<string> enselement,int nbcase,int nbtour){
+void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour){
 	NB_ELEMENT=nbelement;
 	ENSEMBLE_ELEMENT=enselement;
 	NB_CASE=nbcase;
@@ -46,16 +46,32 @@ void Menu :: afficherMenu(){
 		cout<<"0 - lancer la partie \n";
 		cin >>choix;
 			switch (choix) {
+		
 		case 0:
+		if (ModeDeJeu==1){
+			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Couleurs");
+			}
+		else{if (Langue==1){
+					ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Francais");
+					}
+			else {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Anglais");}
+			}
+		cout<<ENSEMBLE_ELEMENT;
 		finchoix = true;
 		break;
+		
+		
 		case 1:
 		cout<<"choisissez votre mode de jeu :\n";
 		cout<<"1 pour Mastermind \n";
 		cout<<"2 pour Wordle \n";
 		cin>>tmp;
 		choisirModeDeJeu(tmp);
-		
+		if (tmp==2){
+			cout<<"choisissez la langue\n1 - Français\n2 - Anglais";
+			cin>>tmp;
+			Langue=tmp;
+			}
 		break;
 		case 2:
 		cout<<"choisissez le nombre de tours:\n";

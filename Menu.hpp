@@ -20,7 +20,7 @@ class Menu {
 	public:
 
 		static int NB_ELEMENT;
-		static vector<string> ENSEMBLE_ELEMENT;
+		static string ENSEMBLE_ELEMENT;
 		static int NB_CASE;
 		static int NB_TOUR;
 		static int Langue; //1 pour Francais , 2 pour Anglais
@@ -58,7 +58,7 @@ class Menu {
 		* \param ENSEMBLE_ELEMENT définit si on choisit de jouer avec des couleurs ou des lettres
 		* \param NB_TOUR le nombre de tours maximale pour faire deviner la combinaison
 		*/
-		void parametreDeJeu(int NB_ELEMENT,vector<string> ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
+		void parametreDeJeu(int NB_ELEMENT,string ENSEMBLE_ELEMENT,int NB_CASE,int NB_TOUR);
 
 		/*! \fn appartientEE(string couleur)
 		 * \brief Fonction qui permet de vérifier si une combinaison de couleurs est valide syntaxiquement ou non.
