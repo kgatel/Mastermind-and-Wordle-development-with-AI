@@ -15,10 +15,10 @@
 
 int main() {
 	Menu menu;
-	menu.afficherMenu()//propose au joueur de modiffier les parametres/mode de jeu ...
+	menu.afficherMenu();//propose au joueur de modiffier les parametres/mode de jeu ...
 	
 
-	extern ModeDeJeu;
+	/*extern ModeDeJeu;
 	switch (ModeDeJeu) {
 		case 1:
 		Humain_Codeur_Wordle codeur ;
@@ -37,7 +37,7 @@ int main() {
 		default:
 		break;
 		
-		}
+		}*/
 	
 
 

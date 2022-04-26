@@ -4,8 +4,15 @@
 #include "Menu.hpp"
 
 using namespace std;
-
-Menu :: Menu() {}
+	int Menu::ModeDeJeu = 1;
+	int Menu::Langue=1;
+	int Menu::NB_TOUR=10;
+	int Menu::NB_CASE=4;
+	int Menu::NB_ELEMENT=0;
+	vector<string> Menu::ENSEMBLE_ELEMENT={};
+	
+Menu :: Menu() {
+	}
 
 Menu :: Menu(int nbcase,int nbtour,int langue){
 	NB_CASE=nbcase;
@@ -15,7 +22,7 @@ Menu :: Menu(int nbcase,int nbtour,int langue){
 	
 void Menu::choisirModeDeJeu(int mdj){
 	ModeDeJeu=mdj;
-	cout<<"Mode de jeu mis à jour";
+	cout<<"Mode de jeu mis à jour\n";
 	}	
 	
 void Menu::parametreDeJeu(int nbelement, vector<string> enselement,int nbcase,int nbtour){
@@ -31,42 +38,42 @@ void Menu :: afficherMenu(){
 	int tmp=0;
 	while(!finchoix){
 		
-		cout<<"que voulez vous définir ?";
-		cout<<"1 - Mode de jeu ";
-		cout<<"2 - Nombre de tours ";
-		cout<<"3 - Nombre de case  ";
+		cout<<"\nque voulez vous définir ?\n";
+		cout<<"1 - Mode de jeu \n";
+		cout<<"2 - Nombre de tours \n";
+		cout<<"3 - Nombre de case  \n";
 		
-		cout<<"0 - lancer la partie ";
+		cout<<"0 - lancer la partie \n";
 		cin >>choix;
 			switch (choix) {
 		case 0:
 		finchoix = true;
 		break;
 		case 1:
-		cout<<"choisissez votre mode de jeu :";
-		cout<<"1 pour Mastermind ";
-		cout<<"2 pour Wordle ";
+		cout<<"choisissez votre mode de jeu :\n";
+		cout<<"1 pour Mastermind \n";
+		cout<<"2 pour Wordle \n";
 		cin>>tmp;
 		choisirModeDeJeu(tmp);
 		
 		break;
 		case 2:
-		cout<<"choisissez le nombre de tours:";
+		cout<<"choisissez le nombre de tours:\n";
 		cin>>tmp;
-		parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,NB_CASE,tmp);
-		cout<<"nombre de tours modifié";
+		NB_TOUR=tmp;
+		cout<<"nombre de tours modifié\n";
 		break;
 		case 3:
-		cout<<"choisissez le nombre de cases:";
+		cout<<"choisissez le nombre de cases:\n";
 		cin>>tmp;
-		parametreDeJeu(NB_ELEMENT,ENSEMBLE_ELEMENT,tmp,NB_TOUR);
-		cout<<"nombre de cases modifié";
+		NB_CASE=tmp;
+		cout<<"nombre de cases modifié\n";
 		break;
 		default:
 		break;
 		
 		}
-		cout<<"itéboucle";
+
 		
 		}
 }
