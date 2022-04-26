@@ -55,20 +55,24 @@ void Menu :: afficherMenu(){
 					ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Francais");
 					}
 			else {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Anglais");}
+			if (NB_CASE==6) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("6lettres");}
+			if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("5lettres");}
+			if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("4lettres");}
 			}
-		cout<<ENSEMBLE_ELEMENT;
+		
+		cout<<ENSEMBLE_ELEMENT<<"\n";
 		finchoix = true;
 		break;
 		
 		
 		case 1:
-		cout<<"choisissez votre mode de jeu :\n";
+		cout<<"\nchoisissez votre mode de jeu :\n";
 		cout<<"1 pour Mastermind \n";
 		cout<<"2 pour Wordle \n";
 		cin>>tmp;
 		choisirModeDeJeu(tmp);
 		if (tmp==2){
-			cout<<"choisissez la langue\n1 - Français\n2 - Anglais";
+			cout<<"choisissez la langue\n1 - Français\n2 - Anglais\n";
 			cin>>tmp;
 			Langue=tmp;
 			}
