@@ -3,7 +3,6 @@
 #include <string>
 
 #include "Combinaison.hpp"
-#include "CombiMastermind.hpp"
 #include "Humain_Codeur.hpp"
 
 /*! \class Humain_Codeur_Mastermind

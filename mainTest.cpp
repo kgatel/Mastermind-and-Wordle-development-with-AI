@@ -29,7 +29,7 @@ int main()
     Humain_Codeur_Wordle codeur;
     Humain_Decodeur_Wordle decodeur;
     
-    Menu(5,0,2);
+    Menu(4,0,2);
     CombiWordle c3=CombiWordle(codeur.entrerCode());
     CombiWordle c4=CombiWordle(decodeur.entrerCombinaison());
     string resultat="";
