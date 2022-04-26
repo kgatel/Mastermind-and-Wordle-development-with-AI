@@ -1,4 +1,5 @@
 #include <string>
+#include "FonctionsUtiles.hpp"
 #include "Combinaison.hpp"
 #include "Menu.hpp"
 #include "CombiWordle.hpp"
@@ -26,38 +27,11 @@ string Humain_Codeur_Wordle :: choixFichier(string mot) {
 return repertoire+"//"+mot[0]+".txt";
 }	
 
-bool Humain_Codeur_Wordle :: checkMotFichier(string fichier, string mot)
-{
-    int offset; 
-    string ligne;
-    ifstream monFichier;
-    monFichier.open(fichier);
-
-    if (monFichier.is_open())
-    {
-        while (!monFichier.eof())
-        {
-            getline(monFichier,ligne);
-            if ((offset = ligne.find(mot, 0)) != (int)string::npos) 
-            {
-                
-                monFichier.close();
-                return true;
-            }
-           
-        }
-        monFichier.close();
-    }
-    else
-        cout << "Erreur fichier" << endl;
-
-    return false;
-}
-
 bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
+	FonctionsUtiles f;
 	string chemin;
 	chemin=choixFichier(entree);
-	return checkMotFichier(chemin,entree);
+	return f.checkMotFichier(chemin,entree);
 }
 
 Combinaison Humain_Codeur_Wordle :: entrerCode() {

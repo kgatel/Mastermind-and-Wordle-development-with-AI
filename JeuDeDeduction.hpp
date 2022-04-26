@@ -22,7 +22,7 @@ using namespace std;
 
 class JeuDeDeduction {
 	private:
-		Joueur codeur,decodeur;
+		Joueur *codeur,*decodeur;
 		vector<Combinaison> HistoriqueCombinaison;
 		int numeroTour;
 		Menu menu;
@@ -45,7 +45,7 @@ class JeuDeDeduction {
 		  * \param historiqueResultatBienPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  */
-		JeuDeDeduction(Joueur codeur, Joueur decodeur, vector<Combinaison> HistoriqueCombinaison,int numeroTour,Menu menu,vector<string> historiqueResultatBienPlace,vector<string> historiqueResultatMalPlace);
+		JeuDeDeduction(Joueur *codeur, Joueur *decodeur, vector<Combinaison> HistoriqueCombinaison,int numeroTour,Menu menu,vector<string> historiqueResultatBienPlace,vector<string> historiqueResultatMalPlace);
 		
 		virtual int main();
 		
@@ -69,7 +69,7 @@ class JeuDeDeduction {
 		* \brief Cette méthode permet de savoir s'il y a un gagnant au cours de la partie ou non
 		* \return Renvoie le joueur gagant s'il en existe un, sinon elle retourne null
 		*/
-		Joueur detectionVictoire();
+	//	Joueur detectionVictoire();
 		
 		/*! \fn int getTour();
 		* \brief Cette méthode permet de savoir le numéro du tour surlequelle le joueur est en train de jouer

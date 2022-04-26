@@ -37,6 +37,15 @@ class FonctionsUtiles {
 		*/
 		vector<string> split(const string &chaine, char delimiteur);
 		
+		/*! \fn bool checkMotFichier(string fichier, string mot)
+		* \brief méthode qui permet de vérifier si un mot appartient au fichier
+		* \param fichier : le chemin d'accés au fichier pour vérifier
+		* \param mot : le mot à vérifier
+		* \return un booléen si le mot est dans le fichier
+		*/
+		
+		bool checkMotFichier(string fichier, string mot);
+		
 };
 
 #endif // FONCTIONS_UTILES

@@ -16,7 +16,7 @@ JeuDeDeduction :: JeuDeDeduction(){
 
 }
 
-JeuDeDeduction :: JeuDeDeduction(Joueur codeur1, Joueur decodeur1, vector<Combinaison> HistoriqueCombinaison1,int numeroTour1,Menu menu1,vector<string> historiqueResultatBienPlace1,vector<string> historiqueResultatMalPlace1){
+JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1, vector<Combinaison> HistoriqueCombinaison1,int numeroTour1,Menu menu1,vector<string> historiqueResultatBienPlace1,vector<string> historiqueResultatMalPlace1){
 	codeur=codeur1;
 	decodeur=decodeur1;
 	HistoriqueCombinaison=vector<Combinaison>();
@@ -43,12 +43,12 @@ void JeuDeDeduction :: afficherCode(){
 	//demande à l'utilisateur le mdp, si le mdp est bon alors afficher le code
 }
 
-Joueur JeuDeDeduction :: detectionVictoire(){
+/*Joueur JeuDeDeduction :: detectionVictoire(){
 	//retourne null pas de joueur gagnant, sinon retourne le joueur gagnant
 	Joueur res;
 	
 	return res;
-}
+}*/
 
 int JeuDeDeduction :: getTour(){
 	return numeroTour;
