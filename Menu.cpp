@@ -12,6 +12,7 @@ using namespace std;
 	string Menu::ENSEMBLE_ELEMENT="ressources";
 	
 Menu :: Menu() {
+	afficherMenu();
 	}
 
 Menu :: Menu(int nbcase,int nbtour,int langue){
@@ -49,7 +50,7 @@ void Menu :: afficherMenu(){
 		
 		case 0:
 		if (ModeDeJeu==1){
-			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Couleurs");
+			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Couleurs").append("//").append("liste");
 			}
 		else{if (Langue==1){
 					ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Francais");

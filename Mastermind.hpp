@@ -20,7 +20,7 @@ using namespace std;
 */
 
 class Mastermind : public JeuDeDeduction {
-
+	public:
 		/*! \fn Mastermind()
 		  * \brief Constructeur neutre de la classe Mastermind
 		  */

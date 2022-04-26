@@ -17,6 +17,7 @@
 class Humain_Codeur_Mastermind : public Humain_Codeur{
 
 	
+	public:
 		/*! \fn Humain_Codeur_Mastermind()
 		  * \brief Constructeur de la classe Humain_Codeur_Mastermind
 		  */

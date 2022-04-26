@@ -23,17 +23,18 @@ using namespace std;
 
 
 class Wordle : public JeuDeDeduction {
-		
+		public :
 		/*! \fn Wordle();
 		  * \brief Constructeur neutre de la classe Wordle
 		  */
+	
 		Wordle();
 		
 		/*! \fn Wordle(string fichierDictionnaire)
 		  * \brief Constructeur de la classe Wordle selon un fichier
 		  * \param fichierDictionnaire : nom du fichier comprenant l'ensemble des mots formant le dictionnaire
 		*/
-		Wordle(string fichierDictionnaire);
+		Wordle(Joueur *codeur1, Joueur *decodeur1, vector<Combinaison> HistoriqueCombinaison1,int numeroTour1,Menu menu1,vector<string> historiqueResultatBienPlace1,vector<string> historiqueResultatMalPlace1);
 		
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite

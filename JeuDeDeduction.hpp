@@ -69,7 +69,7 @@ class JeuDeDeduction {
 		* \brief Cette méthode permet de savoir s'il y a un gagnant au cours de la partie ou non
 		* \return Renvoie le joueur gagant s'il en existe un, sinon elle retourne null
 		*/
-	//	Joueur detectionVictoire();
+		Joueur* detectionVictoire();
 		
 		/*! \fn int getTour();
 		* \brief Cette méthode permet de savoir le numéro du tour surlequelle le joueur est en train de jouer
