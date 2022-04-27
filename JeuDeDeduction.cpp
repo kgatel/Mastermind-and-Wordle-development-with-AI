@@ -32,14 +32,6 @@ int JeuDeDeduction :: main(){
 	return 0;
 }
 
-void JeuDeDeduction :: partie(){
-	//méthode abstraite, déroulement d'une partie
-}
-
-void JeuDeDeduction :: afficherPartie(){
-	//méthode abstraite, permet d'afficher une partie
-}
-
 void JeuDeDeduction :: afficherCode(){
 	//demande à l'utilisateur le mdp, si le mdp est bon alors afficher le code
 }
@@ -51,6 +43,13 @@ Joueur* JeuDeDeduction :: detectionVictoire(){
 	
 	return res;
 }
+
+/*void JeuDeDeduction :: partie(){
+	cout << "Si ce message est écris alors c'est la méthode partie() de JeuDeDeduction qui est appelée" << endl;
+}*/
+		
+		
+//void JeuDeDeduction :: afficherPartie(){}
 
 int JeuDeDeduction :: getTour(){
 	return numeroTour;

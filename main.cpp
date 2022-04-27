@@ -11,6 +11,10 @@
 #include "Humain_Decodeur_Wordle.hpp"
 #include "Humain_Decodeur_Mastermind.hpp"
 #include "Humain_Codeur_Mastermind.hpp"
+#include "IA_Decodeur_Mastermind.hpp"
+#include "IA_Decodeur_Wordle.hpp"
+#include "IA_Codeur_Mastermind.hpp"
+#include "IA_Codeur_Wordle.hpp"
 #include "CombiWordle.hpp"
 #include "Menu.hpp"
 #include <vector>
@@ -27,40 +31,70 @@ int main() {
 	
 	Joueur *codeur,*decodeur;
 	
+	Humain_Codeur_Mastermind j1;
+	Humain_Codeur_Wordle j2;
+	Humain_Decodeur_Mastermind j3;
+	Humain_Decodeur_Wordle j4;
+	IA_Codeur_Mastermind j5;
+	IA_Codeur_Wordle j6;
+	IA_Decodeur_Mastermind j7;
+	IA_Decodeur_Wordle j8;
+	
 	switch (Menu::ModeDeJeu) {
 		case 1:{
-			Humain_Codeur_Wordle j1 ;
-			codeur=&j1;
-			Humain_Decodeur_Wordle j2;
-			decodeur=&j2;
+			if (Menu::JEU=="Mastermind"){
+				codeur=&j1;
+				decodeur=&j3;
+			}else{
+				codeur=&j2;
+				decodeur=&j4;
+			}
 		}
 		break;
 		case 2:{
-			Humain_Codeur_Mastermind j1;
-			codeur=&j1;
-			Humain_Decodeur_Mastermind j2;
-			decodeur=&j2;
+			if (Menu::JEU=="Mastermind"){
+				codeur=&j1;
+				decodeur=&j7;
+			}else{
+				codeur=&j2;
+				decodeur=&j8;
+			}
 		}
 		break;
-		case 3://cas avec IA ...
+		case 3:
+			if (Menu::JEU=="Mastermind"){
+				codeur=&j5;
+				decodeur=&j3;
+			}else{
+				codeur=&j6;
+				decodeur=&j4;
+			}
 		
 		break;
+		case 4:
+		if (Menu::JEU=="Mastermind"){
+				codeur=&j5;
+				decodeur=&j7;
+			}else{
+				codeur=&j6;
+				decodeur=&j8;
+			}
 	
 		default:
 		break;
 		
 		};
-		JeuDeDeduction* Jeu;
-		
-		if (Menu::ModeDeJeu==1)
+		JeuDeDeduction *Jeu;
+		Mastermind Mast(codeur,decodeur,menu);
+		Wordle Word(codeur,decodeur,menu);
+			
+		if (Menu::JEU=="Mastermind")
 		{
-			Mastermind Mast(codeur,decodeur,menu);
 			Jeu=&Mast;
 		}else{
-			Wordle Word(codeur,decodeur,menu);
 			Jeu=&Word;
 		}
-		
+
 		(*Jeu).partie();
 		
 		

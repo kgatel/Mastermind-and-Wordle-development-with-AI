@@ -61,9 +61,29 @@ Humain_Decodeur_Wordle.o : Humain_Decodeur.hpp Humain_Decodeur_Wordle.cpp Humain
 	
 Humain_Decodeur_Mastermind.o : Humain_Decodeur.hpp Humain_Decodeur_Mastermind.cpp Humain_Decodeur_Mastermind.hpp
 	$(FC) $(OPT) Humain_Decodeur_Mastermind.cpp
+	
+IA_Codeur.o : IA.hpp IA_Codeur.hpp IA_Codeur.cpp
+	$(FC) $(OPT) IA_Codeur.cpp
 
-main : Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o
-	$(FC) Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o main.cpp -o main $(LIBS)
+IA_Decodeur.o : IA.hpp IA_Decodeur.hpp IA_Decodeur.cpp
+	$(FC) $(OPT) IA_Decodeur.cpp
+
+IA_Codeur_Wordle.o : IA_Codeur.hpp IA_Codeur_Wordle.cpp IA_Codeur_Wordle.hpp Menu.hpp
+	$(FC) $(OPT) $(LIBS) IA_Codeur_Wordle.cpp
+
+IA_Codeur_Mastermind.o : IA_Codeur.hpp IA_Codeur_Mastermind.cpp IA_Codeur_Mastermind.hpp Menu.hpp
+	$(FC) $(OPT) $(LIBS) IA_Codeur_Mastermind.cpp
+
+IA_Decodeur_Wordle.o : IA_Decodeur.hpp IA_Decodeur_Wordle.cpp IA_Decodeur_Wordle.hpp
+	$(FC) $(OPT) IA_Decodeur_Wordle.cpp
+	
+IA_Decodeur_Mastermind.o : IA_Decodeur.hpp IA_Decodeur_Mastermind.cpp IA_Decodeur_Mastermind.hpp
+	$(FC) $(OPT) IA_Decodeur_Mastermind.cpp
+
+
+
+main : Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o
+	$(FC) Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o main.cpp -o main $(LIBS)
 
 clean : 
 	rm *.o mainTest *.gch main

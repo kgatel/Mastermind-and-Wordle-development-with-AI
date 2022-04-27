@@ -34,6 +34,8 @@ class Humain_Codeur_Mastermind : public Humain_Codeur{
 		*\return retourne un booleen, true si la chaîne peut être considérée comme une combinaison et false sinon
 		*/
 		bool VerifierEntree(string entree);
+		
+		virtual void jouer();
 		  
 	
 };

@@ -39,12 +39,12 @@ class Wordle : public JeuDeDeduction {
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
 		*/		
-		void partie();
+		virtual void partie();
 		
 		/*! \fn void afficherPartie()
 		* \brief Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
 		*/
-		void afficherPartie();
+		virtual void afficherPartie();
 		
 		/*! \fn void choisirFichierDeMot();
 		* \brief Cette méthode permet de choisir le fichier de mot qui sera alors le dictionnaire pour le Wordle. 

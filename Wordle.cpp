@@ -6,6 +6,7 @@
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
 #include "Menu.hpp"
+#include "FonctionsUtiles.hpp"
 
 using namespace std;
 
@@ -23,11 +24,9 @@ Wordle :: Wordle(Joueur *codeur1, Joueur *decodeur1,Menu menu1) : JeuDeDeduction
 
 
 void Wordle :: partie(){
-	/*cout << "******* Bienvenue dans le Wordle ! ********\n" << endl;
-	cout << "Les règles sont très simples, dans un premier temps le codeur "+Codeur.toString()+" va devoir entrer un mot, qui sera le mot à deviner." << endl;
-	cout << "Ensuite le décodeur "+Decodeur.toString()+" va lui devoir trouver mot en " << NB_TOUR << "." << end;
-	cout << "S'il y arrive, alors le décodeur "+Decodeur.toString()+" l'emporte, sinon la victoire sera pour le codeur "+Codeur.toString()+".\n" << endl;
-	//cout << */
+	FonctionsUtiles f;
+	f.clear();
+	cout << "Bienvenue dans le Wordle !\n" << endl;
 }
 
 void Wordle :: afficherPartie(){
