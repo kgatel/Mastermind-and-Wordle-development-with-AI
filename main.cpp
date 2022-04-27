@@ -91,9 +91,9 @@ int main() {
 		break;
 		
 		};
-		JeuDeDeduction* Jeu;
+		JeuDeDeduction *Jeu;
 		
-		if (Menu::ModeDeJeu==1)
+		if (Menu::JEU=="Mastermind")
 		{
 			Mastermind Mast(codeur,decodeur,menu);
 			Jeu=&Mast;
