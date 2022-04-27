@@ -31,60 +31,53 @@ int main() {
 	
 	Joueur *codeur,*decodeur;
 	
+	Humain_Codeur_Mastermind j1;
+	Humain_Codeur_Wordle j2;
+	Humain_Decodeur_Mastermind j3;
+	Humain_Decodeur_Wordle j4;
+	IA_Codeur_Mastermind j5;
+	IA_Codeur_Wordle j6;
+	IA_Decodeur_Mastermind j7;
+	IA_Decodeur_Wordle j8;
+	
 	switch (Menu::ModeDeJeu) {
 		case 1:{
 			if (Menu::JEU=="Mastermind"){
-				Humain_Codeur_Mastermind j1 ;
 				codeur=&j1;
-				Humain_Decodeur_Mastermind j2;
-				decodeur=&j2;
+				decodeur=&j3;
 			}else{
-				Humain_Codeur_Wordle j1 ;
-				codeur=&j1;
-				Humain_Decodeur_Wordle j2;
-				decodeur=&j2;
+				codeur=&j2;
+				decodeur=&j4;
 			}
 		}
 		break;
 		case 2:{
 			if (Menu::JEU=="Mastermind"){
-				Humain_Codeur_Mastermind j1;
 				codeur=&j1;
-				IA_Decodeur_Mastermind j2;
-				decodeur=&j2;
+				decodeur=&j7;
 			}else{
-				Humain_Codeur_Wordle j1;
-				codeur=&j1;
-				IA_Decodeur_Wordle j2;
-				decodeur=&j2;
+				codeur=&j2;
+				decodeur=&j8;
 			}
 		}
 		break;
 		case 3:
 			if (Menu::JEU=="Mastermind"){
-				IA_Codeur_Mastermind j1;
-				codeur=&j1;
-				Humain_Decodeur_Mastermind j2;
-				decodeur=&j2;
+				codeur=&j5;
+				decodeur=&j3;
 			}else{
-				IA_Codeur_Wordle j1;
-				codeur=&j1;
-				Humain_Decodeur_Wordle j2;
-				decodeur=&j2;
+				codeur=&j6;
+				decodeur=&j4;
 			}
 		
 		break;
 		case 4:
 		if (Menu::JEU=="Mastermind"){
-				IA_Codeur_Mastermind j1;
-				codeur=&j1;
-				IA_Decodeur_Mastermind j2;
-				decodeur=&j2;
+				codeur=&j5;
+				decodeur=&j7;
 			}else{
-				IA_Codeur_Wordle j1;
-				codeur=&j1;
-				IA_Decodeur_Wordle j2;
-				decodeur=&j2;
+				codeur=&j6;
+				decodeur=&j8;
 			}
 	
 		default:
@@ -92,16 +85,16 @@ int main() {
 		
 		};
 		JeuDeDeduction *Jeu;
-		
+		Mastermind Mast(codeur,decodeur,menu);
+		Wordle Word(codeur,decodeur,menu);
+			
 		if (Menu::JEU=="Mastermind")
 		{
-			Mastermind Mast(codeur,decodeur,menu);
 			Jeu=&Mast;
 		}else{
-			Wordle Word(codeur,decodeur,menu);
 			Jeu=&Word;
 		}
-		
+
 		(*Jeu).partie();
 		
 		

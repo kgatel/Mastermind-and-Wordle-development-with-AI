@@ -12,7 +12,6 @@ using namespace std;
 	int Menu::NB_CASE=4;
 	int Menu::NB_ELEMENT=0;
 	string Menu::ENSEMBLE_ELEMENT="ressources";
-	FonctionsUtiles f;
 	
 Menu :: Menu() {
 	}
@@ -25,12 +24,14 @@ Menu :: Menu(int nbcase,int nbtour,int langue){
 void Menu::choisirJeu(const string &j)
 {
 	JEU=j;
+	FonctionsUtiles f;
 	cout << f.jaune("Jeu mis à jour\n");
 }
 	
 
 void Menu::choisirModeDeJeu(int mdj){
 	ModeDeJeu=mdj;
+	FonctionsUtiles f;
 	cout<<f.jaune("Mode de jeu mis à jour\n");
 	}	
 	
@@ -42,6 +43,7 @@ void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour
 	}
 	
 void Menu :: afficherMenu(){
+	FonctionsUtiles f;
 	f.clear();
 	cout << f.vert("Bienvenue dans le menu des jeux de déduction !") << endl;
 	bool finchoix=false;

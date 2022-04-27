@@ -21,7 +21,7 @@ using namespace std;
 */
 
 class JeuDeDeduction {
-	private:
+	protected:
 		Joueur *codeur,*decodeur;
 		vector<Combinaison> HistoriqueCombinaison;
 		int numeroTour;
@@ -46,19 +46,20 @@ class JeuDeDeduction {
 		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  */
 		JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1,Menu menu1);
+		virtual ~JeuDeDeduction(){}
 		
 		virtual int main();
 		
 		/*! \fn void partie() 
 		* \brief Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
 		*/		
-		virtual void partie();
-		
+		virtual void partie()=0;
+
 		
 		/*! \fn void afficherPartie()
 		* \brief Cette méthode abstraite permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
 		*/
-		virtual void afficherPartie();
+		virtual void afficherPartie()=0;
 		
 		/*! \fn void afficherCode();
 		* \brief Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes.
