@@ -14,7 +14,6 @@ using namespace std;
 	FonctionsUtiles f;
 	
 Menu :: Menu() {
-	afficherMenu();
 	}
 
 Menu :: Menu(int nbcase,int nbtour,int langue){
@@ -40,7 +39,7 @@ void Menu :: afficherMenu(){
 	cout << f.vert("Bienvenue dans le menu des jeux de déduction !") << endl;
 	bool finchoix=false;
 	int choix=-1 ;
-	string tmpChoix;
+	string tmpChoix="";
 	int tmp=0,tmp2=0;
 	while(!finchoix){
 		do{
