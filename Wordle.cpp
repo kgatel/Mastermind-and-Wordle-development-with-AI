@@ -29,7 +29,7 @@ void Wordle :: partie(){
 	cout << "Bienvenue dans le Wordle !\n" << endl;
 }
 
-void Wordle :: afficherPartie(){
+void Wordle :: afficherHistorique(){
 }
 
 

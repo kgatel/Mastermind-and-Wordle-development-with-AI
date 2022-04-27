@@ -2,6 +2,7 @@
 #include <string>
 #include "Mastermind.hpp"  
 #include "FonctionsUtiles.hpp"
+#include "CombiMastermind.hpp"
 
 using namespace std;
 
@@ -19,11 +20,14 @@ void Mastermind :: partie(){
 	cout << "Bienvenue dans le Mastermind !\n" << endl;
 	(*codeur).jouer();
 	do{
+		cout << "\nTour n°"<<numeroTour+1<<endl;
 		(*decodeur).jouer();
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
 		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
-		afficherPartie();
+		afficherHistorique();
+		incrTour();
 	}while(detectionVictoire()==NULL);
+	cout << endl;
 	if (detectionVictoire()==codeur){
 		cout << (*codeur).toString();
 	}else{
@@ -32,5 +36,6 @@ void Mastermind :: partie(){
 	cout << " a remporté la partie." << endl;
 }
 
-void Mastermind :: afficherPartie(){
+void Mastermind :: afficherHistorique(){
+	//while
 }

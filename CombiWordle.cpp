@@ -4,6 +4,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "FonctionsUtiles.hpp"
+
 //#include <windows.h>
 using namespace std;
 
@@ -25,6 +27,7 @@ CombiWordle :: CombiWordle(Combinaison c){
 
 
 string CombiWordle :: resultat(const Combinaison code){
+	FonctionsUtiles f;
 	string res="";   //initialise le vecteur à 0
 	int j=0;
 	bool exit=false;
@@ -34,7 +37,7 @@ string CombiWordle :: resultat(const Combinaison code){
 		}else{
 			while((j<(int)combinaison.size()) && (!exit)){
 				if (i!=j){
-					if (strcasecmp(combinaison[i].c_str(), code.get(j).c_str()) == 0){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
+					if (f.equals(combinaison[i],code.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
 						res+="\033[33m"+combinaison[i]+"\033[0m";
 						exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
 					}

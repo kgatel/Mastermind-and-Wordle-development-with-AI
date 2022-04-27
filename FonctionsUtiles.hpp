@@ -64,6 +64,8 @@ class FonctionsUtiles {
 		
 		string blanc(string s);
 		
+		bool equals(const string& s1,const string& s2);
+		
 };
 
 #endif // FONCTIONS_UTILES

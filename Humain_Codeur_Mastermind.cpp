@@ -31,7 +31,8 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	 
 			while(getline(Handle,CurrLine)) {
 				if (CurrLine!="end")
-				{cout << "|" << CurrLine << endl;
+				{
+					cout << "|" << CurrLine << endl;
 				}
 			}
 			

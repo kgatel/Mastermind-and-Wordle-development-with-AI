@@ -9,6 +9,7 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include "FonctionsUtiles.hpp"
 
 using namespace std;
 
@@ -16,17 +17,20 @@ int main()
 
 
 {	
+	FonctionsUtiles f;
 	cout<<"***************************PARTIE MASTERMIND***************************\n";
 	Menu::ModeDeJeu=1;
+	Menu menu;
+	menu.afficherMenu();
 	Humain_Codeur_Mastermind codeur;
 	Humain_Decodeur_Mastermind decodeur;
 	CombiMastermind c1=CombiMastermind(codeur.entrerCode());
     CombiMastermind c2=CombiMastermind(decodeur.entrerCombinaison());
-    cout << c1.toString() << "\n" << c2.toString() << "\nNombre de couleurs bien placées : " << c1.bienPlace(c2) << "\nNombre de couleurs mal placées : " << c1.malPlace(c2) << "\n"<< endl;
+    cout << "\nNombre de couleurs bien placées : " << c2.resultat(c1)[0] << "\nNombre de couleurs mal placées : " << c2.resultat(c1)[1] << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
 
-    cout<< "***************************PARTIE WORDLE***************************\n";
+   /* cout<< "***************************PARTIE WORDLE***************************\n";
     
     Humain_Codeur_Wordle codeurWordle;
     
@@ -42,7 +46,7 @@ int main()
     cout << c3.toString() << endl;
     cout << resultat << endl;
     //c4.afficherResultat(resultat);
-    cout << "*************************FIN TEST*************************\n" << "\n" << endl;
+    cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
     
     
     

@@ -22,7 +22,7 @@ vector<string> FonctionsUtiles :: split(const string &chaine, char delimiteur) {
 }
 
 bool FonctionsUtiles :: checkMotFichier(string fichier, string mot){
-	 int offset; 
+	//int offset; 
     string ligne;
     ifstream monFichier;
     monFichier.open(fichier);
@@ -32,9 +32,9 @@ bool FonctionsUtiles :: checkMotFichier(string fichier, string mot){
         while (!monFichier.eof())
         {
             getline(monFichier,ligne);
-            if ((offset = ligne.find(mot, 0)) != (int)string::npos) 
+            //if ((offset = ligne.find(mot, 0)) != (int)string::npos) 
+            if (equals(ligne,mot))
             {
-                
                 monFichier.close();
                 return true;
             }
@@ -53,6 +53,10 @@ bool FonctionsUtiles :: isNumber(const string& str){
 		if (std::isdigit(c) == 0) return false;
 	}
 	return true;
+}
+
+bool FonctionsUtiles :: equals(const string& s1,const string& s2){
+	return ((strcasecmp(s1.c_str(), s2.c_str())) == 0);
 }
 
 string FonctionsUtiles :: intToString(int a){

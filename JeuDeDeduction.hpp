@@ -58,7 +58,7 @@ class JeuDeDeduction {
 		/*! \fn void afficherPartie()
 		* \brief Cette méthode abstraite permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
 		*/
-		virtual void afficherPartie()=0;
+		virtual void afficherHistorique()=0;
 		
 		/*! \fn void afficherCode();
 		* \brief Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes.

@@ -36,7 +36,7 @@ class Mastermind : public JeuDeDeduction {
 		/*! \fn void afficherPartie()
 		* \brief Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur.
 		*/
-		void afficherPartie();
+		void afficherHistorique();
 		
 		};
 
