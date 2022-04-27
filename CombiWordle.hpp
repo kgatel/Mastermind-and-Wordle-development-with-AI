@@ -15,6 +15,7 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 * Cette classe, héritée de Combinaison, permet de définir l'objet CombiWordle. Elle transforme une chaine de caractère (suite de lettre) séparée d'espace en un vecteur de string. Elle possède un seul attribut.
 */
@@ -31,21 +32,22 @@ class CombiWordle : public Combinaison{
 		  * \brief Constructeur de la classe CombiWordle
 		  * \param chaine est la chaine de caractère comprenant la suite de lettre séparée d'espace
 		  */
-		CombiWordle(string &chaine);
+		CombiWordle(const string &chaine);
 		
-		/*! \fn int bienPlace(Combinaison code)
-		* \brief renvoie les indices des lettres placées
+		CombiWordle(Combinaison c);
+		
+		/*! \fn int resultat(CombiWordle code)
+		* \brief renvoie les indices des lettres placée
 		* \param code Combinaison : le mot recherché par le décodeur
 		* \return un tableau d'entier
 		*/
-		vector<int> bienPlace(const Combinaison code) ;
+		string resultat(const CombiWordle code) ;
 		
-		/*! \fn int malPlace(Combinaison code)
-		* \brief renvoie les indices des lettres appartenant au mot recherché mais mal placées
-		* \param code Combinaison : le mot valide recherché par le décodeur
-		* \return un tablaeu d'entier
-		*/
-		vector<int> malPlace(const Combinaison code);
+		/*! \fn afficherResultat(string resultat)
+		  * \brief Affiche les caractéres rentrés par le décodeur avec un code de couleur précis : Vert le caractére est dans la bonne place , Jaune le caractére est dans la mauvaise place , Rouge le caractére existe pas dans le code.
+		  * \param un string correspondant au résultat de la vérification du mot rentré par le décodeur
+		  */
+		void afficherResultat(string resultat);
 		
 		/*! \fn string toString();
 		* \brief permet l'affichage du mot

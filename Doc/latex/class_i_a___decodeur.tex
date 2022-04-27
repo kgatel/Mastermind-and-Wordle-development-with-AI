@@ -1,0 +1,123 @@
+\hypertarget{class_i_a___decodeur}{}\doxysection{I\+A\+\_\+\+Decodeur Class Reference}
+\label{class_i_a___decodeur}\index{IA\_Decodeur@{IA\_Decodeur}}
+
+
+Cette classe abstraite permet de décrire l\textquotesingle{}intelligence artificielle en mode Decodeur peu importe le mode de jeu (\mbox{\hyperlink{class_mastermind}{Mastermind}} ou wordle).  
+
+
+
+
+{\ttfamily \#include $<$I\+A\+\_\+\+Decodeur.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+A\+\_\+\+Decodeur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_a___decodeur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+A\+\_\+\+Decodeur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_i_a___decodeur__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_a___decodeur_afc6f1c731f9562b271eb128308393869}{I\+A\+\_\+\+Decodeur}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_i_a___decodeur}{I\+A\+\_\+\+Decodeur}}. \end{DoxyCompactList}\item 
+virtual vector$<$ \mbox{\hyperlink{class_combinaison}{Combinaison}} $>$ \mbox{\hyperlink{class_i_a___decodeur_a08ea22027a8c582ecc926cf506b973f0}{Combi\+\_\+possible}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode abstraite permet de créer l\textquotesingle{}ensemble S de toutes les combinaisons possibles dans le cas du \mbox{\hyperlink{class_mastermind}{Mastermind}} ou prendre l\textquotesingle{}ensemble des mots présents sur le dictionnaire pour le \mbox{\hyperlink{class_wordle}{Wordle}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_a___decodeur_aad1dc7fe6b5373ac20b2362872603171}{Maj\+\_\+ensemble}} ()
+\begin{DoxyCompactList}\small\item\em Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_combinaison}{Combinaison}} \mbox{\hyperlink{class_i_a___decodeur_aaa73b4a48fc40936dbba629c6b857bba}{Choisir\+\_\+combi}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet de choisir la prochaine proposition soit dans l’ordre de son apparition dans l’ensemble, soit en choisissant une de manière aléatoire, soit en utilisant l’algorithme Min\+Max. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe abstraite permet de décrire l\textquotesingle{}intelligence artificielle en mode Decodeur peu importe le mode de jeu (\mbox{\hyperlink{class_mastermind}{Mastermind}} ou wordle). 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_a___decodeur_afc6f1c731f9562b271eb128308393869}\label{class_i_a___decodeur_afc6f1c731f9562b271eb128308393869}} 
+\index{IA\_Decodeur@{IA\_Decodeur}!IA\_Decodeur@{IA\_Decodeur}}
+\index{IA\_Decodeur@{IA\_Decodeur}!IA\_Decodeur@{IA\_Decodeur}}
+\doxysubsubsection{\texorpdfstring{IA\_Decodeur()}{IA\_Decodeur()}}
+{\footnotesize\ttfamily I\+A\+\_\+\+Decodeur\+::\+I\+A\+\_\+\+Decodeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{class_i_a___decodeur}{I\+A\+\_\+\+Decodeur}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_a___decodeur_aaa73b4a48fc40936dbba629c6b857bba}\label{class_i_a___decodeur_aaa73b4a48fc40936dbba629c6b857bba}} 
+\index{IA\_Decodeur@{IA\_Decodeur}!Choisir\_combi@{Choisir\_combi}}
+\index{Choisir\_combi@{Choisir\_combi}!IA\_Decodeur@{IA\_Decodeur}}
+\doxysubsubsection{\texorpdfstring{Choisir\_combi()}{Choisir\_combi()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_combinaison}{Combinaison}} I\+A\+\_\+\+Decodeur\+::\+Choisir\+\_\+combi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode permet de choisir la prochaine proposition soit dans l’ordre de son apparition dans l’ensemble, soit en choisissant une de manière aléatoire, soit en utilisant l’algorithme Min\+Max. 
+
+\begin{DoxyReturn}{Returns}
+retourne une combinaison 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_i_a___decodeur___wordle_ab39f354aebfe43b985a25ed243e71633}{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle}}, and \mbox{\hyperlink{class_i_a___decodeur___mastermind_afe01ec3497e89248018edebf26b1573c}{I\+A\+\_\+\+Decodeur\+\_\+\+Mastermind}}.
+
+\mbox{\Hypertarget{class_i_a___decodeur_a08ea22027a8c582ecc926cf506b973f0}\label{class_i_a___decodeur_a08ea22027a8c582ecc926cf506b973f0}} 
+\index{IA\_Decodeur@{IA\_Decodeur}!Combi\_possible@{Combi\_possible}}
+\index{Combi\_possible@{Combi\_possible}!IA\_Decodeur@{IA\_Decodeur}}
+\doxysubsubsection{\texorpdfstring{Combi\_possible()}{Combi\_possible()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_combinaison}{Combinaison}} $>$ I\+A\+\_\+\+Decodeur\+::\+Combi\+\_\+possible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode abstraite permet de créer l\textquotesingle{}ensemble S de toutes les combinaisons possibles dans le cas du \mbox{\hyperlink{class_mastermind}{Mastermind}} ou prendre l\textquotesingle{}ensemble des mots présents sur le dictionnaire pour le \mbox{\hyperlink{class_wordle}{Wordle}}. 
+
+\begin{DoxyReturn}{Returns}
+retourne une liste de combinaison 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_i_a___decodeur___wordle_ac03e3f4eb12ede5a39da68555e6e5a1f}{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle}}, and \mbox{\hyperlink{class_i_a___decodeur___mastermind_a1d988bc84f297dc6fcdf09022df4496b}{I\+A\+\_\+\+Decodeur\+\_\+\+Mastermind}}.
+
+\mbox{\Hypertarget{class_i_a___decodeur_aad1dc7fe6b5373ac20b2362872603171}\label{class_i_a___decodeur_aad1dc7fe6b5373ac20b2362872603171}} 
+\index{IA\_Decodeur@{IA\_Decodeur}!Maj\_ensemble@{Maj\_ensemble}}
+\index{Maj\_ensemble@{Maj\_ensemble}!IA\_Decodeur@{IA\_Decodeur}}
+\doxysubsubsection{\texorpdfstring{Maj\_ensemble()}{Maj\_ensemble()}}
+{\footnotesize\ttfamily void I\+A\+\_\+\+Decodeur\+::\+Maj\+\_\+ensemble (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_i_a___decodeur___wordle_a05c3af9532154e9de4f717ca02a253ab}{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle}}, and \mbox{\hyperlink{class_i_a___decodeur___mastermind_a6fb5014110514587dd1ef473cd2ae484}{I\+A\+\_\+\+Decodeur\+\_\+\+Mastermind}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/\mbox{\hyperlink{_i_a___decodeur_8hpp}{I\+A\+\_\+\+Decodeur.\+hpp}}\end{DoxyCompactItemize}

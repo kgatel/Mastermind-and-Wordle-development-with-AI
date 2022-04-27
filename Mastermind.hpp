@@ -1,13 +1,12 @@
 #ifndef MASTERMIND_H
 #define MASTERMIND_H
 
-#include <string>
 #include <iostream>
 #include "Menu.hpp"
 #include "Joueur.hpp"
 #include "Combinaison.hpp"
+#include "JeuDeDeduction.hpp"
 
-using std::string;
 using namespace std;
 
 /*! \class Mastermind
@@ -15,12 +14,23 @@ using namespace std;
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
-*
+* \namespace std
+* 
 * Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur) séparée d'espace en tableau d'entier.
 */
 
-class Mastermind {
+class Mastermind : public JeuDeDeduction {
+	public:
+		/*! \fn Mastermind()
+		  * \brief Constructeur neutre de la classe Mastermind
+		  */
+		Mastermind();
 
+<<<<<<< HEAD
+=======
+		Mastermind(Joueur *codeur1, Joueur *decodeur1,Menu menu1);
+		
+>>>>>>> d2884787e6a21be2f72d8ef0cee0092a58a41b81
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie de Mastermind.
 		*/		
@@ -33,5 +43,5 @@ class Mastermind {
 		
 		};
 
-#endif // CODEUR_H
+#endif // MASTERMIND_H
 

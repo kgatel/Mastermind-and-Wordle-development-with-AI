@@ -11,11 +11,13 @@
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 */
 
-class Humain_Decodeur_Mastermind : Humain_Decodeur{
+class Humain_Decodeur_Mastermind : public Humain_Decodeur{
 	
+	public :
 	
 		/*! \fn Humain_Decodeur_Mastermind()
 		  * \brief Constructeur de la classe Humain_Decodeur_Mastermind
@@ -29,7 +31,7 @@ class Humain_Decodeur_Mastermind : Humain_Decodeur{
 		Combinaison entrerCombinaison();
 		
 		/*! \fn bool VerifierEntree(string entree)()
-		* \brief Méthode qui Permet de vérifier si l'entrée du joueur decodeur peut être interpréter en une combinaison du Mastermind
+		* \brief Méthode qui permet de vérifier si l'entrée du joueur decodeur peut être interpréter en une combinaison du Mastermind
 		*\return retourne un booleen, true si la chaîne peut être considérée comme une combinaison et false sinon
 		*/
 		bool VerifierEntree(string entree);

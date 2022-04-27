@@ -2,29 +2,30 @@
 #define Humain_Codeur_H
 
 #include "Humain.hpp"
-#include "Combinaison.hpp"
+#include "CombiWordle.hpp"
 /*! \class Humain_Codeur
 * \brief Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de jeu (Mastermind ou wordle).
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 */
 
 class Humain_Codeur : public Humain {
 
-	public:
+	private:
 
 		int Mdp;
-	
-		
+	public:
+
 		/*! \fn Humain_Codeur()
 		  * \brief Constructeur de la classe Humain_Codeur
 		  */
 		Humain_Codeur();
 		
-		/*! \fn virtual void entrerCode()=0
-		* \brief methode abstraite à redefinir pour les différents modes de jeu
+		/*! \fn virtual Combinaison entrerCode()
+		* \brief methode abstraite utilisée pour demander un code au joueur codeur. Cette méthode devra être redefini pour les différents modes de jeu
 		*/
 		virtual Combinaison entrerCode()=0;
 		  
@@ -38,7 +39,9 @@ class Humain_Codeur : public Humain {
 	 	* \brief acccesseur de l'attribut MdP
 		*\return retourne l'attribut MdP de la classe Humain_Codeur
 		*/
-		int getMdP();		
+		int getMdP();
+		
+		virtual bool verifierEntree(string entree);
 };
 
 #endif 

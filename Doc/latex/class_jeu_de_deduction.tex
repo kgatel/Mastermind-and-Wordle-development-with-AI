@@ -1,0 +1,158 @@
+\hypertarget{class_jeu_de_deduction}{}\doxysection{Jeu\+De\+Deduction Class Reference}
+\label{class_jeu_de_deduction}\index{JeuDeDeduction@{JeuDeDeduction}}
+
+
+Classe principale permettant de lancement d\textquotesingle{}une partie. Elle comprend le main et.  
+
+
+
+
+{\ttfamily \#include $<$Jeu\+De\+Deduction.\+hpp$>$}
+
+
+
+Inheritance diagram for Jeu\+De\+Deduction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_jeu_de_deduction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jeu_de_deduction_aeed30e53c2dfb08a3ece412d28cad8fc}{Jeu\+De\+Deduction}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de la classe \mbox{\hyperlink{class_jeu_de_deduction}{Jeu\+De\+Deduction}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jeu_de_deduction_ab7520e30efc0c413685f2e71936a7675}{Jeu\+De\+Deduction}} (const string chaine)
+\item 
+int \mbox{\hyperlink{class_jeu_de_deduction_afba6bd78638454bd159a994dc0b6ef82}{main}} ()
+\begin{DoxyCompactList}\small\item\em méthode principale, elle permet de lancement du jeu \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_jeu_de_deduction_a1b5823a045306b7958edc4cfdb6e5563}{partie}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s\textquotesingle{}il le souhaite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_jeu_de_deduction_ab2401b0ccd9f99b9dcf4f68ea470b606}{afficher\+Partie}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode abstraite permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jeu_de_deduction_a298bb519d06e79b9d3d96b5bc3b920d8}{afficher\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_joueur}{Joueur}} \mbox{\hyperlink{class_jeu_de_deduction_a22c0b4de642e25a76e31865c57cd6edc}{detection\+Victoire}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet de savoir s\textquotesingle{}il y a un gagnant au cours de la partie ou non. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jeu_de_deduction_a1765ef5c3774a89be46157ecf95c7404}{get\+Tour}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet de savoir le numéro du tour surlequelle le joueur est en train de jouer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jeu_de_deduction_aa0cbe74a46fe9711c66bf02c7b46e883}{incr\+Tour}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet d\textquotesingle{}incrémenter de 1 l\textquotesingle{}attribut numero\+Tour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe principale permettant de lancement d\textquotesingle{}une partie. Elle comprend le main et. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_jeu_de_deduction_aeed30e53c2dfb08a3ece412d28cad8fc}\label{class_jeu_de_deduction_aeed30e53c2dfb08a3ece412d28cad8fc}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!JeuDeDeduction@{JeuDeDeduction}}
+\index{JeuDeDeduction@{JeuDeDeduction}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{JeuDeDeduction()}{JeuDeDeduction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Jeu\+De\+Deduction\+::\+Jeu\+De\+Deduction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur neutre de la classe \mbox{\hyperlink{class_jeu_de_deduction}{Jeu\+De\+Deduction}}. 
+
+\mbox{\Hypertarget{class_jeu_de_deduction_ab7520e30efc0c413685f2e71936a7675}\label{class_jeu_de_deduction_ab7520e30efc0c413685f2e71936a7675}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!JeuDeDeduction@{JeuDeDeduction}}
+\index{JeuDeDeduction@{JeuDeDeduction}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{JeuDeDeduction()}{JeuDeDeduction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Jeu\+De\+Deduction\+::\+Jeu\+De\+Deduction (\begin{DoxyParamCaption}\item[{const string}]{chaine }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jeu_de_deduction_a298bb519d06e79b9d3d96b5bc3b920d8}\label{class_jeu_de_deduction_a298bb519d06e79b9d3d96b5bc3b920d8}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!afficherCode@{afficherCode}}
+\index{afficherCode@{afficherCode}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{afficherCode()}{afficherCode()}}
+{\footnotesize\ttfamily void Jeu\+De\+Deduction\+::afficher\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes. 
+
+\mbox{\Hypertarget{class_jeu_de_deduction_ab2401b0ccd9f99b9dcf4f68ea470b606}\label{class_jeu_de_deduction_ab2401b0ccd9f99b9dcf4f68ea470b606}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!afficherPartie@{afficherPartie}}
+\index{afficherPartie@{afficherPartie}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{afficherPartie()}{afficherPartie()}}
+{\footnotesize\ttfamily void Jeu\+De\+Deduction\+::afficher\+Partie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode abstraite permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). Cette méthode ne permet pas d’afficher le code car nous sommes du point de vue décodeur. 
+
+\mbox{\Hypertarget{class_jeu_de_deduction_a22c0b4de642e25a76e31865c57cd6edc}\label{class_jeu_de_deduction_a22c0b4de642e25a76e31865c57cd6edc}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!detectionVictoire@{detectionVictoire}}
+\index{detectionVictoire@{detectionVictoire}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{detectionVictoire()}{detectionVictoire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_joueur}{Joueur}} Jeu\+De\+Deduction\+::detection\+Victoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette méthode permet de savoir s\textquotesingle{}il y a un gagnant au cours de la partie ou non. 
+
+\begin{DoxyReturn}{Returns}
+Renvoie le joueur gagant s\textquotesingle{}il en existe un, sinon elle retourne null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jeu_de_deduction_a1765ef5c3774a89be46157ecf95c7404}\label{class_jeu_de_deduction_a1765ef5c3774a89be46157ecf95c7404}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!getTour@{getTour}}
+\index{getTour@{getTour}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{getTour()}{getTour()}}
+{\footnotesize\ttfamily int Jeu\+De\+Deduction\+::get\+Tour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette méthode permet de savoir le numéro du tour surlequelle le joueur est en train de jouer. 
+
+\begin{DoxyReturn}{Returns}
+renvoie un entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jeu_de_deduction_aa0cbe74a46fe9711c66bf02c7b46e883}\label{class_jeu_de_deduction_aa0cbe74a46fe9711c66bf02c7b46e883}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!incrTour@{incrTour}}
+\index{incrTour@{incrTour}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{incrTour()}{incrTour()}}
+{\footnotesize\ttfamily void Jeu\+De\+Deduction\+::incr\+Tour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cette méthode permet d\textquotesingle{}incrémenter de 1 l\textquotesingle{}attribut numero\+Tour. 
+
+\mbox{\Hypertarget{class_jeu_de_deduction_afba6bd78638454bd159a994dc0b6ef82}\label{class_jeu_de_deduction_afba6bd78638454bd159a994dc0b6ef82}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!main@{main}}
+\index{main@{main}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int Jeu\+De\+Deduction\+::main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+méthode principale, elle permet de lancement du jeu 
+
+\mbox{\Hypertarget{class_jeu_de_deduction_a1b5823a045306b7958edc4cfdb6e5563}\label{class_jeu_de_deduction_a1b5823a045306b7958edc4cfdb6e5563}} 
+\index{JeuDeDeduction@{JeuDeDeduction}!partie@{partie}}
+\index{partie@{partie}!JeuDeDeduction@{JeuDeDeduction}}
+\doxysubsubsection{\texorpdfstring{partie()}{partie()}}
+{\footnotesize\ttfamily void Jeu\+De\+Deduction\+::partie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s\textquotesingle{}il le souhaite. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/\mbox{\hyperlink{_jeu_de_deduction_8hpp}{Jeu\+De\+Deduction.\+hpp}}\end{DoxyCompactItemize}

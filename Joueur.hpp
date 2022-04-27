@@ -8,28 +8,28 @@
 * \brief classe abstraite regroupant tout joueur
 * \author Groupe A7
 * \version 1.0
-* \date avril 2022
+* \date avril 2022 
+* \namespace std
 *
 * Il s’agit d’une classe abstraite qui définit tout joueur du Mastermind. On y retrouve deux attributs, le premier est un élément de la classe combinaison et le second est le nombre de tours écoulés qui est équivalent au nombre de combinaisons entrées par le joueur décodeur. 
 * */
 
 class Joueur {
-	private:
+	protected:
 		Combinaison combinaison;
 		string pseudo;
 
-public:
+	public:
 		/*! \fn Joueur()
 		* \brief Constructeur de la classe joueur
 		*/
 		Joueur();
 		
-		/*! \fn Joueur(Combinaison comb,int nb)
-		  * \brief Constructeur de la classe joueur avec paramètre
-		  * \param comb la combinaison 
-		  * \param pseudo du joueur
+		/*! \fn Joueur(string pseudo1)
+		  * \brief Constructeur de la classe joueur avec paramètre 
+		  * \param pseudo1 du joueur
 		  */
-		Joueur(Combinaison comb,string nom);
+		Joueur(string pseudo1);
 		
 		/*! \fn Combinaison getCombinaison()
 		* \brief Pour accéder à l'attribut combinaison 
@@ -59,15 +59,14 @@ public:
 		* \param un string nom
 		*/
 		void setPseudo(string nom);
-	
 		
-		
-		/*! \fn bool verification(const string &chaine);
-		* \brief permet de verifier une chaine de caractère pour savoir si elle peut être transformée en combinaison
-		* \param chaine string : la chaine à vérifier
-		* \return un booleen
+		/*! \fn string toString() abstraite;
+		* \brief permet l'affichage du pseudo
+		* \return un string
 		*/
-		bool verification(const string chaine);
+		string toString();
+		
+		virtual void jouer()=0;
 	};
 
 #endif // JOUEUR_H

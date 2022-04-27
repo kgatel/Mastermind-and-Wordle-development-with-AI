@@ -10,12 +10,14 @@
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022
+* \namespace std
 *
 */
 
-class Humain_Codeur_Mastermind : Humain_Codeur{
+class Humain_Codeur_Mastermind : public Humain_Codeur{
 
 	
+	public:
 		/*! \fn Humain_Codeur_Mastermind()
 		  * \brief Constructeur de la classe Humain_Codeur_Mastermind
 		  */

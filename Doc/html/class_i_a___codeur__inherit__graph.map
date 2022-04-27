@@ -1,0 +1,7 @@
+<map id="IA_Codeur" name="IA_Codeur">
+<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode codeur peu importe le mo..." alt="" coords="139,155,227,181"/>
+<area shape="rect" id="node4" href="$class_i_a___codeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur artificiel (IA) en mode codeur dans le mode de j..." alt="" coords="5,229,179,256"/>
+<area shape="rect" id="node5" href="$class_i_a___codeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur virtuel (IA) en mode codeur dans le mode de jeu ..." alt="" coords="203,229,344,256"/>
+<area shape="rect" id="node2" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="163,80,202,107"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tout joueur" alt="" coords="151,5,214,32"/>
+</map>

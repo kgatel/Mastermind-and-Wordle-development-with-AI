@@ -1,0 +1,4 @@
+<map id="Wordle" name="Wordle">
+<area shape="rect" id="node1" title="Classe principale permettant de lancement d&#39;une partie de Wordle." alt="" coords="35,80,103,107"/>
+<area shape="rect" id="node2" href="$class_jeu_de_deduction.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="5,5,132,32"/>
+</map>

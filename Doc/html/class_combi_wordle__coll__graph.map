@@ -1,0 +1,4 @@
+<map id="CombiWordle" name="CombiWordle">
+<area shape="rect" id="node1" title="Tableau d&#39;entier représentant une combinaison de lettre." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node2" href="$class_combinaison.html" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="7,5,114,32"/>
+</map>

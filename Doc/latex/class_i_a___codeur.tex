@@ -1,0 +1,118 @@
+\hypertarget{class_i_a___codeur}{}\doxysection{I\+A\+\_\+\+Codeur Class Reference}
+\label{class_i_a___codeur}\index{IA\_Codeur@{IA\_Codeur}}
+
+
+Cette classe abstraite permet de décrire l\textquotesingle{}intelligence artificielle en mode codeur peu importe le mode de jeu (\mbox{\hyperlink{class_mastermind}{Mastermind}} ou wordle).  
+
+
+
+
+{\ttfamily \#include $<$I\+A\+\_\+\+Codeur.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+A\+\_\+\+Codeur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_i_a___codeur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+A\+\_\+\+Codeur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_i_a___codeur__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_a___codeur_ad79fc7cb7450e91417ebe6cf6a726d75}{I\+A\+\_\+\+Codeur}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_i_a___codeur}{I\+A\+\_\+\+Codeur}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_combinaison}{Combinaison}} \mbox{\hyperlink{class_i_a___codeur_a82c9abaa3d6b933ee5414a0d56109328}{generer\+Code}} ()
+\begin{DoxyCompactList}\small\item\em methode abstraite permettant de générer le code que le décodeur devra deviner \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_i_a___codeur_aa7e013e15899cf29266d753ecc2f3e47}{generer\+MdP}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui permet à la machine de générer un mot de passe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_i_a___codeur_a8ac2517e2906b2295a2818985ca4f823}{get\+MdP}} ()
+\begin{DoxyCompactList}\small\item\em acccesseur de l\textquotesingle{}attribut MdP \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe abstraite permet de décrire l\textquotesingle{}intelligence artificielle en mode codeur peu importe le mode de jeu (\mbox{\hyperlink{class_mastermind}{Mastermind}} ou wordle). 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_a___codeur_ad79fc7cb7450e91417ebe6cf6a726d75}\label{class_i_a___codeur_ad79fc7cb7450e91417ebe6cf6a726d75}} 
+\index{IA\_Codeur@{IA\_Codeur}!IA\_Codeur@{IA\_Codeur}}
+\index{IA\_Codeur@{IA\_Codeur}!IA\_Codeur@{IA\_Codeur}}
+\doxysubsubsection{\texorpdfstring{IA\_Codeur()}{IA\_Codeur()}}
+{\footnotesize\ttfamily I\+A\+\_\+\+Codeur\+::\+I\+A\+\_\+\+Codeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{class_i_a___codeur}{I\+A\+\_\+\+Codeur}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_a___codeur_a82c9abaa3d6b933ee5414a0d56109328}\label{class_i_a___codeur_a82c9abaa3d6b933ee5414a0d56109328}} 
+\index{IA\_Codeur@{IA\_Codeur}!genererCode@{genererCode}}
+\index{genererCode@{genererCode}!IA\_Codeur@{IA\_Codeur}}
+\doxysubsubsection{\texorpdfstring{genererCode()}{genererCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_combinaison}{Combinaison}} I\+A\+\_\+\+Codeur\+::generer\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+methode abstraite permettant de générer le code que le décodeur devra deviner 
+
+\begin{DoxyReturn}{Returns}
+retourne une combinaison 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_i_a___codeur___wordle_a3d66c967aad6d5088a88e065476fad19}{I\+A\+\_\+\+Codeur\+\_\+\+Wordle}}, and \mbox{\hyperlink{class_i_a___codeur___mastermind_a84ec38313c71fb67626950a4686c0980}{I\+A\+\_\+\+Codeur\+\_\+\+Mastermind}}.
+
+\mbox{\Hypertarget{class_i_a___codeur_aa7e013e15899cf29266d753ecc2f3e47}\label{class_i_a___codeur_aa7e013e15899cf29266d753ecc2f3e47}} 
+\index{IA\_Codeur@{IA\_Codeur}!genererMdP@{genererMdP}}
+\index{genererMdP@{genererMdP}!IA\_Codeur@{IA\_Codeur}}
+\doxysubsubsection{\texorpdfstring{genererMdP()}{genererMdP()}}
+{\footnotesize\ttfamily int I\+A\+\_\+\+Codeur\+::generer\+MdP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode qui permet à la machine de générer un mot de passe. 
+
+\begin{DoxyReturn}{Returns}
+retourne l\textquotesingle{}entier généré 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_i_a___codeur_a8ac2517e2906b2295a2818985ca4f823}\label{class_i_a___codeur_a8ac2517e2906b2295a2818985ca4f823}} 
+\index{IA\_Codeur@{IA\_Codeur}!getMdP@{getMdP}}
+\index{getMdP@{getMdP}!IA\_Codeur@{IA\_Codeur}}
+\doxysubsubsection{\texorpdfstring{getMdP()}{getMdP()}}
+{\footnotesize\ttfamily int I\+A\+\_\+\+Codeur\+::get\+MdP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+acccesseur de l\textquotesingle{}attribut MdP 
+
+\begin{DoxyReturn}{Returns}
+retourne l\textquotesingle{}attribut MdP de la classe \mbox{\hyperlink{class_i_a___codeur}{I\+A\+\_\+\+Codeur}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/\mbox{\hyperlink{_i_a___codeur_8hpp}{I\+A\+\_\+\+Codeur.\+hpp}}\end{DoxyCompactItemize}

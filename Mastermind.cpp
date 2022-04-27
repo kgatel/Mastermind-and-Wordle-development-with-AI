@@ -3,13 +3,15 @@
 #include "Mastermind.hpp"  
 
 
-int Mastermind::main() 
-
-{ 
-	
-	Menu menu;
-	menu.afficherMenu();
-	Mastermind::partie();
-	return 0;
+Mastermind::Mastermind() : JeuDeDeduction(){
 }
 
+Mastermind :: Mastermind(Joueur *codeur1, Joueur *decodeur1,Menu menu1) : JeuDeDeduction(codeur1,decodeur1,menu1){
+	
+}
+
+void Mastermind :: partie(){
+}
+
+void Mastermind :: afficherPartie(){
+}
