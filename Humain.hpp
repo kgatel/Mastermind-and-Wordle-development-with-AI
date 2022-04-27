@@ -38,6 +38,5 @@ class Humain: public Joueur {
 		  */
 		virtual bool verifierEntree(string entree)=0;
 		
-		virtual void jouer();
 	};
 #endif 

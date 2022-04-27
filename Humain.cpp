@@ -6,6 +6,3 @@ Humain :: Humain(){
 }
 Humain::Humain(string pseudo1) : Joueur(pseudo1){
 }
-
-void Humain :: jouer(){
-}

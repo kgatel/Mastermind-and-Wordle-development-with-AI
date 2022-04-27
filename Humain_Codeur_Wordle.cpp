@@ -30,7 +30,7 @@ string Humain_Codeur_Wordle :: choixFichier(string mot) {
 return repertoire+"//"+mot[0]+".txt";
 }	
 
-bool Humain_Codeur_Wordle :: VerifierEntree(string entree) {
+bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
 	FonctionsUtiles f;
 	string chemin;
 	chemin=choixFichier(entree);
@@ -45,7 +45,7 @@ Combinaison Humain_Codeur_Wordle :: entrerCode() {
     while(!t) {
         mot=cachermot(longueurMotBonne,motExiste);
         if ((int)mot.size()==Menu::NB_CASE) {
-			if (VerifierEntree(mot)){
+			if (verifierEntree(mot)){
 				t=true;
 				motExiste=true;
 			}

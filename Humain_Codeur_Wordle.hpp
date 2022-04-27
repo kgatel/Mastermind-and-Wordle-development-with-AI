@@ -40,7 +40,7 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		* \brief Méthode qui Permet de vérifier si l'entrée du joueur codeur peut être interpréter en un mot du dictionnaire du jeu Wordle
 		*\return retourne un booleen, true si la chaîne peut être considérée comme un mot du dictionnaire et false sinon
 		*/
-		bool VerifierEntree(string entree);
+		bool verifierEntree(string entree);
 		  
 		string cachermot(bool longueurMotBonne,bool motExiste);
 		

@@ -9,5 +9,6 @@ IA::IA(string pseudo1){
 	pseudo=pseudo1;
 }
 
-void IA :: jouer(){
+Combinaison IA :: choisirCombinaison(){		//à supprimer car elle est abstraite pure
+	return Combinaison();
 }

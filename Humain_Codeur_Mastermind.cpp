@@ -19,14 +19,11 @@ void Humain_Codeur_Mastermind :: jouer(){
 }
 
 Combinaison Humain_Codeur_Mastermind :: entrerCode() {
-	string chemin="ressources";
 	ifstream Handle;
 	string chaine="";
 	string CurrLine;
 	int compteur=0;
-	chemin=chemin.append("//").append("Couleurs").append("//").append("liste");
-	//Handle.open(Menu::ENSEMBLE_ELEMENT);
-	Handle.open(chemin);
+	Handle.open(Menu::ENSEMBLE_ELEMENT);
 	cin.clear();
 	do {
 		cout<<"Codeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
@@ -45,23 +42,21 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 			compteur++;
 		}while((chaine=="")&&(compteur==1));
 		compteur=0;
-	} while (!VerifierEntree(chaine));
+	} while (!verifierEntree(chaine));
 	Handle.close();
 	return CombiMastermind(chaine);
 	
 }
 
-bool Humain_Codeur_Mastermind :: VerifierEntree(string entree) {
+bool Humain_Codeur_Mastermind :: verifierEntree(string entree) {
 	FonctionsUtiles f;
-	string chemin="ressources";
-	chemin=chemin.append("//").append("Couleurs").append("//").append("liste");
 	int i=0;
 	CombiMastermind combi;
 	combi.setCombinaison(f.split(entree,' '));
 	int taille=combi.get().size();
 	if (taille == Menu :: NB_CASE) {
 		while(i<taille){
-			if(f.checkMotFichier(chemin,combi.get(i))){
+			if(f.checkMotFichier(Menu::ENSEMBLE_ELEMENT,combi.get(i))){
 				i++;
 			}
 			else { cout<< "Le mot "<<f.rouge(combi.get(i))<<" n'est pas une couleur !"<<endl;

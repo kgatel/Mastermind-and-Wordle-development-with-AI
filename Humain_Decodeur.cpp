@@ -10,9 +10,4 @@ Humain_Decodeur :: Humain_Decodeur(){
 	Combinaison combinaison();
 }
 
-bool Humain_Decodeur :: verifierEntree(string entree){
-	return false;
-}
-
-
 
