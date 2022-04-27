@@ -2,6 +2,8 @@
 #include "CombiMastermind.hpp"
 #include "Humain_Codeur_Wordle.hpp"
 #include "Humain_Decodeur_Wordle.hpp"
+#include "Humain_Codeur_Mastermind.hpp"
+#include "Humain_Decodeur_Mastermind.hpp"
 #include "CombiWordle.hpp"
 #include "Menu.hpp"
 #include <vector>
@@ -11,21 +13,23 @@
 using namespace std;
 
 int main() 
-{
+
+
+{	
+	"***************************PARTIE MASTERMIND***************************\n"
+	Menu::ModeDeJeu=1;
+	Humain_Codeur_Mastermind codeur;
+	Humain_Decodeur_Mastermind decodeur;
 	cout << "***************************TEST***************************\n"<< endl;
-	CombiMastermind c1("rouge bleu vert violet orange");
-	CombiMastermind c2("blanc vert bleu violet rouge");
+	CombiMastermind c1=CombiMastermind(codeur.entrerCode());
+    CombiMastermind c2=CombiMastermind(decodeur.entrerCombinaison());
     cout << c1.toString() << "\n" << c2.toString() << "\nNombre de couleurs bien placées : " << c1.bienPlace(c2) << "\nNombre de couleurs mal placées : " << c1.malPlace(c2) << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
-    cout << "***************************TEST***************************\n"<< endl;
-	CombiWordle c5("TABLE");
-	CombiWordle c6("TREES");
-    cout << "Code : " + c5.toString() << "\nCombinaison testée : " << c6.toString() << "\nRésultat : " << c6.resultat(c5) << "\n"<< endl;
-    cout << "*************************FIN TEST*************************\n\n" << endl;
+
+    "***************************PARTIE WORDLE***************************\n"
     
-    
-    cout << "***************************TEST***************************\n" << endl;
+  cout << "***************************TEST***************************\n" << endl;
     Humain_Codeur_Wordle codeur;
     
 	Humain_Decodeur_Wordle decodeur;

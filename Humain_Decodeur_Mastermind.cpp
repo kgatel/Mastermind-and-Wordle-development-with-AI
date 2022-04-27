@@ -1,4 +1,6 @@
 #include "FonctionsUtiles.hpp"
+#include "Combinaison.hpp"
+#include "Menu.hpp"
 #include "CombiMastermind.hpp"
 #include "Humain_Decodeur.hpp"
 #include "Humain_Decodeur_Mastermind.hpp"
@@ -13,35 +15,35 @@ Humain_Decodeur_Mastermind :: Humain_Decodeur_Mastermind(){
 
 bool Humain_Decodeur_Mastermind :: VerifierEntree(string entree) {
 	FonctionsUtiles f;
+	string chemin="ressources";
+	chemin=chemin.append("//").append("Couleurs").append("//").append("liste");
+	int i=0;
 	CombiMastermind combi;
 	combi.setCombinaison(f.split(entree,' '));
-	bool test=true;
-	int i=0,taille=(int)combi.get().size();
-	while((test)&&(i<taille)){
-		if(f.checkMotFichier(Menu::ENSEMBLE_ELEMENT,combi.get(i))){
-			i++;
+	int taille=combi.get().size();
+	if (taille == Menu :: NB_CASE) {
+		while(i<taille){
+			if(f.checkMotFichier(chemin,combi.get(i))){
+				i++;
+			}
+			else { cout<< "Le mot "<<f.rouge(combi.get(i))<<" n'est pas une couleur !"<<endl;
+			return false;
+			}
 		}
-		else {
-		test=false;
-		}
-	}
-	return test;
+		if (i==taille) {return true;}
+	} 
+	else {cout <<"Vous n'avez rentré que "<<taille<<" mots!"<<endl;}
+	return false;
+		
 }
 
 Combinaison Humain_Decodeur_Mastermind :: entrerCombinaison() {
 	string couleurs;
-	FonctionsUtiles f;
-	CombiMastermind combi;
-	int taille=(int)combi.get().size();
 	bool t=false;
 	while(!t) {
-		cout << "Décodeur entrez votre Combinaison de couleurs ici : ";
-		cin >> couleurs;
-		combi.setCombinaison(f.split(couleurs,' '));
-		if (taille==Menu::NB_CASE) {
+		cout << "Décodeur entrez votre mot ici : ";
+		getline(cin,couleurs);
 		if (VerifierEntree(couleurs)) {t=true;}
-		else cout << "Votre combinaison n'est pas correcte essayez encore \n";
-		}
-		if (taille!=Menu::NB_CASE){cout << "La combinaison ne fait pas " <<Menu::NB_CASE<<" couleurs \n";}}
-	return CombiWordle(couleurs);
+	}
+	return CombiMastermind(couleurs);
 }
