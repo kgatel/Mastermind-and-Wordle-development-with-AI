@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Humain_Codeur :: Humain_Codeur(){
+Humain_Codeur :: Humain_Codeur() : Humain(){
 	Combinaison combinaison();
 }
 

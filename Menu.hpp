@@ -18,7 +18,7 @@ using namespace std;
 class Menu {
 
 	public:
-
+		static string JEU;  //Mastermind ou Wordle
 		static int NB_ELEMENT;
 		static string ENSEMBLE_ELEMENT;
 		static int NB_CASE;
@@ -39,6 +39,8 @@ class Menu {
 		* \brief affiche le menu.
 		*/
 		void afficherMenu();
+		
+		void choisirJeu(const string &jeu);
 		  
 		/*! \fn ChoisirModeDeJeu(int mdj)
 		* \brief Fonction qui permet à l'utilisateur de choisir le mode de jeu

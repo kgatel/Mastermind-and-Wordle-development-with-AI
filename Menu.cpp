@@ -5,6 +5,7 @@
 #include "FonctionsUtiles.hpp"
 
 using namespace std;
+	string Menu:: JEU = "Mastermind";
 	int Menu::ModeDeJeu = 1;
 	int Menu::Langue=1;
 	int Menu::NB_TOUR=10;
@@ -21,7 +22,13 @@ Menu :: Menu(int nbcase,int nbtour,int langue){
 	NB_TOUR=nbtour;
 	Langue=langue;}
 	
+void Menu::choisirJeu(const string &j)
+{
+	JEU=j;
+	cout << f.jaune("Jeu mis à jour\n");
+}
 	
+
 void Menu::choisirModeDeJeu(int mdj){
 	ModeDeJeu=mdj;
 	cout<<f.jaune("Mode de jeu mis à jour\n");
@@ -44,8 +51,9 @@ void Menu :: afficherMenu(){
 	while(!finchoix){
 		do{
 			cout<<f.bleu("\nQue voulez vous faire ?\n");
-			cout<<"1 - Définir le mode de jeu \n";
-			cout<<"2 - Définir le nombre de tours \n";
+			cout<<"1 - Définir le jeu \n";
+			cout<<"2 - Définir le mode de jeu \n";
+			cout<<"3 - Définir le nombre de tours max \n";
 			cout<<"0 - Lancer la partie \n";
 			cin >>tmpChoix;
 		}while(!f.isNumber(tmpChoix));
@@ -71,19 +79,19 @@ void Menu :: afficherMenu(){
 			finchoix = true;
 			break;
 			
-			
 			case 1:
 			do{
 				do{
-					cout<<f.bleu("\nChoisissez votre mode de jeu :\n");
-					cout<<"1 pour Mastermind \n";
-					cout<<"2 pour Wordle \n";
+					cout<<f.bleu("\nChoisissez votre jeu :\n");
+					cout<<"1- Mastermind \n";
+					cout<<"2- Wordle \n";
 					cin>>tmpChoix;
 				}while(!f.isNumber(tmpChoix));
 				tmp=stoi(tmpChoix);
 			}while((tmp!=1)&&(tmp!=2));
-			choisirModeDeJeu(tmp);
-				if (tmp==1){
+	
+			if (tmp==1){
+				choisirJeu("Mastermind");
 					do{
 						do{
 							cout<<f.bleu("\nChoisissez la taille de la combinaison de couleur entrée :\n")+"Il doit être compris entre 3 et 10\n";
@@ -94,7 +102,8 @@ void Menu :: afficherMenu(){
 					NB_CASE=tmp2;
 					cout<<f.jaune("Taille de la combinaison modifiée\n");
 				}
-				if (tmp==2){
+			if (tmp==2){
+				choisirJeu("Wordle");
 					do{
 						do{
 							cout<<f.bleu("\nChoisissez la langue\n")+"1 - Français\n2 - Anglais\n";
@@ -114,9 +123,24 @@ void Menu :: afficherMenu(){
 					NB_CASE=tmp2;
 					cout<<f.jaune("Nombre de lettre modifié\n");
 				}
-				
 			break;
+			
 			case 2:
+			do{
+				do{
+					cout<<f.bleu("\nChoisissez votre mode de jeu :\n");
+					cout<<"1- Humain vs Humain \n";
+					cout<<"2- Humain codeur vs IA décodeur \n";
+					cout<<"3- IA codeur vs IA decodeur\n";
+					cout<<"4- IA vs IA\n";
+					cin>>tmpChoix;
+				}while(!f.isNumber(tmpChoix));
+				tmp=stoi(tmpChoix);
+			}while((tmp!=1)&&(tmp!=2)&&(tmp!=3)&&(tmp!=4));	
+			choisirModeDeJeu(tmp);	
+			break;
+			
+			case 3:
 			do{
 				do{
 					cout<<f.bleu("\nChoisissez le nombre de tours:\n")+"Il doit être compris entre 5 et 20\n";
