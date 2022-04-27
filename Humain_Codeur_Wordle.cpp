@@ -17,6 +17,9 @@ using namespace std;
 Humain_Codeur_Wordle :: Humain_Codeur_Wordle() : Humain_Codeur(){
 }
 
+void Humain_Codeur_Wordle :: jouer(){
+	setCombinaison(CombiWordle(entrerCode()));
+}
 string Humain_Codeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
 	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}

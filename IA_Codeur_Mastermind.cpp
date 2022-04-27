@@ -14,6 +14,10 @@ IA_Codeur_Mastermind :: IA_Codeur_Mastermind () {
 
 }
 
+void IA_Codeur_Mastermind :: jouer(){
+	setCombinaison(CombiMastermind(genererCode()));
+}
+
 Combinaison IA_Codeur_Mastermind :: genererCode(){
 	return Combinaison();
 }

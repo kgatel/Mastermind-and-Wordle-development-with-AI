@@ -43,6 +43,8 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		bool VerifierEntree(string entree);
 		  
 		string cachermot(bool longueurMotBonne,bool motExiste);
+		
+		virtual void jouer();
 };
 
 #endif 

@@ -30,7 +30,7 @@ class IA_Codeur_Wordle : public IA_Codeur{
 		*/
 		Combinaison genererCode();
 		  
-		
+		virtual void jouer();
 		  
 	
 };

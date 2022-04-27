@@ -17,6 +17,10 @@ using namespace std;
 IA_Codeur_Wordle :: IA_Codeur_Wordle() : IA_Codeur(){
 }
 
+void IA_Codeur_Wordle :: jouer(){
+	setCombinaison(CombiWordle(genererCode()));
+}
+
 Combinaison IA_Codeur_Wordle :: genererCode(){
 	return Combinaison();
 }

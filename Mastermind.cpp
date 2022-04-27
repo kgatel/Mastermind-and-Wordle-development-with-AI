@@ -25,7 +25,7 @@ void Mastermind :: partie(){
 	if (detectionVictoire()==codeur){
 		cout << (*codeur).toString();
 	}else{
-		cout << (*codeur).toString();
+		cout << (*decodeur).toString();
 	}
 	cout << " a remporté la partie." << endl;
 }

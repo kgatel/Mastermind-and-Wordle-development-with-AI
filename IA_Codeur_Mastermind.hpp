@@ -29,7 +29,7 @@ class IA_Codeur_Mastermind : public IA_Codeur{
 		*/
 		Combinaison genererCode();
 		  
-		  
+		virtual void jouer();
 	
 };
 
