@@ -14,7 +14,7 @@
 using namespace std;
 
 
-Humain_Codeur_Wordle :: Humain_Codeur_Wordle() {
+Humain_Codeur_Wordle :: Humain_Codeur_Wordle() : Humain_Codeur(){
 }
 
 string Humain_Codeur_Wordle :: choixFichier(string mot) {

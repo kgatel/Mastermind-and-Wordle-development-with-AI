@@ -18,22 +18,22 @@
 #include <sstream>
 
 
-
+using namespace std;
 
 int main() {
 	
 	Menu menu;
-	//menu.afficherMenu();//propose au joueur de modiffier les parametres/mode de jeu ...
 	
-	
-	/*switch (Menu::ModeDeJeu) {
+	switch (Menu::ModeDeJeu) {
 		case 1:{
-		Humain_Codeur_Wordle codeur ;
-		Humain_Decodeur_Wordle decodeur;}
+			Humain_Codeur_Wordle codeur ;
+			Humain_Decodeur_Wordle decodeur;
+		}
 		break;
-		case 2:
-		{Humain_Codeur_Mastermind codeur;
-		Humain_Decodeur_Mastermind decodeur;}
+		case 2:{
+			Humain_Codeur_Mastermind codeur;
+			Humain_Decodeur_Mastermind decodeur;
+		}
 		break;
 		case 3://cas avec IA ...
 		
@@ -42,9 +42,9 @@ int main() {
 		default:
 		break;
 		
-		};*/
+		};
 		//JeuDeDeduction* Jeu;
-		/*
+		
 		if (Menu::ModeDeJeu==1)
 		{
 			Mastermind Jeu;
@@ -52,12 +52,7 @@ int main() {
 		}else{
 			Wordle Jeu;
 			//Jeu=&Word;
-		}*/
-		
-	
-
-
-
+		}
 
   return 0;
 }

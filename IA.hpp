@@ -35,9 +35,11 @@ class IA: public Joueur {
 		  * \brief une méthode abstraite qui permettera à l'IA de trouver la combinaison correct selon le mode de jeu
 		  * \return une combinaison
 		  */
-		virtual Combinaison choisirCombinaison();
+		//virtual Combinaison choisirCombinaison()=0;
 		 
-		virtual void jouer();
+		//virtual void jouer()=0;
+		
+		virtual void jouer();	
 	};
 	
 #endif // IA_H

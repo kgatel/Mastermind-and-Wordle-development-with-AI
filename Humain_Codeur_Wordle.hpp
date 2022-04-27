@@ -1,10 +1,8 @@
 #ifndef Humain_Codeur_Wordle_H
 #define Humain_Codeur_Wordle_H
 #include <string>
-
-#include "CombiWordle.hpp"
+#include "Combinaison.hpp"
 #include "Humain_Codeur.hpp"
-
 
 /*! \class Humain_Codeur_Wordle
 * \brief Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle
@@ -14,6 +12,8 @@
 * \namespace std
 *
 */
+
+using namespace std;
 
 class Humain_Codeur_Wordle : public Humain_Codeur{
 	private:

@@ -9,10 +9,5 @@ IA::IA(string pseudo1){
 	pseudo=pseudo1;
 }
 
-Combinaison IA :: choisirCombinaison(){
-	return Combinaison(); //cette méthode sera redéfinie dans ses classes inférieures
-}
-
 void IA :: jouer(){
-	setCombinaison(choisirCombinaison);
 }

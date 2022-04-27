@@ -3,5 +3,11 @@
 #include "Mastermind.hpp"  
 
 
-Mastermind::Mastermind(){}
+Mastermind::Mastermind() : JeuDeDeduction(){
+}
 
+void Mastermind :: partie(){
+}
+
+void Mastermind :: afficherPartie(){
+}
