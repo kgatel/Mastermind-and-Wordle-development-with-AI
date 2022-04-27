@@ -23,13 +23,13 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	//Handle.open(Menu::ENSEMBLE_ELEMENT);
 	Handle.open(chemin);
 	do {
-	cout<<"Entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
+	cout<<"Codeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
     if(Handle.is_open()) {
-        int I = 1;
+ 
         while(getline(Handle,CurrLine)) {
             if (CurrLine!="end")
-            {cout << I << ":" << CurrLine << endl;
-            I++;}
+            {cout << "|" << CurrLine << endl;
+            }
         }
         
     }

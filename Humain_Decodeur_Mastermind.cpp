@@ -41,7 +41,7 @@ Combinaison Humain_Decodeur_Mastermind :: entrerCombinaison() {
 	string couleurs;
 	bool t=false;
 	while(!t) {
-		cout << "Décodeur entrez votre mot ici : ";
+		cout<<"Decodeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
 		getline(cin,couleurs);
 		if (VerifierEntree(couleurs)) {t=true;}
 	}
