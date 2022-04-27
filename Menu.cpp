@@ -133,7 +133,7 @@ void Menu :: afficherMenu(){
 					cout<<f.bleu("\nChoisissez votre mode de jeu :\n");
 					cout<<"1- Humain vs Humain \n";
 					cout<<"2- Humain codeur vs IA décodeur \n";
-					cout<<"3- IA codeur vs IA decodeur\n";
+					cout<<"3- IA codeur vs Humain decodeur\n";
 					cout<<"4- IA vs IA\n";
 					cin>>tmpChoix;
 				}while(!f.isNumber(tmpChoix));

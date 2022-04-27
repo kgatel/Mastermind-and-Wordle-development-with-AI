@@ -21,11 +21,12 @@ void Humain_Codeur_Mastermind :: jouer(){
 Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	string chemin="ressources";
 	ifstream Handle;
-	string chaine;
-	 string CurrLine;
+	string chaine="";
+	string CurrLine;
 	chemin=chemin.append("//").append("Couleurs").append("//").append("liste");
 	//Handle.open(Menu::ENSEMBLE_ELEMENT);
 	Handle.open(chemin);
+	cin.clear();
 	do {
 		cout<<"Codeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
 		if(Handle.is_open()) {
@@ -38,7 +39,9 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 			
 		}
 		else {cout << "Erreur fichier";}
-		getline(cin,chaine);
+		do{
+			getline(cin,chaine);
+		}while(chaine=="");
 	} while (!VerifierEntree(chaine));
 	Handle.close();
 	return CombiMastermind(chaine);
@@ -64,7 +67,13 @@ bool Humain_Codeur_Mastermind :: VerifierEntree(string entree) {
 		}
 		if (i==taille) {return true;}
 	} 
-	else {cout <<"Vous n'avez rentré que "<<taille<<" mots!"<<endl;}
+	else {
+		if (taille==1){
+			cout <<"Vous n'avez rentré que "<<taille<<" mot !"<<endl;
+		}else{
+			cout <<"Vous n'avez rentré que "<<taille<<" mots !"<<endl;
+		}
+	}
 	return false;
 }
 

@@ -17,12 +17,11 @@ JeuDeDeduction :: JeuDeDeduction(){
 
 }
 
-JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1,Menu menu1){
+JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1){
 	codeur=codeur1;
 	decodeur=decodeur1;
 	HistoriqueCombinaison=vector<Combinaison>();
 	numeroTour=1;
-	menu=menu1;
 	historiqueResultatBienPlace=vector<string>();
 	historiqueResultatMalPlace=vector<string>();
 }

@@ -18,7 +18,7 @@ Wordle :: Wordle() : JeuDeDeduction(){
 
 }
 
-Wordle :: Wordle(Joueur *codeur1, Joueur *decodeur1,Menu menu1) : JeuDeDeduction(codeur1,decodeur1,menu1){
+Wordle :: Wordle(Joueur *codeur1, Joueur *decodeur1) : JeuDeDeduction(codeur1,decodeur1){
 	
 }
 

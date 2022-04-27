@@ -84,9 +84,10 @@ int main() {
 		break;
 		
 		};
+		
 		JeuDeDeduction *Jeu;
-		Mastermind Mast(codeur,decodeur,menu);
-		Wordle Word(codeur,decodeur,menu);
+		Mastermind Mast(codeur,decodeur);
+		Wordle Word(codeur,decodeur);
 			
 		if (Menu::JEU=="Mastermind")
 		{
