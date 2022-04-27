@@ -21,7 +21,6 @@ using namespace std;
 
 class Mastermind {
 
-		
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie de Mastermind.
 		*/		

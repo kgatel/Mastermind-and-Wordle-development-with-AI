@@ -18,7 +18,6 @@ using namespace std;
 *
 * Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d'espace en tableau d'entier. Elle possède un seul attribut : le tableau d'entier.
 */
-
 class JeuDeDeduction {
 	private:
 		Joueur codeur,decodeur;
