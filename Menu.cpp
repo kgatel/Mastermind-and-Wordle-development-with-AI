@@ -25,7 +25,7 @@ Menu :: Menu(int nbcase,int nbtour,int langue){
 	
 void Menu::choisirModeDeJeu(int mdj){
 	ModeDeJeu=mdj;
-	cout<<"Mode de jeu mis à jour\n";
+	cout<<f.jaune("Mode de jeu mis à jour\n");
 	}	
 	
 void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour){
@@ -36,17 +36,17 @@ void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour
 	}
 	
 void Menu :: afficherMenu(){
+	f.clear();
+	cout << f.vert("Bienvenue dans le menu des jeux de déduction !") << endl;
 	bool finchoix=false;
 	int choix=-1 ;
 	string tmpChoix;
 	int tmp=0,tmp2=0;
 	while(!finchoix){
 		do{
-			cout<<"\nque voulez vous définir ?\n";
-			cout<<"1 - Mode de jeu \n";
-			cout<<"2 - Nombre de tours \n";
-			
-			
+			cout<<f.bleu("\nQue voulez vous faire ?\n");
+			cout<<"1 - Définir le mode de jeu \n";
+			cout<<"2 - Définir le nombre de tours \n";
 			cout<<"0 - Lancer la partie \n";
 			cin >>tmpChoix;
 		}while(!f.isNumber(tmpChoix));
@@ -67,7 +67,7 @@ void Menu :: afficherMenu(){
 				if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("5lettres");}
 				if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("4lettres");}
 				}
-			
+			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append(".txt");
 			cout<<ENSEMBLE_ELEMENT<<"\n";
 			finchoix = true;
 			break;
@@ -76,7 +76,7 @@ void Menu :: afficherMenu(){
 			case 1:
 			do{
 				do{
-					cout<<"\nchoisissez votre mode de jeu :\n";
+					cout<<f.bleu("\nChoisissez votre mode de jeu :\n");
 					cout<<"1 pour Mastermind \n";
 					cout<<"2 pour Wordle \n";
 					cin>>tmpChoix;
@@ -87,46 +87,46 @@ void Menu :: afficherMenu(){
 				if (tmp==1){
 					do{
 						do{
-							cout<<"\nchoisissez la taille de la combinaison de couleur entrée :\nIl doit être compris entre 3 et 10\n";
+							cout<<f.bleu("\nChoisissez la taille de la combinaison de couleur entrée :\n")+"Il doit être compris entre 3 et 10\n";
 							cin>>tmpChoix;
 						}while(!f.isNumber(tmpChoix));
 						tmp2=stoi(tmpChoix);
 					}while (tmp2<3||tmp2>10);
 					NB_CASE=tmp2;
-					cout<<"taille de la combinaison modifiée\n";
+					cout<<f.jaune("Taille de la combinaison modifiée\n");
 				}
 				if (tmp==2){
 					do{
 						do{
-							cout<<"\nchoisissez la langue\n1 - Français\n2 - Anglais\n";
+							cout<<f.bleu("\nChoisissez la langue\n")+"1 - Français\n2 - Anglais\n";
 							cin>>tmpChoix;
 						}while(!f.isNumber(tmpChoix));
 						tmp=stoi(tmpChoix);
 					}while((tmp!=1)&&(tmp!=2));
 					Langue=tmp;
-					cout<<"langue modifiée\n";
+					cout<<f.jaune("Langue modifiée\n");
 					do{
 						do{
-							cout<<"\nchoisissez le nombre de lettres des mots:\nIl doit être compris entre 4 et 7\n";
+							cout<<f.bleu("\nChoisissez le nombre de lettres des mots:\n")+"Il doit être compris entre 4 et 7\n";
 							cin>>tmpChoix;
 						}while(!f.isNumber(tmpChoix));
 						tmp2=stoi(tmpChoix);
 					}while (tmp2<4||tmp2>7);
 					NB_CASE=tmp2;
-					cout<<"nombre de lettre modifié\n";
+					cout<<f.jaune("Nombre de lettre modifié\n");
 				}
 				
 			break;
 			case 2:
 			do{
 				do{
-					cout<<"\nchoisissez le nombre de tours:\nIl doit être compris entre 5 et 20\n";
+					cout<<f.bleu("\nChoisissez le nombre de tours:\n")+"Il doit être compris entre 5 et 20\n";
 					cin>>tmpChoix;
 				}while(!f.isNumber(tmpChoix));
 				tmp=stoi(tmpChoix);
 			}while (tmp<5||tmp>20);
 			NB_TOUR=tmp;
-			cout<<"nombre de tours modifié\n";
+			cout<<f.jaune("Nombre de tours modifié\n");
 			break;
 			/*case 3:
 			cout<<"choisissez le nombre de cases:\n";

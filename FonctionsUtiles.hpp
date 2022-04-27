@@ -48,6 +48,20 @@ class FonctionsUtiles {
 		
 		bool isNumber(const string& str);
 		
+		void clear();
+		
+		string vert(string s);
+		
+		string rouge(string s);
+		
+		string jaune(string s);
+		
+		string bleu(string s);
+		
+		string violet(string s);
+		
+		string blanc(string s);
+		
 };
 
 #endif // FONCTIONS_UTILES

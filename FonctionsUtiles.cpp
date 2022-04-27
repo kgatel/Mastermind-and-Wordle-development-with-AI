@@ -54,3 +54,31 @@ bool FonctionsUtiles :: isNumber(const string& str){
 	}
 	return true;
 }
+
+void FonctionsUtiles :: clear()
+{
+    cout << "\x1B[2J\x1B[H";
+}
+
+string FonctionsUtiles :: vert(string s){
+	return "\033[32m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: rouge(string s){
+	return "\033[31m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: jaune(string s){
+	return "\033[33m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: bleu(string s){
+	return "\033[34m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: violet(string s){
+	return "\033[35m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: blanc(string s){
+	return "\033[0m"+s+"\033[0m";}
