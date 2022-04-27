@@ -16,27 +16,25 @@ int main()
 
 
 {	
-	"***************************PARTIE MASTERMIND***************************\n"
+	cout<<"***************************PARTIE MASTERMIND***************************\n";
 	Menu::ModeDeJeu=1;
 	Humain_Codeur_Mastermind codeur;
 	Humain_Decodeur_Mastermind decodeur;
-	cout << "***************************TEST***************************\n"<< endl;
 	CombiMastermind c1=CombiMastermind(codeur.entrerCode());
     CombiMastermind c2=CombiMastermind(decodeur.entrerCombinaison());
     cout << c1.toString() << "\n" << c2.toString() << "\nNombre de couleurs bien placées : " << c1.bienPlace(c2) << "\nNombre de couleurs mal placées : " << c1.malPlace(c2) << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
 
-    "***************************PARTIE WORDLE***************************\n"
+    cout<< "***************************PARTIE WORDLE***************************\n";
     
-  cout << "***************************TEST***************************\n" << endl;
-    Humain_Codeur_Wordle codeur;
+    Humain_Codeur_Wordle codeurWordle;
     
-	Humain_Decodeur_Wordle decodeur;
+	Humain_Decodeur_Wordle decodeurWordle;
     
     Menu(4,0,2);
-    CombiWordle c3=CombiWordle(codeur.entrerCode());
-    CombiWordle c4=CombiWordle(decodeur.entrerCombinaison());
+    CombiWordle c3=CombiWordle(codeurWordle.entrerCode());
+    CombiWordle c4=CombiWordle(decodeurWordle.entrerCombinaison());
     string resultat="";
 	string chaine1, chaine2;
 	resultat =c4.resultat(c3);
