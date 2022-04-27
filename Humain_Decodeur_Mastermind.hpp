@@ -36,6 +36,7 @@ class Humain_Decodeur_Mastermind : public Humain_Decodeur{
 		*/
 		bool VerifierEntree(string entree);
 		
+		virtual void jouer();
 };
 
 #endif

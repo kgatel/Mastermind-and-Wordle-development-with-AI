@@ -42,7 +42,8 @@ class IA_Decodeur_Wordle : public IA_Decodeur{
 		Combinaison Choisir_combi();		
 		  
 		
-		  
+		virtual void jouer();
+
 	
 };
 

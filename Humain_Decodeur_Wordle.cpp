@@ -11,6 +11,10 @@ using namespace std;
 Humain_Decodeur_Wordle :: Humain_Decodeur_Wordle() {
 }
 
+void Humain_Decodeur_Wordle :: jouer(){
+	
+}
+
 string Humain_Decodeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
 	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}

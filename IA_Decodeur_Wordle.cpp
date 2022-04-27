@@ -10,6 +10,9 @@ using namespace std;
 
 IA_Decodeur_Wordle :: IA_Decodeur_Wordle() {
 }
+void IA_Decodeur_Wordle :: jouer(){
+	
+}
 
 vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 	return vector<Combinaison>();

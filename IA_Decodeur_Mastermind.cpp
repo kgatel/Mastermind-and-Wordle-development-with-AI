@@ -12,6 +12,9 @@ using namespace std;
 
 IA_Decodeur_Mastermind :: IA_Decodeur_Mastermind(){
 }
+void IA_Decodeur_Mastermind :: jouer(){
+	
+}
 
 vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 	return vector<Combinaison>();

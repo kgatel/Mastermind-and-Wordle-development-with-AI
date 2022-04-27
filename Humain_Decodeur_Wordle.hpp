@@ -40,7 +40,9 @@ class Humain_Decodeur_Wordle : public Humain_Decodeur{
 		*\return retourne un booleen, true si la chaîne peut être considérée comme un mot du dictionnaire et false sinon
 		*/
 		bool VerifierEntree(string entree);
-		  
+		
+		virtual void jouer();
+
 	
 };
 

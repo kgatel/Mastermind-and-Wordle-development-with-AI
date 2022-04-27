@@ -39,7 +39,9 @@ class IA_Decodeur_Mastermind : public IA_Decodeur{
 		*\return retourne une combinaison
 		*/
 		Combinaison Choisir_combi();
-	
+
+		virtual void jouer();
+
 };
 
 #endif 

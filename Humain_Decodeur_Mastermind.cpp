@@ -12,6 +12,9 @@ using namespace std;
 
 Humain_Decodeur_Mastermind :: Humain_Decodeur_Mastermind(){
 }
+void Humain_Decodeur_Mastermind :: jouer(){
+	
+}
 
 bool Humain_Decodeur_Mastermind :: VerifierEntree(string entree) {
 	FonctionsUtiles f;
