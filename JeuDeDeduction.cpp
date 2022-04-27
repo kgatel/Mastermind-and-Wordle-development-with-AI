@@ -20,10 +20,9 @@ JeuDeDeduction :: JeuDeDeduction(){
 JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1){
 	codeur=codeur1;
 	decodeur=decodeur1;
-	HistoriqueCombinaison=vector<Combinaison>();
+	historiqueCombinaison=vector<Combinaison>();
 	numeroTour=1;
-	historiqueResultatBienPlace=vector<string>();
-	historiqueResultatMalPlace=vector<string>();
+	historiqueResultat=vector<string>();
 }
 
 int JeuDeDeduction :: main(){

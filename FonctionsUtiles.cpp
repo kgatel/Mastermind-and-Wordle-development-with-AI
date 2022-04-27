@@ -55,6 +55,12 @@ bool FonctionsUtiles :: isNumber(const string& str){
 	return true;
 }
 
+string FonctionsUtiles :: intToString(int a){
+	stringstream ss;
+	ss << a;
+	return ss.str();
+}
+
 void FonctionsUtiles :: clear()
 {
     cout << "\x1B[2J\x1B[H";

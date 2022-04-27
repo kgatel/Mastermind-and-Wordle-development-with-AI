@@ -20,6 +20,8 @@ void Mastermind :: partie(){
 	(*codeur).jouer();
 	do{
 		(*decodeur).jouer();
+		historiqueCombinaison.push_back((*decodeur).getCombinaison());
+		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
 		afficherPartie();
 	}while(detectionVictoire()==NULL);
 	if (detectionVictoire()==codeur){

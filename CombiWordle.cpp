@@ -24,7 +24,7 @@ CombiWordle :: CombiWordle(Combinaison c){
 }
 
 
-string CombiWordle :: resultat(const CombiWordle code){
+string CombiWordle :: resultat(const Combinaison code){
 	string res="";   //initialise le vecteur à 0
 	int j=0;
 	bool exit=false;

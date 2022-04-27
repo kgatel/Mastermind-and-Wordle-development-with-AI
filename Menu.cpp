@@ -65,16 +65,16 @@ void Menu :: afficherMenu(){
 		
 			case 0:
 			if (ModeDeJeu==1){
-				ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Couleurs").append("//").append("liste");
+				ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Couleurs").append("/").append("liste");
 				}
 			else{if (Langue==1){
-						ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Francais");
+						ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Francais");
 						}
-				else {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("Anglais");}
-				if (NB_CASE==7) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("7lettres");}
-				if (NB_CASE==6) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("6lettres");}
-				if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("5lettres");}
-				if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("//").append("4lettres");}
+				else {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Anglais");}
+				if (NB_CASE==7) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("7lettres");}
+				if (NB_CASE==6) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("6lettres");}
+				if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("5lettres");}
+				if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("4lettres");}
 				}
 			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append(".txt");
 			cout<<ENSEMBLE_ELEMENT<<"\n";

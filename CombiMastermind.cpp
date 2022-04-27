@@ -21,6 +21,12 @@ CombiMastermind :: CombiMastermind(const string &chaine){
 CombiMastermind :: CombiMastermind(Combinaison c){
 	combinaison=c.get();
 }
+
+string CombiMastermind :: resultat(const Combinaison code){
+	FonctionsUtiles f;
+	return f.intToString(bienPlace(code))+f.intToString(malPlace(code));
+}
+
 int CombiMastermind :: bienPlace(const CombiMastermind code){
 	int res=0;
 	for(int i=0;i<(int)combinaison.size();i++){
@@ -30,7 +36,7 @@ int CombiMastermind :: bienPlace(const CombiMastermind code){
 	}
 	return res;
 }
-		
+
 int CombiMastermind :: malPlace(const CombiMastermind code){
 	int res=0;
 	int j=0;

@@ -48,6 +48,8 @@ class Combinaison {
 		*/
 		string get(const int i) const;
 		
+		virtual string resultat(Combinaison code);
+		
 		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage de la combinaison
 		* \return un string

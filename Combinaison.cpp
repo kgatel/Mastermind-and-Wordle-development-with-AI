@@ -24,6 +24,9 @@ string Combinaison :: get(const int i) const{
 	return combinaison[i];
 }
 
+string Combinaison :: resultat(const Combinaison code){
+	return "";
+}
 
 string Combinaison :: toString() {
 	string res="";

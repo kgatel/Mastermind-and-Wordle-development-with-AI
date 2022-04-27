@@ -34,6 +34,16 @@ class CombiMastermind : public Combinaison{
 		
 		CombiMastermind(Combinaison c);
 		
+		virtual string resultat(const Combinaison code) ;
+		
+		/*! \fn string toString();
+		* \brief permet l'affichage de la combinaison de couleur
+		* \return un string
+		*/
+		string toString();
+		
+	private:
+	
 		/*! \fn int bienPlace(CombiMastermind code)
 		* \brief renvoie le nombre de couleurs bien placées par rapport à la combinaison du codeur
 		* \param code Combinaison : la combinaison de couleur valide recherchée par le décodeur
@@ -47,12 +57,6 @@ class CombiMastermind : public Combinaison{
 		* \return un entier
 		*/
 		int malPlace(const CombiMastermind code);
-		
-		/*! \fn string toString();
-		* \brief permet l'affichage de la combinaison de couleur
-		* \return un string
-		*/
-		string toString();
 			
 };
 

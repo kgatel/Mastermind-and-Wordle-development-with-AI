@@ -48,6 +48,8 @@ class FonctionsUtiles {
 		
 		bool isNumber(const string& str);
 		
+		string intToString(int a);
+		
 		void clear();
 		
 		string vert(string s);

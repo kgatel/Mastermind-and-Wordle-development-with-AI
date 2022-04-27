@@ -22,10 +22,10 @@ using namespace std;
 class JeuDeDeduction {
 	protected:
 		Joueur *codeur,*decodeur;
-		vector<Combinaison> HistoriqueCombinaison;
+		vector<Combinaison> historiqueCombinaison;
 		int numeroTour;
 		Menu menu;
-		vector<string> historiqueResultatBienPlace,historiqueResultatMalPlace;
+		vector<string> historiqueResultat;	//pour Wordle c'est le mot avec les couleurs vert et jaune, pour Mastermind on colle le résultatBienPlacé et resultatMalplacé exemple 31 -> 3 bien placés -- 1 mal placé
 	
 	public:
 	
