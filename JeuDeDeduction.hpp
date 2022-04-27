@@ -45,7 +45,7 @@ class JeuDeDeduction {
 		  * \param historiqueResultatBienPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  */
-		JeuDeDeduction(Joueur *codeur, Joueur *decodeur, vector<Combinaison> HistoriqueCombinaison,int numeroTour,Menu menu,vector<string> historiqueResultatBienPlace,vector<string> historiqueResultatMalPlace);
+		JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1,Menu menu1);
 		
 		virtual int main();
 		

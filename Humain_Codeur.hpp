@@ -39,7 +39,9 @@ class Humain_Codeur : public Humain {
 	 	* \brief acccesseur de l'attribut MdP
 		*\return retourne l'attribut MdP de la classe Humain_Codeur
 		*/
-		int getMdP();		
+		int getMdP();
+		
+		virtual bool verifierEntree(string entree);
 };
 
 #endif 

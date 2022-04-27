@@ -26,6 +26,8 @@ class Humain_Decodeur : public Humain {
 		*/
 		virtual Combinaison entrerCombinaison()=0;
 		
+		virtual bool verifierEntree(string entree);
+		
 };
 
 #endif

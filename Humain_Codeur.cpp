@@ -10,7 +10,9 @@ Humain_Codeur :: Humain_Codeur(){
 	Combinaison combinaison();
 }
 
-
+bool Humain_Codeur :: verifierEntree(string entree){
+	return false;
+}
 
 
 

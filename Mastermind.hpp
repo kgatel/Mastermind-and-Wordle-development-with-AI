@@ -26,6 +26,8 @@ class Mastermind : public JeuDeDeduction {
 		  */
 		Mastermind();
 
+		Mastermind(Joueur *codeur1, Joueur *decodeur1,Menu menu1);
+		
 		/*! \fn void partie() 
 		* \brief Elle permet de lancer une partie de Mastermind.
 		*/		

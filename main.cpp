@@ -24,15 +24,21 @@ int main() {
 	
 	Menu menu;
 	
+	Joueur *codeur,*decodeur;
+	
 	switch (Menu::ModeDeJeu) {
 		case 1:{
-			Humain_Codeur_Wordle codeur ;
-			Humain_Decodeur_Wordle decodeur;
+			Humain_Codeur_Wordle j1 ;
+			codeur=&j1;
+			Humain_Decodeur_Wordle j2;
+			decodeur=&j2;
 		}
 		break;
 		case 2:{
-			Humain_Codeur_Mastermind codeur;
-			Humain_Decodeur_Mastermind decodeur;
+			Humain_Codeur_Mastermind j1;
+			codeur=&j1;
+			Humain_Decodeur_Mastermind j2;
+			decodeur=&j2;
 		}
 		break;
 		case 3://cas avec IA ...
@@ -43,16 +49,19 @@ int main() {
 		break;
 		
 		};
-		//JeuDeDeduction* Jeu;
+		JeuDeDeduction* Jeu;
 		
 		if (Menu::ModeDeJeu==1)
 		{
-			Mastermind Jeu;
-			//Jeu=&Mast;
+			Mastermind Mast(codeur,decodeur,menu);
+			Jeu=&Mast;
 		}else{
-			Wordle Jeu;
-			//Jeu=&Word;
+			Wordle Word(codeur,decodeur,menu);
+			Jeu=&Word;
 		}
-
+		
+		(*Jeu).partie();
+		
+		
   return 0;
 }

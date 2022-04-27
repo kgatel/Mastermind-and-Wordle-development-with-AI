@@ -17,7 +17,7 @@ JeuDeDeduction :: JeuDeDeduction(){
 
 }
 
-JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1, vector<Combinaison> HistoriqueCombinaison1,int numeroTour1,Menu menu1,vector<string> historiqueResultatBienPlace1,vector<string> historiqueResultatMalPlace1){
+JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1,Menu menu1){
 	codeur=codeur1;
 	decodeur=decodeur1;
 	HistoriqueCombinaison=vector<Combinaison>();
