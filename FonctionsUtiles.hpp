@@ -46,6 +46,8 @@ class FonctionsUtiles {
 		
 		bool checkMotFichier(string fichier, string mot);
 		
+		bool isNumber(const string& str);
+		
 };
 
 #endif // FONCTIONS_UTILES
