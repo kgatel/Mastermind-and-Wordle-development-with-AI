@@ -23,6 +23,7 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	ifstream Handle;
 	string chaine="";
 	string CurrLine;
+	int compteur=0;
 	chemin=chemin.append("//").append("Couleurs").append("//").append("liste");
 	//Handle.open(Menu::ENSEMBLE_ELEMENT);
 	Handle.open(chemin);
@@ -41,7 +42,9 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 		else {cout << "Erreur fichier";}
 		do{
 			getline(cin,chaine);
-		}while(chaine=="");
+			compteur++;
+		}while((chaine=="")&&(compteur==1));
+		compteur=0;
 	} while (!VerifierEntree(chaine));
 	Handle.close();
 	return CombiMastermind(chaine);
