@@ -14,5 +14,5 @@ Combinaison IA :: choisirCombinaison(){
 }
 
 void IA :: jouer(){
-	//setCombinaison(choisirCombinaison);
+	setCombinaison(choisirCombinaison);
 }

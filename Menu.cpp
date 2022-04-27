@@ -68,33 +68,41 @@ void Menu :: afficherMenu(){
 		
 		
 		case 1:
-		cout<<"\nchoisissez votre mode de jeu :\n";
-		cout<<"1 pour Mastermind \n";
-		cout<<"2 pour Wordle \n";
-		cin>>tmp;
-		choisirModeDeJeu(tmp);
-		if (tmp==1){do {
-			cout<<"choisissez le nombre de couleurs:\nIl doit être compris entre 3 et 10\n";
-			cin>>tmp2;
-			}while (tmp2<3||tmp2>10);
-			NB_CASE=tmp;
-			cout<<"nombre de cases modifié\n";
-			}
-		if (tmp==2){
-			cout<<"choisissez la langue\n1 - Français\n2 - Anglais\n";
+		do{
+			cout<<"\nchoisissez votre mode de jeu :\n";
+			cout<<"1 pour Mastermind \n";
+			cout<<"2 pour Wordle \n";
 			cin>>tmp;
-			Langue=tmp;
-			do {
-			cout<<"choisissez le nombre de lettres:\nIl doit être compris entre 4 et 7\n";
-			cin>>tmp2;
-			}while (tmp2<4||tmp2>7);
-			NB_CASE=tmp2;
-			cout<<"nombre de cases modifié\n";
+		}while((tmp!=1)&&(tmp!=2));
+		choisirModeDeJeu(tmp);
+			if (tmp==1){do {
+				cout<<"\nchoisissez la taille de la combinaison de couleur entrée :\nIl doit être compris entre 3 et 10\n";
+				cin>>tmp2;
+				}while (tmp2<3||tmp2>10);
+				NB_CASE=tmp2;
+				cout<<"taille de la combinaison modifiée\n";
 			}
+			if (tmp==2){
+				do{
+					cout<<"\nchoisissez la langue\n1 - Français\n2 - Anglais\n";
+					cin>>tmp;
+				}while((tmp!=1)&&(tmp!=2));
+				Langue=tmp;
+				cout<<"langue modifiée\n";
+				do{
+				cout<<"\nchoisissez le nombre de lettres des mots:\nIl doit être compris entre 4 et 7\n";
+				cin>>tmp2;
+				}while (tmp2<4||tmp2>7);
+				NB_CASE=tmp2;
+				cout<<"nombre de lettre modifié\n";
+			}
+			
 		break;
 		case 2:
-		cout<<"choisissez le nombre de tours:\n";
-		cin>>tmp;
+		do{
+			cout<<"\nchoisissez le nombre de tours:\nIl doit être compris entre 5 et 20\n";
+			cin>>tmp;
+		}while (tmp<5||tmp>20);
 		NB_TOUR=tmp;
 		cout<<"nombre de tours modifié\n";
 		break;
