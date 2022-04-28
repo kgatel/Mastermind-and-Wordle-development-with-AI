@@ -18,12 +18,9 @@ Humain_Codeur_Wordle :: Humain_Codeur_Wordle() : Humain_Codeur(){
 }
 
 void Humain_Codeur_Wordle :: jouer(){
-	Combinaison *c;
-	CombiWordle tmp(entrerCode());
-	c=&tmp;
-	setCombinaison(c);
+	setCombinaison(CombiWordle(entrerCode()));
 }
-string Humain_Codeur_Wordle :: choixFichier(const string & mot) {
+string Humain_Codeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
 	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}
 	if (Menu::Langue==2) {repertoire=repertoire.append("//").append("Anglais");}
@@ -33,15 +30,14 @@ string Humain_Codeur_Wordle :: choixFichier(const string & mot) {
 return repertoire+"//"+mot[0]+".txt";
 }	
 
-bool Humain_Codeur_Wordle :: verifierEntree(const string & entree) {
+bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
 	FonctionsUtiles f;
 	string chemin;
 	chemin=choixFichier(entree);
 	return f.checkMotFichier(chemin,entree);
 }
 
-Combinaison* Humain_Codeur_Wordle :: entrerCode() {
-    Combinaison *res=NULL;
+Combinaison Humain_Codeur_Wordle :: entrerCode() {
     string mot;
     bool t=false;
     bool longueurMotBonne=true;
@@ -64,9 +60,7 @@ Combinaison* Humain_Codeur_Wordle :: entrerCode() {
 		}
     }
 	cout << "Code bien enregistré, décodeur à vous de jouer !\n" << endl;
-    CombiWordle tmp(mot);
-    res=&tmp;    
-    return res;
+    return CombiWordle(mot);
 }
 
 string Humain_Codeur_Wordle :: cachermot(bool longueurMotBonne,bool motExiste){

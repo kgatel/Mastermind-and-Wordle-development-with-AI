@@ -28,13 +28,13 @@ class Humain_Decodeur_Mastermind : public Humain_Decodeur{
 		* \brief méthode permettant à l'utilisateur de saisir une combinaison qu'il propose pour deviner le code donnée par le joueur codeur
 		*\return retourne la combinaison saisi par le joueur decodeur
 		*/
-		virtual Combinaison* entrerCombinaison();
+		virtual Combinaison entrerCombinaison();
 		
-		/*! \fn bool VerifierEntree(const string & entree)()
+		/*! \fn bool VerifierEntree(string entree)()
 		* \brief Méthode qui permet de vérifier si l'entrée du joueur decodeur peut être interpréter en une combinaison du Mastermind
 		*\return retourne un booleen, true si la chaîne peut être considérée comme une combinaison et false sinon
 		*/
-		bool verifierEntree(const string & entree);
+		bool verifierEntree(string entree);
 		
 		virtual void jouer();
 };

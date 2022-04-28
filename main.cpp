@@ -98,8 +98,6 @@ int main() {
 
 		(*Jeu).partie();
 		
-		//delete Jeu;
-		
 		
   return 0;
 }

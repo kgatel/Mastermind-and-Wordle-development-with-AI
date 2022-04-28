@@ -10,7 +10,8 @@
 using namespace std;
 
 
-CombiMastermind :: CombiMastermind() :Combinaison(){
+CombiMastermind :: CombiMastermind() {
+	combinaison=vector<string>();
 }
 
 CombiMastermind :: CombiMastermind(const string &chaine){
@@ -18,16 +19,16 @@ CombiMastermind :: CombiMastermind(const string &chaine){
 	combinaison=f.split(chaine,' ');
 }
 
-CombiMastermind :: CombiMastermind(Combinaison *c){
-	combinaison=(*c).get();
+CombiMastermind :: CombiMastermind(Combinaison c){
+	combinaison=c.get();
 }
 
-string CombiMastermind :: resultat(Combinaison *code){
+string CombiMastermind :: resultat(const Combinaison code){
 	FonctionsUtiles f;
-	return f.intToString(bienPlace(code)) + f.intToString(malPlace(code));
+	return f.intToString(bienPlace(code))+f.intToString(malPlace(code));
 }
 
-int CombiMastermind :: bienPlace(CombiMastermind code){
+int CombiMastermind :: bienPlace(const CombiMastermind code){
 	FonctionsUtiles f;
 	int res=0;
 	for(int i=0;i<Menu::NB_CASE;i++){
@@ -38,7 +39,7 @@ int CombiMastermind :: bienPlace(CombiMastermind code){
 	return res;
 }
 
-int CombiMastermind :: malPlace(CombiMastermind code){
+int CombiMastermind :: malPlace(const CombiMastermind code){
 	FonctionsUtiles f;
 	bool memoireJ[Menu::NB_CASE];
 	for (int Indice = 0; Indice < Menu::NB_CASE; Indice++) {

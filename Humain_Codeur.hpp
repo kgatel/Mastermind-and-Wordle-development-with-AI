@@ -27,7 +27,7 @@ class Humain_Codeur : public Humain {
 		/*! \fn virtual Combinaison entrerCode()
 		* \brief methode abstraite utilisée pour demander un code au joueur codeur. Cette méthode devra être redefini pour les différents modes de jeu
 		*/
-		virtual Combinaison* entrerCode()=0;
+		virtual Combinaison entrerCode()=0;
 		  
 		/*! \fn int entrerMdP()
 		* \brief Méthode qui permet à l'utilisateur d'entrer son mot de passe
@@ -41,7 +41,7 @@ class Humain_Codeur : public Humain {
 		*/
 		int getMdP();
 		
-		virtual bool verifierEntree(const string & entree);
+		virtual bool verifierEntree(string entree);
 };
 
 #endif 

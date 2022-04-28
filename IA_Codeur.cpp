@@ -6,12 +6,11 @@
 using namespace std;
 
 IA_Codeur :: IA_Codeur(){
-	Combinaison *combinaison();
+	Combinaison combinaison();
 }
 
-Combinaison* IA_Codeur :: genererCode(){
-	Combinaison *combi=NULL;
-	return combi;
+Combinaison IA_Codeur :: genererCode(){
+	return Combinaison();
 }		  
 
 int IA_Codeur ::genererMdP(){

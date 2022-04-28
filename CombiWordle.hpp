@@ -28,26 +28,26 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle();
 		
-		/*! \fn CombiWordle(const string & chaine)
+		/*! \fn CombiWordle(string chaine)
 		  * \brief Constructeur de la classe CombiWordle
 		  * \param chaine est la chaine de caractère comprenant la suite de lettre séparée d'espace
 		  */
 		CombiWordle(const string &chaine);
 		
-		CombiWordle(Combinaison *c);
+		CombiWordle(Combinaison c);
 		
 		/*! \fn int resultat(CombiWordle code)
 		* \brief renvoie les indices des lettres placée
 		* \param code Combinaison : le mot recherché par le décodeur
 		* \return un tableau d'entier
 		*/
-		virtual string resultat(Combinaison *code) ;
+		virtual string resultat(const Combinaison code) ;
 		
-		/*! \fn afficherResultat(const string & resultat)
+		/*! \fn afficherResultat(string resultat)
 		  * \brief Affiche les caractéres rentrés par le décodeur avec un code de couleur précis : Vert le caractére est dans la bonne place , Jaune le caractére est dans la mauvaise place , Rouge le caractére existe pas dans le code.
 		  * \param un string correspondant au résultat de la vérification du mot rentré par le décodeur
 		  */
-		void afficherResultat(const string & resultat);
+		void afficherResultat(string resultat);
 		
 		/*! \fn string toString();
 		* \brief permet l'affichage du mot

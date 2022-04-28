@@ -29,7 +29,7 @@ class IA_Codeur : public IA {
 		* \brief methode abstraite permettant de générer le code que le décodeur devra deviner
 		* \return retourne une combinaison
 		*/
-		virtual Combinaison* genererCode();
+		virtual Combinaison genererCode();
 		  
 		/*! \fn int genererMdP()
 		* \brief Méthode qui permet à la machine de générer un mot de passe

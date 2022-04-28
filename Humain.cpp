@@ -2,7 +2,7 @@
 #include "Combinaison.hpp"
 
 Humain :: Humain(){
-	Combinaison *combinaison();
+	Combinaison combinaison();
 }
-Humain::Humain(const string & pseudo1) : Joueur(pseudo1){
+Humain::Humain(string pseudo1) : Joueur(pseudo1){
 }

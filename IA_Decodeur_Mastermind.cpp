@@ -23,8 +23,7 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 void IA_Decodeur_Mastermind :: Maj_ensemble(){
 }
 		 
-Combinaison* IA_Decodeur_Mastermind :: Choisir_combi(){
-	Combinaison* combi=NULL;
-	return combi;
+Combinaison IA_Decodeur_Mastermind :: Choisir_combi(){
+	return Combinaison();
 }
 	

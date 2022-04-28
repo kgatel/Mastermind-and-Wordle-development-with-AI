@@ -25,18 +25,18 @@ class Humain: public Joueur {
 		*/
 		Humain();
 		
-		/*! \fn Humain(const string & pseudo1)
+		/*! \fn Humain(string pseudo1)
 		  * \brief Constructeur de la classe Humain avec paramètre 
 		  * \param pseudo1 du joueur
 		  */
-		Humain(const string & pseudo1);
+		Humain(string pseudo1);
 	
-		/*! \fn virtual bool verifierEntree(const string & entree)
+		/*! \fn virtual bool verifierEntree(string entree)
 		  * \brief une méthode abstraite qui permettera de vérifier la syntaxe de l'entrée selon le mode de jeu
 		  * \param string entree
 		  * \return retourne un booléen (vraie seulement si la syntaxe est bonne)
 		  */
-		virtual bool verifierEntree(const string & entree)=0;
+		virtual bool verifierEntree(string entree)=0;
 		
 	};
 #endif 

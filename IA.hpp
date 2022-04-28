@@ -25,17 +25,17 @@ class IA: public Joueur {
 		*/
 		IA();
 		
-		/*! \fn IA(const string & pseudo1)
+		/*! \fn IA(string pseudo1)
 		  * \brief Constructeur de la classe IA avec paramètre 
 		  * \param pseudo1 du joueur
 		  */
-		IA(const string & pseudo1);
+		IA(string pseudo1);
 	
 		/*! \fn Combinaison choisirCombinaison()
 		  * \brief une méthode abstraite qui permettera à l'IA de trouver la combinaison correct selon le mode de jeu
 		  * \return une combinaison
 		  */
-		virtual Combinaison* choisirCombinaison();	//à mettre =0 car elle est abstraite pure
+		virtual Combinaison choisirCombinaison();	//à mettre =0 car elle est abstraite pure
 	};
 	
 #endif // IA_H

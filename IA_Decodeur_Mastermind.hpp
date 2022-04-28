@@ -38,7 +38,7 @@ class IA_Decodeur_Mastermind : public IA_Decodeur{
 	 	* \brief Cette méthode permet de choisir la prochaine proposition soit dans l’ordre de son apparition dans l’ensemble, soit en choisissant une de manière aléatoire, soit en utilisant l’algorithme MinMax.
 		*\return retourne une combinaison
 		*/
-		Combinaison* Choisir_combi();
+		Combinaison Choisir_combi();
 
 		virtual void jouer();
 

@@ -18,13 +18,9 @@ IA_Codeur_Wordle :: IA_Codeur_Wordle() : IA_Codeur(){
 }
 
 void IA_Codeur_Wordle :: jouer(){
-	Combinaison *c;
-	CombiWordle tmp(genererCode());
-	c=&tmp;
-	setCombinaison(c);
+	setCombinaison(CombiWordle(genererCode()));
 }
 
-Combinaison* IA_Codeur_Wordle :: genererCode(){
-	Combinaison* combi=NULL;
-	return combi;
+Combinaison IA_Codeur_Wordle :: genererCode(){
+	return Combinaison();
 }

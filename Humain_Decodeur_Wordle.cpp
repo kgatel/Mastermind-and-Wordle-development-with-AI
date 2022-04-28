@@ -15,7 +15,7 @@ void Humain_Decodeur_Wordle :: jouer(){
 	
 }
 
-string Humain_Decodeur_Wordle :: choixFichier(const string & mot) {
+string Humain_Decodeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
 	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}
 	if (Menu::Langue==2) {repertoire=repertoire.append("//").append("Anglais");}
@@ -25,15 +25,14 @@ string Humain_Decodeur_Wordle :: choixFichier(const string & mot) {
 return repertoire+"//"+mot[0]+".txt";
 }	
 
-bool Humain_Decodeur_Wordle :: verifierEntree(const string & entree) {
+bool Humain_Decodeur_Wordle :: verifierEntree(string entree) {
 	FonctionsUtiles f;
 	string chemin;
 	chemin=choixFichier(entree);
 	return f.checkMotFichier(chemin,entree);
 }
 
-Combinaison* Humain_Decodeur_Wordle :: entrerCombinaison() {
-	Combinaison* res=NULL;
+Combinaison Humain_Decodeur_Wordle :: entrerCombinaison() {
 	string mot;
 	bool t=false;
 	while(!t) {
@@ -44,7 +43,5 @@ Combinaison* Humain_Decodeur_Wordle :: entrerCombinaison() {
 		else cout << "Le mot n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n";
 		}
 		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot ne fait pas " <<Menu::NB_CASE<<" caracteres \n";}}
-	CombiWordle tmp(mot);
-	res=&tmp;
-	return res;
+	return CombiWordle(mot);
 }

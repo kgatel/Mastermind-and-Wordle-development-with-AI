@@ -10,7 +10,6 @@ using namespace std;
 
 
 Combinaison :: Combinaison() {
-	combinaison = vector<string>();
 }
 
 void  Combinaison ::setCombinaison (vector<string> c){
@@ -23,6 +22,10 @@ vector<string> Combinaison :: get() const{
 
 string Combinaison :: get(const int i) const{
 	return combinaison[i];
+}
+
+string Combinaison :: resultat(const Combinaison code){
+	return "yo\n";
 }
 
 string Combinaison :: toString() {

@@ -15,15 +15,10 @@ Humain_Codeur_Mastermind :: Humain_Codeur_Mastermind () {
 }
 
 void Humain_Codeur_Mastermind :: jouer(){
-	cout << "Rose Rose Rose Rose\n";
-	Combinaison *c;
-	CombiMastermind tmp(entrerCode());
-	c=&tmp;
-	setCombinaison(c);
+	setCombinaison(CombiMastermind(entrerCode()));
 }
 
-Combinaison* Humain_Codeur_Mastermind :: entrerCode() {
-	Combinaison* res;
+Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	ifstream Handle;
 	string chaine="";
 	string CurrLine;
@@ -50,13 +45,11 @@ Combinaison* Humain_Codeur_Mastermind :: entrerCode() {
 		compteur=0;
 	} while (!verifierEntree(chaine));
 	Handle.close();
-	CombiMastermind tmp(chaine);
-	res=&tmp;
-	return res;
+	return CombiMastermind(chaine);
 	
 }
 
-bool Humain_Codeur_Mastermind :: verifierEntree(const string & entree) {
+bool Humain_Codeur_Mastermind :: verifierEntree(string entree) {
 	FonctionsUtiles f;
 	int i=0;
 	CombiMastermind combi;

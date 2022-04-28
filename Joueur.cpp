@@ -10,17 +10,14 @@
 
 
 Joueur :: Joueur(){
-	Combinaison *tmp=NULL;
-	combinaison=tmp;
-	pseudo="Anonyme";
+	Combinaison combinaison();
 }
-Joueur::Joueur(const string &pseudo1){
-	Combinaison *tmp=NULL;
-	combinaison=tmp;
+Joueur::Joueur(string pseudo1){
+	Combinaison combinaison();
 	pseudo=pseudo1;
 }
 
-Combinaison* Joueur:: getCombinaison(){
+Combinaison Joueur:: getCombinaison(){
 	return combinaison;
 }
 
@@ -29,7 +26,7 @@ void Joueur :: entrerPseudo(){
 	
 }
 
-void Joueur :: setCombinaison(Combinaison *c){
+void Joueur :: setCombinaison(Combinaison c){
 	combinaison=c;
 }
 
@@ -37,7 +34,7 @@ string Joueur:: getPseudo(){
 	return pseudo;
 }
 
-void Joueur :: setPseudo(const string &pseudo1){
+void Joueur :: setPseudo(string pseudo1){
 	pseudo=pseudo1;
 }
 
