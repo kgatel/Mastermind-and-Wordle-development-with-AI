@@ -77,7 +77,6 @@ void Menu :: afficherMenu(){
 				if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("4lettres");}
 				}
 			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append(".txt");
-			cout<<ENSEMBLE_ELEMENT<<"\n";
 			finchoix = true;
 			break;
 			

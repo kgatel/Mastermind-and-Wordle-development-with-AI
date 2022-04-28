@@ -29,7 +29,7 @@ class FonctionsUtiles {
 		*/
 		FonctionsUtiles();
 		
-		/*! \fn vector<string> split(const string &chaine, char delimiteur)
+		/*! \fn vector<string> split(string chaine, char delimiteur)
 		* \brief méthode permettant de découper une chaine de caractère en plusieurs grâce à un delimiteur
 		* \param chaine : chaine à découper
 		* \param delimiteur : le séparateur de mot, ici l'espace
@@ -37,14 +37,14 @@ class FonctionsUtiles {
 		*/
 		vector<string> split(const string &chaine, char delimiteur);
 		
-		/*! \fn bool checkMotFichier(string fichier, string mot)
+		/*! \fn bool checkMotFichier(string  fichier, string mot)
 		* \brief méthode qui permet de vérifier si un mot appartient au fichier
 		* \param fichier : le chemin d'accés au fichier pour vérifier
 		* \param mot : le mot à vérifier
 		* \return un booléen si le mot est dans le fichier
 		*/
 		
-		bool checkMotFichier(string fichier, string mot);
+		bool checkMotFichier(const string &fichier, string mot);
 		
 		bool isNumber(const string& str);
 		

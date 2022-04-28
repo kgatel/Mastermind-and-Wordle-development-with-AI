@@ -21,7 +21,7 @@ vector<string> FonctionsUtiles :: split(const string &chaine, char delimiteur) {
 	return elements;
 }
 
-bool FonctionsUtiles :: checkMotFichier(string fichier, string mot){
+bool FonctionsUtiles :: checkMotFichier(const string & fichier, string mot){
 	//int offset; 
     string ligne;
     ifstream monFichier;

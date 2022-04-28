@@ -13,10 +13,13 @@ using namespace std;
 Humain_Decodeur_Mastermind :: Humain_Decodeur_Mastermind(){
 }
 void Humain_Decodeur_Mastermind :: jouer(){
-	setCombinaison(CombiMastermind(entrerCombinaison()));
+	Combinaison *c;
+	CombiMastermind tmp(entrerCombinaison());
+	c=&tmp;
+	setCombinaison(c);
 }
 
-bool Humain_Decodeur_Mastermind :: verifierEntree(string entree) {
+bool Humain_Decodeur_Mastermind :: verifierEntree(const string & entree) {
 	FonctionsUtiles f;
 	int i=0;
 	CombiMastermind combi;
@@ -38,7 +41,8 @@ bool Humain_Decodeur_Mastermind :: verifierEntree(string entree) {
 		
 }
 
-Combinaison Humain_Decodeur_Mastermind :: entrerCombinaison() {
+Combinaison* Humain_Decodeur_Mastermind :: entrerCombinaison() {
+	Combinaison* res=NULL;
 	string couleurs;
 	bool t=false;
 	while(!t) {
@@ -46,5 +50,7 @@ Combinaison Humain_Decodeur_Mastermind :: entrerCombinaison() {
 		getline(cin,couleurs);
 		if (verifierEntree(couleurs)) {t=true;}
 	}
-	return CombiMastermind(couleurs);
+	CombiMastermind tmp(couleurs);
+	res=&tmp;
+	return res;
 }

@@ -7,10 +7,10 @@
 using namespace std;
 
 Humain_Codeur :: Humain_Codeur() : Humain(){
-	Combinaison combinaison();
+	Combinaison *combinaison();
 }
 
-bool Humain_Codeur :: verifierEntree(string entree){
+bool Humain_Codeur :: verifierEntree(const string & entree){
 	return false;
 }
 

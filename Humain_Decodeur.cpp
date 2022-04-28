@@ -7,7 +7,7 @@
 using namespace std;
 
 Humain_Decodeur :: Humain_Decodeur(){
-	Combinaison combinaison();
+	Combinaison *combinaison();
 }
 
 

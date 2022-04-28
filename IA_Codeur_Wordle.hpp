@@ -28,7 +28,7 @@ class IA_Codeur_Wordle : public IA_Codeur{
 		* \brief méthode permettant à la machine de générer un code que le joueur artificiel décodeur devra ensuite trouver
 		*\return retourne le code créé par la machine
 		*/
-		Combinaison genererCode();
+		Combinaison* genererCode();
 		  
 		virtual void jouer();
 		  

@@ -21,7 +21,8 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 void IA_Decodeur_Wordle :: Maj_ensemble(){
 }
 		 
-Combinaison IA_Decodeur_Wordle :: Choisir_combi(){
-	return Combinaison();
+Combinaison* IA_Decodeur_Wordle :: Choisir_combi(){
+	Combinaison* combi=NULL;
+	return combi;
 }
 	

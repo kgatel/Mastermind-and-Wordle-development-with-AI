@@ -17,12 +17,12 @@ using namespace std;
 
 class Humain_Codeur_Wordle : public Humain_Codeur{
 	private:
-		/*! \fn choixFichier(string mot)
+		/*! \fn choixFichier(const string & mot)
 		* \brief méthode permettant de choisir le fichier correspondant selon le mot rentré par l'utilisateur
 		* \param chaine string : le mot rentré par l'utilisateur
 		*\return retourne le nom du répertoire du fichier 
 		*/
-		string choixFichier(string mot);
+		string choixFichier(const string & mot);
 		
 	public:
 		/*! \fn Humain_Codeur_Wordle()
@@ -34,13 +34,13 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		* \brief méthode permettant à l'utilisateur de saisir le code que le joueur décodeur devra ensuite deviner
 		*\return retourne le code saisi par le joueur codeur
 		*/
-		Combinaison entrerCode();
+		Combinaison* entrerCode();
 		  
-		/*! \fn bool VerifierEntree(string entree)()
+		/*! \fn bool VerifierEntree(const string & entree)()
 		* \brief Méthode qui Permet de vérifier si l'entrée du joueur codeur peut être interpréter en un mot du dictionnaire du jeu Wordle
 		*\return retourne un booleen, true si la chaîne peut être considérée comme un mot du dictionnaire et false sinon
 		*/
-		bool verifierEntree(string entree);
+		bool verifierEntree(const string & entree);
 		  
 		string cachermot(bool longueurMotBonne,bool motExiste);
 		

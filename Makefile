@@ -1,6 +1,7 @@
 FC = g++
 OPT = -c
 LIBS = -lncurses
+WALL = -Wall
 
 Jeu : Joueur.o Combinaison.o Menu.o JeuDeDeduction.o 
 	$(FC) Joueur.o Combinaison.o Menu.o JeuDeDeduction.o -o Jeu
@@ -83,7 +84,7 @@ IA_Decodeur_Mastermind.o : IA_Decodeur.hpp IA_Decodeur_Mastermind.cpp IA_Decodeu
 
 
 main : Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o
-	$(FC) Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o main.cpp -o main $(LIBS)
+	$(FC) Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o main.cpp $(WALL) -o main $(LIBS)
 
 clean : 
 	rm *.o mainTest *.gch main

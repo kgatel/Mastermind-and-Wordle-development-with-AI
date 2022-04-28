@@ -16,7 +16,7 @@
 
 class Joueur {
 	protected:
-		Combinaison combinaison;
+		Combinaison *combinaison;
 		string pseudo;
 
 	public:
@@ -25,23 +25,23 @@ class Joueur {
 		*/
 		Joueur();
 		
-		/*! \fn Joueur(string pseudo1)
+		/*! \fn Joueur(const &string pseudo1)
 		  * \brief Constructeur de la classe joueur avec paramètre 
 		  * \param pseudo1 du joueur
 		  */
-		Joueur(string pseudo1);
+		Joueur(const string &pseudo1);
 		
 		/*! \fn Combinaison getCombinaison()
 		* \brief Pour accéder à l'attribut combinaison 
 		* \return retourne la combinaison en attribut
 		*/
-		Combinaison getCombinaison();
+		Combinaison* getCombinaison();
 		
 		/*! \fn void setCombinaison(combinaison comb);
 		* \brief setteur de l'attribut combinaison
 		* \param une combinaison 
 		*/
-		void setCombinaison(Combinaison comb);
+		void setCombinaison(Combinaison *comb);
 		
 		/*! \fn void entrerPseudo();
 		* \brief Pour permettre au joueur de choisir un pseudo 
@@ -54,11 +54,11 @@ class Joueur {
 		*/
 		string getPseudo();
 		
-		/*! \fn void setPseudo(string nom);
+		/*! \fn void setPseudo(const &string nom);
 		* \brief setteur de l'attribut Pseudo
 		* \param un string nom
 		*/
-		void setPseudo(string nom);
+		void setPseudo(const string &nom);
 		
 		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage du pseudo

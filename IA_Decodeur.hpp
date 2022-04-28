@@ -36,7 +36,7 @@ class IA_Decodeur : public IA {
 	 	* \brief Cette méthode permet de choisir la prochaine proposition soit dans l’ordre de son apparition dans l’ensemble, soit en choisissant une de manière aléatoire, soit en utilisant l’algorithme MinMax.
 		*\return retourne une combinaison
 		*/
-		virtual Combinaison Choisir_combi()=0;		
+		virtual Combinaison* Choisir_combi()=0;		
 };
 
 #endif 

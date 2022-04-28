@@ -12,10 +12,6 @@
 
 using namespace std;
 
-extern int NB_CASE;
-extern int Langue;
-extern int NB_TOUR;
-
 JeuDeDeduction :: JeuDeDeduction(){
 	(*codeur).setPseudo("Le codeur");
 	(*decodeur).setPseudo("Le décodeur");
@@ -26,9 +22,9 @@ JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1){
 	decodeur=decodeur1;
 	(*codeur).setPseudo("Le codeur");
 	(*decodeur).setPseudo("Le décodeur");
-	historiqueCombinaison=vector<Combinaison>();
+	vector<Combinaison*> historiqueCombinaison(Menu ::NB_TOUR,NULL);
 	numeroTour=0;
-	historiqueResultat=vector<string>();
+	vector<string> historiqueResultat(Menu ::NB_TOUR,NULL);
 }
 
 int JeuDeDeduction :: main(){
@@ -47,7 +43,7 @@ Joueur* JeuDeDeduction :: detectionVictoire(){
 	
 	bool egale=true;
 	for (int i=0;i<Menu::NB_CASE;i++){
-		if(!f.equals((*codeur).getCombinaison().get(i),(*decodeur).getCombinaison().get(i))){
+		if(!f.equals((*(*codeur).getCombinaison()).get(i),(*(*decodeur).getCombinaison()).get(i))){
 			egale=false;
 		}
 	}

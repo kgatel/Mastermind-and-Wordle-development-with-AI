@@ -23,9 +23,11 @@ void Mastermind :: partie(){
 		cout << "\nTour n°"<<numeroTour+1<<endl;
 		(*decodeur).jouer();
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
-		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
+		historiqueResultat.push_back((*(*decodeur).getCombinaison()).resultat((*codeur).getCombinaison()));
+		cout << (*(*decodeur).getCombinaison()).resultat((*codeur).getCombinaison());
 		afficherHistorique();
 		incrTour();
+		
 	}while(detectionVictoire()==NULL);
 	cout << endl;
 	if (detectionVictoire()==codeur){

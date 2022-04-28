@@ -21,23 +21,23 @@ CombiWordle :: CombiWordle(const string &chaine){
 	}
 }
 
-CombiWordle :: CombiWordle(Combinaison c){
-	combinaison=c.get();
+CombiWordle :: CombiWordle(Combinaison *c){
+	combinaison=(*c).get();
 }
 
 
-string CombiWordle :: resultat(const Combinaison code){
+string CombiWordle :: resultat(Combinaison *code){
 	FonctionsUtiles f;
 	string res="";   //initialise le vecteur à 0
 	int j=0;
 	bool exit=false;
 	for(int i=0;i<(int)combinaison.size();i++){
-		if (strcasecmp(combinaison[i].c_str(), code.get(i).c_str()) == 0){ //vérifier si combinaison[i]==code.get(i)
+		if (strcasecmp(combinaison[i].c_str(), (*code).get(i).c_str()) == 0){ //vérifier si combinaison[i]==(*code).get(i)
 			res+="\033[32m"+combinaison[i]+"\033[0m";
 		}else{
 			while((j<(int)combinaison.size()) && (!exit)){
 				if (i!=j){
-					if (f.equals(combinaison[i],code.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
+					if (f.equals(combinaison[i],(*code).get(j))){ //vérifier si combinaison[i]!=(*code).get(j) avec i!=j
 						res+="\033[33m"+combinaison[i]+"\033[0m";
 						exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
 					}
@@ -54,7 +54,7 @@ string CombiWordle :: resultat(const Combinaison code){
 	return res;
 }
 
-/*void CombiWordle :: afficherResultat(string resultat) {
+/*void CombiWordle :: afficherResultat(const string & resultat) {
 	for(int i=0;i<(int)resultat.size();i++){
 	if (resultat[i]=='*') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);cout <<combinaison[i];}
 	if (resultat[i]=='_') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);cout <<combinaison[i];}

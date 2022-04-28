@@ -26,7 +26,7 @@ int main()
 	Humain_Decodeur_Mastermind decodeur;
 	CombiMastermind c1=CombiMastermind(codeur.entrerCode());
     CombiMastermind c2=CombiMastermind(decodeur.entrerCombinaison());
-    cout << "\nNombre de couleurs bien placées : " << c2.resultat(c1)[0] << "\nNombre de couleurs mal placées : " << c2.resultat(c1)[1] << "\n"<< endl;
+    cout << "\nNombre de couleurs bien placées : " << c2.resultat(&c1)[0] << "\nNombre de couleurs mal placées : " << c2.resultat(&c1)[1] << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
     
 

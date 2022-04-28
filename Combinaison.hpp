@@ -29,7 +29,7 @@ class Combinaison {
 		  */
 		Combinaison();
 		
-		/*! \fn void setCombinaison(string chaine);
+		/*! \fn void setCombinaison(const string & chaine);
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 
 		*/
@@ -48,7 +48,7 @@ class Combinaison {
 		*/
 		string get(const int i) const;
 		
-		virtual string resultat(Combinaison code);
+		virtual string resultat(Combinaison *code)=0;
 		
 		/*! \fn string toString() abstraite;
 		* \brief permet l'affichage de la combinaison

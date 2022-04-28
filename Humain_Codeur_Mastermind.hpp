@@ -1,3 +1,9 @@
+
+
+
+
+
+
 #ifndef Humain_Codeur_Mastermind_H
 #define Humain_Codeur_Mastermind_H
 #include <string>
@@ -27,13 +33,13 @@ class Humain_Codeur_Mastermind : public Humain_Codeur{
 		* \brief méthode permettant à l'utilisateur de saisir le code que le joueur décodeur devra ensuite deviner
 		*\return retourne le code saisi par le joueur codeur
 		*/
-		Combinaison entrerCode();
+		Combinaison* entrerCode();
 		  
-		/*! \fn bool VerifierEntree(string entree)()
+		/*! \fn bool VerifierEntree(const string & entree)()
 		* \brief Méthode qui Permet de vérifier si l'entrée du joueur codeur peut être interpréter en une combinaison du Mastermind
 		*\return retourne un booleen, true si la chaîne peut être considérée comme une combinaison et false sinon
 		*/
-		bool verifierEntree(string entree);
+		bool verifierEntree(const string & entree);
 		
 		virtual void jouer();
 		  
