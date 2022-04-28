@@ -7,6 +7,7 @@
 #include "Combinaison.hpp"
 #include "Menu.hpp"
 #include "FonctionsUtiles.hpp"
+#include "CombiWordle.hpp"
 
 using namespace std;
 
@@ -31,9 +32,9 @@ void Wordle :: partie(){
 	do{
 		cout << f.jaune("\nTour n°"+f.intToString(numeroTour+1))<<endl;
 		(*decodeur).jouer();
-		/*historiqueCombinaison.push_back((*decodeur).getCombinaison());
-		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
-		afficherHistorique();*/
+		historiqueCombinaison.push_back((*decodeur).getCombinaison());
+		historiqueResultat.push_back(CombiWordle((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison()));
+		afficherHistorique();
 		incrTour();
 	}while(detectionVictoire()==NULL);
 	cout << endl;
@@ -46,6 +47,7 @@ void Wordle :: partie(){
 }
 
 void Wordle :: afficherHistorique(){
+
 }
 
 

@@ -54,15 +54,6 @@ string CombiWordle :: resultat(const Combinaison code){
 	return res;
 }
 
-/*void CombiWordle :: afficherResultat(string resultat) {
-	for(int i=0;i<(int)resultat.size();i++){
-	if (resultat[i]=='*') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);cout <<combinaison[i];}
-	if (resultat[i]=='_') { SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);cout <<combinaison[i];}
-	if ((resultat[i]!='_')&&(resultat[i]!='*')){ SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);cout <<combinaison[i];}	
-		}
-cout << endl;
-SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
-}*/
 
 string CombiWordle :: toString() {
 	string res="";
