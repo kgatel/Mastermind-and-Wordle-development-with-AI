@@ -12,7 +12,7 @@ Humain_Decodeur_Wordle :: Humain_Decodeur_Wordle() {
 }
 
 void Humain_Decodeur_Wordle :: jouer(){
-	
+	setCombinaison(CombiWordle(entrerCombinaison()));
 }
 
 string Humain_Decodeur_Wordle :: choixFichier(string mot) {

@@ -66,6 +66,8 @@ class FonctionsUtiles {
 		
 		string blanc(string s);
 		
+		string cyan(string s);
+		
 		string carrevert();
 		
 		string carrerouge();
@@ -85,6 +87,8 @@ class FonctionsUtiles {
 		string carremarron();
 		
 		string carrevide();
+		
+		string blink(string s);
 		
 		bool equals(const string& s1,const string& s2);
 		

@@ -26,7 +26,23 @@ Wordle :: Wordle(Joueur *codeur1, Joueur *decodeur1) : JeuDeDeduction(codeur1,de
 void Wordle :: partie(){
 	FonctionsUtiles f;
 	f.clear();
-	cout << "Bienvenue dans le Wordle !\n" << endl;
+	cout << f.vert("Bienvenue dans le Wordle !\n") << endl;
+	(*codeur).jouer();
+	do{
+		cout << f.jaune("\nTour n°"+f.intToString(numeroTour+1))<<endl;
+		(*decodeur).jouer();
+		/*historiqueCombinaison.push_back((*decodeur).getCombinaison());
+		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
+		afficherHistorique();*/
+		incrTour();
+	}while(detectionVictoire()==NULL);
+	cout << endl;
+	if (detectionVictoire()==codeur){
+		cout << (*codeur).toString();
+	}else{
+		cout << (*decodeur).toString();
+	}
+	cout << " a remporté la partie." << endl;
 }
 
 void Wordle :: afficherHistorique(){

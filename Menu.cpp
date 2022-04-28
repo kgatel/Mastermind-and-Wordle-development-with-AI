@@ -7,8 +7,8 @@
 using namespace std;
 	string Menu:: JEU = "Mastermind";
 	int Menu::ModeDeJeu = 1;
-	int Menu::Langue=1;
-	int Menu::NB_TOUR=10;
+	int Menu::Langue=2;
+	int Menu::NB_TOUR=12;
 	int Menu::NB_CASE=4;
 	int Menu::NB_ELEMENT=0;
 	string Menu::ENSEMBLE_ELEMENT="ressources";
@@ -45,7 +45,7 @@ void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour
 void Menu :: afficherMenu(){
 	FonctionsUtiles f;
 	f.clear();
-	cout << f.vert("Bienvenue dans le menu des jeux de déduction !") << endl;
+	cout << f.violet("Bienvenue dans le menu des jeux de déduction !") << endl;
 	bool finchoix=false;
 	int choix=-1 ;
 	string tmpChoix="";
@@ -64,8 +64,8 @@ void Menu :: afficherMenu(){
 		switch (choix) {
 		
 			case 0:
-			if (ModeDeJeu==1){
-				ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Couleurs").append("/").append("liste");
+			if (f.equals(JEU,"Mastermind")){
+				ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Couleurs").append("/").append("liste").append(".txt");
 				}
 			else{if (Langue==1){
 						ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("Francais");
@@ -75,9 +75,7 @@ void Menu :: afficherMenu(){
 				if (NB_CASE==6) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("6lettres");}
 				if (NB_CASE==5) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("5lettres");}
 				if (NB_CASE==4) {ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append("/").append("4lettres");}
-				}
-			ENSEMBLE_ELEMENT=ENSEMBLE_ELEMENT.append(".txt");
-			cout<<ENSEMBLE_ELEMENT<<"\n";
+			}
 			finchoix = true;
 			break;
 			

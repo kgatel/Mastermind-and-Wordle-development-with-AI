@@ -6,4 +6,5 @@ Orange
 Violet
 Marron
 Rose
+Blanc
 end

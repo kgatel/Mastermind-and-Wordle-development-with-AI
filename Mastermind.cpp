@@ -43,27 +43,40 @@ void Mastermind :: afficherHistorique(){
 	int i,j,k=0;
 	int taille;
 	taille=(int)historiqueCombinaison.size();
+	string espace="";
+	string zero="";
+	cout <<"________________________________________"+f.cyan("Résultats")<< endl;
 	for (i=0;i<Menu::NB_TOUR-taille ; i++) {
 		if (Menu::NB_TOUR-i<10) {
-		cout<<f.jaune("tentative ")<<Menu::NB_TOUR-i<<" "<<f.carrevide()<<"      "<<f.carrevide()<<"      "<<f.carrevide()<<"      "<<f.carrevide()<<endl;
-	}
-	
+			espace=" ";
+		}else{
+			espace="";
+		}
+		if (i==Menu::NB_TOUR-taille-1){
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"  "<<f.blink(f.carrevide()+"      "+f.carrevide()+"      "+f.carrevide()+"      "+f.carrevide())+"           |"<<endl;
+		}else{
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"  "<<f.carrevide()<<"      "<<f.carrevide()<<"      "<<f.carrevide()<<"      "<<f.carrevide()<<"           |"<<endl;
+		}
 	}
 	for (j=0;j<taille ; j++) {
-		cout<<f.jaune("tentative ")<<taille-j;
+		if (taille-j<10) {
+			espace=" ";
+		}else{
+			espace="";
+		}
+		cout<<f.cyan("Tentative : ")<<espace<<taille-j<<" ";
 		for (k=0;k<Menu::NB_CASE;k++) {
 			if (historiqueCombinaison[taille-j-1].get(k)=="Rouge") {cout<<" "<<f.carrerouge()<<"    ";}
 			if (historiqueCombinaison[taille-j-1].get(k)=="Vert") {cout<<" "<<f.carrevert()<<"    ";}
 			if (historiqueCombinaison[taille-j-1].get(k)=="Jaune") {cout<<" "<<f.carrejaune()<<"    ";}
 			if (historiqueCombinaison[taille-j-1].get(k)=="Bleu") {cout<<" "<<f.carrebleu()<<"    ";}
 			if (historiqueCombinaison[taille-j-1].get(k)=="Violet") {cout<<" "<<f.carreviolet()<<"    ";}
-			if (historiqueCombinaison[taille-j-1].get(k)=="BLanc") {cout<<" "<<f.carreblanc()<<"    ";}	
+			if (historiqueCombinaison[taille-j-1].get(k)=="Blanc") {cout<<" "<<f.carreblanc()<<"    ";}	
+			if (historiqueCombinaison[taille-j-1].get(k)=="Orange") {cout<<" "<<f.carreorange()<<"    ";}
+			if (historiqueCombinaison[taille-j-1].get(k)=="Rose") {cout<<" "<<f.carrerose()<<"    ";}	
+			if (historiqueCombinaison[taille-j-1].get(k)=="Marron") {cout<<" "<<f.carremarron()<<"    ";}				
 		}
-		cout<<f.rouge(f.charToString(historiqueResultat[taille-j-1][0]))<<" "<<f.blanc(f.charToString(historiqueResultat[taille-j-1][1]))<<endl;
-		
+		cout<<f.rouge(f.charToString(historiqueResultat[taille-j-1][0]))<<" "<<f.blanc(f.charToString(historiqueResultat[taille-j-1][1]))<<	"   |" << endl;
 	}
-	
-	//historiqueCombinaison[0].get()
-	//string resultat = CombiMastermind((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison());
-	//cout << f.rouge(f.charToString(resultat[0]))+" "+f.blanc(f.charToString(resultat[1])) << endl; 
+	cout <<"_________________________________________________|"<< endl;
 }

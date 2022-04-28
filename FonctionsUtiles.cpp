@@ -95,6 +95,10 @@ string FonctionsUtiles :: violet(string s){
 	return "\033[35m"+s+"\033[0m";
 }
 
+string FonctionsUtiles :: cyan(string s){
+	return "\033[36m"+s+"\033[0m";
+}
+
 string FonctionsUtiles :: blanc(string s){
 	return "\033[0m"+s+"\033[0m";}
 	
@@ -119,16 +123,21 @@ string FonctionsUtiles :: carreviolet(){
 }
 
 string FonctionsUtiles :: carrerose(){
-	return "\033[48:5:200m  \033[m\n";}
+	return "\033[48:5:200m  \033[m";}
 
 string FonctionsUtiles :: carreorange(){
-	return "\033[48:5:208m  \033[m\n";}
+	return "\033[48:5:208m  \033[m";}
 
 string FonctionsUtiles :: carremarron(){
-	return "\033[48:5:094m  \033[m\n";}
+	return "\033[48:5:094m  \033[m";}
 	
 string FonctionsUtiles :: carreblanc(){
 	return "\u001b[0m\u2588\u2588";}
 	
 string FonctionsUtiles :: carrevide(){
-	return "▢";}
+	return "▢";
+}
+
+string FonctionsUtiles :: blink(string s){
+	return "\033[5;39;49m"+s+"\033[25m";
+}

@@ -22,12 +22,12 @@ void Humain_Codeur_Wordle :: jouer(){
 }
 string Humain_Codeur_Wordle :: choixFichier(string mot) {
 	string repertoire="ressources";
-	if (Menu::Langue==1) {repertoire=repertoire.append("//").append("Francais");}
-	if (Menu::Langue==2) {repertoire=repertoire.append("//").append("Anglais");}
-	if (mot.size()==6) {repertoire=repertoire.append("//").append("6lettres");}
-	if (mot.size()==5) {repertoire=repertoire.append("//").append("5lettres");}
-	if (mot.size()==4) {repertoire=repertoire.append("//").append("4lettres");}
-return repertoire+"//"+mot[0]+".txt";
+	if (Menu::Langue==1) {repertoire=repertoire.append("/").append("Francais");}
+	if (Menu::Langue==2) {repertoire=repertoire.append("/").append("Anglais");}
+	if (mot.size()==6) {repertoire=repertoire.append("/").append("6lettres");}
+	if (mot.size()==5) {repertoire=repertoire.append("/").append("5lettres");}
+	if (mot.size()==4) {repertoire=repertoire.append("/").append("4lettres");}
+return repertoire+"/"+mot[0]+".txt";
 }	
 
 bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
@@ -38,6 +38,13 @@ bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
 }
 
 Combinaison Humain_Codeur_Wordle :: entrerCode() {
+	FonctionsUtiles f;
+	cout << "Redirection du codeur en cours..." << endl;
+	for (int i=5;i>0;i--){
+		sleep(1);
+		cerr << i << ".." ;
+	}
+	cerr << 0 << endl;
     string mot;
     bool t=false;
     bool longueurMotBonne=true;
@@ -59,11 +66,12 @@ Combinaison Humain_Codeur_Wordle :: entrerCode() {
 			longueurMotBonne=true;
 		}
     }
-	cout << "Code bien enregistré, décodeur à vous de jouer !\n" << endl;
+	cout << "Code bien enregistré, décodeur à vous de jouer !" << endl;
     return CombiWordle(mot);
 }
 
 string Humain_Codeur_Wordle :: cachermot(bool longueurMotBonne,bool motExiste){
+	FonctionsUtiles f;
 	string mot="";
 	int a;
     bool entr=false;
@@ -72,10 +80,17 @@ string Humain_Codeur_Wordle :: cachermot(bool longueurMotBonne,bool motExiste){
 		printw("\nVeuillez entrer un mot de longueur égale à %d\n\n",Menu::NB_CASE);			//changer la longueur car 5 est arbitraire ici
 	}else{
 		if (!motExiste){
-			printw("\nVeuillez entrer un mot appartenant au dictionnaire anglais\n\n");
+			printw("\nVeuillez entrer un mot appartenant au dictionnaire ");
+			if (Menu::Langue==2){
+				printw("anglais\n\n");
+			}else{
+				printw("français\n\n");
+			}
 		}
 	}
-    printw("Codeur rentrez votre code (en minuscule) : ");
+    string chaine = "Codeur rentrez votre code ("+f.intToString(Menu::NB_CASE)+" lettres en minuscule) : ";
+    char* chr = &chaine[0];
+    printw(chr);
     noecho();
     cbreak();
     while (!entr) {
