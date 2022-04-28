@@ -50,6 +50,8 @@ class FonctionsUtiles {
 		
 		string intToString(int a);
 		
+		string charToString(char c);
+		
 		void clear();
 		
 		string vert(string s);

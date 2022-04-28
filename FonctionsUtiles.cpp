@@ -65,6 +65,11 @@ string FonctionsUtiles :: intToString(int a){
 	return ss.str();
 }
 
+string FonctionsUtiles :: charToString(char c){
+	string s(1, c);
+	return s;
+}
+
 void FonctionsUtiles :: clear()
 {
     cout << "\x1B[2J\x1B[H";

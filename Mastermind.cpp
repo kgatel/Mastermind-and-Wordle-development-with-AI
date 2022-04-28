@@ -17,14 +17,13 @@ Mastermind :: Mastermind(Joueur *codeur1, Joueur *decodeur1) : JeuDeDeduction(co
 void Mastermind :: partie(){
 	FonctionsUtiles f;
 	f.clear();
-	cout << "Bienvenue dans le Mastermind !\n" << endl;
+	cout << f.vert("Bienvenue dans le Mastermind !\n") << endl;
 	(*codeur).jouer();
 	do{
-		cout << "\nTour n°"<<numeroTour+1<<endl;
+		cout << f.jaune("\nTour n°"+f.intToString(numeroTour+1))<<endl;
 		(*decodeur).jouer();
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
 		historiqueResultat.push_back((*decodeur).getCombinaison().resultat((*codeur).getCombinaison()));
-		cout << CombiMastermind((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison());
 		afficherHistorique();
 		incrTour();
 	}while(detectionVictoire()==NULL);
@@ -38,5 +37,7 @@ void Mastermind :: partie(){
 }
 
 void Mastermind :: afficherHistorique(){
-	//while
+	FonctionsUtiles f;
+	string resultat = CombiMastermind((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison());
+	cout << f.rouge(f.charToString(resultat[0]))+" "+f.blanc(f.charToString(resultat[1])) << endl; 
 }

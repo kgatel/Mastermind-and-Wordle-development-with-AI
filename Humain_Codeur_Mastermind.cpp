@@ -19,6 +19,7 @@ void Humain_Codeur_Mastermind :: jouer(){
 }
 
 Combinaison Humain_Codeur_Mastermind :: entrerCode() {
+	FonctionsUtiles f;
 	ifstream Handle;
 	string chaine="";
 	string CurrLine;
@@ -26,7 +27,7 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	Handle.open(Menu::ENSEMBLE_ELEMENT);
 	cin.clear();
 	do {
-		cout<<"Codeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
+		cout<<f.bleu("Codeur entrez une combinaison de "+f.intToString(Menu::NB_CASE)+" couleurs séparées d'espaces \n");
 		if(Handle.is_open()) {
 	 
 			while(getline(Handle,CurrLine)) {
