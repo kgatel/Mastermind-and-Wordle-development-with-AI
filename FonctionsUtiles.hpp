@@ -66,6 +66,20 @@ class FonctionsUtiles {
 		
 		string blanc(string s);
 		
+		string carrevert();
+		
+		string carrerouge();
+		
+		string carrejaune();
+		
+		string carrebleu();
+		
+		string carreviolet();
+		
+		string carreblanc();
+		
+		string carrevide();
+		
 		bool equals(const string& s1,const string& s2);
 		
 };

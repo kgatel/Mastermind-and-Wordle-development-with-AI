@@ -91,9 +91,35 @@ string FonctionsUtiles :: bleu(string s){
 	return "\033[34m"+s+"\033[0m";
 }
 
-string FonctionsUtiles :: violet(string s){
+string FonctionsUtiles :: violet(string s){		
 	return "\033[35m"+s+"\033[0m";
 }
 
 string FonctionsUtiles :: blanc(string s){
 	return "\033[0m"+s+"\033[0m";}
+	
+string FonctionsUtiles :: carrevert(){
+	return "\033[32m\u2588\u2588\u001b[0m";
+}
+
+string FonctionsUtiles :: carrerouge(){
+	return "\033[31m\u2588\u2588\u001b[0m";
+}
+
+string FonctionsUtiles :: carrejaune(){
+	return "\033[33m\u2588\u2588\u001b[0m";
+}
+
+string FonctionsUtiles :: carrebleu(){
+	return "\033[34m\u2588\u2588\u001b[0m";
+}
+
+string FonctionsUtiles :: carreviolet(){
+	return "\u001b[35m\u2588\u2588\u001b[0m";
+}
+
+string FonctionsUtiles :: carreblanc(){
+	return "\u001b[0m\u2588\u2588";}
+	
+string FonctionsUtiles :: carrevide(){
+	return "▢";}
