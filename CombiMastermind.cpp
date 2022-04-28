@@ -72,8 +72,17 @@ int CombiMastermind :: malPlace(const CombiMastermind code){
 
 string CombiMastermind :: toString() {
 	string res="";
-	for (int i=0;i<(int)combinaison.size();i++){
-		res+=combinaison[i] + " ";
+	FonctionsUtiles f;
+	for (int k=0;k<Menu::NB_CASE;k++) {
+			if (f.equals(combinaison[k],"Rouge")) {res+=" "+f.carrerouge()+"    ";}
+			if (f.equals(combinaison[k],"Vert")) {res+=" "+f.carrevert()+"    ";}
+			if (f.equals(combinaison[k],"Jaune")) {res+=" "+f.carrejaune()+"    ";}
+			if (f.equals(combinaison[k],"Bleu")) {res+=" "+f.carrebleu()+"    ";}
+			if (f.equals(combinaison[k],"Violet")) {res+=" "+f.carreviolet()+"    ";}
+			if (f.equals(combinaison[k],"Blanc")) {res+=" "+f.carreblanc()+"    ";}	
+			if (f.equals(combinaison[k],"Orange")) {res+=" "+f.carreorange()+"    ";}
+			if (f.equals(combinaison[k],"Rose")) {res+=" "+f.carrerose()+"    ";}	
+			if (f.equals(combinaison[k],"Marron")) {res+=" "+f.carremarron()+"    ";}						
 	}
 	return res;
 }

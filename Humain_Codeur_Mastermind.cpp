@@ -21,24 +21,35 @@ void Humain_Codeur_Mastermind :: jouer(){
 Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 	FonctionsUtiles f;
 	ifstream Handle;
-	string chaine="";
+	string chaine="",chaine2="";
 	string CurrLine;
 	int compteur=0;
 	Handle.open(Menu::ENSEMBLE_ELEMENT);
 	cin.clear();
 	do {
-		cout<<f.bleu("Codeur entrez une combinaison de "+f.intToString(Menu::NB_CASE)+" couleurs séparées d'espaces \n");
+		cout<<f.cyan("Codeur entrez une combinaison de "+f.intToString(Menu::NB_CASE)+" couleurs séparées d'espaces \n");
 		if(Handle.is_open()) {
 	 
 			while(getline(Handle,CurrLine)) {
 				if (CurrLine!="end")
 				{
-					cout << "|" << CurrLine << endl;
+					if (f.equals(CurrLine,"Rouge")) {chaine2+=f.carrerouge()+" Rouge";}
+					if (f.equals(CurrLine,"Vert")) {chaine2+=f.carrevert()+" Vert";}
+					if (f.equals(CurrLine,"Jaune")) {chaine2+=f.carrejaune()+" Jaune";}
+					if (f.equals(CurrLine,"Bleu")) {chaine2+=f.carrebleu()+" Bleu";}
+					if (f.equals(CurrLine,"Violet")) {chaine2+=f.carreviolet()+" Violet";}
+					if (f.equals(CurrLine,"Blanc")) {chaine2+=f.carreblanc()+" Blanc";}	
+					if (f.equals(CurrLine,"Orange")) {chaine2+=f.carreorange()+" Orange";}
+					if (f.equals(CurrLine,"Rose")) {chaine2+=f.carrerose()+" Rose";}	
+					if (f.equals(CurrLine,"Marron")) {chaine2+=f.carremarron()+" Marron";}
+					cout << chaine2 << endl;
 				}
+				chaine2="";
 			}
 			
 		}
 		else {cout << "Erreur fichier";}
+		cout << "Code : ";
 		do{
 			getline(cin,chaine);
 			compteur++;
@@ -46,6 +57,7 @@ Combinaison Humain_Codeur_Mastermind :: entrerCode() {
 		compteur=0;
 	} while (!verifierEntree(chaine));
 	Handle.close();
+	system("clear");
 	return CombiMastermind(chaine);
 	
 }
@@ -68,10 +80,10 @@ bool Humain_Codeur_Mastermind :: verifierEntree(string entree) {
 		if (i==taille) {return true;}
 	} 
 	else {
-		if (taille==1){
-			cout <<"Vous n'avez rentré que "<<taille<<" mot !"<<endl;
+		if (taille<=1){
+			cout <<"Vous n'avez rentré que "<<taille<<" mot !\n"<<endl;
 		}else{
-			cout <<"Vous n'avez rentré que "<<taille<<" mots !"<<endl;
+			cout <<"Vous n'avez rentré que "<<taille<<" mots !\n"<<endl;
 		}
 	}
 	return false;
