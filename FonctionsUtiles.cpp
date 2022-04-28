@@ -95,6 +95,14 @@ string FonctionsUtiles :: violet(string s){
 	return "\033[35m"+s+"\033[0m";
 }
 
+string FonctionsUtiles :: vertclair(string s){		
+	return "\033[1;92;49m"+s+"\033[0m";
+}
+
+string FonctionsUtiles :: violetclair(string s){
+	return "\033[1;95;49m"+s+"\033[0m";
+}
+
 string FonctionsUtiles :: cyan(string s){
 	return "\033[36m"+s+"\033[0m";
 }

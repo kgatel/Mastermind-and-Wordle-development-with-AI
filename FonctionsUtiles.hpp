@@ -90,6 +90,10 @@ class FonctionsUtiles {
 		
 		string blink(string s);
 		
+		string violetclair(string s);
+		
+		string vertclair(string s);
+		
 		bool equals(const string& s1,const string& s2);
 		
 };

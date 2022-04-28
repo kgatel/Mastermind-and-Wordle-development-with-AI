@@ -45,7 +45,7 @@ void Menu::parametreDeJeu(int nbelement, string enselement,int nbcase,int nbtour
 void Menu :: afficherMenu(){
 	FonctionsUtiles f;
 	f.clear();
-	cout << f.violet("Bienvenue dans le menu des jeux de déduction !") << endl;
+	cout << f.violetclair("Bienvenue dans le menu des jeux de déduction !") << endl;
 	bool finchoix=false;
 	int choix=-1 ;
 	string tmpChoix="";

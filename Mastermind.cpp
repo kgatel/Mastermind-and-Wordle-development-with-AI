@@ -19,10 +19,10 @@ Mastermind :: Mastermind(Joueur *codeur1, Joueur *decodeur1) : JeuDeDeduction(co
 void Mastermind :: partie(){
 	FonctionsUtiles f;
 	f.clear();
-	cout << f.vert("Bienvenue dans le Mastermind !\n") << endl;
+	cout << f.vertclair("Bienvenue dans le Mastermind !\n") << endl;
 	(*codeur).jouer();
 	//le code est caché il faut rafficher
-	cout << f.vert("Bienvenue dans le Mastermind !\n") << endl;
+	cout << f.vertclair("Bienvenue dans le Mastermind !\n") << endl;
 	cout << f.cyan("Code couleur entré, décodeur à vous de le trouver !\n") << endl;
 	afficherCouleurs();	
 	do{
