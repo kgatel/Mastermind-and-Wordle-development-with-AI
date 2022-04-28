@@ -36,10 +36,12 @@ void Mastermind :: partie(){
 	}while(detectionVictoire()==NULL);
 	cout << endl;
 	if (detectionVictoire()==codeur){
+		system("aplay -q ressources/Song/defaite.wav &");
 		cout << "Le code était : " + CombiMastermind((*codeur).getCombinaison()).toString() << endl;
 		cout << (*codeur).toString();
 		cout << " a remporté la partie." << endl;
 	}else{
+		system("aplay -q ressources/Song/victoire.wav &");
 		cout << (*decodeur).toString();
 		cout << " a remporté la partie." << endl;
 	}
