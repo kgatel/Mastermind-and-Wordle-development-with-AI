@@ -118,6 +118,15 @@ string FonctionsUtiles :: carreviolet(){
 	return "\u001b[35m\u2588\u2588\u001b[0m";
 }
 
+string FonctionsUtiles :: carrerose(){
+	return "\033[48:5:200m  \033[m\n";}
+
+string FonctionsUtiles :: carreorange(){
+	return "\033[48:5:208m  \033[m\n";}
+
+string FonctionsUtiles :: carremarron(){
+	return "\033[48:5:094m  \033[m\n";}
+	
 string FonctionsUtiles :: carreblanc(){
 	return "\u001b[0m\u2588\u2588";}
 	

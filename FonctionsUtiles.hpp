@@ -78,6 +78,12 @@ class FonctionsUtiles {
 		
 		string carreblanc();
 		
+		string carreorange();
+		
+		string carrerose();
+		
+		string carremarron();
+		
 		string carrevide();
 		
 		bool equals(const string& s1,const string& s2);
