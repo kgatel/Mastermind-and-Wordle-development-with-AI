@@ -57,9 +57,9 @@ void Wordle :: afficherHistorique(){
 	string espace="";
 	string underscore="";
 	for (int jj=1;jj<Menu::NB_CASE;jj++){
-		underscore+="_______";
+		underscore+="____";
 	}
-	cout <<"________________"+underscore+"___"+f.cyan("Résultats")<< endl;
+	cout <<"________________"+underscore<< endl;
 	for (i=0;i<Menu::NB_TOUR-taille ; i++) {
 		if (Menu::NB_TOUR-i<10) {
 			espace=" ";
@@ -68,12 +68,12 @@ void Wordle :: afficherHistorique(){
 		}
 		string chaine="";
 		for (int cpt=0;cpt<Menu::NB_CASE;cpt++){
-			chaine+=f.carrevide()+"      ";
+			chaine+=f.carrevide()+" ";
 		}
 		if ((i==Menu::NB_TOUR-taille-1)&&(detectionVictoire()!=decodeur)){
-			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"  "+f.blink(chaine)+"     |"<<endl;
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<" "+f.blink(chaine)+"     |"<<endl;
 		}else{
-			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"  "+chaine+"     |"<<endl;
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<" "+chaine+"     |"<<endl;
 		}
 	}
 	for (j=0;j<taille ; j++) {
@@ -83,8 +83,7 @@ void Wordle :: afficherHistorique(){
 			espace="";
 		}
 		cout<<f.cyan("Tentative : ")<<espace<<taille-j<<" ";
-		cout << CombiWordle(historiqueCombinaison[taille-j-1]).toString();
-		cout<<" --> "+historiqueResultat[taille-j-1]<< endl;
+		cout<<historiqueResultat[taille-j-1]<< endl;
 	}
 	cout <<"________________"+underscore+"____________|"<< endl;
 }

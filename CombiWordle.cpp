@@ -33,19 +33,20 @@ string CombiWordle :: resultat(const Combinaison code){
 	bool exit=false;
 	for(int i=0;i<(int)combinaison.size();i++){
 		if (strcasecmp(combinaison[i].c_str(), code.get(i).c_str()) == 0){ //vérifier si combinaison[i]==code.get(i)
-			res+="\033[32m"+combinaison[i]+"\033[0m";
+			res+="\033[32m"+f.toCarre(combinaison[i])+" \033[0m";
 		}else{
 			while((j<(int)combinaison.size()) && (!exit)){
 				if (i!=j){
 					if (f.equals(combinaison[i],code.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
-						res+="\033[33m"+combinaison[i]+"\033[0m";
+						res+="\033[33m"+f.toCarre(combinaison[i])+" \033[0m";
 						exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
 					}
 				}
 				j++;
 			}
 			if (exit==false){
-				res+=combinaison[i];
+				res+=f.toCarre(combinaison[i]);
+				res+=" ";
 			}
 			exit=false;
 			j=0;

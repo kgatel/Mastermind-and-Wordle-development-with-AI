@@ -88,6 +88,60 @@ class FonctionsUtiles {
 		
 		string carrevide();
 		
+		string carreA();
+		
+		string carreB();
+		
+		string carreC();
+		
+		string carreD();
+		
+		string carreE();
+		
+		string carreF();
+		
+		string carreG();
+		
+		string carreH();
+		
+		string carreI();
+		
+		string carreJ();
+		
+		string carreK();
+		
+		string carreL();
+		
+		string carreM();
+		
+		string carreN();
+		
+		string carreO();
+		
+		string carreP();
+		
+		string carreQ();
+		
+		string carreR();
+		
+		string carreS();
+		
+		string carreT();
+		
+		string carreU();
+		
+		string carreV();
+		
+		string carreW();
+		
+		string carreX();
+		
+		string carreY();
+		
+		string carreZ();
+		
+		string toCarre(string s) ;
+		
 		string blink(string s);
 		
 		string violetclair(string s);

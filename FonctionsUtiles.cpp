@@ -146,6 +146,36 @@ string FonctionsUtiles :: carrevide(){
 	return "▢";
 }
 
+string FonctionsUtiles :: toCarre(string s) {
+	if (s=="a"){return "🅰";}
+	if (s=="b"){return "🅱";}
+	if (s=="c"){return "🅲";}
+	if (s=="d"){return "🅳";}
+	if (s=="e"){return "🅴";}
+	if (s=="f"){return "🅵";}
+	if (s=="g"){return "🅶";}
+	if (s=="h"){return "🅷";}
+	if (s=="i"){return "🅸";}
+	if (s=="j"){return "🅹";}
+	if (s=="k"){return "🅺";}
+	if (s=="l"){return "🅻";}
+	if (s=="m"){return "🅼";}
+	if (s=="n"){return "🅽";}
+	if (s=="o"){return "🅾";}
+	if (s=="p"){return "🅿";}
+	if (s=="q"){return "🆀";}
+	if (s=="r"){return "🆁";}
+	if (s=="s"){return "🆂";}
+	if (s=="t"){return "🆃";}
+	if (s=="u"){return "🆄";}
+	if (s=="v"){return "🆅";}
+	if (s=="w"){return "🆆";}
+	if (s=="x"){return "🆇";}
+	if (s=="y"){return "🆈";}
+	if (s=="z"){return "🆉";}
+	else {return "";}
+}
+
 string FonctionsUtiles :: blink(string s){
 	return "\033[5;39;49m"+s+"\033[25m";
 }
