@@ -29,17 +29,24 @@ CombiWordle :: CombiWordle(Combinaison c){
 string CombiWordle :: resultat(const Combinaison code){
 	FonctionsUtiles f;
 	string res="";   //initialise le vecteur à 0
+	bool memoireJ[Menu::NB_CASE];
+	for (int Indice = 0; Indice < Menu::NB_CASE; Indice++) {
+		memoireJ[Indice] = false;
+	}
 	int j=0;
 	bool exit=false;
-	for(int i=0;i<(int)combinaison.size();i++){
-		if (strcasecmp(combinaison[i].c_str(), code.get(i).c_str()) == 0){ //vérifier si combinaison[i]==code.get(i)
+	for(int i=0;i<Menu::NB_CASE;i++){
+		if (f.equals(combinaison[i],code.get(i))){ //vérifier si combinaison[i]==code.get(i)
 			res+="\033[32m"+f.toCarre(combinaison[i])+" \033[0m";
 		}else{
-			while((j<(int)combinaison.size()) && (!exit)){
+			while((j<Menu::NB_CASE) && (!exit)){
 				if (i!=j){
 					if (f.equals(combinaison[i],code.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
-						res+="\033[33m"+f.toCarre(combinaison[i])+" \033[0m";
-						exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
+						if((!f.equals(combinaison[j],code.get(j)))&&(!memoireJ[j])){
+							res+="\033[33m"+f.toCarre(combinaison[i])+" \033[0m";
+							memoireJ[j]=true;
+							exit=true;	//on sort pour ne pas compter deux fois s'il l'élément existe deux fois
+						}
 					}
 				}
 				j++;
@@ -58,7 +65,7 @@ string CombiWordle :: resultat(const Combinaison code){
 
 string CombiWordle :: toString() {
 	string res="";
-	for (int i=0;i<(int)combinaison.size();i++){
+	for (int i=0;i<Menu::NB_CASE;i++){
 		res+=combinaison[i];
 	}
 	return res;

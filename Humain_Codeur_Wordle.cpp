@@ -39,12 +39,12 @@ bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
 
 Combinaison Humain_Codeur_Wordle :: entrerCode() {
 	FonctionsUtiles f;
-	cout << "Redirection du codeur en cours..." << endl;
-	/*for (int i=5;i>0;i--){
+	/*cout << "Redirection du codeur en cours..." << endl;
+	for (int i=5;i>0;i--){
 		sleep(1);
 		cerr << i << ".." ;
-	}*/
-	cerr << 0 << endl;
+	}
+	cerr << 0 << endl;*/
     string mot;
     bool t=false;
     bool longueurMotBonne=true;
@@ -66,7 +66,7 @@ Combinaison Humain_Codeur_Wordle :: entrerCode() {
 			longueurMotBonne=true;
 		}
     }
-	cout << "Code bien enregistré, décodeur à vous de jouer !" << endl;
+	cout << f.cyan("Code bien enregistré, décodeur à vous de jouer !") << endl;
     return CombiWordle(mot);
 }
 
@@ -88,7 +88,7 @@ string Humain_Codeur_Wordle :: cachermot(bool longueurMotBonne,bool motExiste){
 			}
 		}
 	}
-    string chaine = "Codeur rentrez votre code ("+f.intToString(Menu::NB_CASE)+" lettres en minuscule) : ";
+    string chaine = "Codeur rentrez votre code ("+f.intToString(Menu::NB_CASE)+" lettres minuscule) : ";
     char* chr = &chaine[0];
     printw(chr);
     noecho();

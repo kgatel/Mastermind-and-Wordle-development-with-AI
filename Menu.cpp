@@ -56,7 +56,33 @@ void Menu :: afficherMenu(){
 			cout<<"1 - Définir le jeu \n";
 			cout<<"2 - Définir le mode de jeu \n";
 			cout<<"3 - Définir le nombre de tours max \n";
-			cout<<"0 - Lancer la partie \n";
+			string text="";
+			text+=JEU+" ";
+			if (JEU=="Mastermind"){
+				text+="- ";
+			}else{
+				if (Langue==1){
+					text+="fr - ";
+				}
+				if (Langue==2){
+					text+="engl - ";
+				}
+			}
+			if (ModeDeJeu==1){
+				text+="Humain vs Humain - ";
+			}
+			if (ModeDeJeu==2){
+				text+="Humain vs IA codeur - ";
+			}
+			if (ModeDeJeu==3){
+				text+="Humain vs IA décodeur - ";
+			}
+			if (ModeDeJeu==4){
+				text+="IA vs IA - ";
+			}
+			text+="TourMax="+f.intToString(NB_TOUR);
+			
+			cout<<"0 - Lancer la partie (\033[4;39;49m"+text+"\033[0m)\n";
 			cin >>tmpChoix;
 		}while(!f.isNumber(tmpChoix));
 		choix=stoi(tmpChoix);
@@ -130,8 +156,8 @@ void Menu :: afficherMenu(){
 				do{
 					cout<<f.bleu("\nChoisissez votre mode de jeu :\n");
 					cout<<"1- Humain vs Humain \n";
-					cout<<"2- Humain codeur vs IA décodeur \n";
-					cout<<"3- IA codeur vs Humain decodeur\n";
+					cout<<"2- Humain decodeur vs IA codeur \n";
+					cout<<"3- Humain codeur vs IA décodeur \n";
 					cout<<"4- IA vs IA\n";
 					cin>>tmpChoix;
 				}while(!f.isNumber(tmpChoix));

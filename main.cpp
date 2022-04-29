@@ -53,22 +53,22 @@ int main() {
 		break;
 		case 2:{
 			if (Menu::JEU=="Mastermind"){
-				codeur=&j1;
-				decodeur=&j7;
-			}else{
-				codeur=&j2;
-				decodeur=&j8;
-			}
-		}
-		break;
-		case 3:
-			if (Menu::JEU=="Mastermind"){
 				codeur=&j5;
 				decodeur=&j3;
 			}else{
 				codeur=&j6;
 				decodeur=&j4;
 			}
+		}
+		break;
+		case 3:
+			if (Menu::JEU=="Mastermind"){
+					codeur=&j1;
+					decodeur=&j7;
+				}else{
+					codeur=&j2;
+					decodeur=&j8;
+				}
 		
 		break;
 		case 4:

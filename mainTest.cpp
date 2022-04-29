@@ -17,7 +17,7 @@ int main()
 
 
 {	
-	FonctionsUtiles f;
+	/*FonctionsUtiles f;
 	cout<<"***************************PARTIE MASTERMIND***************************\n";
 	Menu::ModeDeJeu=1;
 	Menu menu;
@@ -28,7 +28,7 @@ int main()
     CombiMastermind c2=CombiMastermind(decodeur.entrerCombinaison());
     cout << "\nNombre de couleurs bien placées : " << c2.resultat(c1)[0] << "\nNombre de couleurs mal placées : " << c2.resultat(c1)[1] << "\n"<< endl;
     cout << "*************************FIN TEST*************************\n\n" << endl;
-    
+    */
 
    /* cout<< "***************************PARTIE WORDLE***************************\n";
     
@@ -47,9 +47,6 @@ int main()
     cout << resultat << endl;
     //c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
-    
-    
-    
     
     
     return 0;
