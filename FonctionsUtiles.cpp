@@ -42,8 +42,6 @@ bool FonctionsUtiles :: checkMotFichier(string fichier, string mot){
         }
         monFichier.close();
     }
-    else
-        cout << "Erreur fichier" << endl;
 
     return false;
 }
