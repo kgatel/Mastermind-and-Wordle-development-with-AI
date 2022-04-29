@@ -5,8 +5,10 @@ LIBS = -lncurses
 Jeu : Joueur.o Combinaison.o Menu.o JeuDeDeduction.o 
 	$(FC) Joueur.o Combinaison.o Menu.o JeuDeDeduction.o -o Jeu
 
-mainTest : Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Codeur.o Humain_Decodeur.o Humain.o Joueur.o Menu.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o
-	$(FC) Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Codeur.o Humain_Decodeur.o Menu.o Humain.o Joueur.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o -o mainTest $(LIBS)
+mainTest : Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o
+	$(FC) Menu.o JeuDeDeduction.o Mastermind.o Wordle.o Joueur.o Humain.o Humain_Codeur.o Humain_Decodeur.o Humain_Codeur_Wordle.o Humain_Codeur_Mastermind.o Humain_Decodeur_Wordle.o Humain_Decodeur_Mastermind.o IA.o IA_Codeur.o IA_Decodeur.o IA_Codeur_Wordle.o IA_Codeur_Mastermind.o IA_Decodeur_Wordle.o IA_Decodeur_Mastermind.o Combinaison.o CombiMastermind.o CombiWordle.o FonctionsUtiles.o mainTest.cpp -o mainTest $(LIBS);
+	./mainTest;
+	@ rm mainTest;
 
 mainTest.o : mainTest.cpp CombiMastermind.hpp
 	$(FC) $(OPT) mainTest.cpp

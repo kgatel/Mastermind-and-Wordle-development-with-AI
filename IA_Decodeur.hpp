@@ -30,13 +30,7 @@ class IA_Decodeur : public IA {
 		/*! \fn virtual void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
-		virtual void Maj_ensemble()=0;
-		  
-	  	/*! \fn virtual Combinaison Choisir_combi()
-	 	* \brief Cette méthode permet de choisir la prochaine proposition soit dans l’ordre de son apparition dans l’ensemble, soit en choisissant une de manière aléatoire, soit en utilisant l’algorithme MinMax.
-		*\return retourne une combinaison
-		*/
-		virtual Combinaison Choisir_combi()=0;		
+		virtual void Maj_ensemble()=0;	
 };
 
 #endif 

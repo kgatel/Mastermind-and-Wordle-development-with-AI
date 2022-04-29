@@ -7,12 +7,7 @@
 using namespace std;
 
 Humain_Codeur :: Humain_Codeur() : Humain(){
-	Combinaison combinaison();
+	Mdp=0;
 }
-
-bool Humain_Codeur :: verifierEntree(string entree){
-	return false;
-}
-
 
 

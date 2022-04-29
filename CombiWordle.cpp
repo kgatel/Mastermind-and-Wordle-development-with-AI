@@ -25,6 +25,8 @@ CombiWordle :: CombiWordle(Combinaison c){
 	combinaison=c.get();
 }
 
+CombiWordle :: CombiWordle(vector<string> v) : Combinaison(v){
+}
 
 string CombiWordle :: resultat(const Combinaison code){
 	FonctionsUtiles f;

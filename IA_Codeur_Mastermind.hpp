@@ -27,8 +27,10 @@ class IA_Codeur_Mastermind : public IA_Codeur{
 		* \brief méthode permettant à la machine de générer un code que l'intelligence artificielle devra ensuite trouver
 		*\return retourne le code créé par la machine
 		*/
-		Combinaison genererCode();
-		  
+		virtual Combinaison genererCode();
+		
+		virtual Combinaison choisirCombinaison();
+		
 		virtual void jouer();
 	
 };

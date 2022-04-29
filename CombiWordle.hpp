@@ -34,6 +34,8 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle(const string &chaine);
 		
+		CombiWordle(vector<string> v);
+		
 		CombiWordle(Combinaison c);
 		
 		/*! \fn int resultat(CombiWordle code)

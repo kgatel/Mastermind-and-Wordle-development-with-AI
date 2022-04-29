@@ -10,7 +10,7 @@ using namespace std;
 	int Menu::Langue=2;
 	int Menu::NB_TOUR=12;
 	int Menu::NB_CASE=4;
-	int Menu::NB_ELEMENT=0;
+	int Menu::NB_ELEMENT=9;		//nombre de couleur dans le mastermind
 	string Menu::ENSEMBLE_ELEMENT="ressources";
 	
 Menu :: Menu() {

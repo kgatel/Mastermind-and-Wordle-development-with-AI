@@ -16,6 +16,10 @@ void  Combinaison ::setCombinaison (vector<string> c){
 	combinaison = c;
 }
 
+Combinaison :: Combinaison(vector<string> v) {
+	combinaison=v;
+}
+
 vector<string> Combinaison :: get() const{
 	return combinaison;
 }

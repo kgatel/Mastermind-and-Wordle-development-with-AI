@@ -1,14 +1,8 @@
 #include "IA.hpp"
 #include "Combinaison.hpp"
 
-IA :: IA(){
-	Combinaison combinaison();
-}
-IA::IA(string pseudo1){
-	Combinaison combinaison();
-	pseudo=pseudo1;
+IA :: IA(): Joueur(){
 }
 
-Combinaison IA :: choisirCombinaison(){		//à supprimer car elle est abstraite pure
-	return Combinaison();
+IA::IA(string pseudo1) : Joueur(pseudo1){
 }

@@ -24,7 +24,7 @@ class Menu {
 		static int NB_CASE;
 		static int NB_TOUR;
 		static int Langue; //1 pour Francais , 2 pour Anglais
-		static int ModeDeJeu;	
+		static int ModeDeJeu;
 		
 		/*! \fn Menu()
 		  * \brief Constructeur de la classe Menu

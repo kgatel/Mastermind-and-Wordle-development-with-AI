@@ -29,6 +29,8 @@ class Combinaison {
 		  */
 		Combinaison();
 		
+		Combinaison(vector<string> v);
+		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
 		* \param chaine string 

@@ -23,6 +23,7 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		*\return retourne le nom du répertoire du fichier 
 		*/
 		string choixFichier(string mot);
+		string cachermot(bool longueurMotBonne,bool motExiste);
 		
 	public:
 		/*! \fn Humain_Codeur_Wordle()
@@ -34,15 +35,13 @@ class Humain_Codeur_Wordle : public Humain_Codeur{
 		* \brief méthode permettant à l'utilisateur de saisir le code que le joueur décodeur devra ensuite deviner
 		*\return retourne le code saisi par le joueur codeur
 		*/
-		Combinaison entrerCode();
+		virtual Combinaison entrerCode();
 		  
 		/*! \fn bool VerifierEntree(string entree)()
 		* \brief Méthode qui Permet de vérifier si l'entrée du joueur codeur peut être interpréter en un mot du dictionnaire du jeu Wordle
 		*\return retourne un booleen, true si la chaîne peut être considérée comme un mot du dictionnaire et false sinon
 		*/
-		bool verifierEntree(string entree);
-		  
-		string cachermot(bool longueurMotBonne,bool motExiste);
+		virtual bool verifierEntree(string entree);
 		
 		virtual void jouer();
 };

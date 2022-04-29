@@ -32,6 +32,8 @@ class CombiMastermind : public Combinaison{
 		  */
 		CombiMastermind(const string &chaine);
 		
+		CombiMastermind(vector<string> v);
+		
 		CombiMastermind(Combinaison c);
 		
 		virtual string resultat(const Combinaison code) ;

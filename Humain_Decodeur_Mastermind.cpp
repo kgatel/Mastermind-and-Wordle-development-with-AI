@@ -32,18 +32,27 @@ bool Humain_Decodeur_Mastermind :: verifierEntree(string entree) {
 			}
 		}
 		if (i==taille) {return true;}
-	} 
-	else {cout <<"Vous n'avez rentré que "<<taille<<" mots!"<<endl;}
+	}
+	if (taille<=1){
+		cout <<"Vous n'avez rentré que "<<taille<<" mot !\n"<<endl;
+	}else{
+		cout <<"Vous n'avez rentré que "<<taille<<" mots !\n"<<endl;
+	}
 	return false;
 		
 }
 
 Combinaison Humain_Decodeur_Mastermind :: entrerCombinaison() {
+	int compteur=0;
 	string couleurs;
 	bool t=false;
 	while(!t) {
 		cout<<"Decodeur entrez une combinaison de "<< Menu::NB_CASE<< " couleurs séparées d'espaces \n";
-		getline(cin,couleurs);
+		do{
+			getline(cin,couleurs);
+			compteur++;
+		}while((couleurs=="")&&(compteur==1));
+		compteur=0;
 		if (verifierEntree(couleurs)) {t=true;}
 	}
 	return CombiMastermind(couleurs);

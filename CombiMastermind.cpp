@@ -19,6 +19,9 @@ CombiMastermind :: CombiMastermind(const string &chaine){
 	combinaison=f.split(chaine,' ');
 }
 
+CombiMastermind :: CombiMastermind(vector<string> v) : Combinaison(v){
+}
+
 CombiMastermind :: CombiMastermind(Combinaison c){
 	combinaison=c.get();
 }

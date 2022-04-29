@@ -13,7 +13,7 @@ using namespace std;
 IA_Decodeur_Mastermind :: IA_Decodeur_Mastermind(){
 }
 void IA_Decodeur_Mastermind :: jouer(){
-	
+	setCombinaison(CombiMastermind(choisirCombinaison()));
 }
 
 vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
@@ -23,7 +23,7 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 void IA_Decodeur_Mastermind :: Maj_ensemble(){
 }
 		 
-Combinaison IA_Decodeur_Mastermind :: Choisir_combi(){
+Combinaison IA_Decodeur_Mastermind :: choisirCombinaison(){
 	return Combinaison();
 }
 	

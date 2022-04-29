@@ -4,11 +4,13 @@
 #include "Humain_Decodeur_Wordle.hpp"
 #include "Humain_Codeur_Mastermind.hpp"
 #include "Humain_Decodeur_Mastermind.hpp"
+#include "IA_Codeur_Mastermind.hpp"
 #include "CombiWordle.hpp"
 #include "Menu.hpp"
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include <fstream>
 #include "FonctionsUtiles.hpp"
 
 using namespace std;
@@ -48,6 +50,31 @@ int main()
     //c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
     
+    IA_Codeur_Mastermind ia1;
+    cout << ia1.genererCode().toString() << endl;
+    
+    FonctionsUtiles f;
+	vector<string> Couleurs(Menu :: NB_ELEMENT);
+	vector<string> res(Menu::NB_CASE);
+	ifstream Handle;
+	string CurrLine;
+	Handle.open(Menu::ENSEMBLE_ELEMENT);
+	cin.clear();
+	if(Handle.is_open()) {
+		while(getline(Handle,CurrLine)) {
+			if (CurrLine!="end")
+			{
+				Couleurs.push_back(CurrLine);
+			}
+		}
+	}
+	Handle.close();
+	for (int i=0;i<Menu::NB_CASE;i++){
+		res[i]=Couleurs[rand() % Menu::NB_ELEMENT];	//rentre une couleur aléatoire
+	}
+	system("clear");
+	
+	CombiMastermind c(res);
     
     return 0;
 }
