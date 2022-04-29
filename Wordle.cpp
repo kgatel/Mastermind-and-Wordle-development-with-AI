@@ -57,9 +57,9 @@ void Wordle :: afficherHistorique(){
 	string espace="";
 	string underscore="";
 	for (int jj=1;jj<Menu::NB_CASE;jj++){
-		underscore+="____";
+		underscore+="__";
 	}
-	cout <<"________________"+underscore<< endl;
+	cout <<"______________________"+underscore<< endl;
 	for (i=0;i<Menu::NB_TOUR-taille ; i++) {
 		if (Menu::NB_TOUR-i<10) {
 			espace=" ";
@@ -71,9 +71,9 @@ void Wordle :: afficherHistorique(){
 			chaine+=f.carrevide()+" ";
 		}
 		if ((i==Menu::NB_TOUR-taille-1)&&(detectionVictoire()!=decodeur)){
-			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<" "+f.blink(chaine)+"     |"<<endl;
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"   "+f.blink(chaine)+"   |"<<endl;
 		}else{
-			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<" "+chaine+"     |"<<endl;
+			cout<<f.cyan("Tentative : ")<<espace<<Menu::NB_TOUR-i<<"   "+chaine+"   |"<<endl;
 		}
 	}
 	for (j=0;j<taille ; j++) {
@@ -82,10 +82,10 @@ void Wordle :: afficherHistorique(){
 		}else{
 			espace="";
 		}
-		cout<<f.cyan("Tentative : ")<<espace<<taille-j<<" ";
-		cout<<historiqueResultat[taille-j-1]<< endl;
+		cout<<f.cyan("Tentative : ")<<espace<<taille-j<<"   ";
+		cout<<historiqueResultat[taille-j-1]<< "   |"<<endl;
 	}
-	cout <<"________________"+underscore+"____________|"<< endl;
+	cout <<"______________________"+underscore+"|"<<endl;
 }
 
 

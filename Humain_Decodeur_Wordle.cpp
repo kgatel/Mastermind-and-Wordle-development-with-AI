@@ -40,8 +40,8 @@ Combinaison Humain_Decodeur_Wordle :: entrerCombinaison() {
 		cin >> mot;
 		if ((int)mot.size()==Menu::NB_CASE) {
 		if (verifierEntree(mot)) {t=true;}
-		else cout << "Le mot n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n";
+		else cout << "Le mot n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n\n";
 		}
-		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot ne fait pas " <<Menu::NB_CASE<<" caracteres \n";}}
+		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot ne fait pas " <<Menu::NB_CASE<<" caracteres \n\n";}}
 	return CombiWordle(mot);
 }

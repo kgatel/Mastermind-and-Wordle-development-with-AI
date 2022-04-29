@@ -40,10 +40,10 @@ bool Humain_Codeur_Wordle :: verifierEntree(string entree) {
 Combinaison Humain_Codeur_Wordle :: entrerCode() {
 	FonctionsUtiles f;
 	cout << "Redirection du codeur en cours..." << endl;
-	for (int i=5;i>0;i--){
+	/*for (int i=5;i>0;i--){
 		sleep(1);
 		cerr << i << ".." ;
-	}
+	}*/
 	cerr << 0 << endl;
     string mot;
     bool t=false;
