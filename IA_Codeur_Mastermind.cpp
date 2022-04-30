@@ -35,7 +35,6 @@ Combinaison IA_Codeur_Mastermind :: genererCode(){
 		while(getline(Handle,CurrLine)) {
 			if (CurrLine!="end")
 			{
-				cout << CurrLine;
 				Couleurs.push_back(CurrLine);
 			}
 		}
