@@ -15,6 +15,8 @@ void IA_Decodeur_Wordle :: jouer(){
 }
 
 vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
+
+	//load dictionary
 	return vector<Combinaison>();
 }
 

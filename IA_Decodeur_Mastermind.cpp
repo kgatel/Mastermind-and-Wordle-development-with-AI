@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <set>
 
 using namespace std;
 
@@ -17,7 +18,30 @@ void IA_Decodeur_Mastermind :: jouer(){
 }
 
 vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
-	return vector<Combinaison>();
+
+	//int taille=Menu::NB_CASE;
+
+	set<string> Colorset = {"Rouge","Bleu","Vert","Jaune","Orange","Violet","Marron","Rose","Blanc"};
+	vector<Combinaison> ensemble;
+	string temp;
+	Combinaison combi;
+
+
+	
+for (string i1: Colorset){
+for (string i2: Colorset){
+for (string i3: Colorset){
+for (string i4: Colorset){
+    
+	temp.clear();
+	temp=i1+" "+i2+" "+i3+" "+i4;
+	combi=CombiMastermind(temp);
+
+    
+	ensemble.push_back(combi);
+}}}}
+
+	return ensemble;
 }
 
 void IA_Decodeur_Mastermind :: Maj_ensemble(){
