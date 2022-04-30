@@ -25,8 +25,8 @@ Combinaison IA_Codeur_Mastermind :: choisirCombinaison(){
 
 Combinaison IA_Codeur_Mastermind :: genererCode(){
 	FonctionsUtiles f;
-	vector<string> Couleurs(Menu :: NB_ELEMENT);
-	vector<string> res(Menu::NB_CASE);
+	vector<string> Couleurs;
+	vector<string> res;
 	ifstream Handle;
 	string CurrLine;
 	Handle.open(Menu::ENSEMBLE_ELEMENT);
@@ -35,13 +35,16 @@ Combinaison IA_Codeur_Mastermind :: genererCode(){
 		while(getline(Handle,CurrLine)) {
 			if (CurrLine!="end")
 			{
+				cout << CurrLine;
 				Couleurs.push_back(CurrLine);
 			}
 		}
 	}
 	Handle.close();
+	
+	srand (time(NULL));
 	for (int i=0;i<Menu::NB_CASE;i++){
-		res[i]=Couleurs[rand() % Menu::NB_ELEMENT];	//rentre une couleur aléatoire
+		res.push_back(Couleurs[rand() % Menu::NB_ELEMENT]);	//rentre une couleur aléatoire
 	}
 	system("clear");
 	

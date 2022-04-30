@@ -36,7 +36,7 @@ class IA_Decodeur_Mastermind : public IA_Decodeur{
 		*/
 		virtual void Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble);
 		  
-	  	virtual Combinaison choisirCombinaison(vector<Combinaison> ensemble);
+	  	virtual Combinaison choisirCombinaison();
 
 		virtual void jouer();
 

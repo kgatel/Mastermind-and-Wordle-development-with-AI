@@ -12,6 +12,7 @@
 #include <sstream>
 #include <fstream>
 #include "FonctionsUtiles.hpp"
+#include <time.h>
 
 using namespace std;
 
@@ -50,31 +51,8 @@ int main()
     //c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
     
-    IA_Codeur_Mastermind ia1;
-    cout << ia1.genererCode().toString() << endl;
-    
-    FonctionsUtiles f;
-	vector<string> Couleurs(Menu :: NB_ELEMENT);
-	vector<string> res(Menu::NB_CASE);
-	ifstream Handle;
-	string CurrLine;
-	Handle.open(Menu::ENSEMBLE_ELEMENT);
-	cin.clear();
-	if(Handle.is_open()) {
-		while(getline(Handle,CurrLine)) {
-			if (CurrLine!="end")
-			{
-				Couleurs.push_back(CurrLine);
-			}
-		}
-	}
-	Handle.close();
-	for (int i=0;i<Menu::NB_CASE;i++){
-		res[i]=Couleurs[rand() % Menu::NB_ELEMENT];	//rentre une couleur aléatoire
-	}
-	system("clear");
-	
-	CombiMastermind c(res);
+    Menu menu;
+    menu.afficherMenu();
     
     return 0;
 }
