@@ -11,10 +11,10 @@ using namespace std;
 IA_Decodeur_Wordle :: IA_Decodeur_Wordle() {
 }
 void IA_Decodeur_Wordle :: jouer(){
-	setCombinaison(CombiWordle(choisirCombinaison()));
+	//setCombinaison(CombiWordle(choisirCombinaison()));
 }
 
-vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
+vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(vector<Combinaison> ensemble){
 
 	//load dictionary
 	return vector<Combinaison>();
@@ -23,7 +23,7 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 void IA_Decodeur_Wordle :: Maj_ensemble(){
 }
 		 
-Combinaison IA_Decodeur_Wordle :: choisirCombinaison(){
+Combinaison IA_Decodeur_Wordle :: choisirCombinaison(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble){
 	return Combinaison();
 }
 	

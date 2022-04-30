@@ -4,6 +4,7 @@
 
 #include "Combinaison.hpp"
 #include "IA_Decodeur.hpp"
+#include "CombiMastermind.hpp"
 
 
 /*! \class IA_Decodeur_Wordle
@@ -15,7 +16,7 @@
 *
 */
 
-class IA_Decodeur_Wordle : public IA_Decodeur{
+class IA_Decodeur_Wordle{
 
 	public :
 	
@@ -28,14 +29,14 @@ class IA_Decodeur_Wordle : public IA_Decodeur{
 		* \brief Cette méthode abstraite permet de créer l'ensemble S de toutes les combinaisons de couleurs possibles.
 		* \return retourne une liste de combinaison
 		*/
-		virtual vector<Combinaison> Combi_possible();
+		virtual vector<Combinaison> Combi_possible(vector<Combinaison> ensemble);
 		  
 		/*! \fn void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
 		virtual void Maj_ensemble();
 		
-		virtual Combinaison choisirCombinaison();	
+		virtual Combinaison choisirCombinaison(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble);	
 		
 		virtual void jouer();
 
