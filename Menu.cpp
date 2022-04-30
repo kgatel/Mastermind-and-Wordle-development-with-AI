@@ -120,11 +120,11 @@ void Menu :: afficherMenu(){
 				choisirJeu("Mastermind");
 					do{
 						do{
-							cout<<f.bleu("\nChoisissez la taille de la combinaison de couleur entrée :\n")+"Il doit être compris entre 3 et 10\n";
+							cout<<f.bleu("\nChoisissez la taille de la combinaison de couleur entrée :\n")+"Il doit être compris entre 3 et 6\n";
 							cin>>tmpChoix;
 						}while(!f.isNumber(tmpChoix));
 						tmp2=stoi(tmpChoix);
-					}while (tmp2<3||tmp2>10);
+					}while (tmp2<3||tmp2>6);
 					NB_CASE=tmp2;
 					cout<<f.jaune("Taille de la combinaison modifiée\n");
 				}
@@ -169,11 +169,11 @@ void Menu :: afficherMenu(){
 			case 3:
 			do{
 				do{
-					cout<<f.bleu("\nChoisissez le nombre de tours:\n")+"Il doit être compris entre 5 et 20\n";
+					cout<<f.bleu("\nChoisissez le nombre de tours:\n")+"Il doit être compris entre 5 et 30\n";
 					cin>>tmpChoix;
 				}while(!f.isNumber(tmpChoix));
 				tmp=stoi(tmpChoix);
-			}while (tmp<5||tmp>20);
+			}while (tmp<5||tmp>30);
 			NB_TOUR=tmp;
 			cout<<f.jaune("Nombre de tours modifié\n");
 			break;

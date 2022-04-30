@@ -38,7 +38,6 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 		while(getline(Handle,CurrLine)) {
 			if (CurrLine!="end")
 			{
-				cout << CurrLine;
 				Colorset.push_back(CurrLine);
 			}
 		}
