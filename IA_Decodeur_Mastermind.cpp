@@ -14,7 +14,8 @@ using namespace std;
 IA_Decodeur_Mastermind :: IA_Decodeur_Mastermind(){
 }
 void IA_Decodeur_Mastermind :: jouer(){
-	setCombinaison(CombiMastermind(choisirCombinaison()));
+	vector<Combinaison> ensemble;
+	setCombinaison(CombiMastermind(choisirCombinaison(ensemble)));
 }
 
 vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
@@ -26,8 +27,6 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 	string temp;
 	Combinaison combi;
 
-
-	
 for (string i1: Colorset){
 for (string i2: Colorset){
 for (string i3: Colorset){
@@ -37,17 +36,35 @@ for (string i4: Colorset){
 	temp=i1+" "+i2+" "+i3+" "+i4;
 	combi=CombiMastermind(temp);
 
-    
 	ensemble.push_back(combi);
 }}}}
 
 	return ensemble;
 }
 
-void IA_Decodeur_Mastermind :: Maj_ensemble(){
+void IA_Decodeur_Mastermind :: Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble){
+	vector<Combinaison>::iterator itr;
+	int taille=ensemble.size();
+	for (int i=0;i<taille;i++)
+	{
+		if(combi.bienPlace(ensemble[i])!=bienPlace || combi.malPlace(ensemble[i])!=malPlace)
+		{
+			itr= ensemble.begin()+i;
+			ensemble.erase(itr);
+		}
+	}
+
 }
 		 
-Combinaison IA_Decodeur_Mastermind :: choisirCombinaison(){
-	return Combinaison();
+Combinaison IA_Decodeur_Mastermind :: choisirCombinaison(vector<Combinaison> ensemble){
+	
+	//cas random
+	Combinaison combi;
+	int r;
+	
+	r= rand()% ensemble.size();
+	combi=ensemble[r];
+	
+	return combi;
 }
 	

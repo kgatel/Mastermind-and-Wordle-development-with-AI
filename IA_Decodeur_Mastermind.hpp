@@ -3,6 +3,8 @@
 #include <string>
 
 #include "Combinaison.hpp"
+#include "CombiMastermind.hpp"
+
 #include "IA_Decodeur.hpp"
 
 /*! \class IA_Decodeur_Mastermind
@@ -32,9 +34,9 @@ class IA_Decodeur_Mastermind : public IA_Decodeur{
 		/*! \fn void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
-		virtual void Maj_ensemble();
+		virtual void Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble);
 		  
-	  	virtual Combinaison choisirCombinaison();
+	  	virtual Combinaison choisirCombinaison(vector<Combinaison> ensemble);
 
 		virtual void jouer();
 
