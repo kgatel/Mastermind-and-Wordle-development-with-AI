@@ -1,5 +1,5 @@
 fable
-fâche
+fache
 facho
 façon
 facto
@@ -7,9 +7,9 @@ fadai
 fader
 fagne
 fagot
-faîne
+faine
 faire
-faîte
+faite
 fakir
 fallu
 falun
@@ -84,7 +84,7 @@ fjeld
 fjord
 flair
 flanc
-flâné
+flané
 flash
 fléau
 flein
@@ -152,7 +152,7 @@ frire
 frise
 frite
 fritz
-frôle
+frole
 front
 froué
 fruit

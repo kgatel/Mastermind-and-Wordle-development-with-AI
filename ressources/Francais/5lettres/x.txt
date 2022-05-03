@@ -1,8 +1,5 @@
-XERES
-XERUS
-XHOSA
-XIANG
-XIEME
-XIPHO
-XYLOL
-XYSTE
+xenon
+xeres
+xerus
+xipho
+xyste
