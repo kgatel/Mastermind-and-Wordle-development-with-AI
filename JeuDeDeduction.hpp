@@ -17,7 +17,7 @@ using namespace std;
 * \date avril 2022
 * \namespace std
 *
-* Cette classe permet de définir l'objet Combinaison. Elle transforme une chaine de caractère (suite de couleur ou de lettre) séparée d'espace en tableau d'entier. Elle possède un seul attribut : le tableau d'entier.
+* Cette classe permet de définir un jeu de déduction dans son intégralité, elle a comme attribut les joueurs, la combinaison et le menu pour récuperer les constantes. 
 */
 class JeuDeDeduction {
 	protected:
@@ -36,8 +36,8 @@ class JeuDeDeduction {
 		
 		/*! \fn JeuDeDeduction();
 		  * \brief Constructeur neutre de la classe JeuDeDeduction avec paramètres
-		  * \param codeur : joueur codeur
-		  * \param decodeur : joueur décodeur
+		  * \param codeur : joueur codeur qui propose une combinaison 
+		  * \param decodeur : joueur décodeur qui va deviner la combinaison
 		  * \param HistoriqueCombinaison : historique des combinaisons
 		  * \param numeroTour : numéro du tour initial
 		  * \param menu : menu qui a été initialisé
@@ -45,9 +45,13 @@ class JeuDeDeduction {
 		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
 		  */
 		JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1);
+
+		/*! \fn ~JeuDeDeduction();
+		  * \brief Déstructeur de la classe JeuDeDeduction
+		  */
 		virtual ~JeuDeDeduction(){}
 		
-		virtual int main();
+		
 		
 		/*! \fn void partie() 
 		* \brief Cette méthode abstraite permet de lancer une partie une fois que les paramètres et le mode de jeu ont bien été choisi par le joueur s'il le souhaite
@@ -60,11 +64,7 @@ class JeuDeDeduction {
 		*/
 		virtual void afficherHistorique()=0;
 		
-		/*! \fn void afficherCode();
-		* \brief Cette méthode permet au joueur codeur de regarder son code discrètement. Pour activer cette méthode il faudra rentrer un mot de passe. Si le mot de passe rentré est le même que l’attribut du codeur alors le code sera affiché quelques secondes.
-		*/
-		void afficherCode();
-		
+
 		/*! \fn Joueur detectionVictoire()
 		* \brief Cette méthode permet de savoir s'il y a un gagnant au cours de la partie ou non
 		* \return Renvoie le joueur gagant s'il en existe un, sinon elle retourne null
