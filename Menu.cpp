@@ -56,7 +56,6 @@ void Menu :: afficherMenu(){
 			cout<<"1 - Définir le jeu \n";
 			cout<<"2 - Définir le mode de jeu \n";
 			cout<<"3 - Définir le nombre de tours max \n";
-			cout<<"4 - consulter les règles \n";
 			string text="";
 			text+=JEU+" ";
 			if (JEU=="Mastermind"){
@@ -178,21 +177,12 @@ void Menu :: afficherMenu(){
 			NB_TOUR=tmp;
 			cout<<f.jaune("Nombre de tours modifié\n");
 			break;
-			case 4:
-			tmp=0;
-			do {
-			cout<<"Choisissez le jeu :\n";
-			cout<<"1 - Mastermind \n";
-			cout<<"2 - Wordle \n";
+			/*case 3:
+			cout<<"choisissez le nombre de cases:\n";
 			cin>>tmp;
-		}
-			while (tmp!=1&&tmp!=2);
-			if (tmp==1){
-			system("gedit ressources/Regle/Mastermind.txt");
-			}
-			else {system("gedit ressources/Regle/Worlde.txt");}
-			
-			break;
+			NB_CASE=tmp;
+			cout<<"nombre de cases modifié\n";
+			break;*/
 			default:
 			break;
 			

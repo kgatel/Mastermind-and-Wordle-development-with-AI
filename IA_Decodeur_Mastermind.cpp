@@ -12,22 +12,46 @@
 #include <thread>
 #include <unistd.h>
 
-#define TIME_TO_SLEEP 500
+#define TIME_TO_SLEEP 200
 
 using namespace std;
 
 
 
 IA_Decodeur_Mastermind :: IA_Decodeur_Mastermind() : IA_Decodeur(){
+	
+
+	ensemble=Combi_possible();
+	historiqueRes="";
 }
 void IA_Decodeur_Mastermind :: jouer(){
-	setCombinaison(CombiMastermind(choisirCombinaison()));
-	std::this_thread::sleep_for(std::chrono::milliseconds(TIME_TO_SLEEP));
+	FonctionsUtiles f;
+	if (f.equals(historiqueRes,"")){
+		setCombinaison(CombiMastermind(choisirCombinaison()));
+		}
+	else {
+		int bienPlace,malPlace;
+		bienPlace=stoi(f.charToString(historiqueRes[0]));
+		malPlace=stoi(f.charToString(historiqueRes[1]));
+		Maj_ensemble(CombiMastermind(combinaison),bienPlace,malPlace);
+		setCombinaison(CombiMastermind(choisirCombinaison()));
+		}
+		this_thread::sleep_for(chrono::milliseconds(TIME_TO_SLEEP));
 }
-
+vector<string> IA_Decodeur_Mastermind :: produit(vector<string> ensemble,vector<string> colorset){
+    vector <string> res;
+    string temp;
+    for (string i1: colorset){
+        for (string i2: ensemble){
+			temp=i2+" "+i1;
+            res.push_back(temp);
+        } 
+    }
+    return res;
+	}
+	
 vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
-
-	//int taille=Menu::NB_CASE;
+	
 
 	vector<string> Colorset;
 	ifstream Handle;
@@ -43,44 +67,44 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 		}
 	}
 	Handle.close();
-	vector<Combinaison> ensemble;
+	
+	vector<Combinaison> ensembleCombi;
+	vector<string> ensemble = Colorset;
 	string temp;
 	Combinaison combi;
-
-for (string i1: Colorset){
-for (string i2: Colorset){
-for (string i3: Colorset){
-for (string i4: Colorset){
+	
+	for (int i=0;i<Menu::NB_CASE-1;i++){
+		ensemble=produit(ensemble,Colorset);
+	}
+	
+	for (string temp: ensemble){
+		ensembleCombi.push_back(CombiMastermind(temp));
     
-	temp.clear();
-	temp=i1+" "+i2+" "+i3+" "+i4;
-	combi=CombiMastermind(temp);
-
-	ensemble.push_back(combi);
-}}}}
-
-	return ensemble;
+	}
+	
+	return ensembleCombi;
 }
 
-void IA_Decodeur_Mastermind :: Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble){
+void IA_Decodeur_Mastermind :: Maj_ensemble(Combinaison combi,int bienPlace,int malPlace){
 	FonctionsUtiles f;
 	vector<Combinaison>::iterator itr;
 	int taille=ensemble.size();
 	for (int i=0;i<taille;i++)
 	{
-		if(!f.equals(f.charToString(CombiMastermind(combi).resultat(ensemble[i])[0]),f.intToString(bienPlace)) || !f.equals(f.charToString(CombiMastermind(combi).resultat(ensemble[i])[1]),f.intToString(malPlace)))
+		if(!f.equals(f.charToString(CombiMastermind(ensemble[i]).resultat(CombiMastermind(combi))[0]),f.intToString(bienPlace)) || !f.equals(f.charToString(CombiMastermind(ensemble[i]).resultat(CombiMastermind(combi))[1]),f.intToString(malPlace)))
 		{
-			itr= ensemble.begin()+i;
+			itr=ensemble.begin()+i;
 			ensemble.erase(itr);
+			taille--;
 		}
 	}
+	
 
 }
 		 
 Combinaison IA_Decodeur_Mastermind :: choisirCombinaison(){
 	
 	//cas random
-	vector<Combinaison> ensemble = Combi_possible();
 	Combinaison combi;
 	int r;
 	

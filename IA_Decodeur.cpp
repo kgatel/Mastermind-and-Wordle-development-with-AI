@@ -8,5 +8,4 @@ using namespace std;
 IA_Decodeur :: IA_Decodeur(){
 	Combinaison combinaison();
 }
-	
 

@@ -15,6 +15,7 @@
 
 class IA_Decodeur : public IA {
 		
+
 	public :	
 		
 		/*! \fn IA_Decodeur()
@@ -31,7 +32,8 @@ class IA_Decodeur : public IA {
 		/*! \fn virtual void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
-		virtual void Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble)=0;	
+		virtual void Maj_ensemble(Combinaison combi,int bienPlace,int malPlace)=0;	
+		
 };
 
 #endif 

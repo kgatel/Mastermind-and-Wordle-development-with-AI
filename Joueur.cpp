@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
+using namespace std;
 
 Joueur :: Joueur(){
 	Combinaison combinaison();
@@ -41,3 +41,8 @@ void Joueur :: setPseudo(string pseudo1){
 string Joueur :: toString(){
 	return pseudo;
 }
+void Joueur::set_historiqueRes(string res){
+historiqueRes=res;
+}
+
+

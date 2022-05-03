@@ -19,18 +19,18 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 	return vector<Combinaison>();
 }
 
-void IA_Decodeur_Wordle :: Maj_ensemble(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble){
+void IA_Decodeur_Wordle :: Maj_ensemble(Combinaison combi,int bienPlace,int malPlace){
 }
 		 
-Combinaison IA_Decodeur_Wordle :: choixCombinaisonWordle(CombiMastermind combi,int bienPlace,int malPlace,vector<Combinaison> ensemble){
+/*Combinaison IA_Decodeur_Wordle::choixCombinaisonWordle(CombiWordle(combi),int bienPlace,int malPlace){
 	return Combinaison();
-}
+}*/
 
 Combinaison IA_Decodeur_Wordle :: choisirCombinaison(){
-	CombiMastermind combi;
-	int bienPlace=0;
-	int malPlace=0;
+	CombiWordle combi;
+	//int bienPlace=0;
+	//int malPlace=0;
 	vector<Combinaison> ensemble;
-	return choixCombinaisonWordle(combi,bienPlace,malPlace,ensemble);
+	return combi;// choixCombinaisonWordle(combi,bienPlace,malPlace,ensemble);
 }
 	
