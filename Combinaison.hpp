@@ -29,6 +29,11 @@ class Combinaison {
 		  */
 		Combinaison();
 		
+		/*! \fn Combinaison()
+		  * \brief Constructeur neutre de Combinaison
+		  * \param 
+		  */
+		
 		Combinaison(vector<string> v);
 		
 		/*! \fn void setCombinaison(string chaine);
