@@ -31,6 +31,7 @@ void Mastermind :: partie(){
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
 		historiqueResultat.push_back(CombiMastermind((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison()));
 		afficherHistorique();
+		system("aplay -q ressources/Song/ohlala.wav &");
 		incrTour();
 		cout << endl;
 	}while(detectionVictoire()==NULL);

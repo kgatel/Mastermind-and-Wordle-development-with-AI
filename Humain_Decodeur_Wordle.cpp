@@ -41,8 +41,11 @@ Combinaison Humain_Decodeur_Wordle :: entrerCombinaison() {
 		cin >> mot;
 		if ((int)mot.size()==Menu::NB_CASE) {
 		if (verifierEntree(mot)) {t=true;}
-		else cout << "Le mot "+f.rouge(mot)+" n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n\n";
+		else {
+			cout << "Le mot "+f.rouge(mot)+" n'existe pas dans le dictionnaire, veuillez essayer à nouveau \n\n";
+			system("aplay -q ressources/Song/zidane.wav &");}
 		}
-		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot "+f.rouge(mot)+" ne fait pas " <<Menu::NB_CASE<<" caracteres \n\n";}}
+		if ((int)mot.size()!=Menu::NB_CASE){cout << "Le mot "+f.rouge(mot)+" ne fait pas " <<Menu::NB_CASE<<" caracteres \n\n";
+											system("aplay -q ressources/Song/math.wav &");}}
 	return CombiWordle(mot);
 }
