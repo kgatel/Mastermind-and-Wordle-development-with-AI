@@ -37,6 +37,7 @@ void Wordle :: partie(){
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
 		historiqueResultat.push_back(CombiWordle((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison()));
 		afficherHistorique();
+		system("aplay -q ressources/Song/aha.wav &");
 		incrTour();
 	}while(detectionVictoire()==NULL);
 	cout << endl;

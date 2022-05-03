@@ -51,8 +51,9 @@ int main()
     //c4.afficherResultat(resultat);
     cout << "*************************FIN TEST*************************\n" << "\n" << endl;*/
     
-    Menu menu;
-    menu.afficherMenu();
+    CombiWordle c1("apple");
+    CombiWordle c2("table");
+    cout << c2.resultat(c1) << endl;
     
     return 0;
 }

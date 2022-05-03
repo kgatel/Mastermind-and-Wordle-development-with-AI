@@ -34,7 +34,17 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle(const string &chaine);
 		
+		/*! \fn CombiWordle(vector<string> v)
+		  * \brief Constructeur de la classe CombiWordle à partir d'un vecteur
+		  * \param v est un vecteur contenant tous les caractères d'un mot
+		  */
+		
 		CombiWordle(vector<string> v);
+		
+		/*! \fn CombiWordle(Combinaison c)
+		  * \brief Constructeur de la classe CombiWordle à partir d'une combinaison
+		  * \param c est une combinaison correspondant à un mot
+		  */
 		
 		CombiWordle(Combinaison c);
 		

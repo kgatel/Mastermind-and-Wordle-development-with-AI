@@ -40,11 +40,16 @@ class Menu {
 		*/
 		void afficherMenu();
 		
+		/*! \fn ChoisirJeu(int mdj)
+		* \brief Fonction qui permet à l'utilisateur de choisir le jeu
+		* \param jeu est une chaîne de caractère qui indique le jeu choisi
+		*/
+		
 		void choisirJeu(const string &jeu);
 		  
 		/*! \fn ChoisirModeDeJeu(int mdj)
 		* \brief Fonction qui permet à l'utilisateur de choisir le mode de jeu
-		* \param ModeDejeu est un entier qui indique le mode Joueur contre Joueur ou Joueur contre IA
+		* \param mdj est un entier qui indique le mode Joueur contre Joueur ou Joueur contre IA
 		*/
 		void choisirModeDeJeu(int mdj);
 		

@@ -26,6 +26,8 @@ class CombiMastermind : public Combinaison{
 		  */
 		CombiMastermind();
 		
+		virtual ~CombiMastermind(){};
+		
 		/*! \fn CombiMastermind(string chaine)
 		  * \brief Constructeur de la classe CombiMastermind
 		  * \param chaine est la chaine de caractère comprenant la suite de couleur séparée d'espace
