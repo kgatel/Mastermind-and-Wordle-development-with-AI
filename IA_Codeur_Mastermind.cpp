@@ -33,7 +33,7 @@ Combinaison IA_Codeur_Mastermind :: genererCode(){
 	cin.clear();
 	if(Handle.is_open()) {
 		while(getline(Handle,CurrLine)) {
-			if (CurrLine!="end")p
+			if (CurrLine!="end")
 			{
 				Couleurs.push_back(CurrLine);
 			}
