@@ -1,9 +1,8 @@
-WURM
-
-WRAP
-WONS
-WOKS
-WITZ
-WIKI
-WIFI
-WHIP
+wurm
+wrap
+wons
+woks
+witz
+wiki
+wifi
+whip
