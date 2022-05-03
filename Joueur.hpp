@@ -16,6 +16,7 @@ class Joueur {
 	protected:
 		Combinaison combinaison;
 		string pseudo;
+		string historiqueRes;
 
 	public:
 		/*! \fn Joueur()
@@ -63,7 +64,7 @@ class Joueur {
 		* \return un string
 		*/
 		string toString();
-		
+		void set_historiqueRes(string res);
 		virtual void jouer()=0;
 	};
 
