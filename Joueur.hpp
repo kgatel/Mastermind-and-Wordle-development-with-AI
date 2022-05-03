@@ -5,14 +5,12 @@
 #include "Combinaison.hpp"
 
 /*! \class Joueur
-* \brief classe abstraite regroupant tout joueur
+* \brief classe abstraite regroupant tous les joueurs (humain et IA)
 * \author Groupe A7
 * \version 1.0
 * \date avril 2022 
-* \namespace std
-*
-* Il s’agit d’une classe abstraite qui définit tout joueur du Mastermind. On y retrouve deux attributs, le premier est un élément de la classe combinaison et le second est le nombre de tours écoulés qui est équivalent au nombre de combinaisons entrées par le joueur décodeur. 
-* */
+* \namespace std 
+*/
 
 class Joueur {
 	protected:
@@ -25,16 +23,16 @@ class Joueur {
 		*/
 		Joueur();
 		
-		/*! \fn Joueur(string pseudo1)
-		  * \brief Constructeur de la classe joueur avec paramètre 
-		  * \param pseudo1 du joueur
+		/*! \fn Joueur()
+		  * \brief Constructeur de la classe joueur avec paramètre
+		  * \param pseudo du joueur
 		  */
 		Joueur(string pseudo1);
 		
 		/*! \fn Combinaison getCombinaison()
-		* \brief Pour accéder à l'attribut combinaison 
-		* \return retourne la combinaison en attribut
-		*/
+		 *  \brief Pour accéder à l'attribut combinaison 
+		 *  \return retourne la combinaison en attribut
+		 */
 		Combinaison getCombinaison();
 		
 		/*! \fn void setCombinaison(combinaison comb);

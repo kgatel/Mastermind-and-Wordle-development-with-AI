@@ -31,17 +31,9 @@ JeuDeDeduction :: JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1){
 	historiqueResultat=vector<string>();
 }
 
-int JeuDeDeduction :: main(){
-	cout<<"ntm"<<endl;
-	return 0;
-}
-
-void JeuDeDeduction :: afficherCode(){
-	//demande à l'utilisateur le mdp, si le mdp est bon alors afficher le code
-}
 
 Joueur* JeuDeDeduction :: detectionVictoire(){
-	//retourne null pas de joueur gagnant, sinon retourne le joueur gagnant
+	//retourne null s'il n'y a pas de joueur gagnant, sinon retourne le joueur gagnant
 	Joueur *res=NULL;
 	FonctionsUtiles f;
 	
