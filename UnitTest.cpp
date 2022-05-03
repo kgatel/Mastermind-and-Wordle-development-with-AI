@@ -58,6 +58,7 @@ void UnitTest::testResultatMastermind(void)
 void UnitTest::testResultatWordle(void)
 {
 	FonctionsUtiles f;
+	CombiWordle::Menu::NB_Case;
 	CombiWordle code("appl");
 	CPPUNIT_ASSERT(f.equals(f.toCarre("t")+" "+"\033[33m"+f.toCarre("a")+" \033[0m"+f.toCarre("b")+" "+"\033[32m"+f.toCarre("l")+" \033[0m",combiWord->resultat(code)));
 }
