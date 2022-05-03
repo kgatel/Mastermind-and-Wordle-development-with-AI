@@ -1,4 +1,4 @@
-jabiru
+ijabiru
 jablai
 jabler
 jabote
@@ -8,7 +8,7 @@ jactai
 jaguar
 jailli
 jamais
-jambée
+jambee
 jambon
 jappai
 japper
@@ -20,7 +20,7 @@ jasais
 jasmin
 jaspai
 jasper
-jattée
+jattee
 jauger
 jaunir
 jaunis
@@ -30,12 +30,12 @@ jeanne
 jensen
 jerkai
 jerker
-jérôme
+jerome
 jersey
 jetage
 jetais
-jeûnai
-jeûner
+jeunai
+jeuner
 jigger
 jockey
 jodlai
@@ -53,7 +53,7 @@ joujou
 joutai
 jouter
 jouxte
-jubilé
+jubile
 juchai
 jucher
 judith
