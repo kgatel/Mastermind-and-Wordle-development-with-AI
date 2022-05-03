@@ -29,6 +29,7 @@ void Mastermind :: partie(){
 		(*decodeur).jouer();
 		historiqueCombinaison.push_back((*decodeur).getCombinaison());
 		historiqueResultat.push_back(CombiMastermind((*decodeur).getCombinaison()).resultat((*codeur).getCombinaison()));
+		(*decodeur).set_historiqueRes(historiqueResultat[historiqueResultat.size()-1]);
 		afficherHistorique();
 		system("aplay -q ressources/Song/ohlala.wav &");
 		incrTour();
