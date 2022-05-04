@@ -1,10 +1,12 @@
 #ifndef IA_Decodeur_Wordle_H
 #define IA_Decodeur_Wordle_H
+
 #include <string>
 
 #include "Combinaison.hpp"
 #include "IA_Decodeur.hpp"
 #include "CombiMastermind.hpp"
+#include "FonctionsUtiles.hpp"
 
 
 /*! \class IA_Decodeur_Wordle
@@ -29,19 +31,22 @@ class IA_Decodeur_Wordle : public IA_Decodeur{
 		* \brief Cette méthode abstraite permet de créer l'ensemble S de toutes les combinaisons de couleurs possibles.
 		* \return retourne une liste de combinaison
 		*/
-		virtual vector<Combinaison>
-		Combi_possible();
+		virtual vector<Combinaison> Combi_possible();
 		  
 		/*! \fn void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
 		virtual void Maj_ensemble(Combinaison combi,int bienPlace,int malPlace);
 		
-		Combinaison choixCombinaisonWordle(Combinaison combi,int bienPlace,int malPlace);
+		//Combinaison choixCombinaisonWordle(Combinaison combi,int bienPlace,int malPlace);
 		
 		virtual Combinaison choisirCombinaison();
 		
 		virtual void jouer();
+		
+	private:
+	
+		vector<Combinaison> toutLesMotsCombi;
 
 	
 };
