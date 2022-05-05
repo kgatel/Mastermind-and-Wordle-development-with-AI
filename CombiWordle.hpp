@@ -55,6 +55,9 @@ class CombiWordle : public Combinaison{
 		*/
 		virtual string resultat(const Combinaison code) ;
 		
+		string resultat_couleur(const Combinaison code);
+
+		
 		/*! \fn afficherResultat(string resultat)
 		  * \brief Affiche les caractéres rentrés par le décodeur avec un code de couleur précis : Vert le caractére est dans la bonne place , Jaune le caractére est dans la mauvaise place , Rouge le caractére existe pas dans le code.
 		  * \param un string correspondant au résultat de la vérification du mot rentré par le décodeur

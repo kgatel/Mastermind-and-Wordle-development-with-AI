@@ -19,21 +19,18 @@ using namespace std;
 
 
 IA_Decodeur_Mastermind :: IA_Decodeur_Mastermind() : IA_Decodeur(){
-	
-
 	ensemble=Combi_possible();
 	historiqueRes="";
 }
 void IA_Decodeur_Mastermind :: jouer(){
 	FonctionsUtiles f;
+	string resultat;
+	resultat=historiqueRes;
 	if (f.equals(historiqueRes,"")){
 		setCombinaison(CombiMastermind(choisirCombinaison()));
 		}
 	else {
-		int bienPlace,malPlace;
-		bienPlace=stoi(f.charToString(historiqueRes[0]));
-		malPlace=stoi(f.charToString(historiqueRes[1]));
-		Maj_ensemble(CombiMastermind(combinaison),bienPlace,malPlace);
+		Maj_ensemble(CombiMastermind(combinaison),resultat);
 		setCombinaison(CombiMastermind(choisirCombinaison()));
 		}
 		this_thread::sleep_for(chrono::milliseconds(TIME_TO_SLEEP));
@@ -85,8 +82,14 @@ vector<Combinaison> IA_Decodeur_Mastermind :: Combi_possible(){
 	return ensembleCombi;
 }
 
-void IA_Decodeur_Mastermind :: Maj_ensemble(Combinaison combi,int bienPlace,int malPlace){
+void IA_Decodeur_Mastermind :: Maj_ensemble(Combinaison combi,string resultat){
 	FonctionsUtiles f;
+	int bienPlace;
+	int malPlace;
+	
+	bienPlace=stoi(f.charToString(resultat[0]));
+	malPlace=stoi(f.charToString(resultat[1]));
+	
 	vector<Combinaison>::iterator itr;
 	int taille=ensemble.size();
 	for (int i=0;i<taille;i++)

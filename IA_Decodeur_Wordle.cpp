@@ -1,37 +1,55 @@
-#include "FonctionsUtiles.hpp"
 #include "Menu.hpp"
 #include "CombiWordle.hpp"
 #include "IA_Decodeur.hpp"
 #include "IA_Decodeur_Wordle.hpp"
+#include "FonctionsUtiles.hpp"
+
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <random>
+#include <algorithm>
+
+
 
 
 using namespace std;
 
 IA_Decodeur_Wordle :: IA_Decodeur_Wordle() : IA_Decodeur() {
 	toutLesMotsCombi=Combi_possible();
+	historiqueRes="";
 }
 
 void IA_Decodeur_Wordle :: jouer(){
-	setCombinaison(CombiWordle(choisirCombinaison()));
+	FonctionsUtiles f;
+	string result;
+	if (historiqueRes==""){
+		setCombinaison(CombiWordle(choisirCombinaison()));
+		}
+	else {
+		
+		cout<<historiqueRes<< endl;
+		result=historiqueRes;
+		Maj_ensemble(CombiWordle(combinaison),result);
+		setCombinaison(CombiWordle(choisirCombinaison()));
+		}
+	cout<<toutLesMotsCombi.size();
+	
 }
 
 vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 	//charge tout le dictionnaire pour la longueur et la langue choisie
-	
 	vector<string> toutLesMots;	
 	string res;
-	ifstream Handle;
+	
 	string CurrLine;
 	string premiereLettre;
-
 	string alphabet = "abcdefghijklmnopqrstuvwxyz";
-    vector<char> char_alphabet(alphabet.length());
-    std::copy(alphabet.begin(), alphabet.end(), char_alphabet.begin());
-    
-    for (const char &premiereLettre: char_alphabet) {
+	vector<char> char_alphabet(alphabet.length());
+	copy(alphabet.begin(), alphabet.end(), char_alphabet.begin());
+	for (const char premiereLettre: char_alphabet) 
+	{
+	ifstream Handle;
 	Handle.open(Menu::ENSEMBLE_ELEMENT+"/"+premiereLettre+".txt");
 	cin.clear();
 	if(Handle.is_open()) {
@@ -39,36 +57,44 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 			getline(Handle,CurrLine);
 			toutLesMots.push_back(CurrLine);
 		}
-		
 	}
-	
 	Handle.close();
-}
-	 
-	vector<Combinaison> toutLesMotsCombi;
-	
-	for (string temp: toutLesMots){
-		toutLesMotsCombi.push_back(CombiWordle(res));
 	}
 	
-	 
+	
+	vector<Combinaison> toutLesMotsCombi;
+	for (string temp: toutLesMots){
+		toutLesMotsCombi.push_back(CombiWordle(temp));
+	} 
 	return toutLesMotsCombi;
 }
 
-void IA_Decodeur_Wordle :: Maj_ensemble(Combinaison combi,int bienPlace,int malPlace){
+void IA_Decodeur_Wordle :: Maj_ensemble(Combinaison combi,string resultat){
+	FonctionsUtiles f;
+	
+	string s1,s2;
+	vector<Combinaison>::iterator itr;
+	int taille=toutLesMotsCombi.size();
+	cout<<"size=" << toutLesMotsCombi.size()<<endl;
+
+	for (int i=0;i<taille;i++)
+	{
+		if((CombiWordle(combi)).resultat_couleur((CombiWordle(toutLesMotsCombi[i])))!=resultat)
+		{
+			itr=toutLesMotsCombi.begin()+i;
+			toutLesMotsCombi.erase(itr);
+			taille--;}
+			
+	}
+	
+	
 }
 		 
-/*Combinaison IA_Decodeur_Wordle::choixCombinaisonWordle(CombiWordle(combi),int bienPlace,int malPlace){
-	return Combinaison();
-}*/
 
 Combinaison IA_Decodeur_Wordle :: choisirCombinaison(){
-	
-	Combinaison combi;
-	combi=toutLesMotsCombi[rand()% toutLesMotsCombi.size()];
-	return combi;
-	
-
+	CombiWordle ress;
+	ress=toutLesMotsCombi[rand()%(int)toutLesMotsCombi.size()];
+	return CombiWordle(ress);
 
 }
 	

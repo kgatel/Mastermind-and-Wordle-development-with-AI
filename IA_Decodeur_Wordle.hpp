@@ -2,11 +2,12 @@
 #define IA_Decodeur_Wordle_H
 
 #include <string>
+#include "FonctionsUtiles.hpp"
+
 
 #include "Combinaison.hpp"
 #include "IA_Decodeur.hpp"
 #include "CombiMastermind.hpp"
-#include "FonctionsUtiles.hpp"
 
 
 /*! \class IA_Decodeur_Wordle
@@ -36,11 +37,11 @@ class IA_Decodeur_Wordle : public IA_Decodeur{
 		/*! \fn void Maj_ensemble()
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
-		virtual void Maj_ensemble(Combinaison combi,int bienPlace,int malPlace);
+		virtual void Maj_ensemble(Combinaison combi,string resultat);
 		
 		//Combinaison choixCombinaisonWordle(Combinaison combi,int bienPlace,int malPlace);
 		
-		virtual Combinaison choisirCombinaison();
+		Combinaison choisirCombinaison();
 		
 		virtual void jouer();
 		

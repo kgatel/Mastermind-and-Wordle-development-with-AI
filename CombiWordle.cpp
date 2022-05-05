@@ -64,6 +64,43 @@ string CombiWordle :: resultat(const Combinaison code){
 	return res;
 }
 
+string CombiWordle :: resultat_couleur(const Combinaison combin){
+	FonctionsUtiles f;
+	string res="";  
+	bool memoireJ[Menu::NB_CASE];
+	
+	for (int Indice = 0; Indice < Menu::NB_CASE; Indice++) {
+		memoireJ[Indice] = false;
+	}
+	int j=0;
+	bool exit=false;
+	for(int i=0;i<Menu::NB_CASE;i++){
+		if (f.equals(combinaison[i],combin.get(i))){
+			res+="+";
+		}else{
+			while((j<Menu::NB_CASE) && (!exit)){
+				if (i!=j){
+					if (f.equals(combinaison[i],combin.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
+						if((!f.equals(combinaison[j],combin.get(j)))&&(!memoireJ[j])){
+							res+="o";
+							memoireJ[j]=true;
+							exit=true;	
+						}
+					}
+				}
+				j++;
+			}
+			if (exit==false){
+				res+="-";
+			}
+			exit=false;
+			j=0;
+		}
+	}
+	return res;
+}
+
+
 
 string CombiWordle :: toString() {
 	string res="";
