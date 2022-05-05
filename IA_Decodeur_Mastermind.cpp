@@ -99,6 +99,7 @@ void IA_Decodeur_Mastermind :: Maj_ensemble(Combinaison combi,string resultat){
 			itr=ensemble.begin()+i;
 			ensemble.erase(itr);
 			taille--;
+			i--;
 		}
 	}
 	

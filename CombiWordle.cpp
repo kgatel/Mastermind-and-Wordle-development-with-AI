@@ -76,13 +76,13 @@ string CombiWordle :: resultat_couleur(const Combinaison combin){
 	bool exit=false;
 	for(int i=0;i<Menu::NB_CASE;i++){
 		if (f.equals(combinaison[i],combin.get(i))){
-			res+="+";
+			res+="v";
 		}else{
 			while((j<Menu::NB_CASE) && (!exit)){
 				if (i!=j){
 					if (f.equals(combinaison[i],combin.get(j))){ //vérifier si combinaison[i]!=code.get(j) avec i!=j
 						if((!f.equals(combinaison[j],combin.get(j)))&&(!memoireJ[j])){
-							res+="o";
+							res+="j";
 							memoireJ[j]=true;
 							exit=true;	
 						}
@@ -91,7 +91,7 @@ string CombiWordle :: resultat_couleur(const Combinaison combin){
 				j++;
 			}
 			if (exit==false){
-				res+="-";
+				res+="b";
 			}
 			exit=false;
 			j=0;

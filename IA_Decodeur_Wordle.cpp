@@ -23,17 +23,16 @@ IA_Decodeur_Wordle :: IA_Decodeur_Wordle() : IA_Decodeur() {
 void IA_Decodeur_Wordle :: jouer(){
 	FonctionsUtiles f;
 	string result;
+	cout<<toutLesMotsCombi.size();
 	if (historiqueRes==""){
 		setCombinaison(CombiWordle(choisirCombinaison()));
 		}
 	else {
-		
-		cout<<historiqueRes<< endl;
 		result=historiqueRes;
 		Maj_ensemble(CombiWordle(combinaison),result);
 		setCombinaison(CombiWordle(choisirCombinaison()));
+
 		}
-	cout<<toutLesMotsCombi.size();
 	
 }
 
@@ -75,18 +74,31 @@ void IA_Decodeur_Wordle :: Maj_ensemble(Combinaison combi,string resultat){
 	string s1,s2;
 	vector<Combinaison>::iterator itr;
 	int taille=toutLesMotsCombi.size();
-	cout<<"size=" << toutLesMotsCombi.size()<<endl;
 
 	for (int i=0;i<taille;i++)
 	{
-		if((CombiWordle(combi)).resultat_couleur((CombiWordle(toutLesMotsCombi[i])))!=resultat)
+
+		
+		if(!f.equals((CombiWordle(combi)).resultat_couleur((CombiWordle(toutLesMotsCombi[i]))),resultat))
 		{
 			itr=toutLesMotsCombi.begin()+i;
 			toutLesMotsCombi.erase(itr);
-			taille--;}
+			taille--;
+			i--;
+		}
 			
+		else{
+			
+
 	}
-	
+
+}
+	cout<<toutLesMotsCombi.size()<<endl;
+
+	for (int i=0;i<taille;i++)
+	{
+		
+	}
 	
 }
 		 
