@@ -47,18 +47,23 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 	vector<char> char_alphabet(alphabet.length());
 	copy(alphabet.begin(), alphabet.end(), char_alphabet.begin());
 	for (const char premiereLettre: char_alphabet) 
-	{
-	ifstream Handle;
-	Handle.open(Menu::ENSEMBLE_ELEMENT+"/"+premiereLettre+".txt");
-	cin.clear();
-	if(Handle.is_open()) {
-		while (!Handle.eof()){
-			getline(Handle,CurrLine);
-			toutLesMots.push_back(CurrLine);
+		{
+		ifstream Handle;
+		Handle.open(Menu::ENSEMBLE_ELEMENT+"/"+premiereLettre+".txt");
+		cin.clear();
+		if(Handle.is_open())
+			{
+			while (!Handle.eof())
+				{getline(Handle,CurrLine);
+				if (CurrLine!="")
+					{toutLesMots.push_back(CurrLine);}
+				}		
+			}
+		Handle.close();
+			if (toutLesMots[toutLesMots.size()-1]=="")
+				{toutLesMots.pop_back();}
+	
 		}
-	}
-	Handle.close();
-	}
 	
 	
 	vector<Combinaison> toutLesMotsCombi;
@@ -69,31 +74,23 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 }
 
 void IA_Decodeur_Wordle :: Maj_ensemble(Combinaison combi,string resultat){
-	FonctionsUtiles f;
-	
-	string s1,s2;
+	FonctionsUtiles f;	
 	vector<Combinaison>::iterator itr;
 	int taille=toutLesMotsCombi.size();
 
-	for (int i=0;i<taille;i++)
-	{
-
-		
-		if(!f.equals((CombiWordle(combi)).resultat_couleur((CombiWordle(toutLesMotsCombi[i]))),resultat))
+	for (itr=toutLesMotsCombi.begin();itr!=toutLesMotsCombi.end();itr++)
 		{
-			itr=toutLesMotsCombi.begin()+i;
-			toutLesMotsCombi.erase(itr);
-			taille--;
-			i--;
-		}
+
+		if(!f.equals((CombiWordle(combi)).resultat_couleur((CombiWordle(*itr))),resultat))
+			{toutLesMotsCombi.erase(itr);
+			itr--;}
 			
 		else{
 			
 
-	}
+		}
 
 }
-	cout<<toutLesMotsCombi.size()<<endl;
 
 	for (int i=0;i<taille;i++)
 	{
