@@ -47,23 +47,19 @@ vector<Combinaison> IA_Decodeur_Wordle :: Combi_possible(){
 	vector<char> char_alphabet(alphabet.length());
 	copy(alphabet.begin(), alphabet.end(), char_alphabet.begin());
 	for (const char premiereLettre: char_alphabet) 
-		{
-		ifstream Handle;
-		Handle.open(Menu::ENSEMBLE_ELEMENT+"/"+premiereLettre+".txt");
-		cin.clear();
-		if(Handle.is_open())
-			{
-			while (!Handle.eof())
+	{
+	ifstream Handle;
+	Handle.open(Menu::ENSEMBLE_ELEMENT+"/"+premiereLettre+".txt");
+	cin.clear();
+	if(Handle.is_open()) {
+		while (!Handle.eof())
 				{getline(Handle,CurrLine);
 				if (CurrLine!="")
 					{toutLesMots.push_back(CurrLine);}
-				}		
-			}
-		Handle.close();
-			if (toutLesMots[toutLesMots.size()-1]=="")
-				{toutLesMots.pop_back();}
-	
-		}
+				}
+	}
+	Handle.close();
+	}
 	
 	
 	vector<Combinaison> toutLesMotsCombi;
