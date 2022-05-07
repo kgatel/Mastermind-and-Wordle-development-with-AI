@@ -1,4 +1,0 @@
-Règle du Mastermind :
-
-
-Le premier joueur va choisir une combinaison de 3 à 6 couleurs. Le but du second joueur étant de deviner la combinaison, celui-ci va proposer différents propositions. À l'issue de chacune de ses propositions, ce joueur saura quelles sont les couleurs bien placées, mal placées, et donc celles qui ne sont pas présentes dans la combinaison initiale. Tout ceci en un nombre limité d'essai. 

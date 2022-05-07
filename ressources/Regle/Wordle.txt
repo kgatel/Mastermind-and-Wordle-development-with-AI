@@ -1,5 +1,0 @@
-Règle du Wordle :
-
-
-Le premier joueur va proposer un mot entre 4 et 7 lettres, en français ou en anglais. 
-Le but du second joueur étant de deviner ce mot, celui-ci va donner plusieurs propositions. À l'issue de chacune de ses propositions le joueur saura quelles sont les lettres bien placées, mal placées ou simplement non présente dans le mot de départ. Tout cela dans un nombre d'essais limité.

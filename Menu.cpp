@@ -56,6 +56,7 @@ void Menu :: afficherMenu(){
 			cout<<"1 - Définir le jeu \n";
 			cout<<"2 - Définir le mode de jeu \n";
 			cout<<"3 - Définir le nombre de tours max \n";
+			cout<<"4 - Regarder les règles du jeu\n";
 			string text="";
 			text+=JEU+" ";
 			if (JEU=="Mastermind"){
@@ -177,19 +178,21 @@ void Menu :: afficherMenu(){
 			NB_TOUR=tmp;
 			cout<<f.jaune("Nombre de tours modifié\n");
 			break;
-			/*case 3:
-			cout<<"choisissez le nombre de cases:\n";
-			cin>>tmp;
-			NB_CASE=tmp;
-			cout<<"nombre de cases modifié\n";
-			break;*/
+			case 4:
+			if (JEU=="Mastermind"){
+				system("evince ressources/Regle/Mastermind.pdf");
+			}else{
+				system("evince ressources/Regle/Wordle.pdf");
+			}
+			break;
+			
 			default:
 			break;
 			
-			}
+		}
 
 		
-		}
+	}
 }
 	
 	
