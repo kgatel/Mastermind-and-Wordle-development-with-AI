@@ -28,6 +28,8 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle();
 		
+		virtual ~CombiWordle(){};
+		
 		/*! \fn CombiWordle(string chaine)
 		  * \brief Constructeur de la classe CombiWordle
 		  * \param chaine est la chaine de caractère comprenant la suite de lettre séparée d'espace
