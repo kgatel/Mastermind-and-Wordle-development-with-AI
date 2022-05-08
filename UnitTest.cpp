@@ -188,8 +188,14 @@ void UnitTest::setUp(void)
 }
 void UnitTest::tearDown(void)
 {
+	delete combiMaster3;
 	delete combiMaster4;
+	delete combiMaster5;
+	delete combiMaster6;
 	delete combiWord4;
+	delete combiWord5;
+	delete combiWord6;
+	delete combiWord7;
 	delete f;
 }
 //-----------------------------------------------------------------------------
