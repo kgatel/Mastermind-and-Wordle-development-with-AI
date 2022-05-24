@@ -36,6 +36,7 @@ clean:
 .PHONY: remove
 remove: clean
 	@$(rm) $(BINDIR)/$(TARGET)
+	@$(rm) ./unitTest/resultat.txt ./unitTest/cppUnitTest.xml
 	@echo "Executable removed!"
 	
 test : $(OBJECTS)
