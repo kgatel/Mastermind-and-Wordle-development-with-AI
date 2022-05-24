@@ -1,0 +1,22 @@
+<map id="Mastermind::partie" name="Mastermind::partie">
+<area shape="rect" id="node1" title="Elle permet de lancer une partie de Mastermind." alt="" coords="5,208,152,235"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a9fb229ea7b35353906e7a0a35c71ab1b" title="méthode permettant de nettoyer le terminal" alt="" coords="219,5,382,32"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="220,56,381,83"/>
+<area shape="rect" id="node4" href="$class_jeu_de_deduction.html#a22c0b4de642e25a76e31865c57cd6edc" title="Cette méthode permet de savoir s&#39;il y a un gagnant au cours de la partie ou non." alt="" coords="203,310,398,351"/>
+<area shape="rect" id="node6" href="$class_jeu_de_deduction.html#aa0cbe74a46fe9711c66bf02c7b46e883" title="Cette méthode permet d&#39;incrémenter de 1 l&#39;attribut numeroTour." alt="" coords="208,157,393,184"/>
+<area shape="rect" id="node7" href="$class_fonctions_utiles.html#a80ef25700394aa6ac3320e5ef32e6c31" title="méthode permettant de transformer un entier en chaine de caractère" alt="" coords="455,115,654,141"/>
+<area shape="rect" id="node8" href="$class_fonctions_utiles.html#a01a0d1ec421252c32ba97754d7034b8e" title="méthode permettant de mettre le texte en jaune" alt="" coords="217,259,384,285"/>
+<area shape="rect" id="node9" href="$class_combi_mastermind.html#ab3cf6ba4a51ce591ce4f566d5ebb42a7" title="elle permet de retourner le resultat aorès une tentative" alt="" coords="201,107,401,133"/>
+<area shape="rect" id="node10" href="$class_combi_mastermind.html#a4a148f265167565905dff2806854dbb9" title="permet l&#39;affichage de la combinaison de couleur" alt="" coords="200,376,401,403"/>
+<area shape="rect" id="node20" href="$class_fonctions_utiles.html#a34d71b35d7124483eab14ea4e30cb9d9" title="méthode permettant de mettre le texte en vertclair et en gras" alt="" coords="209,427,393,453"/>
+<area shape="rect" id="node5" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="468,173,641,200"/>
+<area shape="rect" id="node11" href="$class_fonctions_utiles.html#a42a3bad27249f8ad03138e7c57867bd8" title="méthode permettant de renvoyer une carré blanc" alt="" coords="455,325,654,352"/>
+<area shape="rect" id="node12" href="$class_fonctions_utiles.html#a8f323087de16e919b2c75d96b2a6ad63" title="méthode permettant de renvoyer une carré bleu" alt="" coords="459,376,650,403"/>
+<area shape="rect" id="node13" href="$class_fonctions_utiles.html#a37b957ff1613f4293765dab12150c75b" title="méthode permettant de renvoyer une carré jaune" alt="" coords="455,427,654,453"/>
+<area shape="rect" id="node14" href="$class_fonctions_utiles.html#a70819a8bbb63fda84b782ed9b5bb8e6d" title="méthode permettant de renvoyer une carré marron" alt="" coords="449,477,660,504"/>
+<area shape="rect" id="node15" href="$class_fonctions_utiles.html#ab25a1fae4e5c3dc6425202034960257e" title="méthode permettant de renvoyer une carré orange" alt="" coords="451,528,659,555"/>
+<area shape="rect" id="node16" href="$class_fonctions_utiles.html#a9c07ccbf4d942ef95e3d32bf8046882a" title="méthode permettant de renvoyer une carré rose" alt="" coords="459,579,650,605"/>
+<area shape="rect" id="node17" href="$class_fonctions_utiles.html#a6a5eb9c7defda3e17af89d53b5f1c445" title="méthode permettant de renvoyer une carré rouge" alt="" coords="455,629,655,656"/>
+<area shape="rect" id="node18" href="$class_fonctions_utiles.html#a75640571ea4c33a58b6de5ca427092c8" title="méthode permettant de renvoyer une carré vert" alt="" coords="460,224,649,251"/>
+<area shape="rect" id="node19" href="$class_fonctions_utiles.html#a006539dc3b713a37dbe2d95369dbdb81" title="méthode permettant de renvoyer une carré violet" alt="" coords="455,275,655,301"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Humain_Codeur_Wordle::verifierEntree" name="Humain_Codeur_Wordle::verifierEntree">
+<area shape="rect" id="node1" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a9b059747fc31f35d197c4ffa12578701" title="méthode qui permet de vérifier si un mot appartient au fichier" alt="" coords="232,5,425,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CombiWordle::resultat" name="CombiWordle::resultat">
+<area shape="rect" id="node1" title="renvoie les indices des lettres placée" alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="224,5,397,32"/>
+<area shape="rect" id="node3" href="$class_combinaison.html#a2b8f586b5c68679b9e72152bcd758b28" title="getteur de l&#39;attribut combinaison" alt="" coords="243,56,379,83"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a85405e240dce8bfd78382cb002545746" title="méthode permettant de transformer une chaine en suite de lettres carrées" alt="" coords="221,107,400,133"/>
+</map>

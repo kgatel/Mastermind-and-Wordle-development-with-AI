@@ -1,0 +1,228 @@
+\hypertarget{class_combi_wordle}{}\doxysection{Combi\+Wordle Class Reference}
+\label{class_combi_wordle}\index{CombiWordle@{CombiWordle}}
+
+
+Tableau d\textquotesingle{}entier représentant une combinaison de lettre.  
+
+
+
+
+{\ttfamily \#include $<$Combi\+Wordle.\+hpp$>$}
+
+
+
+Inheritance diagram for Combi\+Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_combi_wordle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Combi\+Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_combi_wordle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_combi_wordle_a325941c3cd97b8439596b70f911fcb1d}\label{class_combi_wordle_a325941c3cd97b8439596b70f911fcb1d}} 
+\mbox{\hyperlink{class_combi_wordle_a325941c3cd97b8439596b70f911fcb1d}{Combi\+Wordle}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combi_wordle_a0d7daed0ffbc60d2a0c130db8dff75a1}\label{class_combi_wordle_a0d7daed0ffbc60d2a0c130db8dff75a1}} 
+virtual \mbox{\hyperlink{class_combi_wordle_a0d7daed0ffbc60d2a0c130db8dff75a1}{$\sim$\+Combi\+Wordle}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur neutre de \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_combi_wordle_a51f7d0dc221f388b1fe58cd898248e3a}\label{class_combi_wordle_a51f7d0dc221f388b1fe58cd898248e3a}} 
+{\bfseries Combi\+Wordle} (const string \&chaine)
+\item 
+\mbox{\hyperlink{class_combi_wordle_a210ca7bfb64598fbdae3e085d19bf1cd}{Combi\+Wordle}} (vector$<$ string $>$ v)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}} à partir d\textquotesingle{}un vecteur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_combi_wordle_a14f8870e5b08bc205e409f2740973f08}{Combi\+Wordle}} (\mbox{\hyperlink{class_combinaison}{Combinaison}} c)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}} à partir d\textquotesingle{}une combinaison. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d}{resultat}} (const \mbox{\hyperlink{class_combinaison}{Combinaison}} code)
+\begin{DoxyCompactList}\small\item\em renvoie les indices des lettres placée \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_combi_wordle_a051c62f67098d4133a51427b8d113b26}{resultat\+\_\+couleur}} (const \mbox{\hyperlink{class_combinaison}{Combinaison}} code)
+\item 
+void \mbox{\hyperlink{class_combi_wordle_a6845911d71ba22edcbac6174c7c51f66}{afficher\+Resultat}} (string \mbox{\hyperlink{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d}{resultat}})
+\begin{DoxyCompactList}\small\item\em Affiche les caractéres rentrés par le décodeur avec un code de couleur précis \+: Vert le caractére est dans la bonne place , Jaune le caractére est dans la mauvaise place , Rouge le caractére existe pas dans le code. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_combi_wordle_ae2bbd54299ccb1fed1a33f518aa1b172}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em permet l\textquotesingle{}affichage du mot \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Tableau d\textquotesingle{}entier représentant une combinaison de lettre. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_combi_wordle_a210ca7bfb64598fbdae3e085d19bf1cd}\label{class_combi_wordle_a210ca7bfb64598fbdae3e085d19bf1cd}} 
+\index{CombiWordle@{CombiWordle}!CombiWordle@{CombiWordle}}
+\index{CombiWordle@{CombiWordle}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{CombiWordle()}{CombiWordle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Combi\+Wordle\+::\+Combi\+Wordle (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{v }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}} à partir d\textquotesingle{}un vecteur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & est un vecteur contenant tous les caractères d\textquotesingle{}un mot \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combi_wordle_a14f8870e5b08bc205e409f2740973f08}\label{class_combi_wordle_a14f8870e5b08bc205e409f2740973f08}} 
+\index{CombiWordle@{CombiWordle}!CombiWordle@{CombiWordle}}
+\index{CombiWordle@{CombiWordle}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{CombiWordle()}{CombiWordle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Combi\+Wordle\+::\+Combi\+Wordle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_combinaison}{Combinaison}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{class_combi_wordle}{Combi\+Wordle}} à partir d\textquotesingle{}une combinaison. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & est une combinaison correspondant à un mot \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combi_wordle_a14f8870e5b08bc205e409f2740973f08_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_combi_wordle_a6845911d71ba22edcbac6174c7c51f66}\label{class_combi_wordle_a6845911d71ba22edcbac6174c7c51f66}} 
+\index{CombiWordle@{CombiWordle}!afficherResultat@{afficherResultat}}
+\index{afficherResultat@{afficherResultat}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{afficherResultat()}{afficherResultat()}}
+{\footnotesize\ttfamily Combi\+Wordle\+::afficher\+Resultat (\begin{DoxyParamCaption}\item[{string}]{resultat }\end{DoxyParamCaption})}
+
+
+
+Affiche les caractéres rentrés par le décodeur avec un code de couleur précis \+: Vert le caractére est dans la bonne place , Jaune le caractére est dans la mauvaise place , Rouge le caractére existe pas dans le code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & string correspondant au résultat de la vérification du mot rentré par le décodeur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d}\label{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d}} 
+\index{CombiWordle@{CombiWordle}!resultat@{resultat}}
+\index{resultat@{resultat}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{resultat()}{resultat()}}
+{\footnotesize\ttfamily Combi\+Wordle\+::resultat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_combinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+renvoie les indices des lettres placée 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{class_combinaison}{Combinaison}} \+: le mot recherché par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaîne de caratère 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_combinaison_ae1b6941a58a6d581bf5e9538c6e6991e}{Combinaison}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combi_wordle_aeb2a6cee84d503f55b9010f55c75932d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combi_wordle_a051c62f67098d4133a51427b8d113b26}\label{class_combi_wordle_a051c62f67098d4133a51427b8d113b26}} 
+\index{CombiWordle@{CombiWordle}!resultat\_couleur@{resultat\_couleur}}
+\index{resultat\_couleur@{resultat\_couleur}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{resultat\_couleur()}{resultat\_couleur()}}
+{\footnotesize\ttfamily Combi\+Wordle\+::resultat\+\_\+couleur (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_combinaison}{Combinaison}}}]{code }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & \mbox{\hyperlink{class_combinaison}{Combinaison}} \+: le mot recherché par le décodeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaîne de caratère 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_combi_wordle_a051c62f67098d4133a51427b8d113b26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_combi_wordle_a051c62f67098d4133a51427b8d113b26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_combi_wordle_ae2bbd54299ccb1fed1a33f518aa1b172}\label{class_combi_wordle_ae2bbd54299ccb1fed1a33f518aa1b172}} 
+\index{CombiWordle@{CombiWordle}!toString@{toString}}
+\index{toString@{toString}!CombiWordle@{CombiWordle}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Combi\+Wordle\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+permet l\textquotesingle{}affichage du mot 
+
+\begin{DoxyReturn}{Returns}
+un string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_combinaison_a1e1700b8ffa3459249adb99e8d636c08}{Combinaison}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_combi_wordle_ae2bbd54299ccb1fed1a33f518aa1b172_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Combi\+Wordle.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Combi\+Wordle.\+cpp\end{DoxyCompactItemize}

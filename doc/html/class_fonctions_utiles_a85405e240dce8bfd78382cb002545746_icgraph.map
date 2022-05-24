@@ -1,0 +1,6 @@
+<map id="FonctionsUtiles::toCarre" name="FonctionsUtiles::toCarre">
+<area shape="rect" id="node1" title="méthode permettant de transformer une chaine en suite de lettres carrées" alt="" coords="625,31,804,57"/>
+<area shape="rect" id="node2" href="$class_combi_wordle.html#aeb2a6cee84d503f55b9010f55c75932d" title="renvoie les indices des lettres placée" alt="" coords="409,31,577,57"/>
+<area shape="rect" id="node3" href="$class_wordle.html#a65c0b5cc15614214450ed85594f20ce2" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="168,5,361,32"/>
+<area shape="rect" id="node4" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="5,31,120,57"/>
+</map>

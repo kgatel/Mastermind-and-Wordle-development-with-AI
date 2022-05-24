@@ -1,0 +1,16 @@
+<map id="Humain_Codeur_Mastermind::entrerCode" name="Humain_Codeur_Mastermind::entrerCode">
+<area shape="rect" id="node1" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="5,302,216,343"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a42a3bad27249f8ad03138e7c57867bd8" title="méthode permettant de renvoyer une carré blanc" alt="" coords="270,5,469,32"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a8f323087de16e919b2c75d96b2a6ad63" title="méthode permettant de renvoyer une carré bleu" alt="" coords="274,56,465,83"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a37b957ff1613f4293765dab12150c75b" title="méthode permettant de renvoyer une carré jaune" alt="" coords="270,107,469,133"/>
+<area shape="rect" id="node5" href="$class_fonctions_utiles.html#a70819a8bbb63fda84b782ed9b5bb8e6d" title="méthode permettant de renvoyer une carré marron" alt="" coords="264,157,475,184"/>
+<area shape="rect" id="node6" href="$class_fonctions_utiles.html#ab25a1fae4e5c3dc6425202034960257e" title="méthode permettant de renvoyer une carré orange" alt="" coords="265,208,473,235"/>
+<area shape="rect" id="node7" href="$class_fonctions_utiles.html#a9c07ccbf4d942ef95e3d32bf8046882a" title="méthode permettant de renvoyer une carré rose" alt="" coords="274,259,465,285"/>
+<area shape="rect" id="node8" href="$class_fonctions_utiles.html#a6a5eb9c7defda3e17af89d53b5f1c445" title="méthode permettant de renvoyer une carré rouge" alt="" coords="269,309,469,336"/>
+<area shape="rect" id="node9" href="$class_fonctions_utiles.html#a75640571ea4c33a58b6de5ca427092c8" title="méthode permettant de renvoyer une carré vert" alt="" coords="275,360,464,387"/>
+<area shape="rect" id="node10" href="$class_fonctions_utiles.html#a006539dc3b713a37dbe2d95369dbdb81" title="méthode permettant de renvoyer une carré violet" alt="" coords="269,411,469,437"/>
+<area shape="rect" id="node11" href="$class_fonctions_utiles.html#a9fb229ea7b35353906e7a0a35c71ab1b" title="méthode permettant de nettoyer le terminal" alt="" coords="288,461,451,488"/>
+<area shape="rect" id="node12" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="289,512,450,539"/>
+<area shape="rect" id="node13" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="283,563,456,589"/>
+<area shape="rect" id="node14" href="$class_fonctions_utiles.html#a80ef25700394aa6ac3320e5ef32e6c31" title="méthode permettant de transformer un entier en chaine de caractère" alt="" coords="270,613,469,640"/>
+</map>

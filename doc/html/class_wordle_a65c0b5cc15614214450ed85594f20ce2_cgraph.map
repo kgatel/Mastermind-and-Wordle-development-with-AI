@@ -1,0 +1,11 @@
+<map id="Wordle::afficherHistorique" name="Wordle::afficherHistorique">
+<area shape="rect" id="node1" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="5,107,199,133"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a7dcf11fa744cb441f2e1518f5210d8bd" title="méthode permettant de rendre une chaine de caractère clignotante" alt="" coords="263,5,425,32"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a8b206001df8ac91e8bd51ae5c8253d8d" title="méthode permettant de renvoyer une carré vide" alt="" coords="249,56,439,83"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="263,107,425,133"/>
+<area shape="rect" id="node5" href="$class_jeu_de_deduction.html#a22c0b4de642e25a76e31865c57cd6edc" title="Cette méthode permet de savoir s&#39;il y a un gagnant au cours de la partie ou non." alt="" coords="247,158,441,199"/>
+<area shape="rect" id="node7" href="$class_combi_wordle.html#aeb2a6cee84d503f55b9010f55c75932d" title="renvoie les indices des lettres placée" alt="" coords="260,224,428,251"/>
+<area shape="rect" id="node6" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="492,167,665,193"/>
+<area shape="rect" id="node8" href="$class_combinaison.html#a2b8f586b5c68679b9e72152bcd758b28" title="getteur de l&#39;attribut combinaison" alt="" coords="511,221,647,248"/>
+<area shape="rect" id="node9" href="$class_fonctions_utiles.html#a85405e240dce8bfd78382cb002545746" title="méthode permettant de transformer une chaine en suite de lettres carrées" alt="" coords="489,272,668,299"/>
+</map>

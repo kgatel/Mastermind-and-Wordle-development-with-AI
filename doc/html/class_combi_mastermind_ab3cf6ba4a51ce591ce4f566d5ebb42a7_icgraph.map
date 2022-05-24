@@ -1,0 +1,4 @@
+<map id="CombiMastermind::resultat" name="CombiMastermind::resultat">
+<area shape="rect" id="node1" title="elle permet de retourner le resultat aorès une tentative" alt="" coords="200,5,400,32"/>
+<area shape="rect" id="node2" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="5,5,152,32"/>
+</map>

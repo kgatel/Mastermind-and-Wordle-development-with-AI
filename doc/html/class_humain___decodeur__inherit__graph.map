@@ -1,0 +1,7 @@
+<map id="Humain_Decodeur" name="Humain_Decodeur">
+<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire les joueurs humains en mode decodeur peu importe le mode de ..." alt="" coords="165,155,307,181"/>
+<area shape="rect" id="node4" href="$class_humain___decodeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Mast..." alt="" coords="5,229,232,256"/>
+<area shape="rect" id="node5" href="$class_humain___decodeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Word..." alt="" coords="256,229,451,256"/>
+<area shape="rect" id="node2" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="199,80,273,107"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="205,5,267,32"/>
+</map>

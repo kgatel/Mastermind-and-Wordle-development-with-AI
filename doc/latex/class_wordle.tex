@@ -1,0 +1,123 @@
+\hypertarget{class_wordle}{}\doxysection{Wordle Class Reference}
+\label{class_wordle}\index{Wordle@{Wordle}}
+
+
+Classe principale permettant de lancement d\textquotesingle{}une partie de \mbox{\hyperlink{class_wordle}{Wordle}}. Elle définit les méthodes abstraites présente dans \mbox{\hyperlink{class_jeu_de_deduction}{Jeu\+De\+Deduction}}.  
+
+
+
+
+{\ttfamily \#include $<$Wordle.\+hpp$>$}
+
+
+
+Inheritance diagram for Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_wordle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wordle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wordle_adf7636c17a4c0fffe4240b33adfa3f6f}{Wordle}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur neutre de la classe \mbox{\hyperlink{class_wordle}{Wordle}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_wordle_ab90b1f64c57e7297bc3ad03f74fcc36d}\label{class_wordle_ab90b1f64c57e7297bc3ad03f74fcc36d}} 
+{\bfseries Wordle} (\mbox{\hyperlink{class_joueur}{Joueur}} $\ast$codeur1, \mbox{\hyperlink{class_joueur}{Joueur}} $\ast$decodeur1)
+\item 
+\mbox{\Hypertarget{class_wordle_a6bb5d0530f92aca70a55d1f76c6074f3}\label{class_wordle_a6bb5d0530f92aca70a55d1f76c6074f3}} 
+virtual void \mbox{\hyperlink{class_wordle_a6bb5d0530f92aca70a55d1f76c6074f3}{partie}} ()
+\begin{DoxyCompactList}\small\item\em Elle permet de lancer une partie de \mbox{\hyperlink{class_wordle}{Wordle}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_wordle_a65c0b5cc15614214450ed85594f20ce2}{afficher\+Historique}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_wordle_aa2bb4218dc8a0704b675f4c346a0cb56}\label{class_wordle_aa2bb4218dc8a0704b675f4c346a0cb56}} 
+void \mbox{\hyperlink{class_wordle_aa2bb4218dc8a0704b675f4c346a0cb56}{choisir\+Fichier\+De\+Mot}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet de choisir le fichier de mot qui sera alors le dictionnaire pour le \mbox{\hyperlink{class_wordle}{Wordle}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classe principale permettant de lancement d\textquotesingle{}une partie de \mbox{\hyperlink{class_wordle}{Wordle}}. Elle définit les méthodes abstraites présente dans \mbox{\hyperlink{class_jeu_de_deduction}{Jeu\+De\+Deduction}}. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wordle_adf7636c17a4c0fffe4240b33adfa3f6f}\label{class_wordle_adf7636c17a4c0fffe4240b33adfa3f6f}} 
+\index{Wordle@{Wordle}!Wordle@{Wordle}}
+\index{Wordle@{Wordle}!Wordle@{Wordle}}
+\doxysubsubsection{\texorpdfstring{Wordle()}{Wordle()}}
+{\footnotesize\ttfamily Wordle\+::\+Wordle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur neutre de la classe \mbox{\hyperlink{class_wordle}{Wordle}}. 
+
+Constructeur de la classe \mbox{\hyperlink{class_wordle}{Wordle}} avec les paramètres.
+
+
+\begin{DoxyParams}{Parameters}
+{\em codeur} & \+: joueur codeur qui propose une combinaison \\
+\hline
+{\em decodeur} & \+: joueur décodeur qui va deviner la combinaison \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wordle_a65c0b5cc15614214450ed85594f20ce2}\label{class_wordle_a65c0b5cc15614214450ed85594f20ce2}} 
+\index{Wordle@{Wordle}!afficherHistorique@{afficherHistorique}}
+\index{afficherHistorique@{afficherHistorique}!Wordle@{Wordle}}
+\doxysubsubsection{\texorpdfstring{afficherHistorique()}{afficherHistorique()}}
+{\footnotesize\ttfamily void Wordle\+::afficher\+Historique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé). 
+
+Cette méthode ne permet pas d’afficher le code quand nous sommes du point de vue décodeur. 
+
+Implements \mbox{\hyperlink{class_jeu_de_deduction}{Jeu\+De\+Deduction}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wordle_a65c0b5cc15614214450ed85594f20ce2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_wordle_a65c0b5cc15614214450ed85594f20ce2_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Wordle.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Wordle.\+cpp\end{DoxyCompactItemize}

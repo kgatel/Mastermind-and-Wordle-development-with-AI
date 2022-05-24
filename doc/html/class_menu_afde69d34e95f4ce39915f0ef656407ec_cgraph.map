@@ -1,0 +1,4 @@
+<map id="Menu::choisirJeu" name="Menu::choisirJeu">
+<area shape="rect" id="node1" title="Fonction qui permet à l&#39;utilisateur de choisir le jeu." alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a01a0d1ec421252c32ba97754d7034b8e" title="méthode permettant de mettre le texte en jaune" alt="" coords="183,5,349,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="IA_Decodeur_Wordle" name="IA_Decodeur_Wordle">
+<area shape="rect" id="node1" title="Cette classe est utilisée pour représenter un joueur virtuel (IA) en mode Decodeur dans le mode de je..." alt="" coords="5,229,163,256"/>
+<area shape="rect" id="node2" href="$class_i_a___decodeur.html" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode Decodeur peu importe le ..." alt="" coords="32,155,136,181"/>
+<area shape="rect" id="node3" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="65,80,103,107"/>
+<area shape="rect" id="node4" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="53,5,115,32"/>
+</map>

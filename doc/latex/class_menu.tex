@@ -1,0 +1,189 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+La classe \mbox{\hyperlink{class_menu}{Menu}} permet à l\textquotesingle{}utilisateur de choisir le mode et les parametres du jeu.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+hpp$>$}
+
+
+
+Collaboration diagram for Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_menu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}\label{class_menu_ad466dd83355124a6ed958430450bfe94}} 
+\mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_menu}{Menu}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_a09c6eb8fc87c9f0b5e07411c0f7db335}{Menu}} (int nbcase, int nbtour, int langue)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_menu}{Menu}} avec paramètres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_ac22389fa763bb6957e23c5094bb56259}\label{class_menu_ac22389fa763bb6957e23c5094bb56259}} 
+void \mbox{\hyperlink{class_menu_ac22389fa763bb6957e23c5094bb56259}{afficher\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em affiche le menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_afde69d34e95f4ce39915f0ef656407ec}{choisir\+Jeu}} (const string \&jeu)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet à l\textquotesingle{}utilisateur de choisir le jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menu_ace0ef09629e464630ede811da5031150}\label{class_menu_ace0ef09629e464630ede811da5031150}} 
+void {\bfseries choisir\+Mode\+De\+Jeu} (int mdj)
+\item 
+\mbox{\Hypertarget{class_menu_a277c74eca379fe6a2296e762ac4096f6}\label{class_menu_a277c74eca379fe6a2296e762ac4096f6}} 
+void \mbox{\hyperlink{class_menu_a277c74eca379fe6a2296e762ac4096f6}{choisir\+Difficulte\+IA}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui permet à l\textquotesingle{}utilisateur de choisir la difficulté de l\textquotesingle{}\mbox{\hyperlink{class_i_a}{IA}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a6e639b52ddb4a35f2d113bdf2b166761}{parametre\+De\+Jeu}} (int N\+B\+\_\+\+E\+L\+E\+M\+E\+NT, string E\+N\+S\+E\+M\+B\+L\+E\+\_\+\+E\+L\+E\+M\+E\+NT, int N\+B\+\_\+\+C\+A\+SE, int N\+B\+\_\+\+T\+O\+UR)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet à l\textquotesingle{}utilisateur de choisir le parametre de jeu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_menu_a30bd3d29e4cf6fa0f9e59d64e5ed7e73}{appartient\+EE}} (string couleur)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de vérifier si une combinaison de couleurs est valide syntaxiquement ou non. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_menu_a2b803098a7123c82cf84199c26d8904c}{appartient\+Dico}} (string mot)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de vérifier si un mot est reconnu par le dictionnaire \mbox{\hyperlink{class_wordle}{Wordle}} ou non. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_ad3be9842417e6cd912e19053cafb027b}\label{class_menu_ad3be9842417e6cd912e19053cafb027b}} 
+static string {\bfseries J\+EU} = \char`\"{}Mastermind\char`\"{}
+\item 
+\mbox{\Hypertarget{class_menu_a6ddbf24afd34a4c2c68b3c7a3e8409ee}\label{class_menu_a6ddbf24afd34a4c2c68b3c7a3e8409ee}} 
+static int {\bfseries N\+B\+\_\+\+E\+L\+E\+M\+E\+NT} =9
+\item 
+\mbox{\Hypertarget{class_menu_a1e5dd635fbbc796218b3ec29bbe28a48}\label{class_menu_a1e5dd635fbbc796218b3ec29bbe28a48}} 
+static string {\bfseries E\+N\+S\+E\+M\+B\+L\+E\+\_\+\+E\+L\+E\+M\+E\+NT} =\char`\"{}ressources\char`\"{}
+\item 
+\mbox{\Hypertarget{class_menu_ac16e99d82b7e143c7ec6639760b85166}\label{class_menu_ac16e99d82b7e143c7ec6639760b85166}} 
+static int {\bfseries N\+B\+\_\+\+C\+A\+SE} =4
+\item 
+\mbox{\Hypertarget{class_menu_a2e7b1acf5150216087b6014250bf2945}\label{class_menu_a2e7b1acf5150216087b6014250bf2945}} 
+static int {\bfseries N\+B\+\_\+\+T\+O\+UR} =12
+\item 
+\mbox{\Hypertarget{class_menu_aff5b075c8bde37170bada1e6428ffe04}\label{class_menu_aff5b075c8bde37170bada1e6428ffe04}} 
+static int {\bfseries Langue} =2
+\item 
+\mbox{\Hypertarget{class_menu_a18a179c5388141d870f632b4e589888a}\label{class_menu_a18a179c5388141d870f632b4e589888a}} 
+static int {\bfseries Mode\+De\+Jeu} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{class_menu}{Menu}} permet à l\textquotesingle{}utilisateur de choisir le mode et les parametres du jeu. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_a09c6eb8fc87c9f0b5e07411c0f7db335}\label{class_menu_a09c6eb8fc87c9f0b5e07411c0f7db335}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{int}]{nbcase,  }\item[{int}]{nbtour,  }\item[{int}]{langue }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{class_menu}{Menu}} avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbcase} & un entier pour definir le nombre de case \\
+\hline
+{\em nbtour} & un entier pour définir le nombre de tour de la partie \\
+\hline
+{\em langue} & un entier (1 ou 2) pour définir la lanque de jeu dans le cas de wordle \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_a2b803098a7123c82cf84199c26d8904c}\label{class_menu_a2b803098a7123c82cf84199c26d8904c}} 
+\index{Menu@{Menu}!appartientDico@{appartientDico}}
+\index{appartientDico@{appartientDico}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{appartientDico()}{appartientDico()}}
+{\footnotesize\ttfamily Menu\+::appartient\+Dico (\begin{DoxyParamCaption}\item[{string}]{mot }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de vérifier si un mot est reconnu par le dictionnaire \mbox{\hyperlink{class_wordle}{Wordle}} ou non. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & est une combinaison qui correpond à un mot de la langue francaise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_a30bd3d29e4cf6fa0f9e59d64e5ed7e73}\label{class_menu_a30bd3d29e4cf6fa0f9e59d64e5ed7e73}} 
+\index{Menu@{Menu}!appartientEE@{appartientEE}}
+\index{appartientEE@{appartientEE}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{appartientEE()}{appartientEE()}}
+{\footnotesize\ttfamily Menu\+::appartient\+EE (\begin{DoxyParamCaption}\item[{string}]{couleur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de vérifier si une combinaison de couleurs est valide syntaxiquement ou non. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em couleur} & est un string qui correspond à une succession de couleurs différentes définissant une combinaison \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menu_afde69d34e95f4ce39915f0ef656407ec}\label{class_menu_afde69d34e95f4ce39915f0ef656407ec}} 
+\index{Menu@{Menu}!choisirJeu@{choisirJeu}}
+\index{choisirJeu@{choisirJeu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{choisirJeu()}{choisirJeu()}}
+{\footnotesize\ttfamily Menu\+::choisir\+Jeu (\begin{DoxyParamCaption}\item[{const string \&}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet à l\textquotesingle{}utilisateur de choisir le jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jeu} & est une chaîne de caractère qui indique le jeu choisi \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_menu_afde69d34e95f4ce39915f0ef656407ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_menu_a6e639b52ddb4a35f2d113bdf2b166761}\label{class_menu_a6e639b52ddb4a35f2d113bdf2b166761}} 
+\index{Menu@{Menu}!parametreDeJeu@{parametreDeJeu}}
+\index{parametreDeJeu@{parametreDeJeu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{parametreDeJeu()}{parametreDeJeu()}}
+{\footnotesize\ttfamily Menu\+::parametre\+De\+Jeu (\begin{DoxyParamCaption}\item[{int}]{N\+B\+\_\+\+E\+L\+E\+M\+E\+NT,  }\item[{string}]{E\+N\+S\+E\+M\+B\+L\+E\+\_\+\+E\+L\+E\+M\+E\+NT,  }\item[{int}]{N\+B\+\_\+\+C\+A\+SE,  }\item[{int}]{N\+B\+\_\+\+T\+O\+UR }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet à l\textquotesingle{}utilisateur de choisir le parametre de jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N\+B\+\_\+\+E\+L\+E\+M\+E\+NT} & indique le nombre d\textquotesingle{}éléments constitutifs parmi lesquels on choisit pour la combinaision à faire deviner \\
+\hline
+{\em N\+B\+\_\+\+C\+A\+SE} & indique la taille du tableau d\textquotesingle{}entier combinaison \\
+\hline
+{\em E\+N\+S\+E\+M\+B\+L\+E\+\_\+\+E\+L\+E\+M\+E\+NT} & définit si on choisit de jouer avec des couleurs ou des lettres \\
+\hline
+{\em N\+B\+\_\+\+T\+O\+UR} & le nombre de tours maximale pour faire deviner la combinaison \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Menu.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Menu.\+cpp\end{DoxyCompactItemize}

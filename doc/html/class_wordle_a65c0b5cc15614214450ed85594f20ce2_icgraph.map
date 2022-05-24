@@ -1,0 +1,4 @@
+<map id="Wordle::afficherHistorique" name="Wordle::afficherHistorique">
+<area shape="rect" id="node1" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="168,5,361,32"/>
+<area shape="rect" id="node2" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="5,5,120,32"/>
+</map>

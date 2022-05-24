@@ -1,0 +1,5 @@
+<map id="IA_Codeur_Wordle::genererCode" name="IA_Codeur_Wordle::genererCode">
+<area shape="rect" id="node1" title="méthode permettant à la machine de générer un code que le joueur artificiel décodeur devra ensuite tr..." alt="" coords="5,31,237,57"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a5952c8ddca89e00672c922d991f6cf73" title="méthode permettant de transformer un caractère en chaine de caractère" alt="" coords="285,5,496,32"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="310,56,471,83"/>
+</map>

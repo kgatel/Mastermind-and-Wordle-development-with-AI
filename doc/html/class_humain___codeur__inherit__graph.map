@@ -1,0 +1,7 @@
+<map id="Humain_Codeur" name="Humain_Codeur">
+<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..." alt="" coords="157,155,283,181"/>
+<area shape="rect" id="node4" href="$class_humain___codeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Master..." alt="" coords="5,229,216,256"/>
+<area shape="rect" id="node5" href="$class_humain___codeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle..." alt="" coords="240,229,419,256"/>
+<area shape="rect" id="node2" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="183,80,257,107"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="189,5,251,32"/>
+</map>

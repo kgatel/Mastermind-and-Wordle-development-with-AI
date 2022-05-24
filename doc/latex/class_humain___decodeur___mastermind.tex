@@ -1,0 +1,115 @@
+\hypertarget{class_humain___decodeur___mastermind}{}\doxysection{Humain\+\_\+\+Decodeur\+\_\+\+Mastermind Class Reference}
+\label{class_humain___decodeur___mastermind}\index{Humain\_Decodeur\_Mastermind@{Humain\_Decodeur\_Mastermind}}
+
+
+Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu \mbox{\hyperlink{class_mastermind}{Mastermind}}.  
+
+
+
+
+{\ttfamily \#include $<$Humain\+\_\+\+Decodeur\+\_\+\+Mastermind.\+hpp$>$}
+
+
+
+Inheritance diagram for Humain\+\_\+\+Decodeur\+\_\+\+Mastermind\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_humain___decodeur___mastermind__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Humain\+\_\+\+Decodeur\+\_\+\+Mastermind\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_humain___decodeur___mastermind__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_humain___decodeur___mastermind_a7b342c84db523dbd6c6892eaa9383163}\label{class_humain___decodeur___mastermind_a7b342c84db523dbd6c6892eaa9383163}} 
+\mbox{\hyperlink{class_humain___decodeur___mastermind_a7b342c84db523dbd6c6892eaa9383163}{Humain\+\_\+\+Decodeur\+\_\+\+Mastermind}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_humain___decodeur___mastermind}{Humain\+\_\+\+Decodeur\+\_\+\+Mastermind}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_combinaison}{Combinaison}} \mbox{\hyperlink{class_humain___decodeur___mastermind_aca615363840a3a2ad1fba89f0669d97a}{entrer\+Combinaison}} ()
+\begin{DoxyCompactList}\small\item\em méthode permettant à l\textquotesingle{}utilisateur de saisir une combinaison qu\textquotesingle{}il propose pour deviner le code donnée par le joueur codeur \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_humain___decodeur___mastermind_a1f0f50f0e42357bb234b57688fc6927e}{verifier\+Entree}} (string entree)
+\begin{DoxyCompactList}\small\item\em une méthode abstraite qui permettera de vérifier la syntaxe de l\textquotesingle{}entrée selon le mode de jeu \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_humain___decodeur___mastermind_a541a0d2cfb78525a4cb84029e3d042d0}\label{class_humain___decodeur___mastermind_a541a0d2cfb78525a4cb84029e3d042d0}} 
+virtual void \mbox{\hyperlink{class_humain___decodeur___mastermind_a541a0d2cfb78525a4cb84029e3d042d0}{jouer}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui Permet de lancer la partie mastermind avec humain decodeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu \mbox{\hyperlink{class_mastermind}{Mastermind}}. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_humain___decodeur___mastermind_aca615363840a3a2ad1fba89f0669d97a}\label{class_humain___decodeur___mastermind_aca615363840a3a2ad1fba89f0669d97a}} 
+\index{Humain\_Decodeur\_Mastermind@{Humain\_Decodeur\_Mastermind}!entrerCombinaison@{entrerCombinaison}}
+\index{entrerCombinaison@{entrerCombinaison}!Humain\_Decodeur\_Mastermind@{Humain\_Decodeur\_Mastermind}}
+\doxysubsubsection{\texorpdfstring{entrerCombinaison()}{entrerCombinaison()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_combinaison}{Combinaison}} Humain\+\_\+\+Decodeur\+\_\+\+Mastermind\+::entrer\+Combinaison (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+méthode permettant à l\textquotesingle{}utilisateur de saisir une combinaison qu\textquotesingle{}il propose pour deviner le code donnée par le joueur codeur 
+
+\begin{DoxyReturn}{Returns}
+retourne la combinaison saisi par le joueur decodeur 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_humain___decodeur_a17c86f3df5c404a1ca66c62105035a5c}{Humain\+\_\+\+Decodeur}}.
+
+\mbox{\Hypertarget{class_humain___decodeur___mastermind_a1f0f50f0e42357bb234b57688fc6927e}\label{class_humain___decodeur___mastermind_a1f0f50f0e42357bb234b57688fc6927e}} 
+\index{Humain\_Decodeur\_Mastermind@{Humain\_Decodeur\_Mastermind}!verifierEntree@{verifierEntree}}
+\index{verifierEntree@{verifierEntree}!Humain\_Decodeur\_Mastermind@{Humain\_Decodeur\_Mastermind}}
+\doxysubsubsection{\texorpdfstring{verifierEntree()}{verifierEntree()}}
+{\footnotesize\ttfamily bool Humain\+\_\+\+Decodeur\+\_\+\+Mastermind\+::verifier\+Entree (\begin{DoxyParamCaption}\item[{string}]{entree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+une méthode abstraite qui permettera de vérifier la syntaxe de l\textquotesingle{}entrée selon le mode de jeu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & entree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un booléen (vraie seulement si la syntaxe est bonne) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_humain_a397a098f4ba53cb5cdadeefd9d994901}{Humain}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_humain___decodeur___mastermind_a1f0f50f0e42357bb234b57688fc6927e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Humain\+\_\+\+Decodeur\+\_\+\+Mastermind.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/Humain\+\_\+\+Decodeur\+\_\+\+Mastermind.\+cpp\end{DoxyCompactItemize}

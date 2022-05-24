@@ -1,0 +1,10 @@
+<map id="Combinaison::get" name="Combinaison::get">
+<area shape="rect" id="node1" title="getteur de l&#39;attribut combinaison" alt="" coords="684,107,820,133"/>
+<area shape="rect" id="node2" href="$class_combi_wordle.html#a14f8870e5b08bc205e409f2740973f08" title="Constructeur de la classe CombiWordle à partir d&#39;une combinaison." alt="" coords="419,5,626,32"/>
+<area shape="rect" id="node3" href="$class_combi_wordle.html#aeb2a6cee84d503f55b9010f55c75932d" title="renvoie les indices des lettres placée" alt="" coords="439,56,607,83"/>
+<area shape="rect" id="node6" href="$class_combi_wordle.html#a051c62f67098d4133a51427b8d113b26" title=" " alt="" coords="181,107,349,149"/>
+<area shape="rect" id="node7" href="$class_humain___codeur___mastermind.html#a2ee4372bc969d30b91955f4e431cb66b" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="417,158,628,199"/>
+<area shape="rect" id="node8" href="$class_humain___decodeur___mastermind.html#a1f0f50f0e42357bb234b57688fc6927e" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="409,223,636,265"/>
+<area shape="rect" id="node4" href="$class_wordle.html#a65c0b5cc15614214450ed85594f20ce2" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="168,5,361,32"/>
+<area shape="rect" id="node5" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="5,56,120,83"/>
+</map>

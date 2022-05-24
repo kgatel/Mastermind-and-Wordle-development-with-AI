@@ -1,5 +1,0 @@
-<map id="JeuDeDeduction" name="JeuDeDeduction">
-<area shape="rect" id="node1" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="45,5,172,32"/>
-<area shape="rect" id="node2" href="$class_mastermind.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="5,80,105,107"/>
-<area shape="rect" id="node3" href="$class_wordle.html" title="Classe principale permettant de lancement d&#39;une partie de Wordle." alt="" coords="129,80,197,107"/>
-</map>

@@ -1,0 +1,6 @@
+<map id="IA_Codeur_Wordle::choisirCombinaison" name="IA_Codeur_Wordle::choisirCombinaison">
+<area shape="rect" id="node1" title="Cette méthode permet de a l&#39;IA de choisir une combinaison parmis l&#39;ensemble." alt="" coords="5,23,197,65"/>
+<area shape="rect" id="node2" href="$class_i_a___codeur___wordle.html#a23946e17fb8771e1818f0c83b4adc86c" title="méthode permettant à la machine de générer un code que le joueur artificiel décodeur devra ensuite tr..." alt="" coords="245,31,477,57"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a5952c8ddca89e00672c922d991f6cf73" title="méthode permettant de transformer un caractère en chaine de caractère" alt="" coords="525,5,736,32"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="550,56,711,83"/>
+</map>

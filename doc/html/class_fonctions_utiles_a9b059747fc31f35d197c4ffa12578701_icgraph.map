@@ -1,0 +1,9 @@
+<map id="FonctionsUtiles::checkMotFichier" name="FonctionsUtiles::checkMotFichier">
+<area shape="rect" id="node1" title="méthode qui permet de vérifier si un mot appartient au fichier" alt="" coords="733,104,927,145"/>
+<area shape="rect" id="node2" href="$class_humain___codeur___mastermind.html#a2ee4372bc969d30b91955f4e431cb66b" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="467,5,677,47"/>
+<area shape="rect" id="node3" href="$class_humain___decodeur___mastermind.html#a1f0f50f0e42357bb234b57688fc6927e" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="459,71,685,112"/>
+<area shape="rect" id="node4" href="$class_humain___decodeur___wordle.html#a3b43a4aca3b9af2e39861392fa7d0e73" title="Méthode qui Permet de vérifier si l&#39;entrée du joueur codeur peut être interpréter en un mot du dictio..." alt="" coords="475,136,669,177"/>
+<area shape="rect" id="node5" href="$class_humain___codeur___wordle.html#ab2875c9ffe6a842490353f8fc59533b1" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="483,201,661,243"/>
+<area shape="rect" id="node6" href="$class_humain___codeur___wordle.html#accbef5363239d009ebd80883f4ef9d8a" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="232,201,411,243"/>
+<area shape="rect" id="node7" href="$class_humain___codeur___wordle.html#a6abb2cf58cbcb6572bccc21a10b67994" title="Méthode qui Permet de lancer la partie wordle avec l&#39;humain codeur." alt="" coords="5,201,184,243"/>
+</map>

@@ -1,0 +1,295 @@
+\begin{theindex}
+
+  \item {afficherHistorique}
+    \subitem {Wordle}, \hyperpage{99}
+  \item {afficherResultat}
+    \subitem {CombiWordle}, \hyperpage{20}
+  \item {appartientDico}
+    \subitem {Menu}, \hyperpage{94}
+  \item {appartientEE}
+    \subitem {Menu}, \hyperpage{95}
+
+  \indexspace
+
+  \item {blanc}
+    \subitem {FonctionsUtiles}, \hyperpage{24}
+  \item {bleu}
+    \subitem {FonctionsUtiles}, \hyperpage{25}
+  \item {blink}
+    \subitem {FonctionsUtiles}, \hyperpage{25}
+
+  \indexspace
+
+  \item {carreblanc}
+    \subitem {FonctionsUtiles}, \hyperpage{26}
+  \item {carrebleu}
+    \subitem {FonctionsUtiles}, \hyperpage{26}
+  \item {carrejaune}
+    \subitem {FonctionsUtiles}, \hyperpage{27}
+  \item {carremarron}
+    \subitem {FonctionsUtiles}, \hyperpage{27}
+  \item {carreorange}
+    \subitem {FonctionsUtiles}, \hyperpage{28}
+  \item {carrerose}
+    \subitem {FonctionsUtiles}, \hyperpage{28}
+  \item {carrerouge}
+    \subitem {FonctionsUtiles}, \hyperpage{29}
+  \item {carrevert}
+    \subitem {FonctionsUtiles}, \hyperpage{29}
+  \item {carrevide}
+    \subitem {FonctionsUtiles}, \hyperpage{30}
+  \item {carreviolet}
+    \subitem {FonctionsUtiles}, \hyperpage{30}
+  \item {charToString}
+    \subitem {FonctionsUtiles}, \hyperpage{30}
+  \item {checkMotFichier}
+    \subitem {FonctionsUtiles}, \hyperpage{31}
+  \item {choisirCombinaison}
+    \subitem {IA}, \hyperpage{61}
+    \subitem {IA\_Codeur\_Mastermind}, \hyperpage{67}
+    \subitem {IA\_Codeur\_Wordle}, \hyperpage{70}
+    \subitem {IA\_Decodeur\_Mastermind}, \hyperpage{76}
+    \subitem {IA\_Decodeur\_Wordle}, \hyperpage{79}
+  \item {choisirJeu}
+    \subitem {Menu}, \hyperpage{95}
+  \item {Combi\_possible}
+    \subitem {IA\_Decodeur}, \hyperpage{74}
+    \subitem {IA\_Decodeur\_Mastermind}, \hyperpage{76}
+    \subitem {IA\_Decodeur\_Wordle}, \hyperpage{79}
+  \item {CombiMastermind}, \hyperpage{11}
+    \subitem {CombiMastermind}, \hyperpage{12}
+    \subitem {resultat}, \hyperpage{13}
+    \subitem {toString}, \hyperpage{13}
+  \item {Combinaison}, \hyperpage{15}
+    \subitem {Combinaison}, \hyperpage{16}
+    \subitem {get}, \hyperpage{16}
+    \subitem {resultat}, \hyperpage{16}
+    \subitem {setCombinaison}, \hyperpage{17}
+    \subitem {toString}, \hyperpage{17}
+  \item {CombiWordle}, \hyperpage{18}
+    \subitem {afficherResultat}, \hyperpage{20}
+    \subitem {CombiWordle}, \hyperpage{19}
+    \subitem {resultat}, \hyperpage{20}
+    \subitem {resultat\_couleur}, \hyperpage{21}
+    \subitem {toString}, \hyperpage{22}
+  \item {cyan}
+    \subitem {FonctionsUtiles}, \hyperpage{32}
+
+  \indexspace
+
+  \item {detectionVictoire}
+    \subitem {JeuDeDeduction}, \hyperpage{83}
+
+  \indexspace
+
+  \item {entrerCode}
+    \subitem {Humain\_Codeur\_Mastermind}, \hyperpage{46}
+    \subitem {Humain\_Codeur\_Wordle}, \hyperpage{50}
+  \item {entrerCombinaison}
+    \subitem {Humain\_Decodeur\_Mastermind}, \hyperpage{56}
+  \item {entrerMdP}
+    \subitem {Humain\_Codeur}, \hyperpage{44}
+  \item {equals}
+    \subitem {FonctionsUtiles}, \hyperpage{32}
+
+  \indexspace
+
+  \item {FonctionsUtiles}, \hyperpage{23}
+    \subitem {blanc}, \hyperpage{24}
+    \subitem {bleu}, \hyperpage{25}
+    \subitem {blink}, \hyperpage{25}
+    \subitem {carreblanc}, \hyperpage{26}
+    \subitem {carrebleu}, \hyperpage{26}
+    \subitem {carrejaune}, \hyperpage{27}
+    \subitem {carremarron}, \hyperpage{27}
+    \subitem {carreorange}, \hyperpage{28}
+    \subitem {carrerose}, \hyperpage{28}
+    \subitem {carrerouge}, \hyperpage{29}
+    \subitem {carrevert}, \hyperpage{29}
+    \subitem {carrevide}, \hyperpage{30}
+    \subitem {carreviolet}, \hyperpage{30}
+    \subitem {charToString}, \hyperpage{30}
+    \subitem {checkMotFichier}, \hyperpage{31}
+    \subitem {cyan}, \hyperpage{32}
+    \subitem {equals}, \hyperpage{32}
+    \subitem {intToString}, \hyperpage{33}
+    \subitem {isNumber}, \hyperpage{34}
+    \subitem {jaune}, \hyperpage{34}
+    \subitem {rouge}, \hyperpage{35}
+    \subitem {split}, \hyperpage{36}
+    \subitem {toCarre}, \hyperpage{37}
+    \subitem {vert}, \hyperpage{37}
+    \subitem {vertclair}, \hyperpage{38}
+    \subitem {violet}, \hyperpage{38}
+    \subitem {violetclair}, \hyperpage{39}
+
+  \indexspace
+
+  \item {genererCode}
+    \subitem {IA\_Codeur}, \hyperpage{64}
+    \subitem {IA\_Codeur\_Mastermind}, \hyperpage{67}
+    \subitem {IA\_Codeur\_Wordle}, \hyperpage{71}
+  \item {genererMdP}
+    \subitem {IA\_Codeur}, \hyperpage{64}
+  \item {get}
+    \subitem {Combinaison}, \hyperpage{16}
+  \item {getCombinaison}
+    \subitem {Joueur}, \hyperpage{87}
+  \item {getMdP}
+    \subitem {Humain\_Codeur}, \hyperpage{44}
+    \subitem {IA\_Codeur}, \hyperpage{64}
+  \item {getPseudo}
+    \subitem {Joueur}, \hyperpage{87}
+  \item {getTour}
+    \subitem {JeuDeDeduction}, \hyperpage{84}
+
+  \indexspace
+
+  \item {Humain}, \hyperpage{39}
+    \subitem {Humain}, \hyperpage{41}
+    \subitem {verifierEntree}, \hyperpage{41}
+  \item {Humain\_Codeur}, \hyperpage{42}
+    \subitem {entrerMdP}, \hyperpage{44}
+    \subitem {getMdP}, \hyperpage{44}
+  \item {Humain\_Codeur\_Mastermind}, \hyperpage{44}
+    \subitem {entrerCode}, \hyperpage{46}
+    \subitem {verifierEntree}, \hyperpage{47}
+  \item {Humain\_Codeur\_Wordle}, \hyperpage{48}
+    \subitem {entrerCode}, \hyperpage{50}
+    \subitem {verifierEntree}, \hyperpage{51}
+  \item {Humain\_Decodeur}, \hyperpage{52}
+  \item {Humain\_Decodeur\_Mastermind}, \hyperpage{54}
+    \subitem {entrerCombinaison}, \hyperpage{56}
+    \subitem {verifierEntree}, \hyperpage{56}
+  \item {Humain\_Decodeur\_Wordle}, \hyperpage{57}
+    \subitem {verifierEntree}, \hyperpage{59}
+
+  \indexspace
+
+  \item {IA}, \hyperpage{60}
+    \subitem {choisirCombinaison}, \hyperpage{61}
+    \subitem {IA}, \hyperpage{61}
+  \item {IA\_Codeur}, \hyperpage{62}
+    \subitem {genererCode}, \hyperpage{64}
+    \subitem {genererMdP}, \hyperpage{64}
+    \subitem {getMdP}, \hyperpage{64}
+  \item {IA\_Codeur\_Mastermind}, \hyperpage{65}
+    \subitem {choisirCombinaison}, \hyperpage{67}
+    \subitem {genererCode}, \hyperpage{67}
+  \item {IA\_Codeur\_Wordle}, \hyperpage{68}
+    \subitem {choisirCombinaison}, \hyperpage{70}
+    \subitem {genererCode}, \hyperpage{71}
+  \item {IA\_Decodeur}, \hyperpage{72}
+    \subitem {Combi\_possible}, \hyperpage{74}
+  \item {IA\_Decodeur\_Mastermind}, \hyperpage{74}
+    \subitem {choisirCombinaison}, \hyperpage{76}
+    \subitem {Combi\_possible}, \hyperpage{76}
+  \item {IA\_Decodeur\_Wordle}, \hyperpage{77}
+    \subitem {choisirCombinaison}, \hyperpage{79}
+    \subitem {Combi\_possible}, \hyperpage{79}
+    \subitem {Maj\_ensemble}, \hyperpage{80}
+  \item {intToString}
+    \subitem {FonctionsUtiles}, \hyperpage{33}
+  \item {isNumber}
+    \subitem {FonctionsUtiles}, \hyperpage{34}
+
+  \indexspace
+
+  \item {jaune}
+    \subitem {FonctionsUtiles}, \hyperpage{34}
+  \item {JeuDeDeduction}, \hyperpage{81}
+    \subitem {detectionVictoire}, \hyperpage{83}
+    \subitem {getTour}, \hyperpage{84}
+    \subitem {JeuDeDeduction}, \hyperpage{83}
+  \item {Joueur}, \hyperpage{85}
+    \subitem {getCombinaison}, \hyperpage{87}
+    \subitem {getPseudo}, \hyperpage{87}
+    \subitem {Joueur}, \hyperpage{86}
+    \subitem {set\_historiqueRes}, \hyperpage{87}
+    \subitem {setCombinaison}, \hyperpage{87}
+    \subitem {setPseudo}, \hyperpage{88}
+    \subitem {toString}, \hyperpage{88}
+
+  \indexspace
+
+  \item {Maj\_ensemble}
+    \subitem {IA\_Decodeur\_Wordle}, \hyperpage{80}
+  \item {Mastermind}, \hyperpage{89}
+    \subitem {Mastermind}, \hyperpage{91}
+    \subitem {partie}, \hyperpage{91}
+  \item {Menu}, \hyperpage{92}
+    \subitem {appartientDico}, \hyperpage{94}
+    \subitem {appartientEE}, \hyperpage{95}
+    \subitem {choisirJeu}, \hyperpage{95}
+    \subitem {Menu}, \hyperpage{94}
+    \subitem {parametreDeJeu}, \hyperpage{95}
+
+  \indexspace
+
+  \item {parametreDeJeu}
+    \subitem {Menu}, \hyperpage{95}
+  \item {partie}
+    \subitem {Mastermind}, \hyperpage{91}
+
+  \indexspace
+
+  \item {resultat}
+    \subitem {CombiMastermind}, \hyperpage{13}
+    \subitem {Combinaison}, \hyperpage{16}
+    \subitem {CombiWordle}, \hyperpage{20}
+  \item {resultat\_couleur}
+    \subitem {CombiWordle}, \hyperpage{21}
+  \item {rouge}
+    \subitem {FonctionsUtiles}, \hyperpage{35}
+
+  \indexspace
+
+  \item {set\_historiqueRes}
+    \subitem {Joueur}, \hyperpage{87}
+  \item {setCombinaison}
+    \subitem {Combinaison}, \hyperpage{17}
+    \subitem {Joueur}, \hyperpage{87}
+  \item {setPseudo}
+    \subitem {Joueur}, \hyperpage{88}
+  \item {split}
+    \subitem {FonctionsUtiles}, \hyperpage{36}
+  \item {std}, \hyperpage{9}
+
+  \indexspace
+
+  \item {toCarre}
+    \subitem {FonctionsUtiles}, \hyperpage{37}
+  \item {toString}
+    \subitem {CombiMastermind}, \hyperpage{13}
+    \subitem {Combinaison}, \hyperpage{17}
+    \subitem {CombiWordle}, \hyperpage{22}
+    \subitem {Joueur}, \hyperpage{88}
+
+  \indexspace
+
+  \item {UnitTest}, \hyperpage{96}
+
+  \indexspace
+
+  \item {verifierEntree}
+    \subitem {Humain}, \hyperpage{41}
+    \subitem {Humain\_Codeur\_Mastermind}, \hyperpage{47}
+    \subitem {Humain\_Codeur\_Wordle}, \hyperpage{51}
+    \subitem {Humain\_Decodeur\_Mastermind}, \hyperpage{56}
+    \subitem {Humain\_Decodeur\_Wordle}, \hyperpage{59}
+  \item {vert}
+    \subitem {FonctionsUtiles}, \hyperpage{37}
+  \item {vertclair}
+    \subitem {FonctionsUtiles}, \hyperpage{38}
+  \item {violet}
+    \subitem {FonctionsUtiles}, \hyperpage{38}
+  \item {violetclair}
+    \subitem {FonctionsUtiles}, \hyperpage{39}
+
+  \indexspace
+
+  \item {Wordle}, \hyperpage{97}
+    \subitem {afficherHistorique}, \hyperpage{99}
+    \subitem {Wordle}, \hyperpage{99}
+
+\end{theindex}

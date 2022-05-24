@@ -1,0 +1,12 @@
+<map id="FonctionsUtiles::cyan" name="FonctionsUtiles::cyan">
+<area shape="rect" id="node1" title="méthode permettant de mettre le texte en cyan" alt="" coords="756,129,917,156"/>
+<area shape="rect" id="node2" href="$class_wordle.html#a65c0b5cc15614214450ed85594f20ce2" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="495,5,689,32"/>
+<area shape="rect" id="node4" href="$class_humain___codeur___mastermind.html#a82a4ce8c55071fd36f69f6ea9d4e1726" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="487,57,697,98"/>
+<area shape="rect" id="node5" href="$class_humain___codeur___wordle.html#accbef5363239d009ebd80883f4ef9d8a" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="503,122,681,163"/>
+<area shape="rect" id="node7" href="$class_i_a___codeur___wordle.html#a23946e17fb8771e1818f0c83b4adc86c" title="méthode permettant à la machine de générer un code que le joueur artificiel décodeur devra ensuite tr..." alt="" coords="476,188,708,215"/>
+<area shape="rect" id="node10" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="519,239,665,265"/>
+<area shape="rect" id="node3" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="275,5,389,32"/>
+<area shape="rect" id="node6" href="$class_humain___codeur___wordle.html#a6abb2cf58cbcb6572bccc21a10b67994" title="Méthode qui Permet de lancer la partie wordle avec l&#39;humain codeur." alt="" coords="243,118,421,159"/>
+<area shape="rect" id="node8" href="$class_i_a___codeur___wordle.html#a4e98387dcbc1eca52a2df6262dbc6232" title="Cette méthode permet de a l&#39;IA de choisir une combinaison parmis l&#39;ensemble." alt="" coords="236,183,428,225"/>
+<area shape="rect" id="node9" href="$class_i_a___codeur___wordle.html#a2b6234752b5b292471f45f065a5e6974" title="Méthode qui Permet de lancer la partie wordle avec IA codeur." alt="" coords="5,191,188,217"/>
+</map>

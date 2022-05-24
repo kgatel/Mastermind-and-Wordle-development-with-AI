@@ -1,0 +1,4 @@
+<map id="JeuDeDeduction::detectionVictoire" name="JeuDeDeduction::detectionVictoire">
+<area shape="rect" id="node1" title="Cette méthode permet de savoir s&#39;il y a un gagnant au cours de la partie ou non." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="248,13,421,39"/>
+</map>

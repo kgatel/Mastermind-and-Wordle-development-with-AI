@@ -1,0 +1,4 @@
+<map id="Humain_Decodeur_Wordle::verifierEntree" name="Humain_Decodeur_Wordle::verifierEntree">
+<area shape="rect" id="node1" title="Méthode qui Permet de vérifier si l&#39;entrée du joueur codeur peut être interpréter en un mot du dictio..." alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a9b059747fc31f35d197c4ffa12578701" title="méthode qui permet de vérifier si un mot appartient au fichier" alt="" coords="248,5,441,47"/>
+</map>

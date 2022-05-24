@@ -1,6 +1,0 @@
-<map id="Humain_Decodeur_Mastermind" name="Humain_Decodeur_Mastermind">
-<area shape="rect" id="node1" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Mast..." alt="" coords="5,229,232,256"/>
-<area shape="rect" id="node2" href="$class_humain___decodeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode decodeur peu importe le mode de ..." alt="" coords="47,155,190,181"/>
-<area shape="rect" id="node3" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="82,80,155,107"/>
-<area shape="rect" id="node4" href="$class_joueur.html" title="classe abstraite regroupant tout joueur" alt="" coords="87,5,150,32"/>
-</map>

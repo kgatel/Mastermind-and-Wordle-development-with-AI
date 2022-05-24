@@ -1,0 +1,7 @@
+<map id="IA_Decodeur" name="IA_Decodeur">
+<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode Decodeur peu importe le ..." alt="" coords="65,261,169,288"/>
+<area shape="rect" id="node2" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="98,185,137,212"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="86,109,149,136"/>
+<area shape="rect" id="node4" href="$class_combinaison.html" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="148,5,207,32"/>
+</map>

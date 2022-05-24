@@ -1,0 +1,8 @@
+<map id="Mastermind" name="Mastermind">
+<area shape="rect" id="node1" title="Classe principale permettant de lancement d&#39;une partie de Mastermind. Elle définit les méthodes abstr..." alt="" coords="189,289,289,316"/>
+<area shape="rect" id="node2" href="$class_jeu_de_deduction.html" title="Classe principale permettant de lancement d&#39;une partie. Elle comprend le main et." alt="" coords="175,213,302,240"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="146,109,209,136"/>
+<area shape="rect" id="node4" href="$class_combinaison.html" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="209,5,268,32"/>
+<area shape="rect" id="node6" href="$class_menu.html" title="La classe Menu permet à l&#39;utilisateur de choisir le mode et les parametres du jeu." alt="" coords="268,109,327,136"/>
+</map>

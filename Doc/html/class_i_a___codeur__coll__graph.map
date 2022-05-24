@@ -1,5 +1,0 @@
-<map id="IA_Codeur" name="IA_Codeur">
-<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode codeur peu importe le mo..." alt="" coords="5,155,93,181"/>
-<area shape="rect" id="node2" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="30,80,69,107"/>
-<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tout joueur" alt="" coords="18,5,81,32"/>
-</map>

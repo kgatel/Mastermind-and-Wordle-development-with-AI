@@ -1,0 +1,5 @@
+<map id="IA_Codeur_Mastermind::genererCode" name="IA_Codeur_Mastermind::genererCode">
+<area shape="rect" id="node1" title="méthode permettant à la machine de générer un code que l&#39;intelligence artificielle devra ensuite trou..." alt="" coords="448,5,621,47"/>
+<area shape="rect" id="node2" href="$class_i_a___codeur___mastermind.html#a87952498f59496cc824a04fd5708bf14" title="Cette méthode permet de a l&#39;IA de choisir une combinaison parmis l&#39;ensemble." alt="" coords="227,5,400,47"/>
+<area shape="rect" id="node3" href="$class_i_a___codeur___mastermind.html#ab2fe1d3190b124d1de590ef5153cbedb" title="Méthode qui Permet de lancer la partie mastermind avec IA codeur." alt="" coords="5,5,179,47"/>
+</map>

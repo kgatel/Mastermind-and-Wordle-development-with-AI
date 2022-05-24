@@ -1,0 +1,8 @@
+<map id="Humain_Codeur_Wordle" name="Humain_Codeur_Wordle">
+<area shape="rect" id="node1" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle..." alt="" coords="28,337,207,364"/>
+<area shape="rect" id="node2" href="$class_humain___codeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..." alt="" coords="54,261,181,288"/>
+<area shape="rect" id="node3" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="81,185,154,212"/>
+<area shape="rect" id="node4" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="86,109,149,136"/>
+<area shape="rect" id="node5" href="$class_combinaison.html" title="Tableau d&#39;entier représentant une combinaison de couleur ou de lettre." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="148,5,207,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Humain_Codeur_Wordle::entrerCode" name="Humain_Codeur_Wordle::entrerCode">
+<area shape="rect" id="node1" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="5,27,184,69"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a2ca24b7d4961e2bbe49eee4ddb81d0d1" title="méthode permettant de mettre le texte en cyan" alt="" coords="241,5,402,32"/>
+<area shape="rect" id="node3" href="$class_humain___codeur___wordle.html#ab2875c9ffe6a842490353f8fc59533b1" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="232,57,411,98"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a9b059747fc31f35d197c4ffa12578701" title="méthode qui permet de vérifier si un mot appartient au fichier" alt="" coords="459,57,652,98"/>
+</map>

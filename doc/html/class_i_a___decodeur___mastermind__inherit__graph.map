@@ -1,0 +1,6 @@
+<map id="IA_Decodeur_Mastermind" name="IA_Decodeur_Mastermind">
+<area shape="rect" id="node1" title="Cette classe est utilisée pour représenter un joueur artificiel (IA) en mode Decodeur dans le mode de..." alt="" coords="5,229,195,256"/>
+<area shape="rect" id="node2" href="$class_i_a___decodeur.html" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode Decodeur peu importe le ..." alt="" coords="48,155,152,181"/>
+<area shape="rect" id="node3" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="81,80,119,107"/>
+<area shape="rect" id="node4" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="69,5,131,32"/>
+</map>

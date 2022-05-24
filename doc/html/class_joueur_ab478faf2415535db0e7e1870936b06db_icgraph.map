@@ -1,0 +1,8 @@
+<map id="Joueur::setCombinaison" name="Joueur::setCombinaison">
+<area shape="rect" id="node1" title="setteur de l&#39;attribut combinaison" alt="" coords="243,130,419,157"/>
+<area shape="rect" id="node2" href="$class_i_a___codeur___mastermind.html#ab2fe1d3190b124d1de590ef5153cbedb" title="Méthode qui Permet de lancer la partie mastermind avec IA codeur." alt="" coords="13,5,187,47"/>
+<area shape="rect" id="node3" href="$class_i_a___codeur___wordle.html#a2b6234752b5b292471f45f065a5e6974" title="Méthode qui Permet de lancer la partie wordle avec IA codeur." alt="" coords="9,71,191,98"/>
+<area shape="rect" id="node4" href="$class_i_a___decodeur___mastermind.html#ab26157dda483a2c33263f041b0c6d48b" title="Méthode qui Permet de lancer la partie mastermind avec IA décodeur." alt="" coords="5,123,195,164"/>
+<area shape="rect" id="node5" href="$class_i_a___decodeur___wordle.html#a0d1ccf7528626060caf0e5fd475f47b4" title="Méthode qui Permet de lancer la partie wordle avec IA décodeur." alt="" coords="21,188,179,229"/>
+<area shape="rect" id="node6" href="$class_humain___codeur___wordle.html#a6abb2cf58cbcb6572bccc21a10b67994" title="Méthode qui Permet de lancer la partie wordle avec l&#39;humain codeur." alt="" coords="11,253,189,295"/>
+</map>

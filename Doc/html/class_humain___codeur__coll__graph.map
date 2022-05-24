@@ -1,5 +1,0 @@
-<map id="Humain_Codeur" name="Humain_Codeur">
-<area shape="rect" id="node1" title="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..." alt="" coords="5,155,132,181"/>
-<area shape="rect" id="node2" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="32,80,105,107"/>
-<area shape="rect" id="node3" href="$class_joueur.html" title="classe abstraite regroupant tout joueur" alt="" coords="37,5,100,32"/>
-</map>

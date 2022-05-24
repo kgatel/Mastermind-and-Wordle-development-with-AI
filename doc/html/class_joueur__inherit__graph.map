@@ -1,0 +1,17 @@
+<map id="Joueur" name="Joueur">
+<area shape="rect" id="node1" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="5,157,68,184"/>
+<area shape="rect" id="node2" href="$class_humain.html" title="Si le joueur est un humain." alt="" coords="116,132,189,159"/>
+<area shape="rect" id="node9" href="$class_i_a.html" title="Si le joueur est un IA." alt="" coords="133,233,172,260"/>
+<area shape="rect" id="node3" href="$class_humain___codeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..." alt="" coords="245,56,372,83"/>
+<area shape="rect" id="node6" href="$class_humain___decodeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode decodeur peu importe le mode de ..." alt="" coords="237,132,380,159"/>
+<area shape="rect" id="node4" href="$class_humain___codeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Master..." alt="" coords="436,5,647,32"/>
+<area shape="rect" id="node5" href="$class_humain___codeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle..." alt="" coords="452,56,631,83"/>
+<area shape="rect" id="node7" href="$class_humain___decodeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Mast..." alt="" coords="428,107,655,133"/>
+<area shape="rect" id="node8" href="$class_humain___decodeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Word..." alt="" coords="444,157,639,184"/>
+<area shape="rect" id="node10" href="$class_i_a___codeur.html" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode codeur peu importe le mo..." alt="" coords="265,233,353,260"/>
+<area shape="rect" id="node13" href="$class_i_a___decodeur.html" title="Cette classe abstraite permet de décrire l&#39;intelligence artificielle en mode Decodeur peu importe le ..." alt="" coords="257,309,361,336"/>
+<area shape="rect" id="node11" href="$class_i_a___codeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur artificiel (IA) en mode codeur dans le mode de j..." alt="" coords="455,208,628,235"/>
+<area shape="rect" id="node12" href="$class_i_a___codeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur virtuel (IA) en mode codeur dans le mode de jeu ..." alt="" coords="471,259,612,285"/>
+<area shape="rect" id="node14" href="$class_i_a___decodeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur artificiel (IA) en mode Decodeur dans le mode de..." alt="" coords="447,309,636,336"/>
+<area shape="rect" id="node15" href="$class_i_a___decodeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur virtuel (IA) en mode Decodeur dans le mode de je..." alt="" coords="463,360,620,387"/>
+</map>

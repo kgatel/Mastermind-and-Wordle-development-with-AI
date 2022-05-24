@@ -1,0 +1,10 @@
+<map id="Humain" name="Humain">
+<area shape="rect" id="node1" title="Si le joueur est un humain." alt="" coords="116,81,189,108"/>
+<area shape="rect" id="node3" href="$class_humain___codeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode codeur peu importe le mode de je..." alt="" coords="245,56,372,83"/>
+<area shape="rect" id="node6" href="$class_humain___decodeur.html" title="Cette classe abstraite permet de décrire les joueurs humains en mode decodeur peu importe le mode de ..." alt="" coords="237,107,380,133"/>
+<area shape="rect" id="node2" href="$class_joueur.html" title="classe abstraite regroupant tous les joueurs (humain et IA)" alt="" coords="5,81,68,108"/>
+<area shape="rect" id="node4" href="$class_humain___codeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Master..." alt="" coords="436,5,647,32"/>
+<area shape="rect" id="node5" href="$class_humain___codeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode codeur dans le mode de jeu Wordle..." alt="" coords="452,56,631,83"/>
+<area shape="rect" id="node7" href="$class_humain___decodeur___mastermind.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Mast..." alt="" coords="428,107,655,133"/>
+<area shape="rect" id="node8" href="$class_humain___decodeur___wordle.html" title="Cette classe est utilisée pour représenter un joueur humain en mode decodeur dans le mode de jeu Word..." alt="" coords="444,157,639,184"/>
+</map>

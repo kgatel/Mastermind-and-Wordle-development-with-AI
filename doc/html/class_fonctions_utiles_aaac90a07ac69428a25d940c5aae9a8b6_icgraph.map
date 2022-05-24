@@ -1,0 +1,16 @@
+<map id="FonctionsUtiles::equals" name="FonctionsUtiles::equals">
+<area shape="rect" id="node1" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="668,239,841,265"/>
+<area shape="rect" id="node2" href="$class_menu.html#ac22389fa763bb6957e23c5094bb56259" title="affiche le menu." alt="" coords="439,5,591,32"/>
+<area shape="rect" id="node3" href="$class_jeu_de_deduction.html#a22c0b4de642e25a76e31865c57cd6edc" title="Cette méthode permet de savoir s&#39;il y a un gagnant au cours de la partie ou non." alt="" coords="417,290,612,331"/>
+<area shape="rect" id="node7" href="$class_humain___codeur___mastermind.html#a82a4ce8c55071fd36f69f6ea9d4e1726" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="409,107,620,149"/>
+<area shape="rect" id="node8" href="$class_i_a___decodeur___mastermind.html#ab26157dda483a2c33263f041b0c6d48b" title="Méthode qui Permet de lancer la partie mastermind avec IA décodeur." alt="" coords="170,93,359,134"/>
+<area shape="rect" id="node9" href="$class_i_a___decodeur___mastermind.html#a259d94e53293518c64d3bddc782d31ad" title="Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la..." alt="" coords="420,173,609,214"/>
+<area shape="rect" id="node10" href="$class_i_a___decodeur___wordle.html#afed6b210f619de267ae9d32bfbd241fa" title="Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la..." alt="" coords="436,407,593,449"/>
+<area shape="rect" id="node12" href="$class_combi_wordle.html#aeb2a6cee84d503f55b9010f55c75932d" title="renvoie les indices des lettres placée" alt="" coords="431,239,599,265"/>
+<area shape="rect" id="node13" href="$class_combi_wordle.html#a051c62f67098d4133a51427b8d113b26" title=" " alt="" coords="181,470,349,511"/>
+<area shape="rect" id="node14" href="$class_combi_mastermind.html#a4a148f265167565905dff2806854dbb9" title="permet l&#39;affichage de la combinaison de couleur" alt="" coords="414,356,615,383"/>
+<area shape="rect" id="node4" href="$class_wordle.html#a65c0b5cc15614214450ed85594f20ce2" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="168,252,361,279"/>
+<area shape="rect" id="node5" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="5,277,120,304"/>
+<area shape="rect" id="node6" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="191,353,338,380"/>
+<area shape="rect" id="node11" href="$class_i_a___decodeur___wordle.html#a0d1ccf7528626060caf0e5fd475f47b4" title="Méthode qui Permet de lancer la partie wordle avec IA décodeur." alt="" coords="186,405,343,446"/>
+</map>

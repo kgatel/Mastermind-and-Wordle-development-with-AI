@@ -1,0 +1,5 @@
+<map id="FonctionsUtiles::vertclair" name="FonctionsUtiles::vertclair">
+<area shape="rect" id="node1" title="méthode permettant de mettre le texte en vertclair et en gras" alt="" coords="200,31,384,57"/>
+<area shape="rect" id="node2" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node3" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="21,56,136,83"/>
+</map>

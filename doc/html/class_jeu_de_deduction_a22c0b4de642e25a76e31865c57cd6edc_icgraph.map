@@ -1,0 +1,6 @@
+<map id="JeuDeDeduction::detectionVictoire" name="JeuDeDeduction::detectionVictoire">
+<area shape="rect" id="node1" title="Cette méthode permet de savoir s&#39;il y a un gagnant au cours de la partie ou non." alt="" coords="409,49,604,90"/>
+<area shape="rect" id="node2" href="$class_wordle.html#a65c0b5cc15614214450ed85594f20ce2" title="Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées av..." alt="" coords="168,5,361,32"/>
+<area shape="rect" id="node3" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="5,31,120,57"/>
+<area shape="rect" id="node4" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="191,107,338,133"/>
+</map>

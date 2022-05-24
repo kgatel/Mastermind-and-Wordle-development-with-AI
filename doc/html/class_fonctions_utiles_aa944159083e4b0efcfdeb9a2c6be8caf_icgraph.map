@@ -1,0 +1,6 @@
+<map id="FonctionsUtiles::rouge" name="FonctionsUtiles::rouge">
+<area shape="rect" id="node1" title="méthode permettant de mettre le texte en rouge" alt="" coords="280,78,447,105"/>
+<area shape="rect" id="node2" href="$class_humain___decodeur___wordle.html#a3b32cc6799e1a438a40cea68981606ef" title="methode abstraite à redefinir pour les différents modes de jeu" alt="" coords="21,5,216,47"/>
+<area shape="rect" id="node3" href="$class_humain___codeur___mastermind.html#a2ee4372bc969d30b91955f4e431cb66b" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="13,71,224,112"/>
+<area shape="rect" id="node4" href="$class_humain___decodeur___mastermind.html#a1f0f50f0e42357bb234b57688fc6927e" title="une méthode abstraite qui permettera de vérifier la syntaxe de l&#39;entrée selon le mode de jeu" alt="" coords="5,136,232,177"/>
+</map>

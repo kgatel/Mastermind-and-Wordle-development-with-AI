@@ -1,0 +1,7 @@
+<map id="FonctionsUtiles::jaune" name="FonctionsUtiles::jaune">
+<area shape="rect" id="node1" title="méthode permettant de mettre le texte en jaune" alt="" coords="205,81,372,108"/>
+<area shape="rect" id="node2" href="$class_menu.html#ac22389fa763bb6957e23c5094bb56259" title="affiche le menu." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node3" href="$class_menu.html#afde69d34e95f4ce39915f0ef656407ec" title="Fonction qui permet à l&#39;utilisateur de choisir le jeu." alt="" coords="17,56,146,83"/>
+<area shape="rect" id="node4" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="8,107,155,133"/>
+<area shape="rect" id="node5" href="$class_wordle.html#a6bb5d0530f92aca70a55d1f76c6074f3" title="Elle permet de lancer une partie de Wordle." alt="" coords="24,157,139,184"/>
+</map>

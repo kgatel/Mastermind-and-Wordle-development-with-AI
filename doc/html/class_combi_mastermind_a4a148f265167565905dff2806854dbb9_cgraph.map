@@ -1,0 +1,13 @@
+<map id="CombiMastermind::toString" name="CombiMastermind::toString">
+<area shape="rect" id="node1" title="permet l&#39;affichage de la combinaison de couleur" alt="" coords="5,233,207,260"/>
+<area shape="rect" id="node2" href="$class_fonctions_utiles.html#a42a3bad27249f8ad03138e7c57867bd8" title="méthode permettant de renvoyer une carré blanc" alt="" coords="261,5,459,32"/>
+<area shape="rect" id="node3" href="$class_fonctions_utiles.html#a8f323087de16e919b2c75d96b2a6ad63" title="méthode permettant de renvoyer une carré bleu" alt="" coords="265,56,455,83"/>
+<area shape="rect" id="node4" href="$class_fonctions_utiles.html#a37b957ff1613f4293765dab12150c75b" title="méthode permettant de renvoyer une carré jaune" alt="" coords="261,107,459,133"/>
+<area shape="rect" id="node5" href="$class_fonctions_utiles.html#a70819a8bbb63fda84b782ed9b5bb8e6d" title="méthode permettant de renvoyer une carré marron" alt="" coords="255,157,465,184"/>
+<area shape="rect" id="node6" href="$class_fonctions_utiles.html#ab25a1fae4e5c3dc6425202034960257e" title="méthode permettant de renvoyer une carré orange" alt="" coords="256,208,464,235"/>
+<area shape="rect" id="node7" href="$class_fonctions_utiles.html#a9c07ccbf4d942ef95e3d32bf8046882a" title="méthode permettant de renvoyer une carré rose" alt="" coords="265,259,455,285"/>
+<area shape="rect" id="node8" href="$class_fonctions_utiles.html#a6a5eb9c7defda3e17af89d53b5f1c445" title="méthode permettant de renvoyer une carré rouge" alt="" coords="260,309,460,336"/>
+<area shape="rect" id="node9" href="$class_fonctions_utiles.html#a75640571ea4c33a58b6de5ca427092c8" title="méthode permettant de renvoyer une carré vert" alt="" coords="265,360,455,387"/>
+<area shape="rect" id="node10" href="$class_fonctions_utiles.html#a006539dc3b713a37dbe2d95369dbdb81" title="méthode permettant de renvoyer une carré violet" alt="" coords="260,411,460,437"/>
+<area shape="rect" id="node11" href="$class_fonctions_utiles.html#aaac90a07ac69428a25d940c5aae9a8b6" title="méthode permettant de comparer deux chaines de caractère" alt="" coords="273,461,447,488"/>
+</map>

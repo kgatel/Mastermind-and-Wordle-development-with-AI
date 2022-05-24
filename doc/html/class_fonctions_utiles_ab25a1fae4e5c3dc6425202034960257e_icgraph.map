@@ -1,0 +1,6 @@
+<map id="FonctionsUtiles::carreorange" name="FonctionsUtiles::carreorange">
+<area shape="rect" id="node1" title="méthode permettant de renvoyer une carré orange" alt="" coords="459,42,667,69"/>
+<area shape="rect" id="node2" href="$class_humain___codeur___mastermind.html#a82a4ce8c55071fd36f69f6ea9d4e1726" title="méthode permettant à l&#39;utilisateur de saisir le code que le joueur décodeur devra ensuite deviner" alt="" coords="200,5,411,47"/>
+<area shape="rect" id="node3" href="$class_combi_mastermind.html#a4a148f265167565905dff2806854dbb9" title="permet l&#39;affichage de la combinaison de couleur" alt="" coords="205,71,406,98"/>
+<area shape="rect" id="node4" href="$class_mastermind.html#a4e427112742c445eda532f461281a16b" title="Elle permet de lancer une partie de Mastermind." alt="" coords="5,71,152,98"/>
+</map>

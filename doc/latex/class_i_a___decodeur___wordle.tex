@@ -1,0 +1,157 @@
+\hypertarget{class_i_a___decodeur___wordle}{}\doxysection{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle Class Reference}
+\label{class_i_a___decodeur___wordle}\index{IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}}
+
+
+Cette classe est utilisée pour représenter un joueur virtuel (\mbox{\hyperlink{class_i_a}{IA}}) en mode Decodeur dans le mode de jeu \mbox{\hyperlink{class_wordle}{Wordle}}.  
+
+
+
+
+{\ttfamily \#include $<$I\+A\+\_\+\+Decodeur\+\_\+\+Wordle.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+A\+\_\+\+Decodeur\+\_\+\+Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_i_a___decodeur___wordle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+A\+\_\+\+Decodeur\+\_\+\+Wordle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_i_a___decodeur___wordle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_a___decodeur___wordle_a33672e3966d1db3115bc95fec2dcb10d}\label{class_i_a___decodeur___wordle_a33672e3966d1db3115bc95fec2dcb10d}} 
+\mbox{\hyperlink{class_i_a___decodeur___wordle_a33672e3966d1db3115bc95fec2dcb10d}{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{class_i_a___decodeur___wordle}{I\+A\+\_\+\+Decodeur\+\_\+\+Wordle}}. \end{DoxyCompactList}\item 
+virtual vector$<$ \mbox{\hyperlink{class_combinaison}{Combinaison}} $>$ \mbox{\hyperlink{class_i_a___decodeur___wordle_ae2d7acf405b9e090f8d9489716832263}{Combi\+\_\+possible}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode abstraite permet de créer l\textquotesingle{}ensemble S de toutes les combinaisons de couleurs possibles. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_a___decodeur___wordle_afed6b210f619de267ae9d32bfbd241fa}{Maj\+\_\+ensemble}} (\mbox{\hyperlink{class_combinaison}{Combinaison}} combi, string resultat)
+\begin{DoxyCompactList}\small\item\em Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_combinaison}{Combinaison}} \mbox{\hyperlink{class_i_a___decodeur___wordle_ac0875b480d124009e673f1f3c61315d5}{choisir\+Combinaison}} ()
+\begin{DoxyCompactList}\small\item\em Cette méthode permet de a l\textquotesingle{}\mbox{\hyperlink{class_i_a}{IA}} de choisir une combinaison parmis l\textquotesingle{}ensemble. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_a___decodeur___wordle_a0d1ccf7528626060caf0e5fd475f47b4}\label{class_i_a___decodeur___wordle_a0d1ccf7528626060caf0e5fd475f47b4}} 
+virtual void \mbox{\hyperlink{class_i_a___decodeur___wordle_a0d1ccf7528626060caf0e5fd475f47b4}{jouer}} ()
+\begin{DoxyCompactList}\small\item\em Méthode qui Permet de lancer la partie wordle avec \mbox{\hyperlink{class_i_a}{IA}} décodeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Cette classe est utilisée pour représenter un joueur virtuel (\mbox{\hyperlink{class_i_a}{IA}}) en mode Decodeur dans le mode de jeu \mbox{\hyperlink{class_wordle}{Wordle}}. 
+
+\begin{DoxyAuthor}{Author}
+Groupe A7 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+avril 2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_a___decodeur___wordle_ac0875b480d124009e673f1f3c61315d5}\label{class_i_a___decodeur___wordle_ac0875b480d124009e673f1f3c61315d5}} 
+\index{IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}!choisirCombinaison@{choisirCombinaison}}
+\index{choisirCombinaison@{choisirCombinaison}!IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}}
+\doxysubsubsection{\texorpdfstring{choisirCombinaison()}{choisirCombinaison()}}
+{\footnotesize\ttfamily I\+A\+\_\+\+Decodeur\+\_\+\+Wordle\+::choisir\+Combinaison (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode permet de a l\textquotesingle{}\mbox{\hyperlink{class_i_a}{IA}} de choisir une combinaison parmis l\textquotesingle{}ensemble. 
+
+\begin{DoxyReturn}{Returns}
+retourne la combinaison choisie 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_a_a8c04107ff6b1024b41a9e8d4c40dd179}{IA}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_a___decodeur___wordle_ac0875b480d124009e673f1f3c61315d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_i_a___decodeur___wordle_ae2d7acf405b9e090f8d9489716832263}\label{class_i_a___decodeur___wordle_ae2d7acf405b9e090f8d9489716832263}} 
+\index{IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}!Combi\_possible@{Combi\_possible}}
+\index{Combi\_possible@{Combi\_possible}!IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}}
+\doxysubsubsection{\texorpdfstring{Combi\_possible()}{Combi\_possible()}}
+{\footnotesize\ttfamily I\+A\+\_\+\+Decodeur\+\_\+\+Wordle\+::\+Combi\+\_\+possible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Cette méthode abstraite permet de créer l\textquotesingle{}ensemble S de toutes les combinaisons de couleurs possibles. 
+
+\begin{DoxyReturn}{Returns}
+retourne une liste de combinaison 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_a___decodeur_a56e1f5fc734c417b6c7b47cef270e9e4}{I\+A\+\_\+\+Decodeur}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_a___decodeur___wordle_ae2d7acf405b9e090f8d9489716832263_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_i_a___decodeur___wordle_afed6b210f619de267ae9d32bfbd241fa}\label{class_i_a___decodeur___wordle_afed6b210f619de267ae9d32bfbd241fa}} 
+\index{IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}!Maj\_ensemble@{Maj\_ensemble}}
+\index{Maj\_ensemble@{Maj\_ensemble}!IA\_Decodeur\_Wordle@{IA\_Decodeur\_Wordle}}
+\doxysubsubsection{\texorpdfstring{Maj\_ensemble()}{Maj\_ensemble()}}
+{\footnotesize\ttfamily I\+A\+\_\+\+Decodeur\+\_\+\+Wordle\+::\+Maj\+\_\+ensemble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_combinaison}{Combinaison}}}]{combi,  }\item[{string}]{resultat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em combi} & la combinaison saisie \\
+\hline
+{\em resultat} & string \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_a___decodeur_a07eb74ac8b1b156e544e2983cdeb8de4}{I\+A\+\_\+\+Decodeur}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_a___decodeur___wordle_afed6b210f619de267ae9d32bfbd241fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_a___decodeur___wordle_afed6b210f619de267ae9d32bfbd241fa_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/I\+A\+\_\+\+Decodeur\+\_\+\+Wordle.\+hpp\item 
+/home/kevin/\+Documents/\+G\+M4/\+S8/\+Projet\+\_\+\+Cpp\+\_\+\+S8/I\+A\+\_\+\+Decodeur\+\_\+\+Wordle.\+cpp\end{DoxyCompactItemize}
