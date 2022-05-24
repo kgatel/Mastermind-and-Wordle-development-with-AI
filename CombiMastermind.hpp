@@ -26,6 +26,9 @@ class CombiMastermind : public Combinaison{
 		  */
 		CombiMastermind();
 		
+		/*! \fn ~CombiMastermind()
+		  * \brief Destructeur neutre de CombiMastermind
+		  */
 		virtual ~CombiMastermind(){};
 		
 		/*! \fn CombiMastermind(string chaine)
@@ -34,10 +37,23 @@ class CombiMastermind : public Combinaison{
 		  */
 		CombiMastermind(const string &chaine);
 		
+		/*! \fn CombiMastermind(vector<string> v)
+		  * \brief Constructeur de la classe CombiMastermind
+		  * \param v est un vecteur de chaine de caractère comprenant la suite de couleur séparée d'espace
+		  */
 		CombiMastermind(vector<string> v);
 		
+		/*! \fn CombiMastermind(Combinaison c))
+		  * \brief Constructeur de la classe CombiMastermind
+		  * \param c est un attribut de type combinaison
+		  */
 		CombiMastermind(Combinaison c);
-		
+
+		/*! \fn resultat(combinaison: code);
+		* \brief elle permet de retourner le resultat aorès une tentative
+		* \param code atibut de type combinaison
+		* \return une chaîne de caractère
+		*/
 		virtual string resultat(const Combinaison code) ;
 		
 		/*! \fn string toString();

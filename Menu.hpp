@@ -31,20 +31,23 @@ class Menu {
 		  */
 		Menu();
 		
-		/*! \fn Menu(int nbcase)   """A CHANGER!!!"""
-		  * \brief Constructeur de la classe Menu
+		/*! \fn Menu(int nbcase,int nbtour,int langue)
+		  * \brief Constructeur de la classe Menu avec paramètres
+		  * \param nbcase un entier pour definir le nombre de case
+		  * \param nbtour un entier pour définir le nombre de tour de la partie
+          * \param langue un entier (1 ou 2) pour définir la lanque de jeu dans le cas de wordle
 		  */
 		Menu(int nbcase,int nbtour,int langue);
+
 		/*! \fn afficherMenu()
 		* \brief affiche le menu.
 		*/
 		void afficherMenu();
 		
-		/*! \fn ChoisirJeu(int mdj)
+		/*! \fn choisirJeu(const string &jeu)
 		* \brief Fonction qui permet à l'utilisateur de choisir le jeu
 		* \param jeu est une chaîne de caractère qui indique le jeu choisi
 		*/
-		
 		void choisirJeu(const string &jeu);
 		  
 		/*! \fn ChoisirModeDeJeu(int mdj)
@@ -73,7 +76,7 @@ class Menu {
 		 */ 
 		bool appartientEE(string couleur);
 		
-		/*! \fn appartientDico(Combinaison mot)
+		/*! \fn appartientDico(string mot)
 		 * \brief Fonction qui permet de vérifier si un mot est reconnu par le dictionnaire Wordle ou non
 		 * \param mot est une combinaison qui correpond à un mot de la langue francaise 
 		 */

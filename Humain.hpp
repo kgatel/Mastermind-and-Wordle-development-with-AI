@@ -31,7 +31,7 @@ class Humain: public Joueur {
 		  */
 		Humain(string pseudo1);
 	
-		/*! \fn virtual bool verifierEntree(string entree)
+		/*! \fn verifierEntree(string entree)
 		  * \brief une méthode abstraite qui permettera de vérifier la syntaxe de l'entrée selon le mode de jeu
 		  * \param string entree
 		  * \return retourne un booléen (vraie seulement si la syntaxe est bonne)

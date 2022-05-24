@@ -24,14 +24,21 @@ class IA_Codeur_Wordle : public IA_Codeur{
 		  */
 		IA_Codeur_Wordle();
 		
-		/*! \fn Combinaison genererCode()
+		/*! \fn genererCode()
 		* \brief méthode permettant à la machine de générer un code que le joueur artificiel décodeur devra ensuite trouver
 		*\return retourne le code créé par la machine
 		*/
 		virtual Combinaison genererCode();
 		
+		/*! \fn choisirCombinaison()
+		* \brief Cette méthode permet de a l'IA de choisir une combinaison parmis l'ensemble.
+		* \return retourne la combinaison choisie
+		*/
 		virtual Combinaison choisirCombinaison();
-		  
+
+		/*! \fn jouer()
+		* \brief Méthode qui Permet de lancer la partie wordle avec IA codeur
+		*/  
 		virtual void jouer();
 		  
 	

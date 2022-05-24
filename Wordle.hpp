@@ -35,7 +35,7 @@ class Wordle : public JeuDeDeduction {
 		*/
 		Wordle(Joueur *codeur1, Joueur *decodeur1);
 		
-		/*! \fn void partie() 
+		/*! \fn partie() 
 		* \brief Elle permet de lancer une partie de Wordle.
 		*/		
 		virtual void partie();

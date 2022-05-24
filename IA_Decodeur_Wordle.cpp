@@ -23,7 +23,6 @@ IA_Decodeur_Wordle :: IA_Decodeur_Wordle() : IA_Decodeur() {
 void IA_Decodeur_Wordle :: jouer(){
 	FonctionsUtiles f;
 	string result;
-	cout<<toutLesMotsCombi.size();
 	if (historiqueRes==""){
 		setCombinaison(CombiWordle(choisirCombinaison()));
 		}

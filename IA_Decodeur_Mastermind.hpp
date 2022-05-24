@@ -35,9 +35,16 @@ class IA_Decodeur_Mastermind : public IA_Decodeur{
 		* \brief Si la proposition est incorrecte, cette méthode permet retirer de S tout code qui ne donnerait pas la même réponse si la supposition actuelle était le code.
 		*/
 		virtual void Maj_ensemble(Combinaison combi,string resultat);
-		  
+		
+		/*! \fn choisirCombinaison()
+		* \brief Cette méthode permet de a l'IA de choisir une combinaison parmis l'ensemble.
+		* \return retourne la combinaison choisie
+		*/
 	  	virtual Combinaison choisirCombinaison();
 
+		/*! \fn jouer()
+		* \brief Méthode qui Permet de lancer la partie mastermind avec IA décodeur
+		*/
 		virtual void jouer();
 		
 

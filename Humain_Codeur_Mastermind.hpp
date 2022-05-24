@@ -35,6 +35,9 @@ class Humain_Codeur_Mastermind : public Humain_Codeur{
 		*/
 		virtual bool verifierEntree(string entree);
 		
+		/*! \fn jouer()
+		* \brief Méthode qui Permet de lancer la partie mastermind avec humain codeur
+		*/
 		virtual void jouer();
 		  
 	

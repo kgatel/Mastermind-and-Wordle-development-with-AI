@@ -30,41 +30,50 @@ class Joueur {
 		  */
 		Joueur(string pseudo1);
 		
-		/*! \fn Combinaison getCombinaison()
+		/*! \fn getCombinaison()
 		 *  \brief Pour accéder à l'attribut combinaison 
 		 *  \return retourne la combinaison en attribut
 		 */
 		Combinaison getCombinaison();
 		
-		/*! \fn void setCombinaison(combinaison comb);
+		/*! \fn setCombinaison(combinaison comb);
 		* \brief setteur de l'attribut combinaison
-		* \param une combinaison 
+		* \param comb une combinaison 
 		*/
 		void setCombinaison(Combinaison comb);
 		
-		/*! \fn void entrerPseudo();
+		/*! \fn entrerPseudo();
 		* \brief Pour permettre au joueur de choisir un pseudo 
 		*/
 		void entrerPseudo();
 		
-		/*! \fn string getPseudo();
+		/*! \fn getPseudo();
 		* \brief getteur de l'attribut Pseudo
 		* \return retourne le pseudo en attribut
 		*/
 		string getPseudo();
 		
-		/*! \fn void setPseudo(string nom);
+		/*! \fn setPseudo(string nom);
 		* \brief setteur de l'attribut Pseudo
-		* \param un string nom
+		* \param nom  un string 
 		*/
 		void setPseudo(string nom);
 		
-		/*! \fn string toString() abstraite;
+		/*! \fn toString() abstraite;
 		* \brief permet l'affichage du pseudo
 		* \return un string
 		*/
 		string toString();
+
+        /*! \fn set_historiqueRes(string res);
+		* \brief setteur de l'attribut historiqueRes
+		* \param res  un string 
+		*/
 		void set_historiqueRes(string res);
+
+        /*! \fn jouer();
+		* \brief méthode abstraite qui sera définie dans les classes filles
+		*/
 		virtual void jouer()=0;
 	};
 

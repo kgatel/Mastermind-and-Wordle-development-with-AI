@@ -29,13 +29,13 @@ class Humain_Codeur : public Humain {
 		*/
 		virtual Combinaison entrerCode()=0;
 		  
-		/*! \fn int entrerMdP()
+		/*! \fn entrerMdP()
 		* \brief Méthode qui permet à l'utilisateur d'entrer son mot de passe
 		*\return retourne l'entier entré par l'utilisateur
 		*/
 		int entrerMdP();
 		  
-	  	/*! \fn int getMdP()
+	  	/*! \fn getMdP()
 	 	* \brief acccesseur de l'attribut MdP
 		*\return retourne l'attribut MdP de la classe Humain_Codeur
 		*/

@@ -31,14 +31,14 @@ class Combinaison {
 		
 		/*! \fn Combinaison()
 		  * \brief Constructeur neutre de Combinaison
-		  * \param 
+		  * \param v : un vecteur de chaîne de caractères
 		  */
 		
 		Combinaison(vector<string> v);
 		
 		/*! \fn void setCombinaison(string chaine);
 		* \brief setteur de l'attribut combinaison
-		* \param chaine string 
+		* \param c : un vecteur de chaîne de caractères
 		*/
 		void setCombinaison(vector<string> c);
 		
@@ -51,10 +51,15 @@ class Combinaison {
 		/*! \fn get(int i)
 		* \brief getteur du ième élément de l'attribut combinaison
 		* \param i entier : l'indice
-		* \return un entier
+		* \return une chaîne de caractère
 		*/
 		string get(const int i) const;
 		
+		/*! \fn resultat(combinaison: code);
+		* \brief elle permet de retourner le resultat aorès une tentative
+		* \param code atibut de type combinaison
+		* \return une chaîne de caractère
+		*/
 		virtual string resultat(Combinaison code);
 		
 		/*! \fn string toString() abstraite;

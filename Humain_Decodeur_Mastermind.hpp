@@ -36,6 +36,9 @@ class Humain_Decodeur_Mastermind : public Humain_Decodeur{
 		*/
 		bool verifierEntree(string entree);
 		
+		/*! \fn jouer()
+		* \brief Méthode qui Permet de lancer la partie mastermind avec humain decodeur
+		*/
 		virtual void jouer();
 };
 

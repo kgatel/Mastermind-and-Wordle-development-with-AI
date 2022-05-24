@@ -17,7 +17,7 @@ using namespace std;
 * \date avril 2022
 * \namespace std
 *
-* Cette classe, héritée de Combinaison, permet de définir l'objet CombiWordle. Elle transforme une chaine de caractère (suite de lettre) séparée d'espace en un vecteur de string. Elle possède un seul attribut.
+* Cette classe, héritée de Combinaison, permet de définir l'objet CombiWordle. Elle transforme une chaine de caractère (suite de lettre) séparée d'espace en un vecteur de string.
 */
 
 class CombiWordle : public Combinaison{
@@ -28,6 +28,9 @@ class CombiWordle : public Combinaison{
 		  */
 		CombiWordle();
 		
+		/*! \fn ~CombiWordle()
+		  * \brief Destructeur neutre de CombiWordle
+		  */
 		virtual ~CombiWordle(){};
 		
 		/*! \fn CombiWordle(string chaine)
@@ -40,23 +43,25 @@ class CombiWordle : public Combinaison{
 		  * \brief Constructeur de la classe CombiWordle à partir d'un vecteur
 		  * \param v est un vecteur contenant tous les caractères d'un mot
 		  */
-		
 		CombiWordle(vector<string> v);
 		
 		/*! \fn CombiWordle(Combinaison c)
 		  * \brief Constructeur de la classe CombiWordle à partir d'une combinaison
 		  * \param c est une combinaison correspondant à un mot
 		  */
-		
 		CombiWordle(Combinaison c);
 		
-		/*! \fn int resultat(CombiWordle code)
+		/*! \fn resultat(CombiWordle code)
 		* \brief renvoie les indices des lettres placée
 		* \param code Combinaison : le mot recherché par le décodeur
-		* \return un tableau d'entier
+		* \return une chaîne de caratère
 		*/
 		virtual string resultat(const Combinaison code) ;
 		
+		/*! \fn resultat_couleur(const Combinaison code)
+		* \param code Combinaison : le mot recherché par le décodeur
+		* \return une chaîne de caratère
+		*/
 		string resultat_couleur(const Combinaison code);
 
 		

@@ -22,9 +22,9 @@ using namespace std;
 class JeuDeDeduction {
 	protected:
 		Joueur *codeur,*decodeur;
-		vector<Combinaison> historiqueCombinaison;
-		int numeroTour;
-		Menu menu;
+		vector<Combinaison> historiqueCombinaison; //historique des combinaisons
+		int numeroTour; //numéro du tour initial
+		Menu menu; //menu qui a été initialisé
 		vector<string> historiqueResultat;	//pour Wordle c'est le mot avec les couleurs vert et jaune, pour Mastermind on colle le résultatBienPlacé et resultatMalplacé exemple 31 -> 3 bien placés -- 1 mal placé
 	
 	public:
@@ -38,12 +38,7 @@ class JeuDeDeduction {
 		  * \brief Constructeur neutre de la classe JeuDeDeduction avec paramètres
 		  * \param codeur : joueur codeur qui propose une combinaison 
 		  * \param decodeur : joueur décodeur qui va deviner la combinaison
-		  * \param HistoriqueCombinaison : historique des combinaisons
-		  * \param numeroTour : numéro du tour initial
-		  * \param menu : menu qui a été initialisé
-		  * \param historiqueResultatBienPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
-		  * \param historiqueResultatMalPlace : tableau de string permettant de stocker les résultats des combinaisons entrées
-		  */
+		*/
 		JeuDeDeduction(Joueur *codeur1, Joueur *decodeur1);
 
 		/*! \fn ~JeuDeDeduction();

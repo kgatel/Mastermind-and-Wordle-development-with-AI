@@ -31,19 +31,19 @@ class Mastermind : public JeuDeDeduction {
 		  */
 		Mastermind(Joueur *codeur1, Joueur *decodeur1);
 
-		/*! \fn void partie()                                                                                                                                                                         
+		/*! \fn partie()                                                                                                                                                                         
 		 * 	\brief Elle permet de lancer une partie de Mastermind.
 		 */		
 		void partie();
 		
-		/*! \fn void afficherPartie()
+		/*! \fn afficherPartie()
 		 *  \brief Cette méthode permet d’afficher le jeu entier comprenant les historiques des combinaisons rentrées avec le résultat de comparaison avec le code associé (nombre de couleur bien placé et mal placé).
 		 *  \brief Cette méthode ne permet pas d’afficher le code quand nous sommes du point de vue décodeur.
 		 */
 		virtual void afficherHistorique();
 	
 	private :
-		/*! \fn void affichercouleur()                                                                                                                                                                         
+		/*! \fn affichercouleur()                                                                                                                                                                         
 		 * 	\brief Elle permet d'afficher la suite de couleur qui correspond à la combinaison saisie.
 		 */
 		void afficherCouleurs();

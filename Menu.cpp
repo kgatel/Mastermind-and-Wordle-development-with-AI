@@ -53,10 +53,6 @@ void Menu :: afficherMenu(){
 	while(!finchoix){
 		do{
 			cout<<f.bleu("\nQue voulez vous faire ?\n");
-			cout<<"1 - Définir le jeu \n";
-			cout<<"2 - Définir le mode de jeu \n";
-			cout<<"3 - Définir le nombre de tours max \n";
-			cout<<"4 - Regarder les règles du jeu\n";
 			string text="";
 			text+=JEU+" ";
 			if (JEU=="Mastermind"){
@@ -84,6 +80,11 @@ void Menu :: afficherMenu(){
 			text+="TourMax="+f.intToString(NB_TOUR);
 			
 			cout<<"0 - Lancer la partie (\033[4;39;49m"+text+"\033[0m)\n";
+			cout<<"1 - Définir le jeu \n";
+			cout<<"2 - Définir le mode de jeu \n";
+			cout<<"3 - Définir le nombre de tours max \n";
+			cout<<"4 - Regarder les règles du jeu\n";
+			cout<<"5 - Quitter\n";
 			cin >>tmpChoix;
 		}while(!f.isNumber(tmpChoix));
 		choix=stoi(tmpChoix);
@@ -178,12 +179,17 @@ void Menu :: afficherMenu(){
 			NB_TOUR=tmp;
 			cout<<f.jaune("Nombre de tours modifié\n");
 			break;
+			
 			case 4:
 			if (JEU=="Mastermind"){
 				system("evince ressources/Regle/Mastermind.pdf");
 			}else{
 				system("evince ressources/Regle/Wordle.pdf");
 			}
+			break;
+			
+			case 5:
+			exit(0);
 			break;
 			
 			default:
